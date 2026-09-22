@@ -1,0 +1,28 @@
+{
+  "search_metadata": {
+    "id": "sanitized-search-id-vcp-mco",
+    "status": "Success",
+    "google_flights_url": "https://www.google.com/travel/flights?sanitized=true",
+    "json_endpoint": "https://serpapi.com/searches/sanitized.json"
+  },
+  "best_flights": [
+    {
+      "flights": [
+        {
+          "departure_airport": {"name": "Viracopos International Airport", "id": "VCP", "time": "2027-03-05 09:00"},
+          "arrival_airport": {"name": "Orlando International Airport", "id": "MCO", "time": "2027-03-05 17:00"},
+          "duration": 480,
+          "airline": "Sanitized Air",
+          "flight_number": "SA 123",
+          "travel_class": "Economy"
+        }
+      ],
+      "total_duration": 480,
+      "price": 12450,
+      "type": "Round trip",
+      "departure_token": "sanitized-departure-token",
+      "booking_token": "sanitized-booking-token"
+    }
+  ],
+  "other_flights": []
+}
