@@ -39,7 +39,14 @@ class MonitorTests(unittest.TestCase):
             segment["departure_airport"]["id"] = route.origin
             segment["arrival_airport"]["id"] = route.destination
             flight["type"] = "One way"
-            (directory / f"google_flights_{route.origin.lower()}_{route.destination.lower()}.json").write_text(json.dumps(payload))
+            if route.trip_type == "multi_city":
+                returning = deepcopy(segment)
+                returning["departure_airport"]["id"] = route.return_origin
+                returning["arrival_airport"]["id"] = route.return_destination
+                flight["flights"].append(returning)
+                flight["type"] = "Multi-city"
+            suffix = "_package" if route.trip_type == "multi_city" else ""
+            (directory / f"google_flights_{route.origin.lower()}_{route.destination.lower()}{suffix}.json").write_text(json.dumps(payload))
 
     def test_dry_run_reads_both_legs_and_writes_versioned_public_json(self):
         with tempfile.TemporaryDirectory() as root:
@@ -55,8 +62,9 @@ class MonitorTests(unittest.TestCase):
             self.assertEqual(public["schema_version"], 1)
             self.assertEqual(public["presentation"]["timezone"], "America/Sao_Paulo")
             self.assertEqual(public["history"]["kind"], "daily_route_minimum")
-            self.assertEqual(len(public["history"]["entries"][0]["routes"]), 12)
-            self.assertEqual({offer["route"]["leg"] for offer in public["offers"]}, {"outbound", "return"})
+            self.assertEqual(len(public["history"]["entries"][0]["routes"]), 18)
+            self.assertEqual({offer["route"].get("leg") for offer in public["offers"]}, {None, "outbound", "return"})
+            self.assertEqual(sum(offer["itinerary"]["type"] == "multi_city" for offer in public["offers"]), 6)
             self.assertTrue(public["offers"][0]["id"].startswith("offer-"))
             self.assertFalse(public["offers"][0]["baggage"]["included"])
             self.assertEqual(
@@ -82,7 +90,7 @@ class MonitorTests(unittest.TestCase):
         self.assertNotIn("return_date", request.params())
 
     def test_both_legs_builds_separate_one_way_routes(self):
-        both_config = config(trip_leg="both", daily_basic_searches=12)
+        both_config = config(trip_leg="both", include_packages=False, daily_basic_searches=12)
 
         routes = routes_from_config(both_config)
 
@@ -90,6 +98,21 @@ class MonitorTests(unittest.TestCase):
         self.assertEqual({route.leg for route in routes}, {"outbound", "return"})
         self.assertEqual(routes[0].key, "GRU-MCO:outbound")
         self.assertEqual(routes[6].key, "FLL-VCP:return")
+
+    def test_package_builds_multi_city_request_and_route(self):
+        package_config = config(trip_leg="both", include_packages=True, daily_basic_searches=18)
+        route = routes_from_config(package_config)[-1]
+        request = _request(package_config, route)
+
+        self.assertEqual(route.key, "VCP-MIA:MCO-GRU")
+        self.assertEqual(request.params()["type"], "3")
+        self.assertEqual(
+            json.loads(request.params()["multi_city_json"]),
+            [
+                {"departure_id": "VCP", "arrival_id": "MIA", "date": "2027-03-05"},
+                {"departure_id": "MCO", "arrival_id": "GRU", "date": "2027-03-14"},
+            ],
+        )
 
     def test_missing_fixture_is_partial_failure_and_last_valid_offer_stays_stale(self):
         with tempfile.TemporaryDirectory() as root:
@@ -110,6 +133,7 @@ class MonitorTests(unittest.TestCase):
             stale = [
                 item for item in public["offers"]
                 if item["route"].get("origin") == "VCP" and item["route"].get("destination") == "MIA"
+                and item["route"].get("leg") == "outbound"
             ]
             self.assertTrue(stale and stale[0]["stale"])
 

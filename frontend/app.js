@@ -21,7 +21,11 @@ function addText(parent, tag, value, className) {
 function routeKey(route) {
   if (!route || typeof route !== "object") return "";
   const key = `${route.origin || "?"}-${route.destination || "?"}`;
-  return route.leg ? `${key}:${route.leg}` : key;
+  const leg = route.leg ? `:${route.leg}` : "";
+  const returning = route.return_origin && route.return_destination
+    ? `:${route.return_origin}-${route.return_destination}`
+    : "";
+  return `${key}${leg}${returning}`;
 }
 
 function legLabel(value) {
@@ -31,8 +35,19 @@ function legLabel(value) {
 function routeLabel(route) {
   if (!route || typeof route !== "object") return "";
   const outbound = `${route.origin || "?"} → ${route.destination || "?"}`;
+  if (route.return_origin && route.return_destination) {
+    return `${outbound} / ${route.return_origin} → ${route.return_destination} · pacote ida e volta`;
+  }
   const leg = route.leg ? ` · ${legLabel(route.leg).toLowerCase()}` : "";
   return `${outbound}${leg}`;
+}
+
+function isPackageOffer(offer) {
+  const route = offer?.route || {};
+  const type = offer?.itinerary?.type;
+  return Boolean(route.return_origin && route.return_destination)
+    || type === "round_trip"
+    || type === "multi_city";
 }
 
 function singleLegOffers(offers) {
@@ -41,6 +56,10 @@ function singleLegOffers(offers) {
     const type = offer?.itinerary?.type;
     return !route.return_origin && !route.return_destination && type !== "round_trip" && type !== "multi_city";
   });
+}
+
+function displayOffers(offers) {
+  return array(offers).filter((offer) => singleLegOffers([offer]).length || isPackageOffer(offer));
 }
 
 function currency(value, code = "BRL") {
@@ -275,7 +294,7 @@ function renderOffer(offer) {
   const checkbox = document.createElement("input");
   checkbox.type = "checkbox";
   checkbox.checked = selected;
-  checkbox.disabled = !isComparable(offer) || !offer?.id;
+  checkbox.disabled = !isComparable(offer) || !offer?.id || isPackageOffer(offer);
   checkbox.setAttribute("aria-label", `Selecionar ${routeLabel(offer.route)} por ${money(offer)}`);
   checkbox.addEventListener("change", () => {
     if (checkbox.checked) state.selectedOfferIds.add(offer.id);
@@ -325,7 +344,7 @@ function renderOffers(offers) {
   more.textContent = `Ver mais (${offers.length - MAX_VISIBLE_OFFERS})`;
 }
 
-function renderRoutes(data, offers = singleLegOffers(data.offers)) {
+function renderRoutes(data, offers = displayOffers(data.offers)) {
   const target = $("routes");
   clear(target);
   const routeData = data.routes && typeof data.routes === "object" ? data.routes : {};
@@ -411,7 +430,7 @@ function render(data) {
   const alert = stale ? "Algumas ofertas são dados antigos porque uma ou mais rotas falharam." : (data.status === "failure" ? "Consulta teve falhas. Veja status por rota." : "");
   setStatus(data.status, alert);
   $("disclaimer").textContent = data.disclaimer || "Preço mantém interpretação da fonte. Taxas, bebê de colo, bagagem e inventário não são inferidos.";
-  const offers = singleLegOffers(data.offers);
+  const offers = displayOffers(data.offers);
   renderFilters(offers, data.search);
   renderRoutes(data, offers);
   updateOffers();
@@ -419,7 +438,7 @@ function render(data) {
 
 function updateOffers() {
   if (!state.data) return;
-  const offers = filteredOffers(singleLegOffers(state.data.offers));
+  const offers = filteredOffers(displayOffers(state.data.offers));
   renderMetrics(offers);
   renderOffers(offers);
   renderHistory(state.data.history);

@@ -1,6 +1,6 @@
 # Testes
 
-`test_serpapi.py` cobre parâmetros da consulta, normalização, tokens, erros, chave ausente e limite de orçamento. `test_monitor.py` cobre rotas de ida e volta em fixtures, limite mensal, quota, falha parcial, preservação de dado antigo, duplicata diária, schema público, lock e alerta local. `test_telegram.py` cobre escape, deduplicação, queda, teto, persistência de falha, confirmação e resposta Telegram.
+`test_serpapi.py` cobre parâmetros da consulta, normalização, tokens, erros, chave ausente e limite de orçamento. `test_monitor.py` cobre rotas de ida, volta e pacotes em fixtures, limite mensal, quota, falha parcial, preservação de dado antigo, duplicata diária, schema público, lock e alerta local. `test_telegram.py` cobre escape, deduplicação, queda, teto, persistência de falha, confirmação e resposta Telegram.
 
 Execute com `PYTHONPATH=src python -m unittest discover -s tests -v`.
 

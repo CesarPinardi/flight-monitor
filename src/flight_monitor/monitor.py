@@ -38,10 +38,13 @@ class Route:
     return_origin: str | None = None
     return_destination: str | None = None
     leg: str | None = None
+    trip_type: str | None = None
 
     @property
     def key(self) -> str:
         suffix = f":{self.leg}" if self.leg else ""
+        if self.return_origin and self.return_destination:
+            suffix += f":{self.return_origin}-{self.return_destination}"
         return f"{self.origin}-{self.destination}{suffix}"
 
 
@@ -86,6 +89,9 @@ def load_config(path: str | os.PathLike[str]) -> dict[str, Any]:
         if not isinstance(result.get("return_date"), str) or not result["return_date"]:
             raise ValueError(f"trip_leg {trip_leg} requires return_date")
     itineraries = result.get("itineraries")
+    include_packages = result.get("include_packages", False)
+    if not isinstance(include_packages, bool):
+        raise ValueError("include_packages must be boolean")
     if itineraries is not None:
         if not isinstance(itineraries, list) or not itineraries:
             raise ValueError("itineraries must be a non-empty list")
@@ -102,6 +108,8 @@ def load_config(path: str | os.PathLike[str]) -> dict[str, Any]:
                     or not leg["destination"]
                 ):
                     raise ValueError(f"itineraries[{index}].{leg_name} must have origin and destination")
+    if include_packages and (trip_type != "one_way" or not isinstance(itineraries, list)):
+        raise ValueError("include_packages requires one-way itineraries")
     result.setdefault("daily_basic_searches", DEFAULT_DAILY_BASIC_SEARCHES)
     result.setdefault("monthly_basic_limit", DEFAULT_MONTHLY_BASIC_LIMIT)
     result.setdefault("monthly_call_limit", DEFAULT_MONTHLY_CALL_LIMIT)
@@ -113,7 +121,9 @@ def load_config(path: str | os.PathLike[str]) -> dict[str, Any]:
     if ceiling is not None and (isinstance(ceiling, bool) or not isinstance(ceiling, (int, float)) or ceiling <= 0):
         raise ValueError("alert_price_ceiling must be a positive number or null")
     leg_count = 2 if trip_type == "one_way" and trip_leg == "both" else 1
-    expected_searches = (len(itineraries) if itineraries is not None else len(origins) * len(destinations)) * leg_count
+    itinerary_count = len(itineraries) if itineraries is not None else len(origins) * len(destinations)
+    package_count = len(itineraries) if include_packages and itineraries is not None else 0
+    expected_searches = itinerary_count * leg_count + package_count
     if result["daily_basic_searches"] != expected_searches:
         raise ValueError("daily_basic_searches must match configured itineraries")
     if result["monthly_basic_limit"] > DEFAULT_MONTHLY_BASIC_LIMIT:
@@ -131,7 +141,7 @@ def routes_from_config(config: Mapping[str, Any]) -> list[Route]:
         if config.get("trip_type") == "one_way":
             trip_leg = config.get("trip_leg", "outbound")
             trip_legs = ("outbound", "return") if trip_leg == "both" else (trip_leg,)
-            return [
+            routes = [
                 Route(
                     str(item[leg]["origin"]).upper(),
                     str(item[leg]["destination"]).upper(),
@@ -140,6 +150,18 @@ def routes_from_config(config: Mapping[str, Any]) -> list[Route]:
                 for leg in trip_legs
                 for item in itineraries
             ]
+            if config.get("include_packages"):
+                routes.extend(
+                    Route(
+                        str(item["outbound"]["origin"]).upper(),
+                        str(item["outbound"]["destination"]).upper(),
+                        str(item["return"]["origin"]).upper(),
+                        str(item["return"]["destination"]).upper(),
+                        trip_type="multi_city",
+                    )
+                    for item in itineraries
+                )
+            return routes
         return [
             Route(
                 str(item["outbound"]["origin"]).upper(),
@@ -169,6 +191,8 @@ def routes_from_config(config: Mapping[str, Any]) -> list[Route]:
 
 def _request(config: Mapping[str, Any], route: Route) -> SearchRequest:
     values = dict(config)
+    if route.trip_type:
+        values["trip_type"] = route.trip_type
     if route.leg == "return":
         values["outbound_date"] = config["return_date"]
         values.pop("return_date", None)
@@ -311,7 +335,8 @@ def _empty_history() -> dict[str, Any]:
 
 
 def _fixture_response(fixture_dir: Path, route: Route) -> Mapping[str, Any]:
-    path = fixture_dir / f"google_flights_{route.origin.lower()}_{route.destination.lower()}.json"
+    suffix = "_package" if route.trip_type == "multi_city" else ""
+    path = fixture_dir / f"google_flights_{route.origin.lower()}_{route.destination.lower()}{suffix}.json"
     with path.open(encoding="utf-8") as stream:
         response = json.load(stream)
     if not isinstance(response, Mapping):
@@ -323,6 +348,7 @@ def _public_search(config: Mapping[str, Any]) -> dict[str, Any]:
     allowed = (
         "departure_date", "return_date", "origins", "destinations", "adults", "children",
         "infants_in_seat", "infants_on_lap", "cabin", "currency", "trip_type", "trip_leg", "payment_type", "itineraries",
+        "include_packages",
     )
     return {key: config[key] for key in allowed if key in config}
 

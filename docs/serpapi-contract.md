@@ -22,7 +22,7 @@ Datas, passageiros, classe e moeda vêm de `config/search.json` via `SearchReque
 
 ## Trechos configuráveis
 
-O monitor usa `type=2` e consulta cada perna separadamente. `trip_leg=outbound` consulta ida; `trip_leg=return` consulta volta e usa `return_date`; `trip_leg=both` executa as duas consultas. O preço retornado pertence ao trecho consultado. A SerpApi não recebe companhia fixa.
+O monitor usa `type=2` e consulta cada perna separadamente. `trip_leg=outbound` consulta ida; `trip_leg=return` consulta volta e usa `return_date`; `trip_leg=both` executa as duas consultas. Quando `include_packages=true`, também executa o pacote combinado com `type=3`. O preço retornado pertence ao trecho ou pacote consultado. A SerpApi não recebe companhia fixa.
 
 `trip_type=multi_city` continua disponível para compatibilidade, usando `type=3` e `multi_city_json` com duas pernas independentes.
 
