@@ -1,6 +1,6 @@
-const DATA_URLS = ["data.json", "../data/public/data.json", "data/public/data.json"];
+const DATA_URLS = ["data.json?v=all-routes-2", "../data/public/data.json?v=all-routes-2", "data/public/data.json?v=all-routes-2"];
 const MAX_VISIBLE_OFFERS = 6;
-const state = { data: null, showAllOffers: false, selectedOfferIds: new Set() };
+const state = { data: null, showAllOffers: false };
 
 const $ = (id) => document.getElementById(id);
 const finite = (value) => typeof value === "number" && Number.isFinite(value);
@@ -138,21 +138,6 @@ function bestOffer(offers) {
   return array(offers).filter(isComparable).sort((left, right) => left.price.amount - right.price.amount)[0] || null;
 }
 
-function selectedTotal(offers) {
-  const selected = array(offers).filter((offer) => offer?.id && state.selectedOfferIds.has(offer.id) && isComparable(offer));
-  if (!selected.length) return null;
-  const currencies = [...new Set(selected.map((offer) => {
-    const value = offer.price?.currency;
-    return typeof value === "string" && /^[A-Z]{3}$/i.test(value) ? value.toUpperCase() : "BRL";
-  }))];
-  if (currencies.length !== 1) return { count: selected.length, incompatible: true };
-  return {
-    amount: selected.reduce((total, offer) => total + offer.price.amount, 0),
-    count: selected.length,
-    currency: currencies[0],
-  };
-}
-
 function setStatus(value, detail = "") {
   const badge = $("status-badge");
   const [className, label] = statusInfo(value);
@@ -270,21 +255,11 @@ function renderMetrics(offers) {
   $("history-price").textContent = lowest ? currency(lowest.amount, lowest.currency) : "—";
   $("history-price-detail").textContent = lowest ? `${routeLabel(lowest.route)} · menor preço diário` : "Histórico sem preço comparável.";
 
-  const selected = selectedTotal(singleLegOffers(state.data?.offers));
-  $("selected-total").textContent = selected?.incompatible ? "—" : selected ? currency(selected.amount, selected.currency) : "—";
-  $("selected-total-detail").textContent = selected?.incompatible
-    ? "Selecione trechos na mesma moeda."
-    : selected
-      ? `${selected.count} ${selected.count === 1 ? "trecho selecionado" : "trechos selecionados"}.`
-      : "Selecione ofertas para somar.";
-  $("clear-selection").disabled = !selected;
 }
 
 function renderOffer(offer) {
   const card = document.createElement("article");
   card.className = "offer-card";
-  const selected = Boolean(offer?.id && state.selectedOfferIds.has(offer.id));
-  if (selected) card.classList.add("offer-card-selected");
   const top = document.createElement("div");
   top.className = "offer-top";
   const heading = document.createElement("div");
@@ -293,20 +268,6 @@ function renderOffer(offer) {
   const topActions = document.createElement("div");
   topActions.className = "offer-top-actions";
   topActions.append(addText(document.createElement("div"), "div", money(offer), "offer-price"));
-  const selectLabel = document.createElement("label");
-  selectLabel.className = "offer-select";
-  const checkbox = document.createElement("input");
-  checkbox.type = "checkbox";
-  checkbox.checked = selected;
-  checkbox.disabled = !isComparable(offer) || !offer?.id || isPackageOffer(offer);
-  checkbox.setAttribute("aria-label", `Selecionar ${routeLabel(offer.route)} por ${money(offer)}`);
-  checkbox.addEventListener("change", () => {
-    if (checkbox.checked) state.selectedOfferIds.add(offer.id);
-    else state.selectedOfferIds.delete(offer.id);
-    updateOffers();
-  });
-  selectLabel.append(checkbox, addText(document.createElement("span"), "span", "Somar"));
-  topActions.append(selectLabel);
   top.append(heading, topActions);
   card.append(top);
   const meta = document.createElement("div");
@@ -426,7 +387,6 @@ function renderHistory(history) {
 function render(data) {
   state.data = data;
   state.showAllOffers = false;
-  state.selectedOfferIds.clear();
   renderSearch(data.search || {});
   $("schema-label").textContent = `JSON público · schema ${data.schema_version ?? "?"}`;
   $("last-updated").textContent = data.generated_at_utc ? `Última consulta: ${date(data.generated_at_utc)}` : "Última consulta: não informada";
@@ -486,10 +446,6 @@ $("clear-filters").addEventListener("click", () => {
   $("leg-filter").value = "";
   $("stops-filter").value = "";
   $("sort-filter").value = "price";
-  updateOffers();
-});
-$("clear-selection").addEventListener("click", () => {
-  state.selectedOfferIds.clear();
   updateOffers();
 });
 $("reload").addEventListener("click", loadData);

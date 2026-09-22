@@ -69,7 +69,7 @@ h2 { margin-bottom: 0; font-size: 1.24rem; letter-spacing: -.02em; }
 .config-grid dt { color: var(--muted); font-size: .76rem; }
 .config-grid dd { margin: .18rem 0 0; font-weight: 750; }
 
-.metric-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin-top: 1.25rem; }
+.metric-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-top: 1.25rem; }
 .metric-card { min-height: 9.4rem; padding: 1.25rem; border: 1px solid var(--line); border-radius: 1rem; background: var(--surface); box-shadow: var(--shadow); }
 .metric-featured { color: #fff; background: #1555a5; border-color: #1555a5; }
 .metric-featured .metric-label, .metric-featured .metric-detail { color: #d7e7ff; }
@@ -82,9 +82,6 @@ label { display: grid; gap: .35rem; color: var(--muted); font-size: .8rem; font-
 select { min-width: 0; padding: .68rem .7rem; color: var(--ink); background: #fff; border: 1px solid #b9c5d6; border-radius: .6rem; font: inherit; }
 .section-actions { display: flex; align-items: center; gap: .9rem; }
 .offer-top-actions { display: grid; justify-items: end; gap: .45rem; }
-.offer-select { display: flex; align-items: center; gap: .35rem; color: var(--blue-dark); font-size: .75rem; font-weight: 800; }
-.offer-select input { width: 1rem; height: 1rem; margin: 0; accent-color: var(--blue); }
-.offer-card-selected { border-color: #6c9eea; background: var(--blue-soft); box-shadow: 0 0 0 2px rgba(47, 128, 237, .14); }
 .button:disabled { cursor: not-allowed; opacity: .5; }
 
 .offer-list { display: grid; grid-template-columns: repeat(2, 1fr); gap: .85rem; }
