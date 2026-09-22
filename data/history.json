@@ -4937,6 +4937,549 @@
       "schema_version": 1,
       "search_signature": "{\"adults\":2,\"cabin\":\"economy\",\"children\":0,\"currency\":\"BRL\",\"departure_date\":\"2027-03-05\",\"destinations\":[\"MCO\",\"FLL\",\"MIA\"],\"infants_in_seat\":0,\"infants_on_lap\":1,\"itineraries\":[{\"outbound\":{\"destination\":\"MCO\",\"origin\":\"GRU\"},\"return\":{\"destination\":\"VCP\",\"origin\":\"FLL\"}},{\"outbound\":{\"destination\":\"FLL\",\"origin\":\"GRU\"},\"return\":{\"destination\":\"VCP\",\"origin\":\"MIA\"}},{\"outbound\":{\"destination\":\"MIA\",\"origin\":\"GRU\"},\"return\":{\"destination\":\"VCP\",\"origin\":\"MCO\"}},{\"outbound\":{\"destination\":\"MCO\",\"origin\":\"VCP\"},\"return\":{\"destination\":\"GRU\",\"origin\":\"FLL\"}},{\"outbound\":{\"destination\":\"FLL\",\"origin\":\"VCP\"},\"return\":{\"destination\":\"GRU\",\"origin\":\"MIA\"}},{\"outbound\":{\"destination\":\"MIA\",\"origin\":\"VCP\"},\"return\":{\"destination\":\"GRU\",\"origin\":\"MCO\"}}],\"origins\":[\"GRU\",\"VCP\"],\"payment_type\":\"cash_only\",\"return_date\":\"2027-03-14\",\"trip_leg\":\"outbound\",\"trip_type\":\"one_way\"}",
       "status": "success"
+    },
+    {
+      "recorded_at_utc": "2026-09-22T20:31:54Z",
+      "results": [
+        {
+          "is_extra": false,
+          "offers": [
+            {
+              "baggage": {
+                "counted_in_price": false,
+                "included": false,
+                "status": "unknown"
+              },
+              "comparison_eligible": true,
+              "compatibility_key": "97748db1c401e9b2df72",
+              "currency": "BRL",
+              "id": "offer-9a3212d24cc944151a89",
+              "itinerary": {
+                "segments": [
+                  {
+                    "airline": "Sanitized Air",
+                    "arrival_airport": {
+                      "id": "MCO",
+                      "name": "Orlando International Airport",
+                      "time": "2027-03-05 17:00"
+                    },
+                    "available": true,
+                    "departure_airport": {
+                      "id": "GRU",
+                      "name": "Sao Paulo Guarulhos International Airport",
+                      "time": "2027-03-05 09:00"
+                    },
+                    "duration_minutes": 480,
+                    "flight_number": "SA 123",
+                    "travel_class": "Economy"
+                  }
+                ],
+                "stops": 0,
+                "total_duration_minutes": 480,
+                "type": "one_way"
+              },
+              "links": {
+                "google_flights": "https://www.google.com/travel/flights?sanitized=true"
+              },
+              "observed_at_utc": "2026-09-22T20:31:54Z",
+              "passengers": {
+                "adults": 2,
+                "children": 0,
+                "infants_in_seat": 0,
+                "infants_on_lap": 1
+              },
+              "price": {
+                "amount": 6225.0,
+                "currency": "BRL",
+                "includes_infants_on_lap": null,
+                "includes_taxes": null,
+                "interpretation": "provider_value_scope_unknown",
+                "scope": "unknown"
+              },
+              "provider": "serpapi",
+              "route": {
+                "destination": "MCO",
+                "leg": "outbound",
+                "origin": "GRU"
+              },
+              "route_verified": true,
+              "source": "best_flights",
+              "status": "complete"
+            }
+          ],
+          "request": {
+            "adults": "2",
+            "arrival_id": "MCO",
+            "children": "0",
+            "currency": "BRL",
+            "departure_id": "GRU",
+            "engine": "google_flights",
+            "gl": "br",
+            "hl": "pt-BR",
+            "infants_in_seat": "0",
+            "infants_on_lap": "1",
+            "outbound_date": "2027-03-05",
+            "travel_class": "1",
+            "type": "2"
+          },
+          "route": {
+            "destination": "MCO",
+            "leg": "outbound",
+            "origin": "GRU"
+          },
+          "search_id": "sanitized-search-id",
+          "status": "success"
+        },
+        {
+          "is_extra": false,
+          "offers": [
+            {
+              "baggage": {
+                "counted_in_price": false,
+                "included": false,
+                "status": "unknown"
+              },
+              "comparison_eligible": true,
+              "compatibility_key": "35ff52af35b3d6cbf5c0",
+              "currency": "BRL",
+              "id": "offer-3a072d7f25f7c7c7c2a5",
+              "itinerary": {
+                "segments": [
+                  {
+                    "airline": "Sanitized Air",
+                    "arrival_airport": {
+                      "id": "FLL",
+                      "name": "Fort Lauderdale-Hollywood International Airport",
+                      "time": "2027-03-05 17:00"
+                    },
+                    "available": true,
+                    "departure_airport": {
+                      "id": "GRU",
+                      "name": "Sao Paulo Guarulhos International Airport",
+                      "time": "2027-03-05 09:00"
+                    },
+                    "duration_minutes": 480,
+                    "flight_number": "SA 123",
+                    "travel_class": "Economy"
+                  }
+                ],
+                "stops": 0,
+                "total_duration_minutes": 480,
+                "type": "one_way"
+              },
+              "links": {
+                "google_flights": "https://www.google.com/travel/flights?sanitized=true"
+              },
+              "observed_at_utc": "2026-09-22T20:31:54Z",
+              "passengers": {
+                "adults": 2,
+                "children": 0,
+                "infants_in_seat": 0,
+                "infants_on_lap": 1
+              },
+              "price": {
+                "amount": 6225.0,
+                "currency": "BRL",
+                "includes_infants_on_lap": null,
+                "includes_taxes": null,
+                "interpretation": "provider_value_scope_unknown",
+                "scope": "unknown"
+              },
+              "provider": "serpapi",
+              "route": {
+                "destination": "FLL",
+                "leg": "outbound",
+                "origin": "GRU"
+              },
+              "route_verified": true,
+              "source": "best_flights",
+              "status": "complete"
+            }
+          ],
+          "request": {
+            "adults": "2",
+            "arrival_id": "FLL",
+            "children": "0",
+            "currency": "BRL",
+            "departure_id": "GRU",
+            "engine": "google_flights",
+            "gl": "br",
+            "hl": "pt-BR",
+            "infants_in_seat": "0",
+            "infants_on_lap": "1",
+            "outbound_date": "2027-03-05",
+            "travel_class": "1",
+            "type": "2"
+          },
+          "route": {
+            "destination": "FLL",
+            "leg": "outbound",
+            "origin": "GRU"
+          },
+          "search_id": "sanitized-search-id-gru-fll",
+          "status": "success"
+        },
+        {
+          "is_extra": false,
+          "offers": [
+            {
+              "baggage": {
+                "counted_in_price": false,
+                "included": false,
+                "status": "unknown"
+              },
+              "comparison_eligible": true,
+              "compatibility_key": "3a803e2ae79dd172e9b7",
+              "currency": "BRL",
+              "id": "offer-1245d11883aec6a2a8fe",
+              "itinerary": {
+                "segments": [
+                  {
+                    "airline": "Sanitized Air",
+                    "arrival_airport": {
+                      "id": "MIA",
+                      "name": "Miami International Airport",
+                      "time": "2027-03-05 17:00"
+                    },
+                    "available": true,
+                    "departure_airport": {
+                      "id": "GRU",
+                      "name": "Sao Paulo Guarulhos International Airport",
+                      "time": "2027-03-05 09:00"
+                    },
+                    "duration_minutes": 480,
+                    "flight_number": "SA 123",
+                    "travel_class": "Economy"
+                  }
+                ],
+                "stops": 0,
+                "total_duration_minutes": 480,
+                "type": "one_way"
+              },
+              "links": {
+                "google_flights": "https://www.google.com/travel/flights?sanitized=true"
+              },
+              "observed_at_utc": "2026-09-22T20:31:54Z",
+              "passengers": {
+                "adults": 2,
+                "children": 0,
+                "infants_in_seat": 0,
+                "infants_on_lap": 1
+              },
+              "price": {
+                "amount": 6225.0,
+                "currency": "BRL",
+                "includes_infants_on_lap": null,
+                "includes_taxes": null,
+                "interpretation": "provider_value_scope_unknown",
+                "scope": "unknown"
+              },
+              "provider": "serpapi",
+              "route": {
+                "destination": "MIA",
+                "leg": "outbound",
+                "origin": "GRU"
+              },
+              "route_verified": true,
+              "source": "best_flights",
+              "status": "complete"
+            }
+          ],
+          "request": {
+            "adults": "2",
+            "arrival_id": "MIA",
+            "children": "0",
+            "currency": "BRL",
+            "departure_id": "GRU",
+            "engine": "google_flights",
+            "gl": "br",
+            "hl": "pt-BR",
+            "infants_in_seat": "0",
+            "infants_on_lap": "1",
+            "outbound_date": "2027-03-05",
+            "travel_class": "1",
+            "type": "2"
+          },
+          "route": {
+            "destination": "MIA",
+            "leg": "outbound",
+            "origin": "GRU"
+          },
+          "search_id": "sanitized-search-id-gru-mia",
+          "status": "success"
+        },
+        {
+          "is_extra": false,
+          "offers": [
+            {
+              "baggage": {
+                "counted_in_price": false,
+                "included": false,
+                "status": "unknown"
+              },
+              "comparison_eligible": true,
+              "compatibility_key": "8793c5fa52b58ffcd6bb",
+              "currency": "BRL",
+              "id": "offer-d2433c196742b26c7101",
+              "itinerary": {
+                "segments": [
+                  {
+                    "airline": "Sanitized Air",
+                    "arrival_airport": {
+                      "id": "MCO",
+                      "name": "Orlando International Airport",
+                      "time": "2027-03-05 17:00"
+                    },
+                    "available": true,
+                    "departure_airport": {
+                      "id": "VCP",
+                      "name": "Viracopos International Airport",
+                      "time": "2027-03-05 09:00"
+                    },
+                    "duration_minutes": 480,
+                    "flight_number": "SA 123",
+                    "travel_class": "Economy"
+                  }
+                ],
+                "stops": 0,
+                "total_duration_minutes": 480,
+                "type": "one_way"
+              },
+              "links": {
+                "google_flights": "https://www.google.com/travel/flights?sanitized=true"
+              },
+              "observed_at_utc": "2026-09-22T20:31:54Z",
+              "passengers": {
+                "adults": 2,
+                "children": 0,
+                "infants_in_seat": 0,
+                "infants_on_lap": 1
+              },
+              "price": {
+                "amount": 6225.0,
+                "currency": "BRL",
+                "includes_infants_on_lap": null,
+                "includes_taxes": null,
+                "interpretation": "provider_value_scope_unknown",
+                "scope": "unknown"
+              },
+              "provider": "serpapi",
+              "route": {
+                "destination": "MCO",
+                "leg": "outbound",
+                "origin": "VCP"
+              },
+              "route_verified": true,
+              "source": "best_flights",
+              "status": "complete"
+            }
+          ],
+          "request": {
+            "adults": "2",
+            "arrival_id": "MCO",
+            "children": "0",
+            "currency": "BRL",
+            "departure_id": "VCP",
+            "engine": "google_flights",
+            "gl": "br",
+            "hl": "pt-BR",
+            "infants_in_seat": "0",
+            "infants_on_lap": "1",
+            "outbound_date": "2027-03-05",
+            "travel_class": "1",
+            "type": "2"
+          },
+          "route": {
+            "destination": "MCO",
+            "leg": "outbound",
+            "origin": "VCP"
+          },
+          "search_id": "sanitized-search-id-vcp-mco",
+          "status": "success"
+        },
+        {
+          "is_extra": false,
+          "offers": [
+            {
+              "baggage": {
+                "counted_in_price": false,
+                "included": false,
+                "status": "unknown"
+              },
+              "comparison_eligible": true,
+              "compatibility_key": "0103a9ee05a40bb6956a",
+              "currency": "BRL",
+              "id": "offer-cba9f12378e048cbf894",
+              "itinerary": {
+                "segments": [
+                  {
+                    "airline": "Sanitized Air",
+                    "arrival_airport": {
+                      "id": "FLL",
+                      "name": "Fort Lauderdale-Hollywood International Airport",
+                      "time": "2027-03-05 17:00"
+                    },
+                    "available": true,
+                    "departure_airport": {
+                      "id": "VCP",
+                      "name": "Viracopos International Airport",
+                      "time": "2027-03-05 09:00"
+                    },
+                    "duration_minutes": 480,
+                    "flight_number": "SA 123",
+                    "travel_class": "Economy"
+                  }
+                ],
+                "stops": 0,
+                "total_duration_minutes": 480,
+                "type": "one_way"
+              },
+              "links": {
+                "google_flights": "https://www.google.com/travel/flights?sanitized=true"
+              },
+              "observed_at_utc": "2026-09-22T20:31:54Z",
+              "passengers": {
+                "adults": 2,
+                "children": 0,
+                "infants_in_seat": 0,
+                "infants_on_lap": 1
+              },
+              "price": {
+                "amount": 6225.0,
+                "currency": "BRL",
+                "includes_infants_on_lap": null,
+                "includes_taxes": null,
+                "interpretation": "provider_value_scope_unknown",
+                "scope": "unknown"
+              },
+              "provider": "serpapi",
+              "route": {
+                "destination": "FLL",
+                "leg": "outbound",
+                "origin": "VCP"
+              },
+              "route_verified": true,
+              "source": "best_flights",
+              "status": "complete"
+            }
+          ],
+          "request": {
+            "adults": "2",
+            "arrival_id": "FLL",
+            "children": "0",
+            "currency": "BRL",
+            "departure_id": "VCP",
+            "engine": "google_flights",
+            "gl": "br",
+            "hl": "pt-BR",
+            "infants_in_seat": "0",
+            "infants_on_lap": "1",
+            "outbound_date": "2027-03-05",
+            "travel_class": "1",
+            "type": "2"
+          },
+          "route": {
+            "destination": "FLL",
+            "leg": "outbound",
+            "origin": "VCP"
+          },
+          "search_id": "sanitized-search-id-vcp-fll",
+          "status": "success"
+        },
+        {
+          "is_extra": false,
+          "offers": [
+            {
+              "baggage": {
+                "counted_in_price": false,
+                "included": false,
+                "status": "unknown"
+              },
+              "comparison_eligible": true,
+              "compatibility_key": "1dc75da22627c18f5377",
+              "currency": "BRL",
+              "id": "offer-eee4b5d1f8558ba9804b",
+              "itinerary": {
+                "segments": [
+                  {
+                    "airline": "Sanitized Air",
+                    "arrival_airport": {
+                      "id": "MIA",
+                      "name": "Miami International Airport",
+                      "time": "2027-03-05 17:00"
+                    },
+                    "available": true,
+                    "departure_airport": {
+                      "id": "VCP",
+                      "name": "Viracopos International Airport",
+                      "time": "2027-03-05 09:00"
+                    },
+                    "duration_minutes": 480,
+                    "flight_number": "SA 123",
+                    "travel_class": "Economy"
+                  }
+                ],
+                "stops": 0,
+                "total_duration_minutes": 480,
+                "type": "one_way"
+              },
+              "links": {
+                "google_flights": "https://www.google.com/travel/flights?sanitized=true"
+              },
+              "observed_at_utc": "2026-09-22T20:31:54Z",
+              "passengers": {
+                "adults": 2,
+                "children": 0,
+                "infants_in_seat": 0,
+                "infants_on_lap": 1
+              },
+              "price": {
+                "amount": 6225.0,
+                "currency": "BRL",
+                "includes_infants_on_lap": null,
+                "includes_taxes": null,
+                "interpretation": "provider_value_scope_unknown",
+                "scope": "unknown"
+              },
+              "provider": "serpapi",
+              "route": {
+                "destination": "MIA",
+                "leg": "outbound",
+                "origin": "VCP"
+              },
+              "route_verified": true,
+              "source": "best_flights",
+              "status": "complete"
+            }
+          ],
+          "request": {
+            "adults": "2",
+            "arrival_id": "MIA",
+            "children": "0",
+            "currency": "BRL",
+            "departure_id": "VCP",
+            "engine": "google_flights",
+            "gl": "br",
+            "hl": "pt-BR",
+            "infants_in_seat": "0",
+            "infants_on_lap": "1",
+            "outbound_date": "2027-03-05",
+            "travel_class": "1",
+            "type": "2"
+          },
+          "route": {
+            "destination": "MIA",
+            "leg": "outbound",
+            "origin": "VCP"
+          },
+          "search_id": "sanitized-search-id-vcp-mia",
+          "status": "success"
+        }
+      ],
+      "run_id": "run-65508c8dace3e5afc706",
+      "schema_version": 1,
+      "search_signature": "{\"adults\":2,\"cabin\":\"economy\",\"children\":0,\"currency\":\"BRL\",\"departure_date\":\"2027-03-05\",\"destinations\":[\"MCO\",\"FLL\",\"MIA\"],\"infants_in_seat\":0,\"infants_on_lap\":1,\"itineraries\":[{\"outbound\":{\"destination\":\"MCO\",\"origin\":\"GRU\"},\"return\":{\"destination\":\"VCP\",\"origin\":\"FLL\"}},{\"outbound\":{\"destination\":\"FLL\",\"origin\":\"GRU\"},\"return\":{\"destination\":\"VCP\",\"origin\":\"MIA\"}},{\"outbound\":{\"destination\":\"MIA\",\"origin\":\"GRU\"},\"return\":{\"destination\":\"VCP\",\"origin\":\"MCO\"}},{\"outbound\":{\"destination\":\"MCO\",\"origin\":\"VCP\"},\"return\":{\"destination\":\"GRU\",\"origin\":\"FLL\"}},{\"outbound\":{\"destination\":\"FLL\",\"origin\":\"VCP\"},\"return\":{\"destination\":\"GRU\",\"origin\":\"MIA\"}},{\"outbound\":{\"destination\":\"MIA\",\"origin\":\"VCP\"},\"return\":{\"destination\":\"GRU\",\"origin\":\"MCO\"}}],\"origins\":[\"GRU\",\"VCP\"],\"payment_type\":\"cash_only\",\"return_date\":\"2027-03-14\",\"trip_leg\":\"outbound\",\"trip_type\":\"one_way\"}",
+      "status": "success"
     }
   ],
   "schema_version": 1

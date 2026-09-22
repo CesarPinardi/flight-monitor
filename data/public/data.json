@@ -50,7 +50,7 @@
     }
   ],
   "disclaimer": "Preço por passageiro pagante. Escopo original da fonte, taxas, bebê de colo, bagagem e inventário não são inferidos.",
-  "generated_at_utc": "2026-09-22T20:26:31Z",
+  "generated_at_utc": "2026-09-22T20:31:54Z",
   "history": {
     "description": "Menor preço confirmado por rota em cada consulta diária; não representa uma oferta específica.",
     "entries": [
@@ -134,76 +134,88 @@
         "status": "success"
       },
       {
-        "recorded_at_utc": "2026-09-22T20:09:23Z",
+        "recorded_at_utc": "2026-09-22T20:31:54Z",
         "routes": [
           {
-            "minimum_price": null,
+            "minimum_price": {
+              "amount": 6225.0,
+              "currency": "BRL"
+            },
             "route": {
               "destination": "MCO",
-              "origin": "GRU",
-              "return_destination": "VCP",
-              "return_origin": "FLL"
+              "leg": "outbound",
+              "origin": "GRU"
             },
             "status": "success"
           },
           {
-            "minimum_price": null,
+            "minimum_price": {
+              "amount": 6225.0,
+              "currency": "BRL"
+            },
             "route": {
               "destination": "FLL",
-              "origin": "GRU",
-              "return_destination": "VCP",
-              "return_origin": "MIA"
+              "leg": "outbound",
+              "origin": "GRU"
             },
             "status": "success"
           },
           {
-            "minimum_price": null,
+            "minimum_price": {
+              "amount": 6225.0,
+              "currency": "BRL"
+            },
             "route": {
               "destination": "MIA",
-              "origin": "GRU",
-              "return_destination": "VCP",
-              "return_origin": "MCO"
+              "leg": "outbound",
+              "origin": "GRU"
             },
             "status": "success"
           },
           {
-            "minimum_price": null,
+            "minimum_price": {
+              "amount": 6225.0,
+              "currency": "BRL"
+            },
             "route": {
               "destination": "MCO",
-              "origin": "VCP",
-              "return_destination": "GRU",
-              "return_origin": "FLL"
+              "leg": "outbound",
+              "origin": "VCP"
             },
             "status": "success"
           },
           {
-            "minimum_price": null,
+            "minimum_price": {
+              "amount": 6225.0,
+              "currency": "BRL"
+            },
             "route": {
               "destination": "FLL",
-              "origin": "VCP",
-              "return_destination": "GRU",
-              "return_origin": "MIA"
+              "leg": "outbound",
+              "origin": "VCP"
             },
             "status": "success"
           },
           {
-            "minimum_price": null,
+            "minimum_price": {
+              "amount": 6225.0,
+              "currency": "BRL"
+            },
             "route": {
               "destination": "MIA",
-              "origin": "VCP",
-              "return_destination": "GRU",
-              "return_origin": "MCO"
+              "leg": "outbound",
+              "origin": "VCP"
             },
             "status": "success"
           }
         ],
-        "run_id": "run-6045992ffc91fa3471af",
+        "run_id": "run-65508c8dace3e5afc706",
         "status": "success"
       }
     ],
     "kind": "daily_route_minimum"
   },
-  "last_run_id": "run-12655fd2be9c79c37a1a",
+  "last_run_id": "run-65508c8dace3e5afc706",
   "offers": [
     {
       "baggage": {
@@ -242,7 +254,7 @@
       "links": {
         "google_flights": "https://www.google.com/travel/flights?sanitized=true"
       },
-      "observed_at_utc": "2026-09-22T20:26:31Z",
+      "observed_at_utc": "2026-09-22T20:31:54Z",
       "passengers": {
         "adults": 2,
         "children": 0,
@@ -305,7 +317,7 @@
       "links": {
         "google_flights": "https://www.google.com/travel/flights?sanitized=true"
       },
-      "observed_at_utc": "2026-09-22T20:26:31Z",
+      "observed_at_utc": "2026-09-22T20:31:54Z",
       "passengers": {
         "adults": 2,
         "children": 0,
@@ -368,7 +380,7 @@
       "links": {
         "google_flights": "https://www.google.com/travel/flights?sanitized=true"
       },
-      "observed_at_utc": "2026-09-22T20:26:31Z",
+      "observed_at_utc": "2026-09-22T20:31:54Z",
       "passengers": {
         "adults": 2,
         "children": 0,
@@ -431,7 +443,7 @@
       "links": {
         "google_flights": "https://www.google.com/travel/flights?sanitized=true"
       },
-      "observed_at_utc": "2026-09-22T20:26:31Z",
+      "observed_at_utc": "2026-09-22T20:31:54Z",
       "passengers": {
         "adults": 2,
         "children": 0,
@@ -494,7 +506,7 @@
       "links": {
         "google_flights": "https://www.google.com/travel/flights?sanitized=true"
       },
-      "observed_at_utc": "2026-09-22T20:26:31Z",
+      "observed_at_utc": "2026-09-22T20:31:54Z",
       "passengers": {
         "adults": 2,
         "children": 0,
@@ -515,10 +527,10 @@
         "leg": "outbound",
         "origin": "VCP"
       },
-      "route_verified": false,
+      "route_verified": true,
       "source": "best_flights",
       "stale": false,
-      "status": "pending"
+      "status": "complete"
     },
     {
       "baggage": {
@@ -557,7 +569,7 @@
       "links": {
         "google_flights": "https://www.google.com/travel/flights?sanitized=true"
       },
-      "observed_at_utc": "2026-09-22T20:26:31Z",
+      "observed_at_utc": "2026-09-22T20:31:54Z",
       "passengers": {
         "adults": 2,
         "children": 0,
@@ -578,44 +590,44 @@
         "leg": "outbound",
         "origin": "VCP"
       },
-      "route_verified": false,
+      "route_verified": true,
       "source": "best_flights",
       "stale": false,
       "status": "complete"
     }
   ],
   "presentation": {
-    "generated_at": "2026-09-22T17:26:31.658722-03:00",
+    "generated_at": "2026-09-22T17:31:54.726404-03:00",
     "timezone": "America/Sao_Paulo"
   },
   "routes": {
     "GRU-FLL:outbound": {
-      "last_success_at_utc": "2026-09-22T20:26:31Z",
+      "last_success_at_utc": "2026-09-22T20:31:54Z",
       "stale": false,
       "status": "success"
     },
     "GRU-MCO:outbound": {
-      "last_success_at_utc": "2026-09-22T20:26:31Z",
+      "last_success_at_utc": "2026-09-22T20:31:54Z",
       "stale": false,
       "status": "success"
     },
     "GRU-MIA:outbound": {
-      "last_success_at_utc": "2026-09-22T20:26:31Z",
+      "last_success_at_utc": "2026-09-22T20:31:54Z",
       "stale": false,
       "status": "success"
     },
     "VCP-FLL:outbound": {
-      "last_success_at_utc": "2026-09-22T20:26:31Z",
+      "last_success_at_utc": "2026-09-22T20:31:54Z",
       "stale": false,
       "status": "success"
     },
     "VCP-MCO:outbound": {
-      "last_success_at_utc": "2026-09-22T20:26:31Z",
+      "last_success_at_utc": "2026-09-22T20:31:54Z",
       "stale": false,
       "status": "success"
     },
     "VCP-MIA:outbound": {
-      "last_success_at_utc": "2026-09-22T20:26:31Z",
+      "last_success_at_utc": "2026-09-22T20:31:54Z",
       "stale": false,
       "status": "success"
     }
