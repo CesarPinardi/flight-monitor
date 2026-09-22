@@ -123,7 +123,15 @@ def load_config(path: str | os.PathLike[str]) -> dict[str, Any]:
     leg_count = 2 if trip_type == "one_way" and trip_leg == "both" else 1
     itinerary_count = len(itineraries) if itineraries is not None else len(origins) * len(destinations)
     package_count = len(itineraries) if include_packages and itineraries is not None else 0
-    expected_searches = itinerary_count * leg_count + package_count
+    if isinstance(itineraries, list) and trip_type == "one_way":
+        simple_routes = {
+            (item[leg]["origin"].upper(), item[leg]["destination"].upper())
+            for leg in (("outbound", "return") if trip_leg == "both" else (trip_leg,))
+            for item in itineraries
+        }
+        expected_searches = len(simple_routes) + package_count
+    else:
+        expected_searches = itinerary_count * leg_count + package_count
     if result["daily_basic_searches"] != expected_searches:
         raise ValueError("daily_basic_searches must match configured itineraries")
     if result["monthly_basic_limit"] > DEFAULT_MONTHLY_BASIC_LIMIT:
@@ -141,15 +149,18 @@ def routes_from_config(config: Mapping[str, Any]) -> list[Route]:
         if config.get("trip_type") == "one_way":
             trip_leg = config.get("trip_leg", "outbound")
             trip_legs = ("outbound", "return") if trip_leg == "both" else (trip_leg,)
-            routes = [
-                Route(
-                    str(item[leg]["origin"]).upper(),
-                    str(item[leg]["destination"]).upper(),
-                    leg=leg,
-                )
-                for leg in trip_legs
-                for item in itineraries
-            ]
+            routes = []
+            seen: set[str] = set()
+            for leg in trip_legs:
+                for item in itineraries:
+                    route = Route(
+                        str(item[leg]["origin"]).upper(),
+                        str(item[leg]["destination"]).upper(),
+                        leg=leg,
+                    )
+                    if route.key not in seen:
+                        routes.append(route)
+                        seen.add(route.key)
             if config.get("include_packages"):
                 routes.extend(
                     Route(

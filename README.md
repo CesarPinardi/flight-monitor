@@ -63,7 +63,7 @@ PYTHONPATH=src python -m unittest discover -s tests -v
 
 ## Processamento
 
-O comando consulta os seis itinerários configurados (`GRU/VCP` × `MCO/FLL/MIA`) como ida, volta e pacote combinado. `trip_leg` define `outbound` (ida), `return` (volta) ou `both` (os dois); cada trecho usa `type=2`, e cada pacote usa `type=3` (`multi_city`). O preço do pacote vem da fonte e não é somado por estimativa. Chamadas extras exigem `extra_calls_limit` positivo na configuração e `--extra-route ORIGEM:DESTINO`. O comando não agenda execução.
+O comando consulta os 12 trechos (`GRU/VCP` × `MCO/FLL/MIA`, nos dois sentidos) e 36 combinações de pacote ida e volta. `trip_leg` define `outbound` (ida), `return` (volta) ou `both` (os dois); cada trecho usa `type=2`, e cada pacote usa `type=3` (`multi_city`). O preço do pacote vem da fonte e não é somado por estimativa. Chamadas extras exigem `extra_calls_limit` positivo na configuração e `--extra-route ORIGEM:DESTINO`. O comando não agenda execução.
 
 ```bash
 # Sem chave: nunca faz chamada real. Consulta fixtures disponíveis.

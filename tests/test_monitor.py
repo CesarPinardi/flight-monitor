@@ -63,9 +63,12 @@ class MonitorTests(unittest.TestCase):
             self.assertEqual(public["schema_version"], 1)
             self.assertEqual(public["presentation"]["timezone"], "America/Sao_Paulo")
             self.assertEqual(public["history"]["kind"], "daily_route_minimum")
-            self.assertEqual(len(public["history"]["entries"][0]["routes"]), 18)
+            self.assertEqual(len(public["history"]["entries"][0]["routes"]), len(routes_from_config(CONFIG)))
             self.assertEqual({offer["route"].get("leg") for offer in public["offers"]}, {None, "outbound", "return"})
-            self.assertEqual(sum(offer["itinerary"]["type"] == "multi_city" for offer in public["offers"]), 6)
+            self.assertEqual(
+                sum(offer["itinerary"]["type"] == "multi_city" for offer in public["offers"]),
+                len(CONFIG["itineraries"]),
+            )
             self.assertTrue(public["offers"][0]["id"].startswith("offer-"))
             self.assertFalse(public["offers"][0]["baggage"]["included"])
             self.assertEqual(
@@ -83,9 +86,10 @@ class MonitorTests(unittest.TestCase):
         route = routes_from_config(return_config)[0]
         request = _request(return_config, route)
 
-        self.assertEqual(route.key, "FLL-VCP:return")
-        self.assertEqual(request.params()["departure_id"], "FLL")
-        self.assertEqual(request.params()["arrival_id"], "VCP")
+        first_return = return_config["itineraries"][0]["return"]
+        self.assertEqual(route.key, f"{first_return['origin']}-{first_return['destination']}:return")
+        self.assertEqual(request.params()["departure_id"], first_return["origin"])
+        self.assertEqual(request.params()["arrival_id"], first_return["destination"])
         self.assertEqual(request.params()["outbound_date"], "2027-03-14")
         self.assertEqual(request.params()["type"], "2")
         self.assertNotIn("return_date", request.params())
@@ -98,25 +102,34 @@ class MonitorTests(unittest.TestCase):
         self.assertEqual(len(routes), 12)
         self.assertEqual({route.leg for route in routes}, {"outbound", "return"})
         self.assertEqual(routes[0].key, "GRU-MCO:outbound")
-        self.assertEqual(routes[6].key, "FLL-VCP:return")
+        first_return = both_config["itineraries"][0]["return"]
+        self.assertEqual(routes[6].key, f"{first_return['origin']}-{first_return['destination']}:return")
 
     def test_package_builds_multi_city_request_and_route(self):
-        package_config = config(trip_leg="both", include_packages=True, daily_basic_searches=18)
+        package_config = config(trip_leg="both", include_packages=True, daily_basic_searches=48)
         route = routes_from_config(package_config)[-1]
         request = _request(package_config, route)
 
-        self.assertEqual(route.key, "VCP-MIA:MCO-GRU")
+        last = package_config["itineraries"][-1]
+        self.assertEqual(
+            route.key,
+            f"{last['outbound']['origin']}-{last['outbound']['destination']}:{last['return']['origin']}-{last['return']['destination']}",
+        )
         self.assertEqual(request.params()["type"], "3")
         self.assertEqual(
             json.loads(request.params()["multi_city_json"]),
             [
                 {"departure_id": "VCP", "arrival_id": "MIA", "date": "2027-03-05"},
-                {"departure_id": "MCO", "arrival_id": "GRU", "date": "2027-03-14"},
+                {
+                    "departure_id": last["return"]["origin"],
+                    "arrival_id": last["return"]["destination"],
+                    "date": "2027-03-14",
+                },
             ],
         )
 
     def test_multi_city_package_price_is_comparable_from_provider_result(self):
-        route = routes_from_config(CONFIG)[12]
+        route = next(route for route in routes_from_config(CONFIG) if route.trip_type == "multi_city")
         request = _request(CONFIG, route)
         payload = deepcopy(FIXTURE)
         flight = payload["best_flights"][0]
