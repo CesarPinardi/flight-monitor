@@ -44,7 +44,7 @@
 
       <section class="metric-grid" aria-label="Resumo da consulta">
         <article class="metric-card metric-featured">
-          <p class="metric-label">Melhor preço confirmado</p>
+          <p class="metric-label">Melhor preço do trecho</p>
           <p id="best-price" class="metric-value">—</p>
           <p id="best-price-detail" class="metric-detail">Nenhuma oferta completa publicada.</p>
         </article>
@@ -68,6 +68,7 @@
         <form id="filters" class="filter-grid">
           <label>Rota<select id="route-filter" name="route"><option value="">Todas as rotas</option></select></label>
           <label>Companhia<select id="airline-filter" name="airline"><option value="">Todas as companhias</option></select></label>
+          <label>Trecho<select id="leg-filter" name="leg"><option value="">Todos os trechos</option></select></label>
           <label>Escalas<select id="stops-filter" name="stops"><option value="">Qualquer número</option><option value="0">Direto</option><option value="1">1 escala</option><option value="2">2 ou mais</option></select></label>
           <label>Ordenar por<select id="sort-filter" name="sort"><option value="price">Menor preço</option><option value="duration">Menor duração</option><option value="stops">Menos escalas</option></select></label>
         </form>
@@ -79,6 +80,7 @@
           <span id="offers-note" class="muted">Valores sem inferência.</span>
         </div>
         <div id="offers" class="offer-list" aria-live="polite"></div>
+        <div class="offer-actions"><button id="show-more" class="button button-secondary" type="button" hidden>Ver mais</button></div>
       </section>
 
       <section class="panel" aria-labelledby="routes-title">

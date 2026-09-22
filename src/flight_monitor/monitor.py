@@ -37,10 +37,12 @@ class Route:
     destination: str
     return_origin: str | None = None
     return_destination: str | None = None
+    leg: str | None = None
 
     @property
     def key(self) -> str:
-        return f"{self.origin}-{self.destination}"
+        suffix = f":{self.leg}" if self.leg else ""
+        return f"{self.origin}-{self.destination}{suffix}"
 
 
 def utc_now() -> datetime:
@@ -72,6 +74,17 @@ def load_config(path: str | os.PathLike[str]) -> dict[str, Any]:
         raise ValueError("origins must be a non-empty list of airport codes")
     if not isinstance(destinations, list) or not destinations or not all(isinstance(item, str) and item for item in destinations):
         raise ValueError("destinations must be a non-empty list of airport codes")
+    trip_type = result.get("trip_type", "round_trip")
+    if trip_type not in {"one_way", "round_trip", "multi_city"}:
+        raise ValueError("unsupported trip_type")
+    trip_leg = result.get("trip_leg", "outbound")
+    if trip_leg not in {"outbound", "return"}:
+        raise ValueError("trip_leg must be outbound or return")
+    if trip_type == "one_way" and trip_leg == "return":
+        if "itineraries" not in result:
+            raise ValueError("trip_leg return requires itineraries")
+        if not isinstance(result.get("return_date"), str) or not result["return_date"]:
+            raise ValueError("trip_leg return requires return_date")
     itineraries = result.get("itineraries")
     if itineraries is not None:
         if not isinstance(itineraries, list) or not itineraries:
@@ -114,6 +127,16 @@ def load_config(path: str | os.PathLike[str]) -> dict[str, Any]:
 def routes_from_config(config: Mapping[str, Any]) -> list[Route]:
     itineraries = config.get("itineraries")
     if isinstance(itineraries, list):
+        if config.get("trip_type") == "one_way":
+            trip_leg = config.get("trip_leg", "outbound")
+            return [
+                Route(
+                    str(item[trip_leg]["origin"]).upper(),
+                    str(item[trip_leg]["destination"]).upper(),
+                    leg=trip_leg,
+                )
+                for item in itineraries
+            ]
         return [
             Route(
                 str(item["outbound"]["origin"]).upper(),
@@ -127,7 +150,11 @@ def routes_from_config(config: Mapping[str, Any]) -> list[Route]:
     seen: set[str] = set()
     for origin in config["origins"]:
         for destination in config["destinations"]:
-            route = Route(str(origin).upper(), str(destination).upper())
+            route = Route(
+                str(origin).upper(),
+                str(destination).upper(),
+                leg=config.get("trip_leg", "outbound") if config.get("trip_type") == "one_way" else None,
+            )
             if route.key not in seen:
                 routes.append(route)
                 seen.add(route.key)
@@ -135,8 +162,12 @@ def routes_from_config(config: Mapping[str, Any]) -> list[Route]:
 
 
 def _request(config: Mapping[str, Any], route: Route) -> SearchRequest:
+    values = dict(config)
+    if route.leg == "return":
+        values["outbound_date"] = config["return_date"]
+        values.pop("return_date", None)
     return SearchRequest.from_config(
-        config,
+        values,
         departure_id=route.origin,
         arrival_id=route.destination,
         return_departure_id=route.return_origin,
@@ -148,6 +179,8 @@ def _route_payload(route: Route) -> dict[str, Any]:
     payload: dict[str, Any] = {"origin": route.origin, "destination": route.destination}
     if route.return_origin and route.return_destination:
         payload.update({"return_origin": route.return_origin, "return_destination": route.return_destination})
+    if route.leg:
+        payload["leg"] = route.leg
     return payload
 
 
@@ -159,6 +192,7 @@ def _offer_id(flight: Mapping[str, Any], request: SearchRequest, route: Route) -
     identity = {
         "source": flight.get("source"),
         "route": route.key,
+        "leg": route.leg,
         "request": request.params(),
         "price": flight.get("price"),
         "segments": flight.get("segments", []),
@@ -215,6 +249,7 @@ def normalize_offer(flight: Mapping[str, Any], request: SearchRequest, route: Ro
         "cabin": request.cabin,
         "currency": request.currency.upper(),
         "trip_type": request.trip_type,
+        "trip_leg": route.leg,
     }
     return {
         "id": _offer_id(flight, request, route),
@@ -259,6 +294,7 @@ def _empty_state(month: str) -> dict[str, Any]:
         "last_run_id": None,
         "last_run_local_date": None,
         "last_run_at_utc": None,
+        "search_signature": None,
         "budget": {},
         "routes": {},
     }
@@ -280,7 +316,7 @@ def _fixture_response(fixture_dir: Path, route: Route) -> Mapping[str, Any]:
 def _public_search(config: Mapping[str, Any]) -> dict[str, Any]:
     allowed = (
         "departure_date", "return_date", "origins", "destinations", "adults", "children",
-        "infants_in_seat", "infants_on_lap", "cabin", "currency", "trip_type", "payment_type", "itineraries",
+        "infants_in_seat", "infants_on_lap", "cabin", "currency", "trip_type", "trip_leg", "payment_type", "itineraries",
     )
     return {key: config[key] for key in allowed if key in config}
 
@@ -302,10 +338,12 @@ def _comparisons(offers: Iterable[Mapping[str, Any]]) -> list[dict[str, Any]]:
     return comparisons
 
 
-def _public_history(history: Mapping[str, Any]) -> dict[str, Any]:
+def _public_history(history: Mapping[str, Any], search_signature: str | None = None) -> dict[str, Any]:
     entries: list[dict[str, Any]] = []
     for entry in history.get("entries", []):
         if not isinstance(entry, Mapping):
+            continue
+        if search_signature is not None and entry.get("search_signature") != search_signature:
             continue
         routes: list[dict[str, Any]] = []
         for result in entry.get("results", []):
@@ -323,7 +361,7 @@ def _public_history(history: Mapping[str, Any]) -> dict[str, Any]:
             route_data: dict[str, Any] = {
                 "route": {
                     key: route.get(key)
-                    for key in ("origin", "destination", "return_origin", "return_destination")
+                    for key in ("origin", "destination", "return_origin", "return_destination", "leg")
                     if key in route
                 },
                 "status": result.get("status"),
@@ -383,7 +421,7 @@ def _public_data(
         "routes": routes,
         "offers": offers,
         "comparisons": _comparisons(offers),
-        "history": _public_history(history),
+        "history": _public_history(history, _canonical(_public_search(config))),
         "disclaimer": "Preço por passageiro pagante. Escopo original da fonte, taxas, bebê de colo, bagagem e inventário não são inferidos.",
     }
 
@@ -416,7 +454,7 @@ def run_monitor(
         raise ValueError("configured route count does not match daily_basic_searches")
     if len(extra_requests) > config["extra_calls_limit"]:
         raise ValueError("extra request count exceeds extra_calls_limit")
-    basic_route_keys = {route.key for route in routes}
+    basic_route_keys = {f"{route.origin}-{route.destination}" for route in routes}
     extra_route_keys = [f"{item.departure_id}-{item.arrival_id}" for item in extra_requests]
     if len(extra_route_keys) != len(set(extra_route_keys)) or basic_route_keys.intersection(extra_route_keys):
         raise ValueError("duplicate route request is not allowed")
@@ -434,6 +472,10 @@ def run_monitor(
             state["routes"] = dict(previous_routes)
             if previous_alerts is not None:
                 state["alerts"] = dict(previous_alerts)
+        search_signature = _canonical(_public_search(config))
+        if state.get("search_signature") != search_signature:
+            state["routes"] = {}
+            state.pop("alerts", None)
         if not force and state.get("last_run_local_date") == _local_date(current):
             return {"status": "duplicate", "run_id": state.get("last_run_id"), "calls": 0}
         budget_info = state.get("budget") if isinstance(state.get("budget"), Mapping) else {}
@@ -537,6 +579,7 @@ def run_monitor(
             "last_run_id": run_id,
             "last_run_local_date": _local_date(current),
             "last_run_at_utc": observed,
+            "search_signature": search_signature,
             "budget": {
                 "month": month,
                 "basic_used": basic_used,
@@ -551,7 +594,14 @@ def run_monitor(
         })
         alert_plan = build_alert_plan(state, results, config, current)
         state["alerts"] = alert_plan.state
-        history_entries.append({"schema_version": SCHEMA_VERSION, "run_id": run_id, "recorded_at_utc": observed, "status": overall, "results": results})
+        history_entries.append({
+            "schema_version": SCHEMA_VERSION,
+            "search_signature": search_signature,
+            "run_id": run_id,
+            "recorded_at_utc": observed,
+            "status": overall,
+            "results": results,
+        })
         new_history = {"schema_version": SCHEMA_VERSION, "entries": history_entries}
         public = _public_data(config, state, new_history, current)
         store.write(store.history_path, new_history)

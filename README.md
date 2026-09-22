@@ -23,7 +23,7 @@ Estágio 6 concluído: workflow diário, execução manual, persistência saniti
 | Passageiros | 2 adultos e 1 bebê de 1 ano no colo |
 | Cabine | Econômica |
 | Moeda | BRL |
-| Tipo | Multi-cidade/open-jaw, somente dinheiro |
+| Tipo | Só ida por trecho; altere `trip_leg` para `return` para monitorar volta |
 | Custo | Zero |
 
 ## Estrutura
@@ -63,7 +63,7 @@ PYTHONPATH=src python -m unittest discover -s tests -v
 
 ## Processamento
 
-O comando consulta seis itinerários multi-cidade configurados (`GRU/VCP` × `MCO/FLL/MIA`), com aeroporto de volta alternativo e limite mensal de 186 chamadas básicas. Cada itinerário pode usar companhia diferente em cada perna. Chamadas extras exigem `extra_calls_limit` positivo na configuração e `--extra-route ORIGEM:DESTINO`. O comando não agenda execução.
+O comando consulta seis itinerários de trecho único configurados (`GRU/VCP` × `MCO/FLL/MIA`). `trip_leg` define `outbound` (ida) ou `return` (volta); a consulta usa `type=2` e grava preço real daquele trecho. Chamadas extras exigem `extra_calls_limit` positivo na configuração e `--extra-route ORIGEM:DESTINO`. O comando não agenda execução.
 
 ```bash
 # Sem chave: nunca faz chamada real. Consulta fixtures disponíveis.
@@ -78,7 +78,7 @@ PYTHONPATH=src python -m flight_monitor --dry-run --local
 
 Saídas atômicas: `data/history.json`, `data/state.json` e `data/public/data.json`. O lock `data/.monitor.lock` bloqueia concorrência. A segunda execução no mesmo dia local (`America/Sao_Paulo`) é ignorada; use `--force` somente para execução manual explícita.
 
-Cada oferta tem identificador estável, rota, passageiros, preço por passageiro pagante, moeda, segmentos, fonte e `observed_at_utc`. Oferta pendente não entra em comparação. Bagagem desconhecida permanece não incluída. Falhas preservam último resultado válido e marcam dados antigos.
+Cada oferta tem identificador estável, rota, trecho, passageiros, preço por passageiro pagante, moeda, segmentos, fonte e `observed_at_utc`. Oferta pendente não entra em comparação. Bagagem desconhecida permanece não incluída. Falhas preservam último resultado válido e marcam dados antigos.
 
 ## Frontend local
 

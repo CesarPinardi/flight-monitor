@@ -20,7 +20,7 @@ O sistema normaliza o preço para passageiro pagante. Não estima valor para beb
 
 O cliente envia adultos, bebê no colo, classe, moeda, datas e tipo de viagem conforme parâmetros oficiais. A resposta marca escopo do preço, inclusão de taxas, inclusão do bebê e inventário como desconhecidos quando a API não os prova. Segmento presente não equivale a disponibilidade para compra.
 
-O itinerário ativo é multi-cidade/open-jaw: ida e volta têm aeroportos configuráveis e não exigem a mesma companhia. O limite permanece em seis buscas básicas por execução.
+O itinerário padrão é trecho único (`type=2`). `trip_leg` seleciona ida ou volta usando as pernas configuradas; assim, preço nunca é dividido por estimativa. `multi_city` continua aceito para compatibilidade. O limite permanece em seis buscas básicas por execução.
 
 ## Orçamento sem renovação paga
 

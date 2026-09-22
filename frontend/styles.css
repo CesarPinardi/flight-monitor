@@ -91,6 +91,7 @@ select { min-width: 0; padding: .68rem .7rem; color: var(--ink); background: #ff
 .offer-meta span:first-child::before { content: ""; margin-right: 0; }
 .offer-note { color: var(--amber); font-size: .78rem; }
 .offer-link { font-size: .83rem; font-weight: 750; }
+.offer-actions { margin-top: 1rem; text-align: center; }
 .empty-state { padding: 1.4rem; color: var(--muted); border: 1px dashed #b9c5d6; border-radius: .8rem; background: #fafbfd; }
 
 .table-wrap { overflow-x: auto; }

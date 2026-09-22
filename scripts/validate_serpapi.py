@@ -17,13 +17,16 @@ ROOT = Path(__file__).parents[1]
 def main() -> int:
     config = load_config(ROOT / "config/search.json")
     itineraries = config.get("itineraries", [])
-    return_leg = itineraries[0]["return"] if itineraries else {}
+    trip_leg = config.get("trip_leg", "outbound")
+    selected_leg = itineraries[0][trip_leg] if itineraries else {"origin": "GRU", "destination": "MCO"}
+    request_config = dict(config)
+    if trip_leg == "return":
+        request_config["outbound_date"] = config["return_date"]
+        request_config.pop("return_date", None)
     request = SearchRequest.from_config(
-        config,
-        departure_id="GRU",
-        arrival_id="MCO",
-        return_departure_id=return_leg.get("origin"),
-        return_arrival_id=return_leg.get("destination"),
+        request_config,
+        departure_id=selected_leg["origin"],
+        arrival_id=selected_leg["destination"],
     )
     result = SerpApiClient(os.environ.get("SERPAPI_API_KEY")).search(request)
     offers = []
@@ -45,7 +48,7 @@ def main() -> int:
         json.dumps(
             {
                 "status": result.get("status"),
-                "route": "GRU-MCO/FLL-VCP",
+                "route": f"{selected_leg['origin']}-{selected_leg['destination']} ({trip_leg})",
                 "request": request.params(),
                 "result_count": result.get("result_count"),
                 "offers": offers,

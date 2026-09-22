@@ -50,6 +50,20 @@ class SerpApiClientTests(unittest.TestCase):
         self.assertFalse(result["price_contract"]["group_total_verified"])
         self.assertTrue(result["flights"][0]["segments_available"])
 
+    def test_builds_one_way_request_without_return_date(self):
+        request = SearchRequest(
+            departure_id="GRU",
+            arrival_id="MCO",
+            outbound_date="2027-03-05",
+            trip_type="one_way",
+        )
+
+        params = request.params()
+
+        self.assertEqual(params["type"], "2")
+        self.assertEqual(params["outbound_date"], "2027-03-05")
+        self.assertNotIn("return_date", params)
+
     def test_builds_multi_city_request_with_open_jaw_legs(self):
         request = SearchRequest(
             departure_id="GRU",

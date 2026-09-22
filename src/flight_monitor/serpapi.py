@@ -53,7 +53,7 @@ class SearchRequest:
     departure_id: str
     arrival_id: str
     outbound_date: str
-    return_date: str
+    return_date: str | None = None
     return_departure_id: str | None = None
     return_arrival_id: str | None = None
     adults: int = 1
@@ -89,17 +89,26 @@ class SearchRequest:
     def __post_init__(self) -> None:
         if not self.departure_id or not self.arrival_id:
             raise ValueError("departure_id and arrival_id are required")
-        for field in ("outbound_date", "return_date"):
+        for field in ("outbound_date",):
             try:
                 date.fromisoformat(getattr(self, field))
             except (TypeError, ValueError) as exc:
                 raise ValueError(f"{field} must use YYYY-MM-DD") from exc
-        if self.return_date < self.outbound_date:
+        if self.return_date is not None:
+            try:
+                date.fromisoformat(self.return_date)
+            except (TypeError, ValueError) as exc:
+                raise ValueError("return_date must use YYYY-MM-DD") from exc
+        if self.return_date is not None and self.return_date < self.outbound_date:
             raise ValueError("return_date must not precede outbound_date")
-        if self.trip_type not in {"round_trip", "multi_city"}:
+        if self.trip_type not in {"one_way", "round_trip", "multi_city"}:
             raise ValueError("unsupported trip_type")
+        if self.trip_type == "round_trip" and self.return_date is None:
+            raise ValueError("round_trip requires return_date")
         if self.trip_type == "multi_city" and (not self.return_departure_id or not self.return_arrival_id):
             raise ValueError("multi_city requires return departure and arrival airports")
+        if self.trip_type == "multi_city" and self.return_date is None:
+            raise ValueError("multi_city requires return_date")
         if self.cabin not in _CABIN_CODES:
             raise ValueError(f"unsupported cabin: {self.cabin}")
         if len(self.currency) != 3 or not self.currency.isalpha():
@@ -138,13 +147,20 @@ class SearchRequest:
                     },
                 ], separators=(",", ":")),
             })
+        elif self.trip_type == "round_trip":
+            params.update({
+                "departure_id": self.departure_id,
+                "arrival_id": self.arrival_id,
+                "outbound_date": self.outbound_date,
+                "return_date": self.return_date or "",
+                "type": "1",
+            })
         else:
             params.update({
                 "departure_id": self.departure_id,
                 "arrival_id": self.arrival_id,
                 "outbound_date": self.outbound_date,
-                "return_date": self.return_date,
-                "type": "1",
+                "type": "2",
             })
         return params
 
@@ -228,7 +244,7 @@ def normalize_response(response: Mapping[str, Any], request: SearchRequest) -> d
         },
         "warnings": [
             "Price scope, taxes, infant-in-lap inclusion, and inventory are not inferred.",
-            "A departure_token follow-up may be needed to select return flights.",
+            *([] if request.trip_type == "one_way" else ["A departure_token follow-up may be needed to select return flights."]),
         ],
     }
 

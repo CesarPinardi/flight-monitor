@@ -2,15 +2,14 @@
 
 ## Consulta implementada
 
-`SerpApiClient` usa somente biblioteca padrão Python e chama `GET https://serpapi.com/search.json` com:
+`SerpApiClient` usa somente biblioteca padrão Python e chama `GET https://serpapi.com/search.json` com busca de trecho único:
 
 | Campo | Valor da busca de validação |
 | --- | --- |
 | `engine` | `google_flights` |
-| `departure_id` / `arrival_id` | definidos em `multi_city_json` |
-| `outbound_date` / `return_date` | datas das pernas dentro de `multi_city_json` |
-| `type` | `3` (multi-cidade) |
-| `multi_city_json` | `GRU → MCO` e `FLL → VCP` |
+| `type` | `2` (só ida) |
+| `departure_id` / `arrival_id` | trecho definido por `trip_leg` |
+| `outbound_date` | data do trecho definido por `trip_leg` |
 | `travel_class` | `1` (econômica) |
 | `adults` | `2` |
 | `infants_on_lap` | `1` |
@@ -21,9 +20,11 @@
 
 Datas, passageiros, classe e moeda vêm de `config/search.json` via `SearchRequest.from_config`.
 
-## Itinerário aberto
+## Trechos configuráveis
 
-O monitor usa `type=3` e `multi_city_json` com duas pernas independentes. Exemplo: ida `GRU → MCO` em 05/03/2027 e volta `FLL → VCP` em 14/03/2027. A SerpApi não recebe companhia fixa; cada perna pode retornar uma companhia diferente.
+O monitor usa `type=2` e consulta uma perna por vez. `trip_leg=outbound` consulta ida; `trip_leg=return` consulta volta e usa `return_date`. O preço retornado pertence ao trecho consultado. A SerpApi não recebe companhia fixa.
+
+`trip_type=multi_city` continua disponível para compatibilidade, usando `type=3` e `multi_city_json` com duas pernas independentes.
 
 O contrato oficial define `multi_city_json` como uma lista de pernas com `departure_id`, `arrival_id` e `date`, e exige `type=3` para multi-cidade: [Google Flights API](https://serpapi.com/google-flights-api).
 

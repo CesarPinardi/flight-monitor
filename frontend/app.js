@@ -1,5 +1,6 @@
 const DATA_URLS = ["data.json", "../data/public/data.json", "data/public/data.json"];
-const state = { data: null };
+const MAX_VISIBLE_OFFERS = 6;
+const state = { data: null, showAllOffers: false };
 
 const $ = (id) => document.getElementById(id);
 const finite = (value) => typeof value === "number" && Number.isFinite(value);
@@ -19,16 +20,27 @@ function addText(parent, tag, value, className) {
 
 function routeKey(route) {
   if (!route || typeof route !== "object") return "";
-  return `${route.origin || "?"}-${route.destination || "?"}`;
+  const key = `${route.origin || "?"}-${route.destination || "?"}`;
+  return route.leg ? `${key}:${route.leg}` : key;
+}
+
+function legLabel(value) {
+  return value === "outbound" ? "Ida" : value === "return" ? "Volta" : "Ida e volta";
 }
 
 function routeLabel(route) {
   if (!route || typeof route !== "object") return "";
   const outbound = `${route.origin || "?"} → ${route.destination || "?"}`;
-  const returnLeg = route.return_origin && route.return_destination
-    ? ` · volta ${route.return_origin} → ${route.return_destination}`
-    : "";
-  return `${outbound}${returnLeg}`;
+  const leg = route.leg ? ` · ${legLabel(route.leg).toLowerCase()}` : "";
+  return `${outbound}${leg}`;
+}
+
+function singleLegOffers(offers) {
+  return array(offers).filter((offer) => {
+    const route = offer?.route || {};
+    const type = offer?.itinerary?.type;
+    return !route.return_origin && !route.return_destination && type !== "round_trip" && type !== "multi_city";
+  });
 }
 
 function currency(value, code = "BRL") {
@@ -119,6 +131,7 @@ function setStatus(value, detail = "") {
 function renderSearch(search) {
   const target = $("search-config");
   clear(target);
+  const selectedLeg = search?.trip_leg === "return" ? "return" : "outbound";
   const adults = Number(search?.adults) || 0;
   const children = Number(search?.children) || 0;
   const infants = Number(search?.infants_on_lap) || 0;
@@ -126,13 +139,12 @@ function renderSearch(search) {
   if (children) passengers.push(`${children} criança${children === 1 ? "" : "s"}`);
   if (infants) passengers.push(`${infants} bebê${infants === 1 ? "" : "s"} no colo`);
   const itineraries = array(search?.itineraries).map((item) => {
-    const outbound = item?.outbound || {};
-    const returnLeg = item?.return || {};
-    return `${outbound.origin || "?"} → ${outbound.destination || "?"} / ${returnLeg.origin || "?"} → ${returnLeg.destination || "?"}`;
+    const leg = item?.[selectedLeg] || item?.outbound || {};
+    return `${leg.origin || "?"} → ${leg.destination || "?"}`;
   });
   const values = [
-    ["Ida", dateOnly(search?.departure_date)],
-    ["Volta", dateOnly(search?.return_date)],
+    ["Trecho", legLabel(selectedLeg)],
+    ["Data", dateOnly(selectedLeg === "return" ? search?.return_date : search?.departure_date)],
     ["Origens", array(search?.origins).join(", ") || "Não informadas"],
     ["Destinos", array(search?.destinations).join(", ") || "Não informados"],
     ...(itineraries.length ? [["Itinerários", itineraries.join("; ")]] : []),
@@ -149,13 +161,13 @@ function renderSearch(search) {
   }
 }
 
-function setOptions(select, values, emptyLabel) {
+function setOptions(select, values, emptyLabel, label = (value) => value) {
   while (select.options.length > 1) select.remove(1);
   select.options[0].textContent = emptyLabel;
   for (const value of values) {
     const option = document.createElement("option");
     option.value = value;
-    option.textContent = value;
+    option.textContent = label(value);
     select.append(option);
   }
 }
@@ -163,14 +175,17 @@ function setOptions(select, values, emptyLabel) {
 function renderFilters(offers) {
   const routes = [...new Set(array(offers).map((offer) => routeLabel(offer.route)).filter(Boolean))].sort();
   const companies = [...new Set(array(offers).flatMap(airlines))].sort();
+  const legs = [...new Set(array(offers).map((offer) => offer?.route?.leg).filter(Boolean))].sort();
   setOptions($("route-filter"), routes, "Todas as rotas");
   setOptions($("airline-filter"), companies, "Todas as companhias");
+  setOptions($("leg-filter"), legs, "Todos os trechos", legLabel);
 }
 
 function selectedFilters() {
   return {
     route: $("route-filter").value,
     airline: $("airline-filter").value,
+    leg: $("leg-filter").value,
     stops: $("stops-filter").value,
     sort: $("sort-filter").value,
   };
@@ -181,6 +196,7 @@ function filteredOffers(offers) {
   const result = array(offers).filter((offer) => {
     if (filters.route && routeLabel(offer.route) !== filters.route) return false;
     if (filters.airline && !airlines(offer).includes(filters.airline)) return false;
+    if (filters.leg && offer?.route?.leg !== filters.leg) return false;
     if (filters.stops === "0" && stops(offer) !== 0) return false;
     if (filters.stops === "1" && stops(offer) !== 1) return false;
     if (filters.stops === "2" && stops(offer) < 2) return false;
@@ -200,7 +216,8 @@ function renderMetrics(offers) {
   $("offer-count").textContent = String(offers.length);
   $("offer-count-detail").textContent = `${offers.filter(isComparable).length} comparável(is) após filtros.`;
 
-  const history = historyPoints(state.data?.history, selectedFilters().route);
+  const filters = selectedFilters();
+  const history = historyPoints(state.data?.history, filters.route, filters.leg);
   const lowest = history.filter((point) => finite(point.amount)).sort((left, right) => left.amount - right.amount)[0];
   $("history-price").textContent = lowest ? currency(lowest.amount, lowest.currency) : "—";
   $("history-price-detail").textContent = lowest ? `${routeLabel(lowest.route)} · menor preço diário` : "Histórico sem preço comparável.";
@@ -242,18 +259,22 @@ function renderOffer(offer) {
 
 function renderOffers(offers) {
   const target = $("offers");
+  const more = $("show-more");
   clear(target);
   if (!offers.length) {
     addText(target, "p", "Nenhuma oferta atende aos filtros. Tente limpar a seleção.", "empty-state");
+    more.hidden = true;
     return;
   }
-  for (const offer of offers) target.append(renderOffer(offer));
+  const visible = state.showAllOffers ? offers : offers.slice(0, MAX_VISIBLE_OFFERS);
+  for (const offer of visible) target.append(renderOffer(offer));
+  more.hidden = state.showAllOffers || offers.length <= MAX_VISIBLE_OFFERS;
+  more.textContent = `Ver mais (${offers.length - MAX_VISIBLE_OFFERS})`;
 }
 
-function renderRoutes(data) {
+function renderRoutes(data, offers = singleLegOffers(data.offers)) {
   const target = $("routes");
   clear(target);
-  const offers = array(data.offers);
   const routeData = data.routes && typeof data.routes === "object" ? data.routes : {};
   const keys = [...new Set([...Object.keys(routeData), ...offers.map((offer) => routeKey(offer.route)).filter(Boolean)])].sort();
   if (!keys.length) {
@@ -278,11 +299,12 @@ function renderRoutes(data) {
   }
 }
 
-function historyPoints(history, route) {
+function historyPoints(history, route, leg) {
   const points = [];
   for (const entry of array(history?.entries)) {
     for (const item of array(entry?.routes)) {
       if (route && routeLabel(item.route) !== route) continue;
+      if (leg && item?.route?.leg !== leg) continue;
       const price = item.minimum_price;
       points.push({
         route: item.route,
@@ -300,7 +322,8 @@ function renderHistory(history) {
   $("history-description").textContent = history?.description || "Menor preço diário confirmado por rota. Não é uma oferta específica.";
   const target = $("history");
   clear(target);
-  const points = historyPoints(history, selectedFilters().route).filter((point) => finite(point.amount));
+  const filters = selectedFilters();
+  const points = historyPoints(history, filters.route, filters.leg).filter((point) => finite(point.amount));
   if (!points.length) {
     addText(target, "p", "Ainda não há histórico comparável publicado.", "empty-state");
     return;
@@ -326,6 +349,7 @@ function renderHistory(history) {
 
 function render(data) {
   state.data = data;
+  state.showAllOffers = false;
   renderSearch(data.search || {});
   $("schema-label").textContent = `JSON público · schema ${data.schema_version ?? "?"}`;
   $("last-updated").textContent = data.generated_at_utc ? `Última consulta: ${date(data.generated_at_utc)}` : "Última consulta: não informada";
@@ -333,14 +357,15 @@ function render(data) {
   const alert = stale ? "Algumas ofertas são dados antigos porque uma ou mais rotas falharam." : (data.status === "failure" ? "Consulta teve falhas. Veja status por rota." : "");
   setStatus(data.status, alert);
   $("disclaimer").textContent = data.disclaimer || "Preço mantém interpretação da fonte. Taxas, bebê de colo, bagagem e inventário não são inferidos.";
-  renderFilters(array(data.offers));
-  renderRoutes(data);
+  const offers = singleLegOffers(data.offers);
+  renderFilters(offers);
+  renderRoutes(data, offers);
   updateOffers();
 }
 
 function updateOffers() {
   if (!state.data) return;
-  const offers = filteredOffers(state.data.offers);
+  const offers = filteredOffers(singleLegOffers(state.data.offers));
   renderMetrics(offers);
   renderOffers(offers);
   renderHistory(state.data.history);
@@ -368,10 +393,20 @@ async function loadData() {
   }
 }
 
-for (const id of ["route-filter", "airline-filter", "stops-filter", "sort-filter"]) $(id).addEventListener("change", updateOffers);
+for (const id of ["route-filter", "airline-filter", "leg-filter", "stops-filter", "sort-filter"]) {
+  $(id).addEventListener("change", () => {
+    state.showAllOffers = false;
+    updateOffers();
+  });
+}
+$("show-more").addEventListener("click", () => {
+  state.showAllOffers = true;
+  updateOffers();
+});
 $("clear-filters").addEventListener("click", () => {
   $("route-filter").value = "";
   $("airline-filter").value = "";
+  $("leg-filter").value = "";
   $("stops-filter").value = "";
   $("sort-filter").value = "price";
   updateOffers();

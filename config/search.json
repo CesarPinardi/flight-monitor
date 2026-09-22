@@ -9,7 +9,8 @@
   "children": 0,
   "cabin": "economy",
   "currency": "BRL",
-  "trip_type": "multi_city",
+  "trip_type": "one_way",
+  "trip_leg": "outbound",
   "itineraries": [
     {"outbound": {"origin": "GRU", "destination": "MCO"}, "return": {"origin": "FLL", "destination": "VCP"}},
     {"outbound": {"origin": "GRU", "destination": "FLL"}, "return": {"origin": "MIA", "destination": "VCP"}},

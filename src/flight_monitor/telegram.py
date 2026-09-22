@@ -141,7 +141,8 @@ def _route_key(offer: Mapping[str, Any]) -> str:
     route = offer.get("route")
     if not isinstance(route, Mapping):
         return "unknown"
-    return f"{route.get('origin', '?')}-{route.get('destination', '?')}"
+    key = f"{route.get('origin', '?')}-{route.get('destination', '?')}"
+    return f"{key}:{route['leg']}" if route.get("leg") else key
 
 
 def _fingerprint(offer: Mapping[str, Any]) -> str:
@@ -253,7 +254,14 @@ def _opportunity_text(item: Mapping[str, Any], config: Mapping[str, Any]) -> str
     arrival_airport = segments[-1].get("arrival_airport") if segments and isinstance(segments[-1], Mapping) else None
     departure = departure_airport.get("time") if isinstance(departure_airport, Mapping) else None
     arrival = arrival_airport.get("time") if isinstance(arrival_airport, Mapping) else None
-    dates = f"{config.get('departure_date', config.get('outbound_date', '?'))} a {config.get('return_date', '?')}"
+    leg = route.get("leg")
+    leg_text = " · Ida" if leg == "outbound" else " · Volta" if leg == "return" else ""
+    if leg == "return":
+        dates = str(config.get("return_date", "?"))
+    elif leg == "outbound":
+        dates = str(config.get("departure_date", config.get("outbound_date", "?")))
+    else:
+        dates = f"{config.get('departure_date', config.get('outbound_date', '?'))} a {config.get('return_date', '?')}"
     reason = ", ".join(item["reasons"])
     baseline = item.get("baseline_price")
     difference = item.get("difference_percent")
@@ -271,7 +279,8 @@ def _opportunity_text(item: Mapping[str, Any], config: Mapping[str, Any]) -> str
     infants = passengers.get("infants_on_lap", 1)
     infant_label = "bebê" if infants == 1 else "bebês"
     return (
-        f"<b>{html.escape(str(route.get('origin', '?')))} → {html.escape(str(route.get('destination', '?')))}</b> | {html.escape(dates)}\n"
+        f"<b>{html.escape(str(route.get('origin', '?')))} → {html.escape(str(route.get('destination', '?')))}</b>"
+        f"{html.escape(leg_text)} | {html.escape(dates)}\n"
         f"Preço informado: {_money(price.get('amount'), price.get('currency'))}\n"
         f"Total confirmado para {passengers.get('adults', 2)} adultos + {infants} {infant_label} de colo: {confirmed}{difference_text}\n"
         f"Itinerário: {html.escape(stop_text)}, {itinerary.get('total_duration_minutes', 'duração desconhecida')} min\n"

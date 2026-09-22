@@ -5,7 +5,7 @@ from pathlib import Path
 import tempfile
 import unittest
 
-from flight_monitor.monitor import load_config, run_monitor
+from flight_monitor.monitor import _request, load_config, routes_from_config, run_monitor
 from flight_monitor.storage import ConcurrentRunError, JsonStore
 
 
@@ -22,39 +22,24 @@ def config(**changes):
 
 
 class MonitorTests(unittest.TestCase):
-    def multi_city_fixture(self, params):
-        legs = json.loads(params["multi_city_json"])
+    def one_way_fixture(self, params):
         payload = deepcopy(FIXTURE)
         flight = payload["best_flights"][0]
-        outbound = flight["flights"][0]
-        outbound["departure_airport"]["id"] = legs[0]["departure_id"]
-        outbound["arrival_airport"]["id"] = legs[0]["arrival_id"]
-        return_leg = deepcopy(outbound)
-        return_leg["departure_airport"]["id"] = legs[1]["departure_id"]
-        return_leg["arrival_airport"]["id"] = legs[1]["arrival_id"]
-        flight["flights"] = [outbound, return_leg]
-        flight["type"] = "Multi-city"
-        flight["total_duration"] = outbound["duration"] + return_leg["duration"]
+        segment = flight["flights"][0]
+        segment["departure_airport"]["id"] = params["departure_id"]
+        segment["arrival_airport"]["id"] = params["arrival_id"]
+        flight["type"] = "One way"
         return payload
 
     def all_fixtures(self, directory: Path) -> None:
         for origin in CONFIG["origins"]:
             for destination in CONFIG["destinations"]:
-                route = next(
-                    item for item in CONFIG["itineraries"]
-                    if item["outbound"] == {"origin": origin, "destination": destination}
-                )
                 payload = deepcopy(FIXTURE)
                 flight = payload["best_flights"][0]
-                outbound = flight["flights"][0]
-                outbound["departure_airport"]["id"] = origin
-                outbound["arrival_airport"]["id"] = destination
-                return_leg = deepcopy(outbound)
-                return_leg["departure_airport"]["id"] = route["return"]["origin"]
-                return_leg["arrival_airport"]["id"] = route["return"]["destination"]
-                flight["flights"] = [outbound, return_leg]
-                flight["type"] = "Multi-city"
-                flight["total_duration"] = outbound["duration"] + return_leg["duration"]
+                segment = flight["flights"][0]
+                segment["departure_airport"]["id"] = origin
+                segment["arrival_airport"]["id"] = destination
+                flight["type"] = "One way"
                 (directory / f"google_flights_{origin.lower()}_{destination.lower()}.json").write_text(json.dumps(payload))
 
     def test_dry_run_reads_six_fixtures_and_writes_versioned_public_json(self):
@@ -76,13 +61,25 @@ class MonitorTests(unittest.TestCase):
             self.assertFalse(public["offers"][0]["baggage"]["included"])
             self.assertEqual(
                 public["offers"][0]["route"],
-                {"origin": "GRU", "destination": "MCO", "return_origin": "FLL", "return_destination": "VCP"},
+                {"origin": "GRU", "destination": "MCO", "leg": "outbound"},
             )
             self.assertEqual(public["offers"][0]["price"]["amount"], 6225)
             self.assertIn("passageiro pagante", public["disclaimer"])
             self.assertEqual(public["offers"][0]["price"]["interpretation"], "provider_value_scope_unknown")
             self.assertEqual(result["telegram"]["status"], "local")
             self.assertFalse(json.loads((Path(root) / "data/state.json").read_text())["alerts"]["first_alert_sent"])
+
+    def test_return_leg_builds_one_way_request_for_return_route(self):
+        return_config = config(trip_leg="return")
+        route = routes_from_config(return_config)[0]
+        request = _request(return_config, route)
+
+        self.assertEqual(route.key, "FLL-VCP:return")
+        self.assertEqual(request.params()["departure_id"], "FLL")
+        self.assertEqual(request.params()["arrival_id"], "VCP")
+        self.assertEqual(request.params()["outbound_date"], "2027-03-14")
+        self.assertEqual(request.params()["type"], "2")
+        self.assertNotIn("return_date", request.params())
 
     def test_missing_fixture_is_partial_failure_and_last_valid_offer_stays_stale(self):
         with tempfile.TemporaryDirectory() as root:
@@ -96,7 +93,7 @@ class MonitorTests(unittest.TestCase):
             self.assertEqual(first["status"], "success")
             self.assertEqual(second["status"], "failure")
             state = json.loads((data_dir / "state.json").read_text())
-            route = state["routes"]["VCP-MIA"]
+            route = state["routes"]["VCP-MIA:outbound"]
             self.assertEqual(route["status"], "stale_data")
             self.assertTrue(route["last_valid_offers"])
             public = json.loads((data_dir / "public/data.json").read_text())
@@ -146,7 +143,7 @@ class MonitorTests(unittest.TestCase):
                 dry_run=False,
                 fixture_dir=fixtures,
                 api_key="serp-test",
-                transport=self.multi_city_fixture,
+                transport=self.one_way_fixture,
                 telegram_token="telegram-secret",
                 telegram_chat_id="chat-123",
                 telegram_transport=telegram_transport,
