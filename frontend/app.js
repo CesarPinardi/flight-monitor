@@ -29,7 +29,7 @@ function routeKey(route) {
 }
 
 function legLabel(value) {
-  return value === "outbound" ? "Ida" : value === "return" ? "Volta" : "Ida e volta";
+  return value === "outbound" ? "Ida" : value === "return" ? "Volta" : value === "package" ? "Pacote ida e volta" : "Ida e volta";
 }
 
 function routeLabel(route) {
@@ -219,7 +219,10 @@ function renderFilters(offers, search = {}) {
   const routes = [...new Set(array(offers).map((offer) => routeLabel(offer.route)).filter(Boolean))].sort();
   const companies = [...new Set(array(offers).flatMap(airlines))].sort();
   const configuredLegs = search.trip_type === "one_way" ? ["outbound", "return"] : [];
-  const legs = [...new Set([...configuredLegs, ...array(offers).map((offer) => offer?.route?.leg).filter(Boolean)])].sort();
+  const packageLeg = array(offers).some(isPackageOffer) ? ["package"] : [];
+  const availableLegs = [...new Set([...configuredLegs, ...packageLeg, ...array(offers).map((offer) => offer?.route?.leg).filter(Boolean)])];
+  const order = ["outbound", "return", "package"];
+  const legs = availableLegs.sort((left, right) => (order.indexOf(left) + 1 || 99) - (order.indexOf(right) + 1 || 99));
   setOptions($("route-filter"), routes, "Todas as rotas");
   setOptions($("airline-filter"), companies, "Todas as companhias");
   setOptions($("leg-filter"), legs, "Todos os trechos", legLabel);
@@ -240,7 +243,8 @@ function filteredOffers(offers) {
   const result = array(offers).filter((offer) => {
     if (filters.route && routeLabel(offer.route) !== filters.route) return false;
     if (filters.airline && !airlines(offer).includes(filters.airline)) return false;
-    if (filters.leg && offer?.route?.leg !== filters.leg) return false;
+    if (filters.leg === "package" && !isPackageOffer(offer)) return false;
+    if (filters.leg && filters.leg !== "package" && offer?.route?.leg !== filters.leg) return false;
     if (filters.stops === "0" && stops(offer) !== 0) return false;
     if (filters.stops === "1" && stops(offer) !== 1) return false;
     if (filters.stops === "2" && stops(offer) < 2) return false;
