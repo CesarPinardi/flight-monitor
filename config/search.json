@@ -1,0 +1,14 @@
+{
+  "departure_date": "2027-03-05",
+  "return_date": "2027-03-14",
+  "origins": ["GRU", "VCP"],
+  "destinations": ["MCO", "FLL", "MIA"],
+  "adults": 2,
+  "infants_in_seat": 0,
+  "infants_on_lap": 1,
+  "children": 0,
+  "cabin": "economy",
+  "currency": "BRL",
+  "trip_type": "round_trip",
+  "payment_type": "cash_only"
+}

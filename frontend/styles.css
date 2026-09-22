@@ -1,0 +1,46 @@
+:root {
+  color-scheme: light;
+  font-family: system-ui, sans-serif;
+  line-height: 1.5;
+  color: #172033;
+  background: #f4f6fa;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  max-width: 44rem;
+  margin: 0 auto;
+  padding: 3rem 1.25rem;
+}
+
+.eyebrow {
+  color: #536dfe;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+section {
+  margin-top: 2rem;
+  padding: 1.25rem;
+  background: #fff;
+  border: 1px solid #dce1ec;
+  border-radius: 0.75rem;
+}
+
+dl {
+  display: grid;
+  grid-template-columns: minmax(8rem, 0.7fr) 1fr;
+  gap: 0.5rem 1rem;
+}
+
+dt {
+  font-weight: 700;
+}
+
+dd {
+  margin: 0;
+}

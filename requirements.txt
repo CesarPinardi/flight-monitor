@@ -1,0 +1,2 @@
+# Stage 1 has no runtime dependencies.
+# Add a package only after validating that the standard library is insufficient.
