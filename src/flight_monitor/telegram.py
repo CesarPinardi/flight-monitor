@@ -311,6 +311,23 @@ class AlertPlan:
     opportunity_keys: tuple[str, ...]
     issue_actions: tuple[tuple[str, str], ...]
     opportunity_count: int
+    messages: tuple[str, ...]
+
+
+def _split_alert_messages(blocks: Sequence[str]) -> tuple[str, ...]:
+    prefix = "<b>Flight Monitor</b>\n\n"
+    messages: list[str] = []
+    current = prefix
+    for block in blocks:
+        candidate = current + ("\n\n" if current != prefix else "") + block
+        if len(candidate) > TELEGRAM_MAX_MESSAGE_LENGTH and current != prefix:
+            messages.append(current)
+            current = prefix + block
+        else:
+            current = candidate
+    if current != prefix:
+        messages.append(current)
+    return tuple(messages)
 
 
 def build_alert_plan(
@@ -382,12 +399,9 @@ def build_alert_plan(
         "last_evaluated_at_utc": now.astimezone(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z"),
     }
     blocks = issue_texts + [_opportunity_text(item, config) for item in opportunities]
-    text = None
-    if blocks:
-        text = "<b>Flight Monitor</b>\n\n" + "\n\n".join(blocks)
-        if len(text) > TELEGRAM_MAX_MESSAGE_LENGTH:
-            raise TelegramError("Telegram alert message exceeds 4096 characters")
-    return AlertPlan(text, state, tuple(opportunity_keys), tuple(issue_actions), len(opportunities))
+    messages = _split_alert_messages(blocks)
+    text = "\n\n".join(messages) if messages else None
+    return AlertPlan(text, state, tuple(opportunity_keys), tuple(issue_actions), len(opportunities), messages)
 
 
 def confirm_alert_plan(plan: AlertPlan, *, sent_at_utc: str, message_id: int) -> dict[str, Any]:

@@ -32,17 +32,16 @@ class MonitorTests(unittest.TestCase):
         return payload
 
     def all_fixtures(self, directory: Path) -> None:
-        for origin in CONFIG["origins"]:
-            for destination in CONFIG["destinations"]:
-                payload = deepcopy(FIXTURE)
-                flight = payload["best_flights"][0]
-                segment = flight["flights"][0]
-                segment["departure_airport"]["id"] = origin
-                segment["arrival_airport"]["id"] = destination
-                flight["type"] = "One way"
-                (directory / f"google_flights_{origin.lower()}_{destination.lower()}.json").write_text(json.dumps(payload))
+        for route in routes_from_config(CONFIG):
+            payload = deepcopy(FIXTURE)
+            flight = payload["best_flights"][0]
+            segment = flight["flights"][0]
+            segment["departure_airport"]["id"] = route.origin
+            segment["arrival_airport"]["id"] = route.destination
+            flight["type"] = "One way"
+            (directory / f"google_flights_{route.origin.lower()}_{route.destination.lower()}.json").write_text(json.dumps(payload))
 
-    def test_dry_run_reads_six_fixtures_and_writes_versioned_public_json(self):
+    def test_dry_run_reads_both_legs_and_writes_versioned_public_json(self):
         with tempfile.TemporaryDirectory() as root:
             fixtures = Path(root) / "fixtures"
             fixtures.mkdir()
@@ -56,7 +55,8 @@ class MonitorTests(unittest.TestCase):
             self.assertEqual(public["schema_version"], 1)
             self.assertEqual(public["presentation"]["timezone"], "America/Sao_Paulo")
             self.assertEqual(public["history"]["kind"], "daily_route_minimum")
-            self.assertEqual(len(public["history"]["entries"][0]["routes"]), 6)
+            self.assertEqual(len(public["history"]["entries"][0]["routes"]), 12)
+            self.assertEqual({offer["route"]["leg"] for offer in public["offers"]}, {"outbound", "return"})
             self.assertTrue(public["offers"][0]["id"].startswith("offer-"))
             self.assertFalse(public["offers"][0]["baggage"]["included"])
             self.assertEqual(
@@ -80,6 +80,16 @@ class MonitorTests(unittest.TestCase):
         self.assertEqual(request.params()["outbound_date"], "2027-03-14")
         self.assertEqual(request.params()["type"], "2")
         self.assertNotIn("return_date", request.params())
+
+    def test_both_legs_builds_separate_one_way_routes(self):
+        both_config = config(trip_leg="both", daily_basic_searches=12)
+
+        routes = routes_from_config(both_config)
+
+        self.assertEqual(len(routes), 12)
+        self.assertEqual({route.leg for route in routes}, {"outbound", "return"})
+        self.assertEqual(routes[0].key, "GRU-MCO:outbound")
+        self.assertEqual(routes[6].key, "FLL-VCP:return")
 
     def test_missing_fixture_is_partial_failure_and_last_valid_offer_stays_stale(self):
         with tempfile.TemporaryDirectory() as root:
@@ -119,8 +129,11 @@ class MonitorTests(unittest.TestCase):
 
     def test_same_local_day_is_duplicate_without_force(self):
         with tempfile.TemporaryDirectory() as root:
-            first = run_monitor(CONFIG, data_dir=root, dry_run=True, fixture_dir=ROOT / "tests/fixtures", now=NOW)
-            second = run_monitor(CONFIG, data_dir=root, dry_run=True, fixture_dir=ROOT / "tests/fixtures", now=NOW)
+            fixtures = Path(root) / "fixtures"
+            fixtures.mkdir()
+            self.all_fixtures(fixtures)
+            first = run_monitor(CONFIG, data_dir=root, dry_run=True, fixture_dir=fixtures, now=NOW)
+            second = run_monitor(CONFIG, data_dir=root, dry_run=True, fixture_dir=fixtures, now=NOW)
             self.assertNotEqual(first["status"], "duplicate")
             self.assertEqual(second["status"], "duplicate")
             self.assertEqual(second["calls"], 0)

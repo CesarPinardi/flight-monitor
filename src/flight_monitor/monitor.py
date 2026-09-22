@@ -78,13 +78,13 @@ def load_config(path: str | os.PathLike[str]) -> dict[str, Any]:
     if trip_type not in {"one_way", "round_trip", "multi_city"}:
         raise ValueError("unsupported trip_type")
     trip_leg = result.get("trip_leg", "outbound")
-    if trip_leg not in {"outbound", "return"}:
-        raise ValueError("trip_leg must be outbound or return")
-    if trip_type == "one_way" and trip_leg == "return":
+    if trip_leg not in {"outbound", "return", "both"}:
+        raise ValueError("trip_leg must be outbound, return, or both")
+    if trip_type == "one_way" and trip_leg in {"return", "both"}:
         if "itineraries" not in result:
-            raise ValueError("trip_leg return requires itineraries")
+            raise ValueError(f"trip_leg {trip_leg} requires itineraries")
         if not isinstance(result.get("return_date"), str) or not result["return_date"]:
-            raise ValueError("trip_leg return requires return_date")
+            raise ValueError(f"trip_leg {trip_leg} requires return_date")
     itineraries = result.get("itineraries")
     if itineraries is not None:
         if not isinstance(itineraries, list) or not itineraries:
@@ -112,7 +112,8 @@ def load_config(path: str | os.PathLike[str]) -> dict[str, Any]:
     ceiling = result.get("alert_price_ceiling")
     if ceiling is not None and (isinstance(ceiling, bool) or not isinstance(ceiling, (int, float)) or ceiling <= 0):
         raise ValueError("alert_price_ceiling must be a positive number or null")
-    expected_searches = len(itineraries) if itineraries is not None else len(origins) * len(destinations)
+    leg_count = 2 if trip_type == "one_way" and trip_leg == "both" else 1
+    expected_searches = (len(itineraries) if itineraries is not None else len(origins) * len(destinations)) * leg_count
     if result["daily_basic_searches"] != expected_searches:
         raise ValueError("daily_basic_searches must match configured itineraries")
     if result["monthly_basic_limit"] > DEFAULT_MONTHLY_BASIC_LIMIT:
@@ -129,12 +130,14 @@ def routes_from_config(config: Mapping[str, Any]) -> list[Route]:
     if isinstance(itineraries, list):
         if config.get("trip_type") == "one_way":
             trip_leg = config.get("trip_leg", "outbound")
+            trip_legs = ("outbound", "return") if trip_leg == "both" else (trip_leg,)
             return [
                 Route(
-                    str(item[trip_leg]["origin"]).upper(),
-                    str(item[trip_leg]["destination"]).upper(),
-                    leg=trip_leg,
+                    str(item[leg]["origin"]).upper(),
+                    str(item[leg]["destination"]).upper(),
+                    leg=leg,
                 )
+                for leg in trip_legs
                 for item in itineraries
             ]
         return [
@@ -148,12 +151,15 @@ def routes_from_config(config: Mapping[str, Any]) -> list[Route]:
         ]
     routes: list[Route] = []
     seen: set[str] = set()
+    trip_leg = config.get("trip_leg", "outbound")
+    if trip_leg == "both":
+        raise ValueError("trip_leg both requires itineraries")
     for origin in config["origins"]:
         for destination in config["destinations"]:
             route = Route(
                 str(origin).upper(),
                 str(destination).upper(),
-                leg=config.get("trip_leg", "outbound") if config.get("trip_type") == "one_way" else None,
+                leg=trip_leg if config.get("trip_type") == "one_way" else None,
             )
             if route.key not in seen:
                 routes.append(route)
@@ -454,8 +460,8 @@ def run_monitor(
         raise ValueError("configured route count does not match daily_basic_searches")
     if len(extra_requests) > config["extra_calls_limit"]:
         raise ValueError("extra request count exceeds extra_calls_limit")
-    basic_route_keys = {f"{route.origin}-{route.destination}" for route in routes}
-    extra_route_keys = [f"{item.departure_id}-{item.arrival_id}" for item in extra_requests]
+    basic_route_keys = {(route.origin, route.destination) for route in routes}
+    extra_route_keys = [(item.departure_id, item.arrival_id) for item in extra_requests]
     if len(extra_route_keys) != len(set(extra_route_keys)) or basic_route_keys.intersection(extra_route_keys):
         raise ValueError("duplicate route request is not allowed")
     store = JsonStore(data_dir)
@@ -625,7 +631,10 @@ def run_monitor(
                 telegram_result["status"] = "not_configured"
             else:
                 try:
-                    sent = client.send_message(alert_plan.text)
+                    sent = None
+                    for message in alert_plan.messages:
+                        sent = client.send_message(message)
+                    assert sent is not None
                     sent_at = iso_utc(current)
                     state["alerts"] = confirm_alert_plan(alert_plan, sent_at_utc=sent_at, message_id=sent.message_id)
                     store.write(store.state_path, state)

@@ -20,7 +20,7 @@ O sistema normaliza o preço para passageiro pagante. Não estima valor para beb
 
 O cliente envia adultos, bebê no colo, classe, moeda, datas e tipo de viagem conforme parâmetros oficiais. A resposta marca escopo do preço, inclusão de taxas, inclusão do bebê e inventário como desconhecidos quando a API não os prova. Segmento presente não equivale a disponibilidade para compra.
 
-O itinerário padrão é trecho único (`type=2`). `trip_leg` seleciona ida ou volta usando as pernas configuradas; assim, preço nunca é dividido por estimativa. `multi_city` continua aceito para compatibilidade. O limite permanece em seis buscas básicas por execução.
+O itinerário padrão é trecho único (`type=2`). `trip_leg` seleciona ida, volta ou ambas usando as pernas configuradas; assim, preço nunca é dividido por estimativa. `multi_city` continua aceito para compatibilidade. Quando `trip_leg=both`, são feitas doze buscas básicas por execução.
 
 ## Orçamento sem renovação paga
 
@@ -34,7 +34,7 @@ O workflow diário usa cron fora da virada da hora, `workflow_dispatch`, runner 
 
 O estágio 3 grava histórico, estado e dados públicos em JSON com `schema_version: 1`. Cada execução usa lock exclusivo e cada arquivo usa escrita temporária, `fsync` e `os.replace`. A chave da oferta usa campos canônicos da busca, rota, preço e segmentos; índice da resposta não participa do identificador.
 
-O limite básico é seis consultas por execução e 186 por mês. Chamadas extras exigem limite explícito na configuração e ficam sob teto mensal de 250 chamadas. Execução repetida no mesmo dia local é ignorada. Falha ou quota não apaga a última oferta válida; painel marca dado antigo. Fixtures e `--dry-run` não consomem quota nem fazem rede.
+O limite básico é seis consultas por perna por execução e 186 por mês. Com `trip_leg=both`, a execução faz doze consultas. Chamadas extras exigem limite explícito na configuração e ficam sob teto mensal de 250 chamadas. Execução repetida no mesmo dia local é ignorada. Falha ou quota não apaga a última oferta válida; painel marca dado antigo. Fixtures e `--dry-run` não consomem quota nem fazem rede.
 
 ## Alertas Telegram
 

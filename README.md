@@ -23,7 +23,7 @@ Estágio 6 concluído: workflow diário, execução manual, persistência saniti
 | Passageiros | 2 adultos e 1 bebê de 1 ano no colo |
 | Cabine | Econômica |
 | Moeda | BRL |
-| Tipo | Só ida por trecho; altere `trip_leg` para `return` para monitorar volta |
+| Tipo | Só ida por trecho; `trip_leg` aceita `outbound`, `return` ou `both` |
 | Custo | Zero |
 
 ## Estrutura
@@ -63,7 +63,7 @@ PYTHONPATH=src python -m unittest discover -s tests -v
 
 ## Processamento
 
-O comando consulta seis itinerários de trecho único configurados (`GRU/VCP` × `MCO/FLL/MIA`). `trip_leg` define `outbound` (ida) ou `return` (volta); a consulta usa `type=2` e grava preço real daquele trecho. Chamadas extras exigem `extra_calls_limit` positivo na configuração e `--extra-route ORIGEM:DESTINO`. O comando não agenda execução.
+O comando consulta os seis itinerários configurados (`GRU/VCP` × `MCO/FLL/MIA`) como trechos únicos. `trip_leg` define `outbound` (ida), `return` (volta) ou `both` (os dois); cada consulta usa `type=2` e grava o preço daquele trecho. Chamadas extras exigem `extra_calls_limit` positivo na configuração e `--extra-route ORIGEM:DESTINO`. O comando não agenda execução.
 
 ```bash
 # Sem chave: nunca faz chamada real. Consulta fixtures disponíveis.

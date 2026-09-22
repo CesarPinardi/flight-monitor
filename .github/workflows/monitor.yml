@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
     inputs:
       mode:
-        description: "calibration faz uma busca GRU-MCO; full executa seis itinerários"
+        description: "calibration faz uma busca GRU-MCO; full executa ida e volta por trecho"
         required: true
         default: full
         type: choice

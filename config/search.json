@@ -10,7 +10,7 @@
   "cabin": "economy",
   "currency": "BRL",
   "trip_type": "one_way",
-  "trip_leg": "outbound",
+  "trip_leg": "both",
   "itineraries": [
     {"outbound": {"origin": "GRU", "destination": "MCO"}, "return": {"origin": "FLL", "destination": "VCP"}},
     {"outbound": {"origin": "GRU", "destination": "FLL"}, "return": {"origin": "MIA", "destination": "VCP"}},
@@ -20,7 +20,7 @@
     {"outbound": {"origin": "VCP", "destination": "MIA"}, "return": {"origin": "MCO", "destination": "GRU"}}
   ],
   "payment_type": "cash_only",
-  "daily_basic_searches": 6,
+  "daily_basic_searches": 12,
   "monthly_basic_limit": 186,
   "monthly_call_limit": 250,
   "extra_calls_limit": 0,
