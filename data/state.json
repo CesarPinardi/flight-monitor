@@ -56,12 +56,12 @@
   },
   "budget": {
     "basic_limit": 186,
-    "basic_used": 6,
+    "basic_used": 12,
     "extra_limit": 0,
     "extra_used": 0,
     "month": "2026-09",
     "monthly_call_limit": 250,
-    "remaining": 180,
+    "remaining": 174,
     "total_limit": 186
   },
   "last_run_at_utc": "2026-09-22T20:26:31Z",
@@ -205,7 +205,7 @@
             "leg": "outbound",
             "origin": "GRU"
           },
-          "route_verified": true,
+          "route_verified": false,
           "source": "best_flights",
           "status": "complete"
         }
@@ -277,7 +277,7 @@
             "leg": "outbound",
             "origin": "GRU"
           },
-          "route_verified": true,
+          "route_verified": false,
           "source": "best_flights",
           "status": "complete"
         }
@@ -349,7 +349,7 @@
             "leg": "outbound",
             "origin": "VCP"
           },
-          "route_verified": true,
+          "route_verified": false,
           "source": "best_flights",
           "status": "complete"
         }
@@ -421,7 +421,7 @@
             "leg": "outbound",
             "origin": "VCP"
           },
-          "route_verified": true,
+          "route_verified": false,
           "source": "best_flights",
           "status": "complete"
         }

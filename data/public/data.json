@@ -132,6 +132,73 @@
         ],
         "run_id": "run-12655fd2be9c79c37a1a",
         "status": "success"
+      },
+      {
+        "recorded_at_utc": "2026-09-22T20:09:23Z",
+        "routes": [
+          {
+            "minimum_price": null,
+            "route": {
+              "destination": "MCO",
+              "origin": "GRU",
+              "return_destination": "VCP",
+              "return_origin": "FLL"
+            },
+            "status": "success"
+          },
+          {
+            "minimum_price": null,
+            "route": {
+              "destination": "FLL",
+              "origin": "GRU",
+              "return_destination": "VCP",
+              "return_origin": "MIA"
+            },
+            "status": "success"
+          },
+          {
+            "minimum_price": null,
+            "route": {
+              "destination": "MIA",
+              "origin": "GRU",
+              "return_destination": "VCP",
+              "return_origin": "MCO"
+            },
+            "status": "success"
+          },
+          {
+            "minimum_price": null,
+            "route": {
+              "destination": "MCO",
+              "origin": "VCP",
+              "return_destination": "GRU",
+              "return_origin": "FLL"
+            },
+            "status": "success"
+          },
+          {
+            "minimum_price": null,
+            "route": {
+              "destination": "FLL",
+              "origin": "VCP",
+              "return_destination": "GRU",
+              "return_origin": "MIA"
+            },
+            "status": "success"
+          },
+          {
+            "minimum_price": null,
+            "route": {
+              "destination": "MIA",
+              "origin": "VCP",
+              "return_destination": "GRU",
+              "return_origin": "MCO"
+            },
+            "status": "success"
+          }
+        ],
+        "run_id": "run-6045992ffc91fa3471af",
+        "status": "success"
       }
     ],
     "kind": "daily_route_minimum"
@@ -448,10 +515,10 @@
         "leg": "outbound",
         "origin": "VCP"
       },
-      "route_verified": true,
+      "route_verified": false,
       "source": "best_flights",
       "stale": false,
-      "status": "complete"
+      "status": "pending"
     },
     {
       "baggage": {
@@ -511,7 +578,7 @@
         "leg": "outbound",
         "origin": "VCP"
       },
-      "route_verified": true,
+      "route_verified": false,
       "source": "best_flights",
       "stale": false,
       "status": "complete"
