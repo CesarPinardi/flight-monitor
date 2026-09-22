@@ -209,7 +209,11 @@ class SerpApiClient:
         budget: CallBudget | None = None,
         transport: Transport | None = None,
     ) -> None:
-        self.api_key = api_key or os.getenv("SERPAPI_API_KEY", "").strip()
+        self.api_key = (
+            os.getenv("SERPAPI_API_KEY", "").strip()
+            if api_key is None
+            else api_key.strip()
+        )
         self.timeout = timeout
         self.budget = budget or CallBudget()
         self._transport = transport or self._request_json
