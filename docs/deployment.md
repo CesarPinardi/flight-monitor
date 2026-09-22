@@ -24,7 +24,7 @@ Esses arquivos não contêm segredos. O estado inclui orçamento, baselines e de
 
 ## Pages
 
-O artifact contém `frontend/` e, quando existir, `data/public/data.json` em `data/public/data.json`. O painel usa caminho relativo e mostra indisponibilidade quando JSON não existe. URL esperada para este repositório: <https://cesarpinardi.github.io/flight-monitor/>; só fica disponível depois de uma execução bem-sucedida com Pages habilitado.
+O artifact contém `frontend/` e, quando existir, `data/public/data.json` em `data/public/data.json`. O painel usa caminho relativo e mostra indisponibilidade quando JSON não existe. URL publicada: <https://cesarpinardi.github.io/flight-monitor/>. Execução confirmada em 22/09/2026; painel está sem dados novos enquanto `SERPAPI_API_KEY` faltar.
 
 ## Operação
 

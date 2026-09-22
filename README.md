@@ -4,11 +4,11 @@ Monitor pessoal de passagens em dinheiro, com histórico público e alertas opci
 
 ## Estado atual
 
-Estágio 6 concluído em código: workflow diário, execução manual, persistência sanitizada e publicação Pages configuradas. Ativação real depende de publicar o workflow e configurar secrets.
+Estágio 6 concluído: workflow diário, execução manual, persistência sanitizada e publicação Pages ativas. Consulta real e alertas dependem de secrets.
 
 - Consulta real: pendente quando `SERPAPI_API_KEY` não está disponível.
 - Nenhum segredo, `chat_id` ou dado pessoal foi salvo.
-- Workflow local está pronto; nenhum workflow remoto foi confirmado nesta execução.
+- Workflow remoto ativo; execução manual confirmou publicação Pages.
 - Nenhum secret GitHub está configurado; consulta real, alertas e dados atualizados estão pendentes.
 - Nenhum preço é inventado ou apresentado como resultado real.
 
@@ -99,7 +99,7 @@ Contrato completo: [`docs/serpapi-contract.md`](docs/serpapi-contract.md).
 3. Implementar histórico e normalização — concluído; execução real segue pendente sem chave.
 4. Implementar alertas Telegram — concluído; envio real depende de credenciais.
 5. Implementar painel GitHub Pages — concluído; dados reais dependem de consulta válida.
-6. Ativar execução diária e publicação — workflow pronto; publicação e secrets pendentes.
+6. Ativar execução diária e publicação — Pages ativa; secrets e consulta real pendentes.
 
 ## Custo
 

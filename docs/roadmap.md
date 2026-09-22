@@ -7,6 +7,6 @@
 | 3 | Histórico JSON e normalização | Concluído; consulta real pendente sem chave |
 | 4 | Telegram Bot API e regras de alerta | Concluído; envio real depende de credenciais |
 | 5 | Painel estático GitHub Pages | Concluído; publicação depende do estágio 6 |
-| 6 | GitHub Actions diário e publicação | Workflow e auditoria concluídos; secrets/publicação real pendentes |
+| 6 | GitHub Actions diário e publicação | Pages e workflow ativos; secrets/consulta real pendentes |
 
 Cada estágio deve validar o comportamento antes de ativar o próximo.
