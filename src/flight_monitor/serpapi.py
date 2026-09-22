@@ -54,6 +54,8 @@ class SearchRequest:
     arrival_id: str
     outbound_date: str
     return_date: str
+    return_departure_id: str | None = None
+    return_arrival_id: str | None = None
     adults: int = 1
     children: int = 0
     infants_in_seat: int = 0
@@ -65,11 +67,23 @@ class SearchRequest:
     hl: str = "pt-BR"
 
     @classmethod
-    def from_config(cls, config: Mapping[str, Any], *, departure_id: str, arrival_id: str) -> "SearchRequest":
+    def from_config(
+        cls,
+        config: Mapping[str, Any],
+        *,
+        departure_id: str,
+        arrival_id: str,
+        return_departure_id: str | None = None,
+        return_arrival_id: str | None = None,
+    ) -> "SearchRequest":
         values = dict(config)
         if "outbound_date" not in values and "departure_date" in values:
             values["outbound_date"] = values["departure_date"]
         values.update(departure_id=departure_id, arrival_id=arrival_id)
+        if return_departure_id is not None:
+            values["return_departure_id"] = return_departure_id
+        if return_arrival_id is not None:
+            values["return_arrival_id"] = return_arrival_id
         return cls(**{field: values[field] for field in cls.__dataclass_fields__ if field in values})
 
     def __post_init__(self) -> None:
@@ -82,8 +96,10 @@ class SearchRequest:
                 raise ValueError(f"{field} must use YYYY-MM-DD") from exc
         if self.return_date < self.outbound_date:
             raise ValueError("return_date must not precede outbound_date")
-        if self.trip_type != "round_trip":
-            raise ValueError("only round_trip is supported")
+        if self.trip_type not in {"round_trip", "multi_city"}:
+            raise ValueError("unsupported trip_type")
+        if self.trip_type == "multi_city" and (not self.return_departure_id or not self.return_arrival_id):
+            raise ValueError("multi_city requires return departure and arrival airports")
         if self.cabin not in _CABIN_CODES:
             raise ValueError(f"unsupported cabin: {self.cabin}")
         if len(self.currency) != 3 or not self.currency.isalpha():
@@ -95,13 +111,8 @@ class SearchRequest:
             raise ValueError("at least one adult, child, or infant in seat is required")
 
     def params(self) -> dict[str, str]:
-        return {
+        params = {
             "engine": "google_flights",
-            "departure_id": self.departure_id,
-            "arrival_id": self.arrival_id,
-            "outbound_date": self.outbound_date,
-            "return_date": self.return_date,
-            "type": "1",
             "travel_class": _CABIN_CODES[self.cabin],
             "adults": str(self.adults),
             "children": str(self.children),
@@ -111,6 +122,31 @@ class SearchRequest:
             "gl": self.gl,
             "hl": self.hl,
         }
+        if self.trip_type == "multi_city":
+            params.update({
+                "type": "3",
+                "multi_city_json": json.dumps([
+                    {
+                        "departure_id": self.departure_id,
+                        "arrival_id": self.arrival_id,
+                        "date": self.outbound_date,
+                    },
+                    {
+                        "departure_id": self.return_departure_id,
+                        "arrival_id": self.return_arrival_id,
+                        "date": self.return_date,
+                    },
+                ], separators=(",", ":")),
+            })
+        else:
+            params.update({
+                "departure_id": self.departure_id,
+                "arrival_id": self.arrival_id,
+                "outbound_date": self.outbound_date,
+                "return_date": self.return_date,
+                "type": "1",
+            })
+        return params
 
 
 def _airport(value: Mapping[str, Any] | None) -> dict[str, Any] | None:

@@ -9,7 +9,15 @@
   "children": 0,
   "cabin": "economy",
   "currency": "BRL",
-  "trip_type": "round_trip",
+  "trip_type": "multi_city",
+  "itineraries": [
+    {"outbound": {"origin": "GRU", "destination": "MCO"}, "return": {"origin": "FLL", "destination": "VCP"}},
+    {"outbound": {"origin": "GRU", "destination": "FLL"}, "return": {"origin": "MIA", "destination": "VCP"}},
+    {"outbound": {"origin": "GRU", "destination": "MIA"}, "return": {"origin": "MCO", "destination": "VCP"}},
+    {"outbound": {"origin": "VCP", "destination": "MCO"}, "return": {"origin": "FLL", "destination": "GRU"}},
+    {"outbound": {"origin": "VCP", "destination": "FLL"}, "return": {"origin": "MIA", "destination": "GRU"}},
+    {"outbound": {"origin": "VCP", "destination": "MIA"}, "return": {"origin": "MCO", "destination": "GRU"}}
+  ],
   "payment_type": "cash_only",
   "daily_basic_searches": 6,
   "monthly_basic_limit": 186,

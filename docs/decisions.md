@@ -12,13 +12,15 @@ A estrutura inicial usa biblioteca padrão. Dependências entram somente quando 
 
 Chave SerpApi e credenciais Telegram ficam em ambiente local ou GitHub Secrets. `.env.example` contém somente nomes de variáveis.
 
-## Preço sem inferência
+## Preço por passageiro
 
-O sistema não multiplica nem estima preço para bebê, taxas ou grupo. O estágio 2 precisa validar o significado do preço retornado pela SerpApi.
+O sistema normaliza o preço para passageiro pagante. Não estima valor para bebê de colo, taxas ou total do grupo; o estágio 2 precisa validar o significado do preço retornado pela SerpApi.
 
 ## Contrato SerpApi explícito
 
 O cliente envia adultos, bebê no colo, classe, moeda, datas e tipo de viagem conforme parâmetros oficiais. A resposta marca escopo do preço, inclusão de taxas, inclusão do bebê e inventário como desconhecidos quando a API não os prova. Segmento presente não equivale a disponibilidade para compra.
+
+O itinerário ativo é multi-cidade/open-jaw: ida e volta têm aeroportos configuráveis e não exigem a mesma companhia. O limite permanece em seis buscas básicas por execução.
 
 ## Orçamento sem renovação paga
 

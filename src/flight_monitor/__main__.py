@@ -14,7 +14,10 @@ def _extra_request(value: str, config: dict[str, object]) -> SearchRequest:
         origin, destination = value.upper().split(":", 1)
     except ValueError as exc:
         raise argparse.ArgumentTypeError("extra route must use ORIGIN:DESTINATION") from exc
-    return SearchRequest.from_config(config, departure_id=origin, arrival_id=destination)
+    extra_config = dict(config)
+    extra_config["trip_type"] = "round_trip"
+    extra_config.pop("itineraries", None)
+    return SearchRequest.from_config(extra_config, departure_id=origin, arrival_id=destination)
 
 
 def main(argv: list[str] | None = None) -> int:

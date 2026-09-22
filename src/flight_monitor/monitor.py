@@ -35,6 +35,8 @@ DEFAULT_EXTRA_CALLS_LIMIT = 0
 class Route:
     origin: str
     destination: str
+    return_origin: str | None = None
+    return_destination: str | None = None
 
     @property
     def key(self) -> str:
@@ -70,6 +72,23 @@ def load_config(path: str | os.PathLike[str]) -> dict[str, Any]:
         raise ValueError("origins must be a non-empty list of airport codes")
     if not isinstance(destinations, list) or not destinations or not all(isinstance(item, str) and item for item in destinations):
         raise ValueError("destinations must be a non-empty list of airport codes")
+    itineraries = result.get("itineraries")
+    if itineraries is not None:
+        if not isinstance(itineraries, list) or not itineraries:
+            raise ValueError("itineraries must be a non-empty list")
+        for index, itinerary in enumerate(itineraries):
+            if not isinstance(itinerary, Mapping):
+                raise ValueError(f"itineraries[{index}] must be an object")
+            for leg_name in ("outbound", "return"):
+                leg = itinerary.get(leg_name)
+                if (
+                    not isinstance(leg, Mapping)
+                    or not isinstance(leg.get("origin"), str)
+                    or not leg["origin"]
+                    or not isinstance(leg.get("destination"), str)
+                    or not leg["destination"]
+                ):
+                    raise ValueError(f"itineraries[{index}].{leg_name} must have origin and destination")
     result.setdefault("daily_basic_searches", DEFAULT_DAILY_BASIC_SEARCHES)
     result.setdefault("monthly_basic_limit", DEFAULT_MONTHLY_BASIC_LIMIT)
     result.setdefault("monthly_call_limit", DEFAULT_MONTHLY_CALL_LIMIT)
@@ -80,8 +99,9 @@ def load_config(path: str | os.PathLike[str]) -> dict[str, Any]:
     ceiling = result.get("alert_price_ceiling")
     if ceiling is not None and (isinstance(ceiling, bool) or not isinstance(ceiling, (int, float)) or ceiling <= 0):
         raise ValueError("alert_price_ceiling must be a positive number or null")
-    if result["daily_basic_searches"] != len(origins) * len(destinations):
-        raise ValueError("daily_basic_searches must match origins multiplied by destinations")
+    expected_searches = len(itineraries) if itineraries is not None else len(origins) * len(destinations)
+    if result["daily_basic_searches"] != expected_searches:
+        raise ValueError("daily_basic_searches must match configured itineraries")
     if result["monthly_basic_limit"] > DEFAULT_MONTHLY_BASIC_LIMIT:
         raise ValueError("monthly_basic_limit cannot exceed 186")
     if result["monthly_call_limit"] > DEFAULT_MONTHLY_CALL_LIMIT:
@@ -92,6 +112,17 @@ def load_config(path: str | os.PathLike[str]) -> dict[str, Any]:
 
 
 def routes_from_config(config: Mapping[str, Any]) -> list[Route]:
+    itineraries = config.get("itineraries")
+    if isinstance(itineraries, list):
+        return [
+            Route(
+                str(item["outbound"]["origin"]).upper(),
+                str(item["outbound"]["destination"]).upper(),
+                str(item["return"]["origin"]).upper(),
+                str(item["return"]["destination"]).upper(),
+            )
+            for item in itineraries
+        ]
     routes: list[Route] = []
     seen: set[str] = set()
     for origin in config["origins"]:
@@ -104,7 +135,20 @@ def routes_from_config(config: Mapping[str, Any]) -> list[Route]:
 
 
 def _request(config: Mapping[str, Any], route: Route) -> SearchRequest:
-    return SearchRequest.from_config(config, departure_id=route.origin, arrival_id=route.destination)
+    return SearchRequest.from_config(
+        config,
+        departure_id=route.origin,
+        arrival_id=route.destination,
+        return_departure_id=route.return_origin,
+        return_arrival_id=route.return_destination,
+    )
+
+
+def _route_payload(route: Route) -> dict[str, Any]:
+    payload: dict[str, Any] = {"origin": route.origin, "destination": route.destination}
+    if route.return_origin and route.return_destination:
+        payload.update({"return_origin": route.return_origin, "return_destination": route.return_destination})
+    return payload
 
 
 def _canonical(value: Any) -> str:
@@ -146,12 +190,24 @@ def normalize_offer(flight: Mapping[str, Any], request: SearchRequest, route: Ro
     last_airport = segments[-1].get("arrival_airport") if segments and isinstance(segments[-1], Mapping) else None
     first_departure = first_airport.get("id") if isinstance(first_airport, Mapping) else None
     last_arrival = last_airport.get("id") if isinstance(last_airport, Mapping) else None
-    route_verified = first_departure == route.origin and last_arrival == route.destination
+    route_verified = first_departure == route.origin and last_arrival == (route.return_destination or route.destination)
+    if route.return_origin and route.return_destination:
+        endpoint_ids = {
+            airport_id
+            for segment in segments
+            for airport in (segment.get("departure_airport"), segment.get("arrival_airport"))
+            if isinstance(airport, Mapping)
+            for airport_id in (airport.get("id"),)
+            if isinstance(airport_id, str)
+        }
+        route_verified = route_verified and route.destination in endpoint_ids and route.return_origin in endpoint_ids
     complete = bool(amount is not None and segments and flight.get("segments_available") and route_verified)
     compatibility = {
         "route": route.key,
         "outbound_date": request.outbound_date,
         "return_date": request.return_date,
+        "return_origin": request.return_departure_id,
+        "return_destination": request.return_arrival_id,
         "adults": request.adults,
         "children": request.children,
         "infants_in_seat": request.infants_in_seat,
@@ -163,7 +219,7 @@ def normalize_offer(flight: Mapping[str, Any], request: SearchRequest, route: Ro
     return {
         "id": _offer_id(flight, request, route),
         "status": "complete" if complete else "pending",
-        "route": {"origin": route.origin, "destination": route.destination},
+        "route": _route_payload(route),
         "route_verified": route_verified,
         "passengers": {
             "adults": request.adults,
@@ -224,7 +280,7 @@ def _fixture_response(fixture_dir: Path, route: Route) -> Mapping[str, Any]:
 def _public_search(config: Mapping[str, Any]) -> dict[str, Any]:
     allowed = (
         "departure_date", "return_date", "origins", "destinations", "adults", "children",
-        "infants_in_seat", "infants_on_lap", "cabin", "currency", "trip_type", "payment_type",
+        "infants_in_seat", "infants_on_lap", "cabin", "currency", "trip_type", "payment_type", "itineraries",
     )
     return {key: config[key] for key in allowed if key in config}
 
@@ -265,7 +321,11 @@ def _public_history(history: Mapping[str, Any]) -> dict[str, Any]:
             ]
             lowest = min(eligible, key=lambda offer: offer["price"]["amount"]) if eligible else None
             route_data: dict[str, Any] = {
-                "route": {"origin": route.get("origin"), "destination": route.get("destination")},
+                "route": {
+                    key: route.get(key)
+                    for key in ("origin", "destination", "return_origin", "return_destination")
+                    if key in route
+                },
                 "status": result.get("status"),
                 "minimum_price": None,
             }
@@ -406,7 +466,7 @@ def run_monitor(
         def process(route: Route, request: SearchRequest, *, is_extra: bool) -> None:
             nonlocal quota_hit, success_count
             key = route.key
-            record: dict[str, Any] = {"route": {"origin": route.origin, "destination": route.destination}, "request": request.params(), "status": "failure", "offers": []}
+            record: dict[str, Any] = {"route": _route_payload(route), "request": request.params(), "status": "failure", "offers": []}
             try:
                 if dry_run:
                     response = _fixture_response(Path(fixture_dir or "tests/fixtures"), route)

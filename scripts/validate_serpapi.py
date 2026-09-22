@@ -16,7 +16,15 @@ ROOT = Path(__file__).parents[1]
 
 def main() -> int:
     config = load_config(ROOT / "config/search.json")
-    request = SearchRequest.from_config(config, departure_id="GRU", arrival_id="MCO")
+    itineraries = config.get("itineraries", [])
+    return_leg = itineraries[0]["return"] if itineraries else {}
+    request = SearchRequest.from_config(
+        config,
+        departure_id="GRU",
+        arrival_id="MCO",
+        return_departure_id=return_leg.get("origin"),
+        return_arrival_id=return_leg.get("destination"),
+    )
     result = SerpApiClient(os.environ.get("SERPAPI_API_KEY")).search(request)
     offers = []
     for flight in result.get("flights", []):
@@ -37,7 +45,7 @@ def main() -> int:
         json.dumps(
             {
                 "status": result.get("status"),
-                "route": "GRU-MCO",
+                "route": "GRU-MCO/FLL-VCP",
                 "request": request.params(),
                 "result_count": result.get("result_count"),
                 "offers": offers,

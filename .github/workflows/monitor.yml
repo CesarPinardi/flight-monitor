@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
     inputs:
       mode:
-        description: "calibration faz uma busca GRU-MCO; full executa seis rotas"
+        description: "calibration faz uma busca GRU-MCO; full executa seis itinerários"
         required: true
         default: full
         type: choice
@@ -73,7 +73,11 @@ jobs:
           fi
 
           set +e
-          PYTHONPATH=src python -m flight_monitor > monitor-result.json
+          monitor_args=()
+          if [[ "${{ github.event_name }}" == "workflow_dispatch" ]]; then
+            monitor_args+=(--force)
+          fi
+          PYTHONPATH=src python -m flight_monitor "${monitor_args[@]}" > monitor-result.json
           monitor_exit=$?
           set -e
           cat monitor-result.json

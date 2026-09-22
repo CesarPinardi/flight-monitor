@@ -23,7 +23,7 @@ Estágio 6 concluído: workflow diário, execução manual, persistência saniti
 | Passageiros | 2 adultos e 1 bebê de 1 ano no colo |
 | Cabine | Econômica |
 | Moeda | BRL |
-| Tipo | Ida e volta, somente dinheiro |
+| Tipo | Multi-cidade/open-jaw, somente dinheiro |
 | Custo | Zero |
 
 ## Estrutura
@@ -63,7 +63,7 @@ PYTHONPATH=src python -m unittest discover -s tests -v
 
 ## Processamento
 
-O comando consulta seis rotas básicas (`GRU,VCP` × `MCO,FLL,MIA`), com limite mensal de 186 chamadas básicas. Chamadas extras exigem `extra_calls_limit` positivo na configuração e `--extra-route ORIGEM:DESTINO`. O comando não agenda execução.
+O comando consulta seis itinerários multi-cidade configurados (`GRU/VCP` × `MCO/FLL/MIA`), com aeroporto de volta alternativo e limite mensal de 186 chamadas básicas. Cada itinerário pode usar companhia diferente em cada perna. Chamadas extras exigem `extra_calls_limit` positivo na configuração e `--extra-route ORIGEM:DESTINO`. O comando não agenda execução.
 
 ```bash
 # Sem chave: nunca faz chamada real. Consulta fixtures disponíveis.

@@ -23,7 +23,12 @@ function routeKey(route) {
 }
 
 function routeLabel(route) {
-  return routeKey(route).replace("-", " → ");
+  if (!route || typeof route !== "object") return "";
+  const outbound = `${route.origin || "?"} → ${route.destination || "?"}`;
+  const returnLeg = route.return_origin && route.return_destination
+    ? ` · volta ${route.return_origin} → ${route.return_destination}`
+    : "";
+  return `${outbound}${returnLeg}`;
 }
 
 function currency(value, code = "BRL") {
@@ -120,11 +125,17 @@ function renderSearch(search) {
   const passengers = [`${adults} adulto${adults === 1 ? "" : "s"}`];
   if (children) passengers.push(`${children} criança${children === 1 ? "" : "s"}`);
   if (infants) passengers.push(`${infants} bebê${infants === 1 ? "" : "s"} no colo`);
+  const itineraries = array(search?.itineraries).map((item) => {
+    const outbound = item?.outbound || {};
+    const returnLeg = item?.return || {};
+    return `${outbound.origin || "?"} → ${outbound.destination || "?"} / ${returnLeg.origin || "?"} → ${returnLeg.destination || "?"}`;
+  });
   const values = [
     ["Ida", dateOnly(search?.departure_date)],
     ["Volta", dateOnly(search?.return_date)],
     ["Origens", array(search?.origins).join(", ") || "Não informadas"],
     ["Destinos", array(search?.destinations).join(", ") || "Não informados"],
+    ...(itineraries.length ? [["Itinerários", itineraries.join("; ")]] : []),
     ["Passageiros", passengers.join(", ")],
     ["Cabine", search?.cabin === "economy" ? "Econômica" : (search?.cabin || "Não informada")],
     ["Pagamento", search?.payment_type === "cash_only" ? "Somente dinheiro" : (search?.payment_type || "Não informado")],
@@ -257,7 +268,7 @@ function renderRoutes(data) {
     const routeOffers = offers.filter((offer) => routeKey(offer.route) === key);
     const best = bestOffer(routeOffers);
     const row = document.createElement("tr");
-    addText(row, "td", key.replace("-", " → "), "route-code");
+    addText(row, "td", best ? routeLabel(best.route) : key.replace("-", " → "), "route-code");
     const status = document.createElement("td");
     status.append(statusPill(info.stale ? "stale_data" : (info.status || "unknown")));
     row.append(status);

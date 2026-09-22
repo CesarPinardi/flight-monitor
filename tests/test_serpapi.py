@@ -50,6 +50,30 @@ class SerpApiClientTests(unittest.TestCase):
         self.assertFalse(result["price_contract"]["group_total_verified"])
         self.assertTrue(result["flights"][0]["segments_available"])
 
+    def test_builds_multi_city_request_with_open_jaw_legs(self):
+        request = SearchRequest(
+            departure_id="GRU",
+            arrival_id="MCO",
+            return_departure_id="FLL",
+            return_arrival_id="VCP",
+            outbound_date="2027-03-05",
+            return_date="2027-03-14",
+            trip_type="multi_city",
+        )
+
+        params = request.params()
+
+        self.assertEqual(params["type"], "3")
+        self.assertEqual(
+            json.loads(params["multi_city_json"]),
+            [
+                {"departure_id": "GRU", "arrival_id": "MCO", "date": "2027-03-05"},
+                {"departure_id": "FLL", "arrival_id": "VCP", "date": "2027-03-14"},
+            ],
+        )
+        self.assertNotIn("outbound_date", params)
+        self.assertNotIn("return_date", params)
+
     def test_return_and_booking_calls_use_same_budget(self):
         client = self.client(budget=CallBudget(limit=2))
 

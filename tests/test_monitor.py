@@ -1,4 +1,5 @@
 import json
+from copy import deepcopy
 from datetime import datetime, timezone
 from pathlib import Path
 import tempfile
@@ -21,10 +22,40 @@ def config(**changes):
 
 
 class MonitorTests(unittest.TestCase):
+    def multi_city_fixture(self, params):
+        legs = json.loads(params["multi_city_json"])
+        payload = deepcopy(FIXTURE)
+        flight = payload["best_flights"][0]
+        outbound = flight["flights"][0]
+        outbound["departure_airport"]["id"] = legs[0]["departure_id"]
+        outbound["arrival_airport"]["id"] = legs[0]["arrival_id"]
+        return_leg = deepcopy(outbound)
+        return_leg["departure_airport"]["id"] = legs[1]["departure_id"]
+        return_leg["arrival_airport"]["id"] = legs[1]["arrival_id"]
+        flight["flights"] = [outbound, return_leg]
+        flight["type"] = "Multi-city"
+        flight["total_duration"] = outbound["duration"] + return_leg["duration"]
+        return payload
+
     def all_fixtures(self, directory: Path) -> None:
         for origin in CONFIG["origins"]:
             for destination in CONFIG["destinations"]:
-                (directory / f"google_flights_{origin.lower()}_{destination.lower()}.json").write_text(json.dumps(FIXTURE))
+                route = next(
+                    item for item in CONFIG["itineraries"]
+                    if item["outbound"] == {"origin": origin, "destination": destination}
+                )
+                payload = deepcopy(FIXTURE)
+                flight = payload["best_flights"][0]
+                outbound = flight["flights"][0]
+                outbound["departure_airport"]["id"] = origin
+                outbound["arrival_airport"]["id"] = destination
+                return_leg = deepcopy(outbound)
+                return_leg["departure_airport"]["id"] = route["return"]["origin"]
+                return_leg["arrival_airport"]["id"] = route["return"]["destination"]
+                flight["flights"] = [outbound, return_leg]
+                flight["type"] = "Multi-city"
+                flight["total_duration"] = outbound["duration"] + return_leg["duration"]
+                (directory / f"google_flights_{origin.lower()}_{destination.lower()}.json").write_text(json.dumps(payload))
 
     def test_dry_run_reads_six_fixtures_and_writes_versioned_public_json(self):
         with tempfile.TemporaryDirectory() as root:
@@ -43,6 +74,10 @@ class MonitorTests(unittest.TestCase):
             self.assertEqual(len(public["history"]["entries"][0]["routes"]), 6)
             self.assertTrue(public["offers"][0]["id"].startswith("offer-"))
             self.assertFalse(public["offers"][0]["baggage"]["included"])
+            self.assertEqual(
+                public["offers"][0]["route"],
+                {"origin": "GRU", "destination": "MCO", "return_origin": "FLL", "return_destination": "VCP"},
+            )
             self.assertEqual(public["offers"][0]["price"]["amount"], 6225)
             self.assertIn("passageiro pagante", public["disclaimer"])
             self.assertEqual(public["offers"][0]["price"]["interpretation"], "provider_value_scope_unknown")
@@ -65,7 +100,10 @@ class MonitorTests(unittest.TestCase):
             self.assertEqual(route["status"], "stale_data")
             self.assertTrue(route["last_valid_offers"])
             public = json.loads((data_dir / "public/data.json").read_text())
-            stale = [item for item in public["offers"] if item["route"] == {"origin": "VCP", "destination": "MIA"}]
+            stale = [
+                item for item in public["offers"]
+                if item["route"].get("origin") == "VCP" and item["route"].get("destination") == "MIA"
+            ]
             self.assertTrue(stale and stale[0]["stale"])
 
     def test_monthly_budget_stops_after_limit_and_marks_quota(self):
@@ -108,7 +146,7 @@ class MonitorTests(unittest.TestCase):
                 dry_run=False,
                 fixture_dir=fixtures,
                 api_key="serp-test",
-                transport=lambda params: FIXTURE,
+                transport=self.multi_city_fixture,
                 telegram_token="telegram-secret",
                 telegram_chat_id="chat-123",
                 telegram_transport=telegram_transport,
