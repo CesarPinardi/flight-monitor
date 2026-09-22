@@ -1,4 +1,4 @@
-const DATA_URLS = ["../data/public/data.json", "data/public/data.json"];
+const DATA_URLS = ["data.json", "../data/public/data.json", "data/public/data.json"];
 const state = { data: null };
 
 const $ = (id) => document.getElementById(id);
