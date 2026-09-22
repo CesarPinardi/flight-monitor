@@ -50,30 +50,30 @@
         "alerted": false
       }
     },
-    "last_evaluated_at_utc": "2026-09-22T19:44:45Z",
+    "last_evaluated_at_utc": "2026-09-22T20:09:23Z",
     "schema_version": 1,
     "sent": {}
   },
   "budget": {
     "basic_limit": 186,
-    "basic_used": 6,
+    "basic_used": 12,
     "extra_limit": 0,
     "extra_used": 0,
     "month": "2026-09",
     "monthly_call_limit": 250,
-    "remaining": 180,
+    "remaining": 174,
     "total_limit": 186
   },
-  "last_run_at_utc": "2026-09-22T19:44:45Z",
-  "last_run_id": "run-d55ee0a41703829d67f3",
+  "last_run_at_utc": "2026-09-22T20:09:23Z",
+  "last_run_id": "run-6045992ffc91fa3471af",
   "last_run_local_date": "2026-09-22",
   "month": "2026-09",
   "routes": {
     "GRU-FLL": {
-      "last_attempt_at_utc": "2026-09-22T19:44:45Z",
+      "last_attempt_at_utc": "2026-09-22T20:09:23Z",
       "last_error": null,
       "last_result_status": "success",
-      "last_success_at_utc": "2026-09-22T19:44:45Z",
+      "last_success_at_utc": "2026-09-22T20:09:23Z",
       "last_valid_offers": [
         {
           "baggage": {
@@ -81,10 +81,10 @@
             "included": false,
             "status": "unknown"
           },
-          "comparison_eligible": true,
-          "compatibility_key": "a48845b9d39d2440265c",
+          "comparison_eligible": false,
+          "compatibility_key": "2c003e6373990d3fe7cb",
           "currency": "BRL",
-          "id": "offer-4b41edfca04374acf02e",
+          "id": "offer-851c43138a8ba9a6d98c",
           "itinerary": {
             "segments": [
               {
@@ -124,12 +124,12 @@
             ],
             "stops": 1,
             "total_duration_minutes": 740,
-            "type": "round_trip"
+            "type": "multi_city"
           },
           "links": {
-            "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDR1JVcgcIARIDRkxMGh4SCjIwMjctMDMtMTRqBwgBEgNGTExyBwgBEgNHUlVAAUABQANIAXABmAEB&tfu=EgIIAQ"
+            "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDR1JVcgcIARIDRkxMGh4SCjIwMjctMDMtMTRqBwgBEgNNSUFyBwgBEgNWQ1BAAUABQANIAXABmAED&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T19:44:45Z",
+          "observed_at_utc": "2026-09-22T20:09:23Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -137,7 +137,7 @@
             "infants_on_lap": 1
           },
           "price": {
-            "amount": 3815.5,
+            "amount": 4950.5,
             "currency": "BRL",
             "includes_infants_on_lap": null,
             "includes_taxes": null,
@@ -147,11 +147,13 @@
           "provider": "serpapi",
           "route": {
             "destination": "FLL",
-            "origin": "GRU"
+            "origin": "GRU",
+            "return_destination": "VCP",
+            "return_origin": "MIA"
           },
-          "route_verified": true,
+          "route_verified": false,
           "source": "best_flights",
-          "status": "complete"
+          "status": "pending"
         },
         {
           "baggage": {
@@ -159,10 +161,10 @@
             "included": false,
             "status": "unknown"
           },
-          "comparison_eligible": true,
-          "compatibility_key": "a48845b9d39d2440265c",
+          "comparison_eligible": false,
+          "compatibility_key": "2c003e6373990d3fe7cb",
           "currency": "BRL",
-          "id": "offer-85cfac1b2b14db14a6f1",
+          "id": "offer-6f0ca77cf31781f37a68",
           "itinerary": {
             "segments": [
               {
@@ -202,12 +204,12 @@
             ],
             "stops": 1,
             "total_duration_minutes": 700,
-            "type": "round_trip"
+            "type": "multi_city"
           },
           "links": {
-            "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDR1JVcgcIARIDRkxMGh4SCjIwMjctMDMtMTRqBwgBEgNGTExyBwgBEgNHUlVAAUABQANIAXABmAEB&tfu=EgIIAQ"
+            "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDR1JVcgcIARIDRkxMGh4SCjIwMjctMDMtMTRqBwgBEgNNSUFyBwgBEgNWQ1BAAUABQANIAXABmAED&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T19:44:45Z",
+          "observed_at_utc": "2026-09-22T20:09:23Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -215,7 +217,7 @@
             "infants_on_lap": 1
           },
           "price": {
-            "amount": 3815.5,
+            "amount": 4950.5,
             "currency": "BRL",
             "includes_infants_on_lap": null,
             "includes_taxes": null,
@@ -225,11 +227,13 @@
           "provider": "serpapi",
           "route": {
             "destination": "FLL",
-            "origin": "GRU"
+            "origin": "GRU",
+            "return_destination": "VCP",
+            "return_origin": "MIA"
           },
-          "route_verified": true,
+          "route_verified": false,
           "source": "best_flights",
-          "status": "complete"
+          "status": "pending"
         },
         {
           "baggage": {
@@ -237,400 +241,10 @@
             "included": false,
             "status": "unknown"
           },
-          "comparison_eligible": true,
-          "compatibility_key": "a48845b9d39d2440265c",
+          "comparison_eligible": false,
+          "compatibility_key": "2c003e6373990d3fe7cb",
           "currency": "BRL",
-          "id": "offer-cc04aed903bc1ab041b8",
-          "itinerary": {
-            "segments": [
-              {
-                "airline": "COPA",
-                "arrival_airport": {
-                  "id": "PTY",
-                  "name": "Aeroporto Internacional Tocumen",
-                  "time": "2027-03-05 08:05"
-                },
-                "available": true,
-                "departure_airport": {
-                  "id": "GRU",
-                  "name": "Aeroporto Internacional de São Paulo/Guarulhos–Governador André Franco Montoro",
-                  "time": "2027-03-05 03:10"
-                },
-                "duration_minutes": 415,
-                "flight_number": "CM 702",
-                "travel_class": "Economy"
-              },
-              {
-                "airline": "COPA",
-                "arrival_airport": {
-                  "id": "FLL",
-                  "name": "Aeroporto Internacional de Fort Lauderdale-Hollywood",
-                  "time": "2027-03-05 12:31"
-                },
-                "available": true,
-                "departure_airport": {
-                  "id": "PTY",
-                  "name": "Aeroporto Internacional Tocumen",
-                  "time": "2027-03-05 09:14"
-                },
-                "duration_minutes": 197,
-                "flight_number": "CM 265",
-                "travel_class": "Economy"
-              }
-            ],
-            "stops": 1,
-            "total_duration_minutes": 681,
-            "type": "round_trip"
-          },
-          "links": {
-            "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDR1JVcgcIARIDRkxMGh4SCjIwMjctMDMtMTRqBwgBEgNGTExyBwgBEgNHUlVAAUABQANIAXABmAEB&tfu=EgIIAQ"
-          },
-          "observed_at_utc": "2026-09-22T19:44:45Z",
-          "passengers": {
-            "adults": 2,
-            "children": 0,
-            "infants_in_seat": 0,
-            "infants_on_lap": 1
-          },
-          "price": {
-            "amount": 4008.5,
-            "currency": "BRL",
-            "includes_infants_on_lap": null,
-            "includes_taxes": null,
-            "interpretation": "provider_value_scope_unknown",
-            "scope": "unknown"
-          },
-          "provider": "serpapi",
-          "route": {
-            "destination": "FLL",
-            "origin": "GRU"
-          },
-          "route_verified": true,
-          "source": "best_flights",
-          "status": "complete"
-        },
-        {
-          "baggage": {
-            "counted_in_price": false,
-            "included": false,
-            "status": "unknown"
-          },
-          "comparison_eligible": true,
-          "compatibility_key": "a48845b9d39d2440265c",
-          "currency": "BRL",
-          "id": "offer-b5bcb0da6fe42991a077",
-          "itinerary": {
-            "segments": [
-              {
-                "airline": "Avianca",
-                "arrival_airport": {
-                  "id": "BOG",
-                  "name": "El Dorado International Airport",
-                  "time": "2027-03-05 21:30"
-                },
-                "available": true,
-                "departure_airport": {
-                  "id": "GRU",
-                  "name": "Aeroporto Internacional de São Paulo/Guarulhos–Governador André Franco Montoro",
-                  "time": "2027-03-05 17:25"
-                },
-                "duration_minutes": 365,
-                "flight_number": "AV 184",
-                "travel_class": "Economy"
-              },
-              {
-                "airline": "Avianca",
-                "arrival_airport": {
-                  "id": "FLL",
-                  "name": "Aeroporto Internacional de Fort Lauderdale-Hollywood",
-                  "time": "2027-03-06 12:45"
-                },
-                "available": true,
-                "departure_airport": {
-                  "id": "BOG",
-                  "name": "El Dorado International Airport",
-                  "time": "2027-03-06 08:50"
-                },
-                "duration_minutes": 235,
-                "flight_number": "AV 36",
-                "travel_class": "Economy"
-              }
-            ],
-            "stops": 1,
-            "total_duration_minutes": 1280,
-            "type": "round_trip"
-          },
-          "links": {
-            "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDR1JVcgcIARIDRkxMGh4SCjIwMjctMDMtMTRqBwgBEgNGTExyBwgBEgNHUlVAAUABQANIAXABmAEB&tfu=EgIIAQ"
-          },
-          "observed_at_utc": "2026-09-22T19:44:45Z",
-          "passengers": {
-            "adults": 2,
-            "children": 0,
-            "infants_in_seat": 0,
-            "infants_on_lap": 1
-          },
-          "price": {
-            "amount": 3815.5,
-            "currency": "BRL",
-            "includes_infants_on_lap": null,
-            "includes_taxes": null,
-            "interpretation": "provider_value_scope_unknown",
-            "scope": "unknown"
-          },
-          "provider": "serpapi",
-          "route": {
-            "destination": "FLL",
-            "origin": "GRU"
-          },
-          "route_verified": true,
-          "source": "other_flights",
-          "status": "complete"
-        },
-        {
-          "baggage": {
-            "counted_in_price": false,
-            "included": false,
-            "status": "unknown"
-          },
-          "comparison_eligible": true,
-          "compatibility_key": "a48845b9d39d2440265c",
-          "currency": "BRL",
-          "id": "offer-e6832db0b1a84bdf4b3e",
-          "itinerary": {
-            "segments": [
-              {
-                "airline": "COPA",
-                "arrival_airport": {
-                  "id": "PTY",
-                  "name": "Aeroporto Internacional Tocumen",
-                  "time": "2027-03-06 04:31"
-                },
-                "available": true,
-                "departure_airport": {
-                  "id": "GRU",
-                  "name": "Aeroporto Internacional de São Paulo/Guarulhos–Governador André Franco Montoro",
-                  "time": "2027-03-05 23:45"
-                },
-                "duration_minutes": 406,
-                "flight_number": "CM 841",
-                "travel_class": "Economy"
-              },
-              {
-                "airline": "COPA",
-                "arrival_airport": {
-                  "id": "FLL",
-                  "name": "Aeroporto Internacional de Fort Lauderdale-Hollywood",
-                  "time": "2027-03-06 12:31"
-                },
-                "available": true,
-                "departure_airport": {
-                  "id": "PTY",
-                  "name": "Aeroporto Internacional Tocumen",
-                  "time": "2027-03-06 09:14"
-                },
-                "duration_minutes": 197,
-                "flight_number": "CM 265",
-                "travel_class": "Economy"
-              }
-            ],
-            "stops": 1,
-            "total_duration_minutes": 886,
-            "type": "round_trip"
-          },
-          "links": {
-            "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDR1JVcgcIARIDRkxMGh4SCjIwMjctMDMtMTRqBwgBEgNGTExyBwgBEgNHUlVAAUABQANIAXABmAEB&tfu=EgIIAQ"
-          },
-          "observed_at_utc": "2026-09-22T19:44:45Z",
-          "passengers": {
-            "adults": 2,
-            "children": 0,
-            "infants_in_seat": 0,
-            "infants_on_lap": 1
-          },
-          "price": {
-            "amount": 4008.5,
-            "currency": "BRL",
-            "includes_infants_on_lap": null,
-            "includes_taxes": null,
-            "interpretation": "provider_value_scope_unknown",
-            "scope": "unknown"
-          },
-          "provider": "serpapi",
-          "route": {
-            "destination": "FLL",
-            "origin": "GRU"
-          },
-          "route_verified": true,
-          "source": "other_flights",
-          "status": "complete"
-        },
-        {
-          "baggage": {
-            "counted_in_price": false,
-            "included": false,
-            "status": "unknown"
-          },
-          "comparison_eligible": true,
-          "compatibility_key": "a48845b9d39d2440265c",
-          "currency": "BRL",
-          "id": "offer-7946d5027eb775989ce2",
-          "itinerary": {
-            "segments": [
-              {
-                "airline": "Air Canada",
-                "arrival_airport": {
-                  "id": "YUL",
-                  "name": "Aeroporto Internacional Pierre Elliott Trudeau",
-                  "time": "2027-03-06 06:10"
-                },
-                "available": true,
-                "departure_airport": {
-                  "id": "GRU",
-                  "name": "Aeroporto Internacional de São Paulo/Guarulhos–Governador André Franco Montoro",
-                  "time": "2027-03-05 21:45"
-                },
-                "duration_minutes": 625,
-                "flight_number": "AC 97",
-                "travel_class": "Economy"
-              },
-              {
-                "airline": "Air Canada",
-                "arrival_airport": {
-                  "id": "FLL",
-                  "name": "Aeroporto Internacional de Fort Lauderdale-Hollywood",
-                  "time": "2027-03-06 12:16"
-                },
-                "available": true,
-                "departure_airport": {
-                  "id": "YUL",
-                  "name": "Aeroporto Internacional Pierre Elliott Trudeau",
-                  "time": "2027-03-06 08:30"
-                },
-                "duration_minutes": 226,
-                "flight_number": "AC 1002",
-                "travel_class": "Economy"
-              }
-            ],
-            "stops": 1,
-            "total_duration_minutes": 991,
-            "type": "round_trip"
-          },
-          "links": {
-            "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDR1JVcgcIARIDRkxMGh4SCjIwMjctMDMtMTRqBwgBEgNGTExyBwgBEgNHUlVAAUABQANIAXABmAEB&tfu=EgIIAQ"
-          },
-          "observed_at_utc": "2026-09-22T19:44:45Z",
-          "passengers": {
-            "adults": 2,
-            "children": 0,
-            "infants_in_seat": 0,
-            "infants_on_lap": 1
-          },
-          "price": {
-            "amount": 5092,
-            "currency": "BRL",
-            "includes_infants_on_lap": null,
-            "includes_taxes": null,
-            "interpretation": "provider_value_scope_unknown",
-            "scope": "unknown"
-          },
-          "provider": "serpapi",
-          "route": {
-            "destination": "FLL",
-            "origin": "GRU"
-          },
-          "route_verified": true,
-          "source": "other_flights",
-          "status": "complete"
-        },
-        {
-          "baggage": {
-            "counted_in_price": false,
-            "included": false,
-            "status": "unknown"
-          },
-          "comparison_eligible": true,
-          "compatibility_key": "a48845b9d39d2440265c",
-          "currency": "BRL",
-          "id": "offer-8b135ded7ec0e4c85ac3",
-          "itinerary": {
-            "segments": [
-              {
-                "airline": "United",
-                "arrival_airport": {
-                  "id": "IAD",
-                  "name": "Aeroporto Internacional Washington Dulles",
-                  "time": "2027-03-06 06:30"
-                },
-                "available": true,
-                "departure_airport": {
-                  "id": "GRU",
-                  "name": "Aeroporto Internacional de São Paulo/Guarulhos–Governador André Franco Montoro",
-                  "time": "2027-03-05 22:25"
-                },
-                "duration_minutes": 605,
-                "flight_number": "UA 860",
-                "travel_class": "Economy"
-              },
-              {
-                "airline": "United",
-                "arrival_airport": {
-                  "id": "FLL",
-                  "name": "Aeroporto Internacional de Fort Lauderdale-Hollywood",
-                  "time": "2027-03-06 10:48"
-                },
-                "available": true,
-                "departure_airport": {
-                  "id": "IAD",
-                  "name": "Aeroporto Internacional Washington Dulles",
-                  "time": "2027-03-06 08:15"
-                },
-                "duration_minutes": 153,
-                "flight_number": "UA 1825",
-                "travel_class": "Economy"
-              }
-            ],
-            "stops": 1,
-            "total_duration_minutes": 863,
-            "type": "round_trip"
-          },
-          "links": {
-            "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDR1JVcgcIARIDRkxMGh4SCjIwMjctMDMtMTRqBwgBEgNGTExyBwgBEgNHUlVAAUABQANIAXABmAEB&tfu=EgIIAQ"
-          },
-          "observed_at_utc": "2026-09-22T19:44:45Z",
-          "passengers": {
-            "adults": 2,
-            "children": 0,
-            "infants_in_seat": 0,
-            "infants_on_lap": 1
-          },
-          "price": {
-            "amount": 5131,
-            "currency": "BRL",
-            "includes_infants_on_lap": null,
-            "includes_taxes": null,
-            "interpretation": "provider_value_scope_unknown",
-            "scope": "unknown"
-          },
-          "provider": "serpapi",
-          "route": {
-            "destination": "FLL",
-            "origin": "GRU"
-          },
-          "route_verified": true,
-          "source": "other_flights",
-          "status": "complete"
-        },
-        {
-          "baggage": {
-            "counted_in_price": false,
-            "included": false,
-            "status": "unknown"
-          },
-          "comparison_eligible": true,
-          "compatibility_key": "a48845b9d39d2440265c",
-          "currency": "BRL",
-          "id": "offer-57833d498a33744910e0",
+          "id": "offer-0349a42be55d37e92731",
           "itinerary": {
             "segments": [
               {
@@ -670,12 +284,12 @@
             ],
             "stops": 1,
             "total_duration_minutes": 990,
-            "type": "round_trip"
+            "type": "multi_city"
           },
           "links": {
-            "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDR1JVcgcIARIDRkxMGh4SCjIwMjctMDMtMTRqBwgBEgNGTExyBwgBEgNHUlVAAUABQANIAXABmAEB&tfu=EgIIAQ"
+            "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDR1JVcgcIARIDRkxMGh4SCjIwMjctMDMtMTRqBwgBEgNNSUFyBwgBEgNWQ1BAAUABQANIAXABmAED&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T19:44:45Z",
+          "observed_at_utc": "2026-09-22T20:09:23Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -683,7 +297,7 @@
             "infants_on_lap": 1
           },
           "price": {
-            "amount": 5379,
+            "amount": 5210.5,
             "currency": "BRL",
             "includes_infants_on_lap": null,
             "includes_taxes": null,
@@ -693,11 +307,13 @@
           "provider": "serpapi",
           "route": {
             "destination": "FLL",
-            "origin": "GRU"
+            "origin": "GRU",
+            "return_destination": "VCP",
+            "return_origin": "MIA"
           },
-          "route_verified": true,
-          "source": "other_flights",
-          "status": "complete"
+          "route_verified": false,
+          "source": "best_flights",
+          "status": "pending"
         },
         {
           "baggage": {
@@ -705,10 +321,427 @@
             "included": false,
             "status": "unknown"
           },
-          "comparison_eligible": true,
-          "compatibility_key": "a48845b9d39d2440265c",
+          "comparison_eligible": false,
+          "compatibility_key": "2c003e6373990d3fe7cb",
           "currency": "BRL",
-          "id": "offer-176dbcc14de1b3c299da",
+          "id": "offer-85b5c16caf979ca495e5",
+          "itinerary": {
+            "segments": [
+              {
+                "airline": "American",
+                "arrival_airport": {
+                  "id": "JFK",
+                  "name": "Aeroporto Internacional John F. Kennedy",
+                  "time": "2027-03-06 07:05"
+                },
+                "available": true,
+                "departure_airport": {
+                  "id": "GRU",
+                  "name": "Aeroporto Internacional de São Paulo/Guarulhos–Governador André Franco Montoro",
+                  "time": "2027-03-05 23:15"
+                },
+                "duration_minutes": 590,
+                "flight_number": "AA 950",
+                "travel_class": "Economy"
+              },
+              {
+                "airline": "American",
+                "arrival_airport": {
+                  "id": "CLT",
+                  "name": "Aeroporto Internacional de Charlotte/Douglas",
+                  "time": "2027-03-06 13:03"
+                },
+                "available": true,
+                "departure_airport": {
+                  "id": "JFK",
+                  "name": "Aeroporto Internacional John F. Kennedy",
+                  "time": "2027-03-06 11:00"
+                },
+                "duration_minutes": 123,
+                "flight_number": "AA 3199",
+                "travel_class": "Economy"
+              },
+              {
+                "airline": "American",
+                "arrival_airport": {
+                  "id": "FLL",
+                  "name": "Aeroporto Internacional de Fort Lauderdale-Hollywood",
+                  "time": "2027-03-06 16:56"
+                },
+                "available": true,
+                "departure_airport": {
+                  "id": "CLT",
+                  "name": "Aeroporto Internacional de Charlotte/Douglas",
+                  "time": "2027-03-06 14:51"
+                },
+                "duration_minutes": 125,
+                "flight_number": "AA 2870",
+                "travel_class": "Economy"
+              }
+            ],
+            "stops": 2,
+            "total_duration_minutes": 1181,
+            "type": "multi_city"
+          },
+          "links": {
+            "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDR1JVcgcIARIDRkxMGh4SCjIwMjctMDMtMTRqBwgBEgNNSUFyBwgBEgNWQ1BAAUABQANIAXABmAED&tfu=EgIIAQ"
+          },
+          "observed_at_utc": "2026-09-22T20:09:23Z",
+          "passengers": {
+            "adults": 2,
+            "children": 0,
+            "infants_in_seat": 0,
+            "infants_on_lap": 1
+          },
+          "price": {
+            "amount": 5333.0,
+            "currency": "BRL",
+            "includes_infants_on_lap": null,
+            "includes_taxes": null,
+            "interpretation": "provider_value_scope_unknown",
+            "scope": "unknown"
+          },
+          "provider": "serpapi",
+          "route": {
+            "destination": "FLL",
+            "origin": "GRU",
+            "return_destination": "VCP",
+            "return_origin": "MIA"
+          },
+          "route_verified": false,
+          "source": "best_flights",
+          "status": "pending"
+        },
+        {
+          "baggage": {
+            "counted_in_price": false,
+            "included": false,
+            "status": "unknown"
+          },
+          "comparison_eligible": false,
+          "compatibility_key": "2c003e6373990d3fe7cb",
+          "currency": "BRL",
+          "id": "offer-bcbab205ec009077e8ee",
+          "itinerary": {
+            "segments": [
+              {
+                "airline": "Air Canada",
+                "arrival_airport": {
+                  "id": "YUL",
+                  "name": "Aeroporto Internacional Pierre Elliott Trudeau",
+                  "time": "2027-03-06 06:10"
+                },
+                "available": true,
+                "departure_airport": {
+                  "id": "GRU",
+                  "name": "Aeroporto Internacional de São Paulo/Guarulhos–Governador André Franco Montoro",
+                  "time": "2027-03-05 21:45"
+                },
+                "duration_minutes": 625,
+                "flight_number": "AC 97",
+                "travel_class": "Economy"
+              },
+              {
+                "airline": "Air Canada",
+                "arrival_airport": {
+                  "id": "FLL",
+                  "name": "Aeroporto Internacional de Fort Lauderdale-Hollywood",
+                  "time": "2027-03-06 12:16"
+                },
+                "available": true,
+                "departure_airport": {
+                  "id": "YUL",
+                  "name": "Aeroporto Internacional Pierre Elliott Trudeau",
+                  "time": "2027-03-06 08:30"
+                },
+                "duration_minutes": 226,
+                "flight_number": "AC 1002",
+                "travel_class": "Economy"
+              }
+            ],
+            "stops": 1,
+            "total_duration_minutes": 991,
+            "type": "multi_city"
+          },
+          "links": {
+            "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDR1JVcgcIARIDRkxMGh4SCjIwMjctMDMtMTRqBwgBEgNNSUFyBwgBEgNWQ1BAAUABQANIAXABmAED&tfu=EgIIAQ"
+          },
+          "observed_at_utc": "2026-09-22T20:09:23Z",
+          "passengers": {
+            "adults": 2,
+            "children": 0,
+            "infants_in_seat": 0,
+            "infants_on_lap": 1
+          },
+          "price": {
+            "amount": 5944.5,
+            "currency": "BRL",
+            "includes_infants_on_lap": null,
+            "includes_taxes": null,
+            "interpretation": "provider_value_scope_unknown",
+            "scope": "unknown"
+          },
+          "provider": "serpapi",
+          "route": {
+            "destination": "FLL",
+            "origin": "GRU",
+            "return_destination": "VCP",
+            "return_origin": "MIA"
+          },
+          "route_verified": false,
+          "source": "best_flights",
+          "status": "pending"
+        },
+        {
+          "baggage": {
+            "counted_in_price": false,
+            "included": false,
+            "status": "unknown"
+          },
+          "comparison_eligible": false,
+          "compatibility_key": "2c003e6373990d3fe7cb",
+          "currency": "BRL",
+          "id": "offer-f9a8be1ccf56384c1ddb",
+          "itinerary": {
+            "segments": [
+              {
+                "airline": "Avianca",
+                "arrival_airport": {
+                  "id": "BOG",
+                  "name": "El Dorado International Airport",
+                  "time": "2027-03-05 21:30"
+                },
+                "available": true,
+                "departure_airport": {
+                  "id": "GRU",
+                  "name": "Aeroporto Internacional de São Paulo/Guarulhos–Governador André Franco Montoro",
+                  "time": "2027-03-05 17:25"
+                },
+                "duration_minutes": 365,
+                "flight_number": "AV 184",
+                "travel_class": "Economy"
+              },
+              {
+                "airline": "Avianca",
+                "arrival_airport": {
+                  "id": "FLL",
+                  "name": "Aeroporto Internacional de Fort Lauderdale-Hollywood",
+                  "time": "2027-03-06 17:35"
+                },
+                "available": true,
+                "departure_airport": {
+                  "id": "BOG",
+                  "name": "El Dorado International Airport",
+                  "time": "2027-03-06 13:40"
+                },
+                "duration_minutes": 235,
+                "flight_number": "AV 66",
+                "travel_class": "Economy"
+              }
+            ],
+            "stops": 1,
+            "total_duration_minutes": 1570,
+            "type": "multi_city"
+          },
+          "links": {
+            "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDR1JVcgcIARIDRkxMGh4SCjIwMjctMDMtMTRqBwgBEgNNSUFyBwgBEgNWQ1BAAUABQANIAXABmAED&tfu=EgIIAQ"
+          },
+          "observed_at_utc": "2026-09-22T20:09:23Z",
+          "passengers": {
+            "adults": 2,
+            "children": 0,
+            "infants_in_seat": 0,
+            "infants_on_lap": 1
+          },
+          "price": {
+            "amount": 4950.5,
+            "currency": "BRL",
+            "includes_infants_on_lap": null,
+            "includes_taxes": null,
+            "interpretation": "provider_value_scope_unknown",
+            "scope": "unknown"
+          },
+          "provider": "serpapi",
+          "route": {
+            "destination": "FLL",
+            "origin": "GRU",
+            "return_destination": "VCP",
+            "return_origin": "MIA"
+          },
+          "route_verified": false,
+          "source": "other_flights",
+          "status": "pending"
+        },
+        {
+          "baggage": {
+            "counted_in_price": false,
+            "included": false,
+            "status": "unknown"
+          },
+          "comparison_eligible": false,
+          "compatibility_key": "2c003e6373990d3fe7cb",
+          "currency": "BRL",
+          "id": "offer-3ae437ee729ee1bcc162",
+          "itinerary": {
+            "segments": [
+              {
+                "airline": "Avianca",
+                "arrival_airport": {
+                  "id": "BOG",
+                  "name": "El Dorado International Airport",
+                  "time": "2027-03-05 21:30"
+                },
+                "available": true,
+                "departure_airport": {
+                  "id": "GRU",
+                  "name": "Aeroporto Internacional de São Paulo/Guarulhos–Governador André Franco Montoro",
+                  "time": "2027-03-05 17:25"
+                },
+                "duration_minutes": 365,
+                "flight_number": "AV 184",
+                "travel_class": "Economy"
+              },
+              {
+                "airline": "Avianca",
+                "arrival_airport": {
+                  "id": "FLL",
+                  "name": "Aeroporto Internacional de Fort Lauderdale-Hollywood",
+                  "time": "2027-03-06 12:45"
+                },
+                "available": true,
+                "departure_airport": {
+                  "id": "BOG",
+                  "name": "El Dorado International Airport",
+                  "time": "2027-03-06 08:50"
+                },
+                "duration_minutes": 235,
+                "flight_number": "AV 36",
+                "travel_class": "Economy"
+              }
+            ],
+            "stops": 1,
+            "total_duration_minutes": 1280,
+            "type": "multi_city"
+          },
+          "links": {
+            "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDR1JVcgcIARIDRkxMGh4SCjIwMjctMDMtMTRqBwgBEgNNSUFyBwgBEgNWQ1BAAUABQANIAXABmAED&tfu=EgIIAQ"
+          },
+          "observed_at_utc": "2026-09-22T20:09:23Z",
+          "passengers": {
+            "adults": 2,
+            "children": 0,
+            "infants_in_seat": 0,
+            "infants_on_lap": 1
+          },
+          "price": {
+            "amount": 5019.5,
+            "currency": "BRL",
+            "includes_infants_on_lap": null,
+            "includes_taxes": null,
+            "interpretation": "provider_value_scope_unknown",
+            "scope": "unknown"
+          },
+          "provider": "serpapi",
+          "route": {
+            "destination": "FLL",
+            "origin": "GRU",
+            "return_destination": "VCP",
+            "return_origin": "MIA"
+          },
+          "route_verified": false,
+          "source": "other_flights",
+          "status": "pending"
+        },
+        {
+          "baggage": {
+            "counted_in_price": false,
+            "included": false,
+            "status": "unknown"
+          },
+          "comparison_eligible": false,
+          "compatibility_key": "2c003e6373990d3fe7cb",
+          "currency": "BRL",
+          "id": "offer-16ac70b35e5cf1809523",
+          "itinerary": {
+            "segments": [
+              {
+                "airline": "American",
+                "arrival_airport": {
+                  "id": "JFK",
+                  "name": "Aeroporto Internacional John F. Kennedy",
+                  "time": "2027-03-06 07:05"
+                },
+                "available": true,
+                "departure_airport": {
+                  "id": "GRU",
+                  "name": "Aeroporto Internacional de São Paulo/Guarulhos–Governador André Franco Montoro",
+                  "time": "2027-03-05 23:15"
+                },
+                "duration_minutes": 590,
+                "flight_number": "AA 950",
+                "travel_class": "Economy"
+              },
+              {
+                "airline": "American",
+                "arrival_airport": {
+                  "id": "FLL",
+                  "name": "Aeroporto Internacional de Fort Lauderdale-Hollywood",
+                  "time": "2027-03-06 17:06"
+                },
+                "available": true,
+                "departure_airport": {
+                  "id": "LGA",
+                  "name": "Aeroporto de LaGuardia",
+                  "time": "2027-03-06 13:55"
+                },
+                "duration_minutes": 191,
+                "flight_number": "AA 1395",
+                "travel_class": "Economy"
+              }
+            ],
+            "stops": 1,
+            "total_duration_minutes": 1191,
+            "type": "multi_city"
+          },
+          "links": {
+            "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDR1JVcgcIARIDRkxMGh4SCjIwMjctMDMtMTRqBwgBEgNNSUFyBwgBEgNWQ1BAAUABQANIAXABmAED&tfu=EgIIAQ"
+          },
+          "observed_at_utc": "2026-09-22T20:09:23Z",
+          "passengers": {
+            "adults": 2,
+            "children": 0,
+            "infants_in_seat": 0,
+            "infants_on_lap": 1
+          },
+          "price": {
+            "amount": 5698.5,
+            "currency": "BRL",
+            "includes_infants_on_lap": null,
+            "includes_taxes": null,
+            "interpretation": "provider_value_scope_unknown",
+            "scope": "unknown"
+          },
+          "provider": "serpapi",
+          "route": {
+            "destination": "FLL",
+            "origin": "GRU",
+            "return_destination": "VCP",
+            "return_origin": "MIA"
+          },
+          "route_verified": false,
+          "source": "other_flights",
+          "status": "pending"
+        },
+        {
+          "baggage": {
+            "counted_in_price": false,
+            "included": false,
+            "status": "unknown"
+          },
+          "comparison_eligible": false,
+          "compatibility_key": "2c003e6373990d3fe7cb",
+          "currency": "BRL",
+          "id": "offer-681229226155632b8ece",
           "itinerary": {
             "segments": [
               {
@@ -748,12 +781,12 @@
             ],
             "stops": 1,
             "total_duration_minutes": 827,
-            "type": "round_trip"
+            "type": "multi_city"
           },
           "links": {
-            "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDR1JVcgcIARIDRkxMGh4SCjIwMjctMDMtMTRqBwgBEgNGTExyBwgBEgNHUlVAAUABQANIAXABmAEB&tfu=EgIIAQ"
+            "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDR1JVcgcIARIDRkxMGh4SCjIwMjctMDMtMTRqBwgBEgNNSUFyBwgBEgNWQ1BAAUABQANIAXABmAED&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T19:44:45Z",
+          "observed_at_utc": "2026-09-22T20:09:23Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -761,7 +794,7 @@
             "infants_on_lap": 1
           },
           "price": {
-            "amount": 6971.5,
+            "amount": 10331.0,
             "currency": "BRL",
             "includes_infants_on_lap": null,
             "includes_taxes": null,
@@ -771,99 +804,13 @@
           "provider": "serpapi",
           "route": {
             "destination": "FLL",
-            "origin": "GRU"
+            "origin": "GRU",
+            "return_destination": "VCP",
+            "return_origin": "MIA"
           },
-          "route_verified": true,
+          "route_verified": false,
           "source": "other_flights",
-          "status": "complete"
-        }
-      ],
-      "last_valid_run_id": "run-d55ee0a41703829d67f3",
-      "status": "success"
-    },
-    "GRU-MCO": {
-      "last_attempt_at_utc": "2026-09-22T19:44:45Z",
-      "last_error": null,
-      "last_result_status": "success",
-      "last_success_at_utc": "2026-09-22T19:44:45Z",
-      "last_valid_offers": [
-        {
-          "baggage": {
-            "counted_in_price": false,
-            "included": false,
-            "status": "unknown"
-          },
-          "comparison_eligible": true,
-          "compatibility_key": "a78af0083d39dc95bce9",
-          "currency": "BRL",
-          "id": "offer-b3394b4d88f2245cf402",
-          "itinerary": {
-            "segments": [
-              {
-                "airline": "United",
-                "arrival_airport": {
-                  "id": "EWR",
-                  "name": "Aeroporto Internacional de Newark",
-                  "time": "2027-03-06 05:30"
-                },
-                "available": true,
-                "departure_airport": {
-                  "id": "GRU",
-                  "name": "Aeroporto Internacional de São Paulo/Guarulhos–Governador André Franco Montoro",
-                  "time": "2027-03-05 21:45"
-                },
-                "duration_minutes": 585,
-                "flight_number": "UA 148",
-                "travel_class": "Economy"
-              },
-              {
-                "airline": "United",
-                "arrival_airport": {
-                  "id": "MCO",
-                  "name": "Aeroporto Internacional de Orlando",
-                  "time": "2027-03-06 09:45"
-                },
-                "available": true,
-                "departure_airport": {
-                  "id": "EWR",
-                  "name": "Aeroporto Internacional de Newark",
-                  "time": "2027-03-06 07:00"
-                },
-                "duration_minutes": 165,
-                "flight_number": "UA 1377",
-                "travel_class": "Economy"
-              }
-            ],
-            "stops": 1,
-            "total_duration_minutes": 840,
-            "type": "round_trip"
-          },
-          "links": {
-            "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDR1JVcgcIARIDTUNPGh4SCjIwMjctMDMtMTRqBwgBEgNNQ09yBwgBEgNHUlVAAUABQANIAXABmAEB&tfu=EgIIAQ"
-          },
-          "observed_at_utc": "2026-09-22T19:44:45Z",
-          "passengers": {
-            "adults": 2,
-            "children": 0,
-            "infants_in_seat": 0,
-            "infants_on_lap": 1
-          },
-          "price": {
-            "amount": 3424,
-            "currency": "BRL",
-            "includes_infants_on_lap": null,
-            "includes_taxes": null,
-            "interpretation": "provider_value_scope_unknown",
-            "scope": "unknown"
-          },
-          "provider": "serpapi",
-          "route": {
-            "destination": "MCO",
-            "origin": "GRU"
-          },
-          "route_verified": true,
-          "source": "best_flights",
-          "status": "complete"
+          "status": "pending"
         },
         {
           "baggage": {
@@ -871,227 +818,10 @@
             "included": false,
             "status": "unknown"
           },
-          "comparison_eligible": true,
-          "compatibility_key": "a78af0083d39dc95bce9",
+          "comparison_eligible": false,
+          "compatibility_key": "2c003e6373990d3fe7cb",
           "currency": "BRL",
-          "id": "offer-d8173282205d40f627e1",
-          "itinerary": {
-            "segments": [
-              {
-                "airline": "Avianca",
-                "arrival_airport": {
-                  "id": "BOG",
-                  "name": "El Dorado International Airport",
-                  "time": "2027-03-05 06:25"
-                },
-                "available": true,
-                "departure_airport": {
-                  "id": "GRU",
-                  "name": "Aeroporto Internacional de São Paulo/Guarulhos–Governador André Franco Montoro",
-                  "time": "2027-03-05 02:25"
-                },
-                "duration_minutes": 360,
-                "flight_number": "AV 160",
-                "travel_class": "Economy"
-              },
-              {
-                "airline": "Avianca",
-                "arrival_airport": {
-                  "id": "MCO",
-                  "name": "Aeroporto Internacional de Orlando",
-                  "time": "2027-03-05 12:35"
-                },
-                "available": true,
-                "departure_airport": {
-                  "id": "BOG",
-                  "name": "El Dorado International Airport",
-                  "time": "2027-03-05 08:20"
-                },
-                "duration_minutes": 255,
-                "flight_number": "AV 28",
-                "travel_class": "Economy"
-              }
-            ],
-            "stops": 1,
-            "total_duration_minutes": 730,
-            "type": "round_trip"
-          },
-          "links": {
-            "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDR1JVcgcIARIDTUNPGh4SCjIwMjctMDMtMTRqBwgBEgNNQ09yBwgBEgNHUlVAAUABQANIAXABmAEB&tfu=EgIIAQ"
-          },
-          "observed_at_utc": "2026-09-22T19:44:45Z",
-          "passengers": {
-            "adults": 2,
-            "children": 0,
-            "infants_in_seat": 0,
-            "infants_on_lap": 1
-          },
-          "price": {
-            "amount": 3639,
-            "currency": "BRL",
-            "includes_infants_on_lap": null,
-            "includes_taxes": null,
-            "interpretation": "provider_value_scope_unknown",
-            "scope": "unknown"
-          },
-          "provider": "serpapi",
-          "route": {
-            "destination": "MCO",
-            "origin": "GRU"
-          },
-          "route_verified": true,
-          "source": "best_flights",
-          "status": "complete"
-        },
-        {
-          "baggage": {
-            "counted_in_price": false,
-            "included": false,
-            "status": "unknown"
-          },
-          "comparison_eligible": true,
-          "compatibility_key": "a78af0083d39dc95bce9",
-          "currency": "BRL",
-          "id": "offer-e37c5cc3056d3b0fda36",
-          "itinerary": {
-            "segments": [
-              {
-                "airline": "COPA",
-                "arrival_airport": {
-                  "id": "PTY",
-                  "name": "Aeroporto Internacional Tocumen",
-                  "time": "2027-03-06 04:31"
-                },
-                "available": true,
-                "departure_airport": {
-                  "id": "GRU",
-                  "name": "Aeroporto Internacional de São Paulo/Guarulhos–Governador André Franco Montoro",
-                  "time": "2027-03-05 23:45"
-                },
-                "duration_minutes": 406,
-                "flight_number": "CM 841",
-                "travel_class": "Economy"
-              },
-              {
-                "airline": "COPA",
-                "arrival_airport": {
-                  "id": "MCO",
-                  "name": "Aeroporto Internacional de Orlando",
-                  "time": "2027-03-06 10:01"
-                },
-                "available": true,
-                "departure_airport": {
-                  "id": "PTY",
-                  "name": "Aeroporto Internacional Tocumen",
-                  "time": "2027-03-06 06:32"
-                },
-                "duration_minutes": 209,
-                "flight_number": "CM 677",
-                "travel_class": "Economy"
-              }
-            ],
-            "stops": 1,
-            "total_duration_minutes": 736,
-            "type": "round_trip"
-          },
-          "links": {
-            "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDR1JVcgcIARIDTUNPGh4SCjIwMjctMDMtMTRqBwgBEgNNQ09yBwgBEgNHUlVAAUABQANIAXABmAEB&tfu=EgIIAQ"
-          },
-          "observed_at_utc": "2026-09-22T19:44:45Z",
-          "passengers": {
-            "adults": 2,
-            "children": 0,
-            "infants_in_seat": 0,
-            "infants_on_lap": 1
-          },
-          "price": {
-            "amount": 3911,
-            "currency": "BRL",
-            "includes_infants_on_lap": null,
-            "includes_taxes": null,
-            "interpretation": "provider_value_scope_unknown",
-            "scope": "unknown"
-          },
-          "provider": "serpapi",
-          "route": {
-            "destination": "MCO",
-            "origin": "GRU"
-          },
-          "route_verified": true,
-          "source": "best_flights",
-          "status": "complete"
-        },
-        {
-          "baggage": {
-            "counted_in_price": false,
-            "included": false,
-            "status": "unknown"
-          },
-          "comparison_eligible": true,
-          "compatibility_key": "a78af0083d39dc95bce9",
-          "currency": "BRL",
-          "id": "offer-5b1b84667117f61042ab",
-          "itinerary": {
-            "segments": [
-              {
-                "airline": "LATAM",
-                "arrival_airport": {
-                  "id": "MCO",
-                  "name": "Aeroporto Internacional de Orlando",
-                  "time": "2027-03-05 15:15"
-                },
-                "available": true,
-                "departure_airport": {
-                  "id": "GRU",
-                  "name": "Aeroporto Internacional de São Paulo/Guarulhos–Governador André Franco Montoro",
-                  "time": "2027-03-05 08:25"
-                },
-                "duration_minutes": 530,
-                "flight_number": "LA 8126",
-                "travel_class": "Economy"
-              }
-            ],
-            "stops": 0,
-            "total_duration_minutes": 530,
-            "type": "round_trip"
-          },
-          "links": {
-            "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDR1JVcgcIARIDTUNPGh4SCjIwMjctMDMtMTRqBwgBEgNNQ09yBwgBEgNHUlVAAUABQANIAXABmAEB&tfu=EgIIAQ"
-          },
-          "observed_at_utc": "2026-09-22T19:44:45Z",
-          "passengers": {
-            "adults": 2,
-            "children": 0,
-            "infants_in_seat": 0,
-            "infants_on_lap": 1
-          },
-          "price": {
-            "amount": 5269.5,
-            "currency": "BRL",
-            "includes_infants_on_lap": null,
-            "includes_taxes": null,
-            "interpretation": "provider_value_scope_unknown",
-            "scope": "unknown"
-          },
-          "provider": "serpapi",
-          "route": {
-            "destination": "MCO",
-            "origin": "GRU"
-          },
-          "route_verified": true,
-          "source": "best_flights",
-          "status": "complete"
-        },
-        {
-          "baggage": {
-            "counted_in_price": false,
-            "included": false,
-            "status": "unknown"
-          },
-          "comparison_eligible": true,
-          "compatibility_key": "a78af0083d39dc95bce9",
-          "currency": "BRL",
-          "id": "offer-fbcb878df76d0d0f4aef",
+          "id": "offer-9989a56c5960bab1cce0",
           "itinerary": {
             "segments": [
               {
@@ -1114,29 +844,29 @@
               {
                 "airline": "United",
                 "arrival_airport": {
-                  "id": "MCO",
-                  "name": "Aeroporto Internacional de Orlando",
-                  "time": "2027-03-06 10:30"
+                  "id": "FLL",
+                  "name": "Aeroporto Internacional de Fort Lauderdale-Hollywood",
+                  "time": "2027-03-06 10:48"
                 },
                 "available": true,
                 "departure_airport": {
                   "id": "IAD",
                   "name": "Aeroporto Internacional Washington Dulles",
-                  "time": "2027-03-06 08:20"
+                  "time": "2027-03-06 08:15"
                 },
-                "duration_minutes": 130,
-                "flight_number": "UA 379",
+                "duration_minutes": 153,
+                "flight_number": "UA 1825",
                 "travel_class": "Economy"
               }
             ],
             "stops": 1,
-            "total_duration_minutes": 845,
-            "type": "round_trip"
+            "total_duration_minutes": 863,
+            "type": "multi_city"
           },
           "links": {
-            "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDR1JVcgcIARIDTUNPGh4SCjIwMjctMDMtMTRqBwgBEgNNQ09yBwgBEgNHUlVAAUABQANIAXABmAEB&tfu=EgIIAQ"
+            "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDR1JVcgcIARIDRkxMGh4SCjIwMjctMDMtMTRqBwgBEgNNSUFyBwgBEgNWQ1BAAUABQANIAXABmAED&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T19:44:45Z",
+          "observed_at_utc": "2026-09-22T20:09:23Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -1144,7 +874,7 @@
             "infants_on_lap": 1
           },
           "price": {
-            "amount": 3424,
+            "amount": 23165.0,
             "currency": "BRL",
             "includes_infants_on_lap": null,
             "includes_taxes": null,
@@ -1153,12 +883,14 @@
           },
           "provider": "serpapi",
           "route": {
-            "destination": "MCO",
-            "origin": "GRU"
+            "destination": "FLL",
+            "origin": "GRU",
+            "return_destination": "VCP",
+            "return_origin": "MIA"
           },
-          "route_verified": true,
+          "route_verified": false,
           "source": "other_flights",
-          "status": "complete"
+          "status": "pending"
         },
         {
           "baggage": {
@@ -1166,88 +898,10 @@
             "included": false,
             "status": "unknown"
           },
-          "comparison_eligible": true,
-          "compatibility_key": "a78af0083d39dc95bce9",
+          "comparison_eligible": false,
+          "compatibility_key": "2c003e6373990d3fe7cb",
           "currency": "BRL",
-          "id": "offer-07ef1fe6bcf1d12fea94",
-          "itinerary": {
-            "segments": [
-              {
-                "airline": "Avianca",
-                "arrival_airport": {
-                  "id": "BOG",
-                  "name": "El Dorado International Airport",
-                  "time": "2027-03-05 11:55"
-                },
-                "available": true,
-                "departure_airport": {
-                  "id": "GRU",
-                  "name": "Aeroporto Internacional de São Paulo/Guarulhos–Governador André Franco Montoro",
-                  "time": "2027-03-05 07:55"
-                },
-                "duration_minutes": 360,
-                "flight_number": "AV 86",
-                "travel_class": "Economy"
-              },
-              {
-                "airline": "Avianca",
-                "arrival_airport": {
-                  "id": "MCO",
-                  "name": "Aeroporto Internacional de Orlando",
-                  "time": "2027-03-05 20:35"
-                },
-                "available": true,
-                "departure_airport": {
-                  "id": "BOG",
-                  "name": "El Dorado International Airport",
-                  "time": "2027-03-05 16:20"
-                },
-                "duration_minutes": 255,
-                "flight_number": "AV 118",
-                "travel_class": "Economy"
-              }
-            ],
-            "stops": 1,
-            "total_duration_minutes": 880,
-            "type": "round_trip"
-          },
-          "links": {
-            "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDR1JVcgcIARIDTUNPGh4SCjIwMjctMDMtMTRqBwgBEgNNQ09yBwgBEgNHUlVAAUABQANIAXABmAEB&tfu=EgIIAQ"
-          },
-          "observed_at_utc": "2026-09-22T19:44:45Z",
-          "passengers": {
-            "adults": 2,
-            "children": 0,
-            "infants_in_seat": 0,
-            "infants_on_lap": 1
-          },
-          "price": {
-            "amount": 3639,
-            "currency": "BRL",
-            "includes_infants_on_lap": null,
-            "includes_taxes": null,
-            "interpretation": "provider_value_scope_unknown",
-            "scope": "unknown"
-          },
-          "provider": "serpapi",
-          "route": {
-            "destination": "MCO",
-            "origin": "GRU"
-          },
-          "route_verified": true,
-          "source": "other_flights",
-          "status": "complete"
-        },
-        {
-          "baggage": {
-            "counted_in_price": false,
-            "included": false,
-            "status": "unknown"
-          },
-          "comparison_eligible": true,
-          "compatibility_key": "a78af0083d39dc95bce9",
-          "currency": "BRL",
-          "id": "offer-7d7a25fed26d6c89ebee",
+          "id": "offer-2bef3a1973bd373b7507",
           "itinerary": {
             "segments": [
               {
@@ -1270,29 +924,29 @@
               {
                 "airline": "COPA",
                 "arrival_airport": {
-                  "id": "MCO",
-                  "name": "Aeroporto Internacional de Orlando",
-                  "time": "2027-03-05 12:49"
+                  "id": "FLL",
+                  "name": "Aeroporto Internacional de Fort Lauderdale-Hollywood",
+                  "time": "2027-03-05 12:31"
                 },
                 "available": true,
                 "departure_airport": {
                   "id": "PTY",
                   "name": "Aeroporto Internacional Tocumen",
-                  "time": "2027-03-05 09:16"
+                  "time": "2027-03-05 09:14"
                 },
-                "duration_minutes": 213,
-                "flight_number": "CM 867",
+                "duration_minutes": 197,
+                "flight_number": "CM 265",
                 "travel_class": "Economy"
               }
             ],
             "stops": 1,
-            "total_duration_minutes": 699,
-            "type": "round_trip"
+            "total_duration_minutes": 681,
+            "type": "multi_city"
           },
           "links": {
-            "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDR1JVcgcIARIDTUNPGh4SCjIwMjctMDMtMTRqBwgBEgNNQ09yBwgBEgNHUlVAAUABQANIAXABmAEB&tfu=EgIIAQ"
+            "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDR1JVcgcIARIDRkxMGh4SCjIwMjctMDMtMTRqBwgBEgNNSUFyBwgBEgNWQ1BAAUABQANIAXABmAED&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T19:44:45Z",
+          "observed_at_utc": "2026-09-22T20:09:23Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -1300,7 +954,7 @@
             "infants_on_lap": 1
           },
           "price": {
-            "amount": 4161.5,
+            "amount": 31022.0,
             "currency": "BRL",
             "includes_infants_on_lap": null,
             "includes_taxes": null,
@@ -1309,68 +963,80 @@
           },
           "provider": "serpapi",
           "route": {
-            "destination": "MCO",
-            "origin": "GRU"
+            "destination": "FLL",
+            "origin": "GRU",
+            "return_destination": "VCP",
+            "return_origin": "MIA"
           },
-          "route_verified": true,
+          "route_verified": false,
           "source": "other_flights",
-          "status": "complete"
-        },
+          "status": "pending"
+        }
+      ],
+      "last_valid_run_id": "run-6045992ffc91fa3471af",
+      "status": "success"
+    },
+    "GRU-MCO": {
+      "last_attempt_at_utc": "2026-09-22T20:09:23Z",
+      "last_error": null,
+      "last_result_status": "success",
+      "last_success_at_utc": "2026-09-22T20:09:23Z",
+      "last_valid_offers": [
         {
           "baggage": {
             "counted_in_price": false,
             "included": false,
             "status": "unknown"
           },
-          "comparison_eligible": true,
-          "compatibility_key": "a78af0083d39dc95bce9",
+          "comparison_eligible": false,
+          "compatibility_key": "c9e7bc51813183e3e0c1",
           "currency": "BRL",
-          "id": "offer-126c8b0846162aa68687",
+          "id": "offer-301e5a1d692378426b08",
           "itinerary": {
             "segments": [
               {
-                "airline": "COPA",
+                "airline": "Azul",
                 "arrival_airport": {
-                  "id": "PTY",
-                  "name": "Aeroporto Internacional Tocumen",
-                  "time": "2027-03-05 14:10"
+                  "id": "CNF",
+                  "name": "Aeroporto Internacional Belo Horizonte/Confins–Tancredo Neves",
+                  "time": "2027-03-05 21:30"
                 },
                 "available": true,
                 "departure_airport": {
                   "id": "GRU",
                   "name": "Aeroporto Internacional de São Paulo/Guarulhos–Governador André Franco Montoro",
-                  "time": "2027-03-05 09:20"
+                  "time": "2027-03-05 20:20"
                 },
-                "duration_minutes": 410,
-                "flight_number": "CM 700",
+                "duration_minutes": 70,
+                "flight_number": "AD 2881",
                 "travel_class": "Economy"
               },
               {
-                "airline": "COPA",
+                "airline": "Azul",
                 "arrival_airport": {
                   "id": "MCO",
                   "name": "Aeroporto Internacional de Orlando",
-                  "time": "2027-03-05 19:27"
+                  "time": "2027-03-06 19:30"
                 },
                 "available": true,
                 "departure_airport": {
-                  "id": "PTY",
-                  "name": "Aeroporto Internacional Tocumen",
-                  "time": "2027-03-05 15:55"
+                  "id": "CNF",
+                  "name": "Aeroporto Internacional Belo Horizonte/Confins–Tancredo Neves",
+                  "time": "2027-03-06 12:25"
                 },
-                "duration_minutes": 212,
-                "flight_number": "CM 672",
+                "duration_minutes": 545,
+                "flight_number": "AD 8730",
                 "travel_class": "Economy"
               }
             ],
             "stops": 1,
-            "total_duration_minutes": 727,
-            "type": "round_trip"
+            "total_duration_minutes": 1510,
+            "type": "multi_city"
           },
           "links": {
-            "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDR1JVcgcIARIDTUNPGh4SCjIwMjctMDMtMTRqBwgBEgNNQ09yBwgBEgNHUlVAAUABQANIAXABmAEB&tfu=EgIIAQ"
+            "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDR1JVcgcIARIDTUNPGh4SCjIwMjctMDMtMTRqBwgBEgNGTExyBwgBEgNWQ1BAAUABQANIAXABmAED&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T19:44:45Z",
+          "observed_at_utc": "2026-09-22T20:09:23Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -1378,7 +1044,7 @@
             "infants_on_lap": 1
           },
           "price": {
-            "amount": 4161.5,
+            "amount": 4210.5,
             "currency": "BRL",
             "includes_infants_on_lap": null,
             "includes_taxes": null,
@@ -1388,11 +1054,13 @@
           "provider": "serpapi",
           "route": {
             "destination": "MCO",
-            "origin": "GRU"
+            "origin": "GRU",
+            "return_destination": "VCP",
+            "return_origin": "FLL"
           },
-          "route_verified": true,
-          "source": "other_flights",
-          "status": "complete"
+          "route_verified": false,
+          "source": "best_flights",
+          "status": "pending"
         },
         {
           "baggage": {
@@ -1400,10 +1068,136 @@
             "included": false,
             "status": "unknown"
           },
-          "comparison_eligible": true,
-          "compatibility_key": "a78af0083d39dc95bce9",
+          "comparison_eligible": false,
+          "compatibility_key": "c9e7bc51813183e3e0c1",
           "currency": "BRL",
-          "id": "offer-1a5cfb66e5faf3e66698",
+          "id": "offer-34e3a3e239e7b3d71d58",
+          "itinerary": {
+            "segments": [
+              {
+                "airline": "LATAM",
+                "arrival_airport": {
+                  "id": "MCO",
+                  "name": "Aeroporto Internacional de Orlando",
+                  "time": "2027-03-05 15:15"
+                },
+                "available": true,
+                "departure_airport": {
+                  "id": "GRU",
+                  "name": "Aeroporto Internacional de São Paulo/Guarulhos–Governador André Franco Montoro",
+                  "time": "2027-03-05 08:25"
+                },
+                "duration_minutes": 530,
+                "flight_number": "LA 8126",
+                "travel_class": "Economy"
+              }
+            ],
+            "stops": 0,
+            "total_duration_minutes": 530,
+            "type": "multi_city"
+          },
+          "links": {
+            "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDR1JVcgcIARIDTUNPGh4SCjIwMjctMDMtMTRqBwgBEgNGTExyBwgBEgNWQ1BAAUABQANIAXABmAED&tfu=EgIIAQ"
+          },
+          "observed_at_utc": "2026-09-22T20:09:23Z",
+          "passengers": {
+            "adults": 2,
+            "children": 0,
+            "infants_in_seat": 0,
+            "infants_on_lap": 1
+          },
+          "price": {
+            "amount": 5891.0,
+            "currency": "BRL",
+            "includes_infants_on_lap": null,
+            "includes_taxes": null,
+            "interpretation": "provider_value_scope_unknown",
+            "scope": "unknown"
+          },
+          "provider": "serpapi",
+          "route": {
+            "destination": "MCO",
+            "origin": "GRU",
+            "return_destination": "VCP",
+            "return_origin": "FLL"
+          },
+          "route_verified": false,
+          "source": "best_flights",
+          "status": "pending"
+        },
+        {
+          "baggage": {
+            "counted_in_price": false,
+            "included": false,
+            "status": "unknown"
+          },
+          "comparison_eligible": false,
+          "compatibility_key": "c9e7bc51813183e3e0c1",
+          "currency": "BRL",
+          "id": "offer-d677937f8e518437d836",
+          "itinerary": {
+            "segments": [
+              {
+                "airline": "LATAM",
+                "arrival_airport": {
+                  "id": "MCO",
+                  "name": "Aeroporto Internacional de Orlando",
+                  "time": "2027-03-05 18:30"
+                },
+                "available": true,
+                "departure_airport": {
+                  "id": "GRU",
+                  "name": "Aeroporto Internacional de São Paulo/Guarulhos–Governador André Franco Montoro",
+                  "time": "2027-03-05 11:40"
+                },
+                "duration_minutes": 530,
+                "flight_number": "LA 8186",
+                "travel_class": "Economy"
+              }
+            ],
+            "stops": 0,
+            "total_duration_minutes": 530,
+            "type": "multi_city"
+          },
+          "links": {
+            "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDR1JVcgcIARIDTUNPGh4SCjIwMjctMDMtMTRqBwgBEgNGTExyBwgBEgNWQ1BAAUABQANIAXABmAED&tfu=EgIIAQ"
+          },
+          "observed_at_utc": "2026-09-22T20:09:23Z",
+          "passengers": {
+            "adults": 2,
+            "children": 0,
+            "infants_in_seat": 0,
+            "infants_on_lap": 1
+          },
+          "price": {
+            "amount": 5891.0,
+            "currency": "BRL",
+            "includes_infants_on_lap": null,
+            "includes_taxes": null,
+            "interpretation": "provider_value_scope_unknown",
+            "scope": "unknown"
+          },
+          "provider": "serpapi",
+          "route": {
+            "destination": "MCO",
+            "origin": "GRU",
+            "return_destination": "VCP",
+            "return_origin": "FLL"
+          },
+          "route_verified": false,
+          "source": "best_flights",
+          "status": "pending"
+        },
+        {
+          "baggage": {
+            "counted_in_price": false,
+            "included": false,
+            "status": "unknown"
+          },
+          "comparison_eligible": false,
+          "compatibility_key": "c9e7bc51813183e3e0c1",
+          "currency": "BRL",
+          "id": "offer-47ce411f22b36aae2673",
           "itinerary": {
             "segments": [
               {
@@ -1443,12 +1237,12 @@
             ],
             "stops": 1,
             "total_duration_minutes": 679,
-            "type": "round_trip"
+            "type": "multi_city"
           },
           "links": {
-            "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDR1JVcgcIARIDTUNPGh4SCjIwMjctMDMtMTRqBwgBEgNNQ09yBwgBEgNHUlVAAUABQANIAXABmAEB&tfu=EgIIAQ"
+            "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDR1JVcgcIARIDTUNPGh4SCjIwMjctMDMtMTRqBwgBEgNGTExyBwgBEgNWQ1BAAUABQANIAXABmAED&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T19:44:45Z",
+          "observed_at_utc": "2026-09-22T20:09:23Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -1456,7 +1250,7 @@
             "infants_on_lap": 1
           },
           "price": {
-            "amount": 5131,
+            "amount": 6805.5,
             "currency": "BRL",
             "includes_infants_on_lap": null,
             "includes_taxes": null,
@@ -1466,11 +1260,13 @@
           "provider": "serpapi",
           "route": {
             "destination": "MCO",
-            "origin": "GRU"
+            "origin": "GRU",
+            "return_destination": "VCP",
+            "return_origin": "FLL"
           },
-          "route_verified": true,
+          "route_verified": false,
           "source": "other_flights",
-          "status": "complete"
+          "status": "pending"
         },
         {
           "baggage": {
@@ -1478,38 +1274,55 @@
             "included": false,
             "status": "unknown"
           },
-          "comparison_eligible": true,
-          "compatibility_key": "a78af0083d39dc95bce9",
+          "comparison_eligible": false,
+          "compatibility_key": "c9e7bc51813183e3e0c1",
           "currency": "BRL",
-          "id": "offer-01838bd7a6d1115c9ea4",
+          "id": "offer-fb579c4a040267f9b2ef",
           "itinerary": {
             "segments": [
               {
-                "airline": "LATAM",
+                "airline": "United",
                 "arrival_airport": {
-                  "id": "MCO",
-                  "name": "Aeroporto Internacional de Orlando",
-                  "time": "2027-03-05 18:30"
+                  "id": "EWR",
+                  "name": "Aeroporto Internacional de Newark",
+                  "time": "2027-03-06 05:30"
                 },
                 "available": true,
                 "departure_airport": {
                   "id": "GRU",
                   "name": "Aeroporto Internacional de São Paulo/Guarulhos–Governador André Franco Montoro",
-                  "time": "2027-03-05 11:40"
+                  "time": "2027-03-05 21:45"
                 },
-                "duration_minutes": 530,
-                "flight_number": "LA 8186",
+                "duration_minutes": 585,
+                "flight_number": "UA 148",
+                "travel_class": "Economy"
+              },
+              {
+                "airline": "United",
+                "arrival_airport": {
+                  "id": "MCO",
+                  "name": "Aeroporto Internacional de Orlando",
+                  "time": "2027-03-06 09:45"
+                },
+                "available": true,
+                "departure_airport": {
+                  "id": "EWR",
+                  "name": "Aeroporto Internacional de Newark",
+                  "time": "2027-03-06 07:00"
+                },
+                "duration_minutes": 165,
+                "flight_number": "UA 1377",
                 "travel_class": "Economy"
               }
             ],
-            "stops": 0,
-            "total_duration_minutes": 530,
-            "type": "round_trip"
+            "stops": 1,
+            "total_duration_minutes": 840,
+            "type": "multi_city"
           },
           "links": {
-            "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDR1JVcgcIARIDTUNPGh4SCjIwMjctMDMtMTRqBwgBEgNNQ09yBwgBEgNHUlVAAUABQANIAXABmAEB&tfu=EgIIAQ"
+            "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDR1JVcgcIARIDTUNPGh4SCjIwMjctMDMtMTRqBwgBEgNGTExyBwgBEgNWQ1BAAUABQANIAXABmAED&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T19:44:45Z",
+          "observed_at_utc": "2026-09-22T20:09:23Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -1517,7 +1330,7 @@
             "infants_on_lap": 1
           },
           "price": {
-            "amount": 5239,
+            "amount": 6956.0,
             "currency": "BRL",
             "includes_infants_on_lap": null,
             "includes_taxes": null,
@@ -1527,21 +1340,343 @@
           "provider": "serpapi",
           "route": {
             "destination": "MCO",
-            "origin": "GRU"
+            "origin": "GRU",
+            "return_destination": "VCP",
+            "return_origin": "FLL"
           },
-          "route_verified": true,
+          "route_verified": false,
           "source": "other_flights",
-          "status": "complete"
+          "status": "pending"
+        },
+        {
+          "baggage": {
+            "counted_in_price": false,
+            "included": false,
+            "status": "unknown"
+          },
+          "comparison_eligible": false,
+          "compatibility_key": "c9e7bc51813183e3e0c1",
+          "currency": "BRL",
+          "id": "offer-efafed5c9fc020f467d5",
+          "itinerary": {
+            "segments": [
+              {
+                "airline": "United",
+                "arrival_airport": {
+                  "id": "IAD",
+                  "name": "Aeroporto Internacional Washington Dulles",
+                  "time": "2027-03-06 06:30"
+                },
+                "available": true,
+                "departure_airport": {
+                  "id": "GRU",
+                  "name": "Aeroporto Internacional de São Paulo/Guarulhos–Governador André Franco Montoro",
+                  "time": "2027-03-05 22:25"
+                },
+                "duration_minutes": 605,
+                "flight_number": "UA 860",
+                "travel_class": "Economy"
+              },
+              {
+                "airline": "United",
+                "arrival_airport": {
+                  "id": "MCO",
+                  "name": "Aeroporto Internacional de Orlando",
+                  "time": "2027-03-06 10:30"
+                },
+                "available": true,
+                "departure_airport": {
+                  "id": "IAD",
+                  "name": "Aeroporto Internacional Washington Dulles",
+                  "time": "2027-03-06 08:20"
+                },
+                "duration_minutes": 130,
+                "flight_number": "UA 379",
+                "travel_class": "Economy"
+              }
+            ],
+            "stops": 1,
+            "total_duration_minutes": 845,
+            "type": "multi_city"
+          },
+          "links": {
+            "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDR1JVcgcIARIDTUNPGh4SCjIwMjctMDMtMTRqBwgBEgNGTExyBwgBEgNWQ1BAAUABQANIAXABmAED&tfu=EgIIAQ"
+          },
+          "observed_at_utc": "2026-09-22T20:09:23Z",
+          "passengers": {
+            "adults": 2,
+            "children": 0,
+            "infants_in_seat": 0,
+            "infants_on_lap": 1
+          },
+          "price": {
+            "amount": 6956.0,
+            "currency": "BRL",
+            "includes_infants_on_lap": null,
+            "includes_taxes": null,
+            "interpretation": "provider_value_scope_unknown",
+            "scope": "unknown"
+          },
+          "provider": "serpapi",
+          "route": {
+            "destination": "MCO",
+            "origin": "GRU",
+            "return_destination": "VCP",
+            "return_origin": "FLL"
+          },
+          "route_verified": false,
+          "source": "other_flights",
+          "status": "pending"
+        },
+        {
+          "baggage": {
+            "counted_in_price": false,
+            "included": false,
+            "status": "unknown"
+          },
+          "comparison_eligible": false,
+          "compatibility_key": "c9e7bc51813183e3e0c1",
+          "currency": "BRL",
+          "id": "offer-c169c375a453371e30aa",
+          "itinerary": {
+            "segments": [
+              {
+                "airline": "COPA",
+                "arrival_airport": {
+                  "id": "PTY",
+                  "name": "Aeroporto Internacional Tocumen",
+                  "time": "2027-03-05 08:05"
+                },
+                "available": true,
+                "departure_airport": {
+                  "id": "GRU",
+                  "name": "Aeroporto Internacional de São Paulo/Guarulhos–Governador André Franco Montoro",
+                  "time": "2027-03-05 03:10"
+                },
+                "duration_minutes": 415,
+                "flight_number": "CM 702",
+                "travel_class": "Economy"
+              },
+              {
+                "airline": "COPA",
+                "arrival_airport": {
+                  "id": "MCO",
+                  "name": "Aeroporto Internacional de Orlando",
+                  "time": "2027-03-05 12:49"
+                },
+                "available": true,
+                "departure_airport": {
+                  "id": "PTY",
+                  "name": "Aeroporto Internacional Tocumen",
+                  "time": "2027-03-05 09:16"
+                },
+                "duration_minutes": 213,
+                "flight_number": "CM 867",
+                "travel_class": "Economy"
+              }
+            ],
+            "stops": 1,
+            "total_duration_minutes": 699,
+            "type": "multi_city"
+          },
+          "links": {
+            "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDR1JVcgcIARIDTUNPGh4SCjIwMjctMDMtMTRqBwgBEgNGTExyBwgBEgNWQ1BAAUABQANIAXABmAED&tfu=EgIIAQ"
+          },
+          "observed_at_utc": "2026-09-22T20:09:23Z",
+          "passengers": {
+            "adults": 2,
+            "children": 0,
+            "infants_in_seat": 0,
+            "infants_on_lap": 1
+          },
+          "price": {
+            "amount": 7674.0,
+            "currency": "BRL",
+            "includes_infants_on_lap": null,
+            "includes_taxes": null,
+            "interpretation": "provider_value_scope_unknown",
+            "scope": "unknown"
+          },
+          "provider": "serpapi",
+          "route": {
+            "destination": "MCO",
+            "origin": "GRU",
+            "return_destination": "VCP",
+            "return_origin": "FLL"
+          },
+          "route_verified": false,
+          "source": "other_flights",
+          "status": "pending"
+        },
+        {
+          "baggage": {
+            "counted_in_price": false,
+            "included": false,
+            "status": "unknown"
+          },
+          "comparison_eligible": false,
+          "compatibility_key": "c9e7bc51813183e3e0c1",
+          "currency": "BRL",
+          "id": "offer-e90ca6ed19444c9656ee",
+          "itinerary": {
+            "segments": [
+              {
+                "airline": "COPA",
+                "arrival_airport": {
+                  "id": "PTY",
+                  "name": "Aeroporto Internacional Tocumen",
+                  "time": "2027-03-06 04:31"
+                },
+                "available": true,
+                "departure_airport": {
+                  "id": "GRU",
+                  "name": "Aeroporto Internacional de São Paulo/Guarulhos–Governador André Franco Montoro",
+                  "time": "2027-03-05 23:45"
+                },
+                "duration_minutes": 406,
+                "flight_number": "CM 841",
+                "travel_class": "Economy"
+              },
+              {
+                "airline": "COPA",
+                "arrival_airport": {
+                  "id": "MCO",
+                  "name": "Aeroporto Internacional de Orlando",
+                  "time": "2027-03-06 10:01"
+                },
+                "available": true,
+                "departure_airport": {
+                  "id": "PTY",
+                  "name": "Aeroporto Internacional Tocumen",
+                  "time": "2027-03-06 06:32"
+                },
+                "duration_minutes": 209,
+                "flight_number": "CM 677",
+                "travel_class": "Economy"
+              }
+            ],
+            "stops": 1,
+            "total_duration_minutes": 736,
+            "type": "multi_city"
+          },
+          "links": {
+            "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDR1JVcgcIARIDTUNPGh4SCjIwMjctMDMtMTRqBwgBEgNGTExyBwgBEgNWQ1BAAUABQANIAXABmAED&tfu=EgIIAQ"
+          },
+          "observed_at_utc": "2026-09-22T20:09:23Z",
+          "passengers": {
+            "adults": 2,
+            "children": 0,
+            "infants_in_seat": 0,
+            "infants_on_lap": 1
+          },
+          "price": {
+            "amount": 7674.0,
+            "currency": "BRL",
+            "includes_infants_on_lap": null,
+            "includes_taxes": null,
+            "interpretation": "provider_value_scope_unknown",
+            "scope": "unknown"
+          },
+          "provider": "serpapi",
+          "route": {
+            "destination": "MCO",
+            "origin": "GRU",
+            "return_destination": "VCP",
+            "return_origin": "FLL"
+          },
+          "route_verified": false,
+          "source": "other_flights",
+          "status": "pending"
+        },
+        {
+          "baggage": {
+            "counted_in_price": false,
+            "included": false,
+            "status": "unknown"
+          },
+          "comparison_eligible": false,
+          "compatibility_key": "c9e7bc51813183e3e0c1",
+          "currency": "BRL",
+          "id": "offer-b423e58666fe8f0de0d2",
+          "itinerary": {
+            "segments": [
+              {
+                "airline": "COPA",
+                "arrival_airport": {
+                  "id": "PTY",
+                  "name": "Aeroporto Internacional Tocumen",
+                  "time": "2027-03-05 06:08"
+                },
+                "available": true,
+                "departure_airport": {
+                  "id": "GRU",
+                  "name": "Aeroporto Internacional de São Paulo/Guarulhos–Governador André Franco Montoro",
+                  "time": "2027-03-05 01:20"
+                },
+                "duration_minutes": 408,
+                "flight_number": "CM 758",
+                "travel_class": "Economy"
+              },
+              {
+                "airline": "COPA",
+                "arrival_airport": {
+                  "id": "MCO",
+                  "name": "Aeroporto Internacional de Orlando",
+                  "time": "2027-03-05 12:01"
+                },
+                "available": true,
+                "departure_airport": {
+                  "id": "PTY",
+                  "name": "Aeroporto Internacional Tocumen",
+                  "time": "2027-03-05 08:28"
+                },
+                "duration_minutes": 213,
+                "flight_number": "CM 446",
+                "travel_class": "Economy"
+              }
+            ],
+            "stops": 1,
+            "total_duration_minutes": 761,
+            "type": "multi_city"
+          },
+          "links": {
+            "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDR1JVcgcIARIDTUNPGh4SCjIwMjctMDMtMTRqBwgBEgNGTExyBwgBEgNWQ1BAAUABQANIAXABmAED&tfu=EgIIAQ"
+          },
+          "observed_at_utc": "2026-09-22T20:09:23Z",
+          "passengers": {
+            "adults": 2,
+            "children": 0,
+            "infants_in_seat": 0,
+            "infants_on_lap": 1
+          },
+          "price": {
+            "amount": 7807.0,
+            "currency": "BRL",
+            "includes_infants_on_lap": null,
+            "includes_taxes": null,
+            "interpretation": "provider_value_scope_unknown",
+            "scope": "unknown"
+          },
+          "provider": "serpapi",
+          "route": {
+            "destination": "MCO",
+            "origin": "GRU",
+            "return_destination": "VCP",
+            "return_origin": "FLL"
+          },
+          "route_verified": false,
+          "source": "other_flights",
+          "status": "pending"
         }
       ],
-      "last_valid_run_id": "run-d55ee0a41703829d67f3",
+      "last_valid_run_id": "run-6045992ffc91fa3471af",
       "status": "success"
     },
     "GRU-MIA": {
-      "last_attempt_at_utc": "2026-09-22T19:44:45Z",
+      "last_attempt_at_utc": "2026-09-22T20:09:23Z",
       "last_error": null,
       "last_result_status": "success",
-      "last_success_at_utc": "2026-09-22T19:44:45Z",
+      "last_success_at_utc": "2026-09-22T20:09:23Z",
       "last_valid_offers": [
         {
           "baggage": {
@@ -1549,10 +1684,10 @@
             "included": false,
             "status": "unknown"
           },
-          "comparison_eligible": true,
-          "compatibility_key": "027c75b51369987e255b",
+          "comparison_eligible": false,
+          "compatibility_key": "54bb0ac32991e576423e",
           "currency": "BRL",
-          "id": "offer-faadd3d726bec0dd18e2",
+          "id": "offer-877a2aea474f1a10f889",
           "itinerary": {
             "segments": [
               {
@@ -1592,12 +1727,12 @@
             ],
             "stops": 1,
             "total_duration_minutes": 825,
-            "type": "round_trip"
+            "type": "multi_city"
           },
           "links": {
-            "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDR1JVcgcIARIDTUlBGh4SCjIwMjctMDMtMTRqBwgBEgNNSUFyBwgBEgNHUlVAAUABQANIAXABmAEB&tfu=EgIIAQ"
+            "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDR1JVcgcIARIDTUlBGh4SCjIwMjctMDMtMTRqBwgBEgNNQ09yBwgBEgNWQ1BAAUABQANIAXABmAED&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T19:44:45Z",
+          "observed_at_utc": "2026-09-22T20:09:23Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -1605,7 +1740,7 @@
             "infants_on_lap": 1
           },
           "price": {
-            "amount": 3058,
+            "amount": 3157.0,
             "currency": "BRL",
             "includes_infants_on_lap": null,
             "includes_taxes": null,
@@ -1615,11 +1750,13 @@
           "provider": "serpapi",
           "route": {
             "destination": "MIA",
-            "origin": "GRU"
+            "origin": "GRU",
+            "return_destination": "VCP",
+            "return_origin": "MCO"
           },
-          "route_verified": true,
+          "route_verified": false,
           "source": "best_flights",
-          "status": "complete"
+          "status": "pending"
         },
         {
           "baggage": {
@@ -1627,88 +1764,10 @@
             "included": false,
             "status": "unknown"
           },
-          "comparison_eligible": true,
-          "compatibility_key": "027c75b51369987e255b",
+          "comparison_eligible": false,
+          "compatibility_key": "54bb0ac32991e576423e",
           "currency": "BRL",
-          "id": "offer-acfa5a150aaeb26a6f08",
-          "itinerary": {
-            "segments": [
-              {
-                "airline": "Arajet",
-                "arrival_airport": {
-                  "id": "PUJ",
-                  "name": "Aeroporto Internacional de Punta Cana",
-                  "time": "2027-03-05 11:20"
-                },
-                "available": true,
-                "departure_airport": {
-                  "id": "GRU",
-                  "name": "Aeroporto Internacional de São Paulo/Guarulhos–Governador André Franco Montoro",
-                  "time": "2027-03-05 05:20"
-                },
-                "duration_minutes": 420,
-                "flight_number": "DM 6087",
-                "travel_class": "Economy"
-              },
-              {
-                "airline": "Arajet",
-                "arrival_airport": {
-                  "id": "MIA",
-                  "name": "Aeroporto Internacional de Miami",
-                  "time": "2027-03-05 15:08"
-                },
-                "available": true,
-                "departure_airport": {
-                  "id": "PUJ",
-                  "name": "Aeroporto Internacional de Punta Cana",
-                  "time": "2027-03-05 13:21"
-                },
-                "duration_minutes": 167,
-                "flight_number": "DM 5102",
-                "travel_class": "Economy"
-              }
-            ],
-            "stops": 1,
-            "total_duration_minutes": 708,
-            "type": "round_trip"
-          },
-          "links": {
-            "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDR1JVcgcIARIDTUlBGh4SCjIwMjctMDMtMTRqBwgBEgNNSUFyBwgBEgNHUlVAAUABQANIAXABmAEB&tfu=EgIIAQ"
-          },
-          "observed_at_utc": "2026-09-22T19:44:45Z",
-          "passengers": {
-            "adults": 2,
-            "children": 0,
-            "infants_in_seat": 0,
-            "infants_on_lap": 1
-          },
-          "price": {
-            "amount": 3706,
-            "currency": "BRL",
-            "includes_infants_on_lap": null,
-            "includes_taxes": null,
-            "interpretation": "provider_value_scope_unknown",
-            "scope": "unknown"
-          },
-          "provider": "serpapi",
-          "route": {
-            "destination": "MIA",
-            "origin": "GRU"
-          },
-          "route_verified": true,
-          "source": "best_flights",
-          "status": "complete"
-        },
-        {
-          "baggage": {
-            "counted_in_price": false,
-            "included": false,
-            "status": "unknown"
-          },
-          "comparison_eligible": true,
-          "compatibility_key": "027c75b51369987e255b",
-          "currency": "BRL",
-          "id": "offer-bfa010b735be21d8707e",
+          "id": "offer-83430a497c6cb514647c",
           "itinerary": {
             "segments": [
               {
@@ -1731,12 +1790,12 @@
             ],
             "stops": 0,
             "total_duration_minutes": 525,
-            "type": "round_trip"
+            "type": "multi_city"
           },
           "links": {
-            "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDR1JVcgcIARIDTUlBGh4SCjIwMjctMDMtMTRqBwgBEgNNSUFyBwgBEgNHUlVAAUABQANIAXABmAEB&tfu=EgIIAQ"
+            "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDR1JVcgcIARIDTUlBGh4SCjIwMjctMDMtMTRqBwgBEgNNQ09yBwgBEgNWQ1BAAUABQANIAXABmAED&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T19:44:45Z",
+          "observed_at_utc": "2026-09-22T20:09:23Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -1744,7 +1803,7 @@
             "infants_on_lap": 1
           },
           "price": {
-            "amount": 4927,
+            "amount": 4866.0,
             "currency": "BRL",
             "includes_infants_on_lap": null,
             "includes_taxes": null,
@@ -1754,11 +1813,13 @@
           "provider": "serpapi",
           "route": {
             "destination": "MIA",
-            "origin": "GRU"
+            "origin": "GRU",
+            "return_destination": "VCP",
+            "return_origin": "MCO"
           },
-          "route_verified": true,
+          "route_verified": false,
           "source": "best_flights",
-          "status": "complete"
+          "status": "pending"
         },
         {
           "baggage": {
@@ -1766,10 +1827,10 @@
             "included": false,
             "status": "unknown"
           },
-          "comparison_eligible": true,
-          "compatibility_key": "027c75b51369987e255b",
+          "comparison_eligible": false,
+          "compatibility_key": "54bb0ac32991e576423e",
           "currency": "BRL",
-          "id": "offer-fcc7fb66821802cc69f5",
+          "id": "offer-ab0ec9ccedce3a0cad61",
           "itinerary": {
             "segments": [
               {
@@ -1792,12 +1853,12 @@
             ],
             "stops": 0,
             "total_duration_minutes": 505,
-            "type": "round_trip"
+            "type": "multi_city"
           },
           "links": {
-            "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDR1JVcgcIARIDTUlBGh4SCjIwMjctMDMtMTRqBwgBEgNNSUFyBwgBEgNHUlVAAUABQANIAXABmAEB&tfu=EgIIAQ"
+            "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDR1JVcgcIARIDTUlBGh4SCjIwMjctMDMtMTRqBwgBEgNNQ09yBwgBEgNWQ1BAAUABQANIAXABmAED&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T19:44:45Z",
+          "observed_at_utc": "2026-09-22T20:09:23Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -1805,7 +1866,7 @@
             "infants_on_lap": 1
           },
           "price": {
-            "amount": 4927,
+            "amount": 4866.0,
             "currency": "BRL",
             "includes_infants_on_lap": null,
             "includes_taxes": null,
@@ -1815,11 +1876,13 @@
           "provider": "serpapi",
           "route": {
             "destination": "MIA",
-            "origin": "GRU"
+            "origin": "GRU",
+            "return_destination": "VCP",
+            "return_origin": "MCO"
           },
-          "route_verified": true,
+          "route_verified": false,
           "source": "best_flights",
-          "status": "complete"
+          "status": "pending"
         },
         {
           "baggage": {
@@ -1827,10 +1890,10 @@
             "included": false,
             "status": "unknown"
           },
-          "comparison_eligible": true,
-          "compatibility_key": "027c75b51369987e255b",
+          "comparison_eligible": false,
+          "compatibility_key": "54bb0ac32991e576423e",
           "currency": "BRL",
-          "id": "offer-4281cea3527b690fe094",
+          "id": "offer-575daf0138c1e560b7f3",
           "itinerary": {
             "segments": [
               {
@@ -1853,12 +1916,12 @@
             ],
             "stops": 0,
             "total_duration_minutes": 505,
-            "type": "round_trip"
+            "type": "multi_city"
           },
           "links": {
-            "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDR1JVcgcIARIDTUlBGh4SCjIwMjctMDMtMTRqBwgBEgNNSUFyBwgBEgNHUlVAAUABQANIAXABmAEB&tfu=EgIIAQ"
+            "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDR1JVcgcIARIDTUlBGh4SCjIwMjctMDMtMTRqBwgBEgNNQ09yBwgBEgNWQ1BAAUABQANIAXABmAED&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T19:44:45Z",
+          "observed_at_utc": "2026-09-22T20:09:23Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -1866,7 +1929,7 @@
             "infants_on_lap": 1
           },
           "price": {
-            "amount": 4927,
+            "amount": 4866.0,
             "currency": "BRL",
             "includes_infants_on_lap": null,
             "includes_taxes": null,
@@ -1876,11 +1939,13 @@
           "provider": "serpapi",
           "route": {
             "destination": "MIA",
-            "origin": "GRU"
+            "origin": "GRU",
+            "return_destination": "VCP",
+            "return_origin": "MCO"
           },
-          "route_verified": true,
+          "route_verified": false,
           "source": "best_flights",
-          "status": "complete"
+          "status": "pending"
         },
         {
           "baggage": {
@@ -1888,10 +1953,10 @@
             "included": false,
             "status": "unknown"
           },
-          "comparison_eligible": true,
-          "compatibility_key": "027c75b51369987e255b",
+          "comparison_eligible": false,
+          "compatibility_key": "54bb0ac32991e576423e",
           "currency": "BRL",
-          "id": "offer-c6e8ca1bd5d377dd920d",
+          "id": "offer-ba9a6e5df3ab2443ea4f",
           "itinerary": {
             "segments": [
               {
@@ -1931,12 +1996,12 @@
             ],
             "stops": 1,
             "total_duration_minutes": 675,
-            "type": "round_trip"
+            "type": "multi_city"
           },
           "links": {
-            "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDR1JVcgcIARIDTUlBGh4SCjIwMjctMDMtMTRqBwgBEgNNSUFyBwgBEgNHUlVAAUABQANIAXABmAEB&tfu=EgIIAQ"
+            "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDR1JVcgcIARIDTUlBGh4SCjIwMjctMDMtMTRqBwgBEgNNQ09yBwgBEgNWQ1BAAUABQANIAXABmAED&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T19:44:45Z",
+          "observed_at_utc": "2026-09-22T20:09:23Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -1944,7 +2009,7 @@
             "infants_on_lap": 1
           },
           "price": {
-            "amount": 4390.5,
+            "amount": 4928.5,
             "currency": "BRL",
             "includes_infants_on_lap": null,
             "includes_taxes": null,
@@ -1954,11 +2019,13 @@
           "provider": "serpapi",
           "route": {
             "destination": "MIA",
-            "origin": "GRU"
+            "origin": "GRU",
+            "return_destination": "VCP",
+            "return_origin": "MCO"
           },
-          "route_verified": true,
-          "source": "other_flights",
-          "status": "complete"
+          "route_verified": false,
+          "source": "best_flights",
+          "status": "pending"
         },
         {
           "baggage": {
@@ -1966,10 +2033,90 @@
             "included": false,
             "status": "unknown"
           },
-          "comparison_eligible": true,
-          "compatibility_key": "027c75b51369987e255b",
+          "comparison_eligible": false,
+          "compatibility_key": "54bb0ac32991e576423e",
           "currency": "BRL",
-          "id": "offer-55a39f5742c448c7f78e",
+          "id": "offer-7762283422fb5ac3c31f",
+          "itinerary": {
+            "segments": [
+              {
+                "airline": "Avianca",
+                "arrival_airport": {
+                  "id": "BOG",
+                  "name": "El Dorado International Airport",
+                  "time": "2027-03-05 06:25"
+                },
+                "available": true,
+                "departure_airport": {
+                  "id": "GRU",
+                  "name": "Aeroporto Internacional de São Paulo/Guarulhos–Governador André Franco Montoro",
+                  "time": "2027-03-05 02:25"
+                },
+                "duration_minutes": 360,
+                "flight_number": "AV 160",
+                "travel_class": "Economy"
+              },
+              {
+                "airline": "Avianca",
+                "arrival_airport": {
+                  "id": "MIA",
+                  "name": "Aeroporto Internacional de Miami",
+                  "time": "2027-03-05 17:00"
+                },
+                "available": true,
+                "departure_airport": {
+                  "id": "BOG",
+                  "name": "El Dorado International Airport",
+                  "time": "2027-03-05 13:00"
+                },
+                "duration_minutes": 240,
+                "flight_number": "AV 4",
+                "travel_class": "Economy"
+              }
+            ],
+            "stops": 1,
+            "total_duration_minutes": 995,
+            "type": "multi_city"
+          },
+          "links": {
+            "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDR1JVcgcIARIDTUlBGh4SCjIwMjctMDMtMTRqBwgBEgNNQ09yBwgBEgNWQ1BAAUABQANIAXABmAED&tfu=EgIIAQ"
+          },
+          "observed_at_utc": "2026-09-22T20:09:23Z",
+          "passengers": {
+            "adults": 2,
+            "children": 0,
+            "infants_in_seat": 0,
+            "infants_on_lap": 1
+          },
+          "price": {
+            "amount": 4861.0,
+            "currency": "BRL",
+            "includes_infants_on_lap": null,
+            "includes_taxes": null,
+            "interpretation": "provider_value_scope_unknown",
+            "scope": "unknown"
+          },
+          "provider": "serpapi",
+          "route": {
+            "destination": "MIA",
+            "origin": "GRU",
+            "return_destination": "VCP",
+            "return_origin": "MCO"
+          },
+          "route_verified": false,
+          "source": "other_flights",
+          "status": "pending"
+        },
+        {
+          "baggage": {
+            "counted_in_price": false,
+            "included": false,
+            "status": "unknown"
+          },
+          "comparison_eligible": false,
+          "compatibility_key": "54bb0ac32991e576423e",
+          "currency": "BRL",
+          "id": "offer-4b3ae919b55f502990c7",
           "itinerary": {
             "segments": [
               {
@@ -2009,12 +2156,12 @@
             ],
             "stops": 1,
             "total_duration_minutes": 665,
-            "type": "round_trip"
+            "type": "multi_city"
           },
           "links": {
-            "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDR1JVcgcIARIDTUlBGh4SCjIwMjctMDMtMTRqBwgBEgNNSUFyBwgBEgNHUlVAAUABQANIAXABmAEB&tfu=EgIIAQ"
+            "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDR1JVcgcIARIDTUlBGh4SCjIwMjctMDMtMTRqBwgBEgNNQ09yBwgBEgNWQ1BAAUABQANIAXABmAED&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T19:44:45Z",
+          "observed_at_utc": "2026-09-22T20:09:23Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -2022,7 +2169,7 @@
             "infants_on_lap": 1
           },
           "price": {
-            "amount": 4390.5,
+            "amount": 4861.0,
             "currency": "BRL",
             "includes_infants_on_lap": null,
             "includes_taxes": null,
@@ -2032,11 +2179,13 @@
           "provider": "serpapi",
           "route": {
             "destination": "MIA",
-            "origin": "GRU"
+            "origin": "GRU",
+            "return_destination": "VCP",
+            "return_origin": "MCO"
           },
-          "route_verified": true,
+          "route_verified": false,
           "source": "other_flights",
-          "status": "complete"
+          "status": "pending"
         },
         {
           "baggage": {
@@ -2044,10 +2193,10 @@
             "included": false,
             "status": "unknown"
           },
-          "comparison_eligible": true,
-          "compatibility_key": "027c75b51369987e255b",
+          "comparison_eligible": false,
+          "compatibility_key": "54bb0ac32991e576423e",
           "currency": "BRL",
-          "id": "offer-5c1fc6a3423a51c37f08",
+          "id": "offer-72440709ea2f8fe6c004",
           "itinerary": {
             "segments": [
               {
@@ -2087,12 +2236,12 @@
             ],
             "stops": 1,
             "total_duration_minutes": 685,
-            "type": "round_trip"
+            "type": "multi_city"
           },
           "links": {
-            "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDR1JVcgcIARIDTUlBGh4SCjIwMjctMDMtMTRqBwgBEgNNSUFyBwgBEgNHUlVAAUABQANIAXABmAEB&tfu=EgIIAQ"
+            "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDR1JVcgcIARIDTUlBGh4SCjIwMjctMDMtMTRqBwgBEgNNQ09yBwgBEgNWQ1BAAUABQANIAXABmAED&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T19:44:45Z",
+          "observed_at_utc": "2026-09-22T20:09:23Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -2100,7 +2249,7 @@
             "infants_on_lap": 1
           },
           "price": {
-            "amount": 4390.5,
+            "amount": 4928.5,
             "currency": "BRL",
             "includes_infants_on_lap": null,
             "includes_taxes": null,
@@ -2110,11 +2259,13 @@
           "provider": "serpapi",
           "route": {
             "destination": "MIA",
-            "origin": "GRU"
+            "origin": "GRU",
+            "return_destination": "VCP",
+            "return_origin": "MCO"
           },
-          "route_verified": true,
+          "route_verified": false,
           "source": "other_flights",
-          "status": "complete"
+          "status": "pending"
         },
         {
           "baggage": {
@@ -2122,10 +2273,10 @@
             "included": false,
             "status": "unknown"
           },
-          "comparison_eligible": true,
-          "compatibility_key": "027c75b51369987e255b",
+          "comparison_eligible": false,
+          "compatibility_key": "54bb0ac32991e576423e",
           "currency": "BRL",
-          "id": "offer-17c15a01061ccef3c61b",
+          "id": "offer-4569e00b12502d59385d",
           "itinerary": {
             "segments": [
               {
@@ -2148,12 +2299,12 @@
             ],
             "stops": 0,
             "total_duration_minutes": 505,
-            "type": "round_trip"
+            "type": "multi_city"
           },
           "links": {
-            "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDR1JVcgcIARIDTUlBGh4SCjIwMjctMDMtMTRqBwgBEgNNSUFyBwgBEgNHUlVAAUABQANIAXABmAEB&tfu=EgIIAQ"
+            "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDR1JVcgcIARIDTUlBGh4SCjIwMjctMDMtMTRqBwgBEgNNQ09yBwgBEgNWQ1BAAUABQANIAXABmAED&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T19:44:45Z",
+          "observed_at_utc": "2026-09-22T20:09:23Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -2161,7 +2312,7 @@
             "infants_on_lap": 1
           },
           "price": {
-            "amount": 6356,
+            "amount": 6552.5,
             "currency": "BRL",
             "includes_infants_on_lap": null,
             "includes_taxes": null,
@@ -2171,11 +2322,13 @@
           "provider": "serpapi",
           "route": {
             "destination": "MIA",
-            "origin": "GRU"
+            "origin": "GRU",
+            "return_destination": "VCP",
+            "return_origin": "MCO"
           },
-          "route_verified": true,
+          "route_verified": false,
           "source": "other_flights",
-          "status": "complete"
+          "status": "pending"
         },
         {
           "baggage": {
@@ -2183,10 +2336,10 @@
             "included": false,
             "status": "unknown"
           },
-          "comparison_eligible": true,
-          "compatibility_key": "027c75b51369987e255b",
+          "comparison_eligible": false,
+          "compatibility_key": "54bb0ac32991e576423e",
           "currency": "BRL",
-          "id": "offer-52b9810aa9b059df2ce3",
+          "id": "offer-a4bbd6d49cc04492f7dc",
           "itinerary": {
             "segments": [
               {
@@ -2209,12 +2362,12 @@
             ],
             "stops": 0,
             "total_duration_minutes": 500,
-            "type": "round_trip"
+            "type": "multi_city"
           },
           "links": {
-            "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDR1JVcgcIARIDTUlBGh4SCjIwMjctMDMtMTRqBwgBEgNNSUFyBwgBEgNHUlVAAUABQANIAXABmAEB&tfu=EgIIAQ"
+            "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDR1JVcgcIARIDTUlBGh4SCjIwMjctMDMtMTRqBwgBEgNNQ09yBwgBEgNWQ1BAAUABQANIAXABmAED&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T19:44:45Z",
+          "observed_at_utc": "2026-09-22T20:09:23Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -2222,7 +2375,7 @@
             "infants_on_lap": 1
           },
           "price": {
-            "amount": 6356,
+            "amount": 6552.5,
             "currency": "BRL",
             "includes_infants_on_lap": null,
             "includes_taxes": null,
@@ -2232,11 +2385,13 @@
           "provider": "serpapi",
           "route": {
             "destination": "MIA",
-            "origin": "GRU"
+            "origin": "GRU",
+            "return_destination": "VCP",
+            "return_origin": "MCO"
           },
-          "route_verified": true,
+          "route_verified": false,
           "source": "other_flights",
-          "status": "complete"
+          "status": "pending"
         },
         {
           "baggage": {
@@ -2244,10 +2399,10 @@
             "included": false,
             "status": "unknown"
           },
-          "comparison_eligible": true,
-          "compatibility_key": "027c75b51369987e255b",
+          "comparison_eligible": false,
+          "compatibility_key": "54bb0ac32991e576423e",
           "currency": "BRL",
-          "id": "offer-55b2ab4c8d4241cbb8d2",
+          "id": "offer-104bb75d4a08ffa851d1",
           "itinerary": {
             "segments": [
               {
@@ -2270,12 +2425,12 @@
             ],
             "stops": 0,
             "total_duration_minutes": 505,
-            "type": "round_trip"
+            "type": "multi_city"
           },
           "links": {
-            "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDR1JVcgcIARIDTUlBGh4SCjIwMjctMDMtMTRqBwgBEgNNSUFyBwgBEgNHUlVAAUABQANIAXABmAEB&tfu=EgIIAQ"
+            "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDR1JVcgcIARIDTUlBGh4SCjIwMjctMDMtMTRqBwgBEgNNQ09yBwgBEgNWQ1BAAUABQANIAXABmAED&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T19:44:45Z",
+          "observed_at_utc": "2026-09-22T20:09:23Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -2283,7 +2438,7 @@
             "infants_on_lap": 1
           },
           "price": {
-            "amount": 6356,
+            "amount": 6552.5,
             "currency": "BRL",
             "includes_infants_on_lap": null,
             "includes_taxes": null,
@@ -2293,21 +2448,23 @@
           "provider": "serpapi",
           "route": {
             "destination": "MIA",
-            "origin": "GRU"
+            "origin": "GRU",
+            "return_destination": "VCP",
+            "return_origin": "MCO"
           },
-          "route_verified": true,
+          "route_verified": false,
           "source": "other_flights",
-          "status": "complete"
+          "status": "pending"
         }
       ],
-      "last_valid_run_id": "run-d55ee0a41703829d67f3",
+      "last_valid_run_id": "run-6045992ffc91fa3471af",
       "status": "success"
     },
     "VCP-FLL": {
-      "last_attempt_at_utc": "2026-09-22T19:44:45Z",
+      "last_attempt_at_utc": "2026-09-22T20:09:23Z",
       "last_error": null,
       "last_result_status": "success",
-      "last_success_at_utc": "2026-09-22T19:44:45Z",
+      "last_success_at_utc": "2026-09-22T20:09:23Z",
       "last_valid_offers": [
         {
           "baggage": {
@@ -2315,10 +2472,10 @@
             "included": false,
             "status": "unknown"
           },
-          "comparison_eligible": true,
-          "compatibility_key": "a1882742b58990f89701",
+          "comparison_eligible": false,
+          "compatibility_key": "42652eb1c84cd5ab4b71",
           "currency": "BRL",
-          "id": "offer-057a585181c6570ab157",
+          "id": "offer-d7eba539f8642fd0f43e",
           "itinerary": {
             "segments": [
               {
@@ -2341,12 +2498,12 @@
             ],
             "stops": 0,
             "total_duration_minutes": 530,
-            "type": "round_trip"
+            "type": "multi_city"
           },
           "links": {
-            "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDVkNQcgcIARIDRkxMGh4SCjIwMjctMDMtMTRqBwgBEgNGTExyBwgBEgNWQ1BAAUABQANIAXABmAEB&tfu=EgIIAQ"
+            "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDVkNQcgcIARIDRkxMGh4SCjIwMjctMDMtMTRqBwgBEgNNSUFyBwgBEgNHUlVAAUABQANIAXABmAED&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T19:44:45Z",
+          "observed_at_utc": "2026-09-22T20:09:23Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -2354,7 +2511,7 @@
             "infants_on_lap": 1
           },
           "price": {
-            "amount": 5534,
+            "amount": 4435.5,
             "currency": "BRL",
             "includes_infants_on_lap": null,
             "includes_taxes": null,
@@ -2364,11 +2521,13 @@
           "provider": "serpapi",
           "route": {
             "destination": "FLL",
-            "origin": "VCP"
+            "origin": "VCP",
+            "return_destination": "GRU",
+            "return_origin": "MIA"
           },
-          "route_verified": true,
+          "route_verified": false,
           "source": "other_flights",
-          "status": "complete"
+          "status": "pending"
         },
         {
           "baggage": {
@@ -2376,72 +2535,72 @@
             "included": false,
             "status": "unknown"
           },
-          "comparison_eligible": true,
-          "compatibility_key": "a1882742b58990f89701",
+          "comparison_eligible": false,
+          "compatibility_key": "42652eb1c84cd5ab4b71",
           "currency": "BRL",
-          "id": "offer-d84aacea7b44d79ff25c",
+          "id": "offer-1deba837d0df323d9a21",
           "itinerary": {
             "segments": [
               {
-                "airline": "Gol",
+                "airline": "Azul",
                 "arrival_airport": {
                   "id": "GIG",
                   "name": "Aeroporto Internacional do Rio de Janeiro - Galeão – Antonio Carlos Jobim",
-                  "time": "2027-03-05 11:45"
+                  "time": "2027-03-05 16:20"
                 },
                 "available": true,
                 "departure_airport": {
                   "id": "VCP",
                   "name": "Aeroporto Internacional de Viracopos",
-                  "time": "2027-03-05 10:35"
+                  "time": "2027-03-05 15:15"
                 },
-                "duration_minutes": 70,
-                "flight_number": "G3 2095",
+                "duration_minutes": 65,
+                "flight_number": "AD 4037",
                 "travel_class": "Economy"
               },
               {
-                "airline": "Delta",
+                "airline": "Air Canada",
                 "arrival_airport": {
-                  "id": "ATL",
-                  "name": "Aeroporto Internacional de Atlanta Hartsfield-Jackson",
-                  "time": "2027-03-06 05:05"
+                  "id": "YYZ",
+                  "name": "Aeroporto Internacional Pearson de Toronto",
+                  "time": "2027-03-06 05:35"
                 },
                 "available": true,
                 "departure_airport": {
                   "id": "GIG",
                   "name": "Aeroporto Internacional do Rio de Janeiro - Galeão – Antonio Carlos Jobim",
-                  "time": "2027-03-05 21:05"
+                  "time": "2027-03-05 21:00"
                 },
-                "duration_minutes": 600,
-                "flight_number": "DL 60",
+                "duration_minutes": 635,
+                "flight_number": "AC 85",
                 "travel_class": "Economy"
               },
               {
-                "airline": "Delta",
+                "airline": "Air Canada",
                 "arrival_airport": {
                   "id": "FLL",
                   "name": "Aeroporto Internacional de Fort Lauderdale-Hollywood",
-                  "time": "2027-03-06 09:23"
+                  "time": "2027-03-06 10:47"
                 },
                 "available": true,
                 "departure_airport": {
-                  "id": "ATL",
-                  "name": "Aeroporto Internacional de Atlanta Hartsfield-Jackson",
+                  "id": "YYZ",
+                  "name": "Aeroporto Internacional Pearson de Toronto",
                   "time": "2027-03-06 07:25"
                 },
-                "duration_minutes": 118,
-                "flight_number": "DL 1334",
+                "duration_minutes": 202,
+                "flight_number": "AC 1022",
                 "travel_class": "Economy"
               }
             ],
             "stops": 2,
-            "total_duration_minutes": 1488,
-            "type": "round_trip"
+            "total_duration_minutes": 1292,
+            "type": "multi_city"
           },
           "links": {
-            "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDVkNQcgcIARIDRkxMGh4SCjIwMjctMDMtMTRqBwgBEgNGTExyBwgBEgNWQ1BAAUABQANIAXABmAEB&tfu=EgIIAQ"
+            "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDVkNQcgcIARIDRkxMGh4SCjIwMjctMDMtMTRqBwgBEgNNSUFyBwgBEgNHUlVAAUABQANIAXABmAED&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T19:44:45Z",
+          "observed_at_utc": "2026-09-22T20:09:23Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -2449,7 +2608,7 @@
             "infants_on_lap": 1
           },
           "price": {
-            "amount": 6463,
+            "amount": 6845.5,
             "currency": "BRL",
             "includes_infants_on_lap": null,
             "includes_taxes": null,
@@ -2459,11 +2618,13 @@
           "provider": "serpapi",
           "route": {
             "destination": "FLL",
-            "origin": "VCP"
+            "origin": "VCP",
+            "return_destination": "GRU",
+            "return_origin": "MIA"
           },
-          "route_verified": true,
+          "route_verified": false,
           "source": "other_flights",
-          "status": "complete"
+          "status": "pending"
         },
         {
           "baggage": {
@@ -2471,10 +2632,10 @@
             "included": false,
             "status": "unknown"
           },
-          "comparison_eligible": true,
-          "compatibility_key": "a1882742b58990f89701",
+          "comparison_eligible": false,
+          "compatibility_key": "42652eb1c84cd5ab4b71",
           "currency": "BRL",
-          "id": "offer-eba533dca551965a2c88",
+          "id": "offer-4e77e14f3bbad5003b76",
           "itinerary": {
             "segments": [
               {
@@ -2531,12 +2692,12 @@
             ],
             "stops": 2,
             "total_duration_minutes": 1094,
-            "type": "round_trip"
+            "type": "multi_city"
           },
           "links": {
-            "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDVkNQcgcIARIDRkxMGh4SCjIwMjctMDMtMTRqBwgBEgNGTExyBwgBEgNWQ1BAAUABQANIAXABmAEB&tfu=EgIIAQ"
+            "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDVkNQcgcIARIDRkxMGh4SCjIwMjctMDMtMTRqBwgBEgNNSUFyBwgBEgNHUlVAAUABQANIAXABmAED&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T19:44:45Z",
+          "observed_at_utc": "2026-09-22T20:09:23Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -2544,7 +2705,7 @@
             "infants_on_lap": 1
           },
           "price": {
-            "amount": 32060,
+            "amount": 24159.5,
             "currency": "BRL",
             "includes_infants_on_lap": null,
             "includes_taxes": null,
@@ -2554,21 +2715,23 @@
           "provider": "serpapi",
           "route": {
             "destination": "FLL",
-            "origin": "VCP"
+            "origin": "VCP",
+            "return_destination": "GRU",
+            "return_origin": "MIA"
           },
-          "route_verified": true,
+          "route_verified": false,
           "source": "other_flights",
-          "status": "complete"
+          "status": "pending"
         }
       ],
-      "last_valid_run_id": "run-d55ee0a41703829d67f3",
+      "last_valid_run_id": "run-6045992ffc91fa3471af",
       "status": "success"
     },
     "VCP-MCO": {
-      "last_attempt_at_utc": "2026-09-22T19:44:45Z",
+      "last_attempt_at_utc": "2026-09-22T20:09:23Z",
       "last_error": null,
       "last_result_status": "success",
-      "last_success_at_utc": "2026-09-22T19:44:45Z",
+      "last_success_at_utc": "2026-09-22T20:09:23Z",
       "last_valid_offers": [
         {
           "baggage": {
@@ -2576,10 +2739,10 @@
             "included": false,
             "status": "unknown"
           },
-          "comparison_eligible": true,
-          "compatibility_key": "fe54b679563348f2606e",
+          "comparison_eligible": false,
+          "compatibility_key": "5e0c483834ac12e171ea",
           "currency": "BRL",
-          "id": "offer-c1c933681b5b4d7a7e74",
+          "id": "offer-37ee1414954487a9cbf9",
           "itinerary": {
             "segments": [
               {
@@ -2636,12 +2799,12 @@
             ],
             "stops": 2,
             "total_duration_minutes": 1105,
-            "type": "round_trip"
+            "type": "multi_city"
           },
           "links": {
-            "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDVkNQcgcIARIDTUNPGh4SCjIwMjctMDMtMTRqBwgBEgNNQ09yBwgBEgNWQ1BAAUABQANIAXABmAEB&tfu=EgIIAQ"
+            "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDVkNQcgcIARIDTUNPGh4SCjIwMjctMDMtMTRqBwgBEgNGTExyBwgBEgNHUlVAAUABQANIAXABmAED&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T19:44:45Z",
+          "observed_at_utc": "2026-09-22T20:09:23Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -2649,7 +2812,7 @@
             "infants_on_lap": 1
           },
           "price": {
-            "amount": 4127.5,
+            "amount": 4567.0,
             "currency": "BRL",
             "includes_infants_on_lap": null,
             "includes_taxes": null,
@@ -2659,11 +2822,13 @@
           "provider": "serpapi",
           "route": {
             "destination": "MCO",
-            "origin": "VCP"
+            "origin": "VCP",
+            "return_destination": "GRU",
+            "return_origin": "FLL"
           },
-          "route_verified": true,
+          "route_verified": false,
           "source": "best_flights",
-          "status": "complete"
+          "status": "pending"
         },
         {
           "baggage": {
@@ -2671,10 +2836,10 @@
             "included": false,
             "status": "unknown"
           },
-          "comparison_eligible": true,
-          "compatibility_key": "fe54b679563348f2606e",
+          "comparison_eligible": false,
+          "compatibility_key": "5e0c483834ac12e171ea",
           "currency": "BRL",
-          "id": "offer-d427947434a349c21b9a",
+          "id": "offer-869e49b47c26ec7b539c",
           "itinerary": {
             "segments": [
               {
@@ -2697,12 +2862,12 @@
             ],
             "stops": 0,
             "total_duration_minutes": 555,
-            "type": "round_trip"
+            "type": "multi_city"
           },
           "links": {
-            "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDVkNQcgcIARIDTUNPGh4SCjIwMjctMDMtMTRqBwgBEgNNQ09yBwgBEgNWQ1BAAUABQANIAXABmAEB&tfu=EgIIAQ"
+            "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDVkNQcgcIARIDTUNPGh4SCjIwMjctMDMtMTRqBwgBEgNGTExyBwgBEgNHUlVAAUABQANIAXABmAED&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T19:44:45Z",
+          "observed_at_utc": "2026-09-22T20:09:23Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -2710,7 +2875,7 @@
             "infants_on_lap": 1
           },
           "price": {
-            "amount": 4957.5,
+            "amount": 5215.5,
             "currency": "BRL",
             "includes_infants_on_lap": null,
             "includes_taxes": null,
@@ -2720,11 +2885,13 @@
           "provider": "serpapi",
           "route": {
             "destination": "MCO",
-            "origin": "VCP"
+            "origin": "VCP",
+            "return_destination": "GRU",
+            "return_origin": "FLL"
           },
-          "route_verified": true,
+          "route_verified": false,
           "source": "best_flights",
-          "status": "complete"
+          "status": "pending"
         },
         {
           "baggage": {
@@ -2732,10 +2899,107 @@
             "included": false,
             "status": "unknown"
           },
-          "comparison_eligible": true,
-          "compatibility_key": "fe54b679563348f2606e",
+          "comparison_eligible": false,
+          "compatibility_key": "5e0c483834ac12e171ea",
           "currency": "BRL",
-          "id": "offer-ce90116d39898c58e1ea",
+          "id": "offer-3dbc7c70fcd7d8ad01a7",
+          "itinerary": {
+            "segments": [
+              {
+                "airline": "Azul",
+                "arrival_airport": {
+                  "id": "GIG",
+                  "name": "Aeroporto Internacional do Rio de Janeiro - Galeão – Antonio Carlos Jobim",
+                  "time": "2027-03-05 16:20"
+                },
+                "available": true,
+                "departure_airport": {
+                  "id": "VCP",
+                  "name": "Aeroporto Internacional de Viracopos",
+                  "time": "2027-03-05 15:15"
+                },
+                "duration_minutes": 65,
+                "flight_number": "AD 4037",
+                "travel_class": "Economy"
+              },
+              {
+                "airline": "Air Canada",
+                "arrival_airport": {
+                  "id": "YYZ",
+                  "name": "Aeroporto Internacional Pearson de Toronto",
+                  "time": "2027-03-06 05:35"
+                },
+                "available": true,
+                "departure_airport": {
+                  "id": "GIG",
+                  "name": "Aeroporto Internacional do Rio de Janeiro - Galeão – Antonio Carlos Jobim",
+                  "time": "2027-03-05 21:00"
+                },
+                "duration_minutes": 635,
+                "flight_number": "AC 85",
+                "travel_class": "Economy"
+              },
+              {
+                "airline": "Air Canada",
+                "arrival_airport": {
+                  "id": "MCO",
+                  "name": "Aeroporto Internacional de Orlando",
+                  "time": "2027-03-06 11:05"
+                },
+                "available": true,
+                "departure_airport": {
+                  "id": "YYZ",
+                  "name": "Aeroporto Internacional Pearson de Toronto",
+                  "time": "2027-03-06 08:10"
+                },
+                "duration_minutes": 175,
+                "flight_number": "AC 1672",
+                "travel_class": "Economy"
+              }
+            ],
+            "stops": 2,
+            "total_duration_minutes": 1310,
+            "type": "multi_city"
+          },
+          "links": {
+            "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDVkNQcgcIARIDTUNPGh4SCjIwMjctMDMtMTRqBwgBEgNGTExyBwgBEgNHUlVAAUABQANIAXABmAED&tfu=EgIIAQ"
+          },
+          "observed_at_utc": "2026-09-22T20:09:23Z",
+          "passengers": {
+            "adults": 2,
+            "children": 0,
+            "infants_in_seat": 0,
+            "infants_on_lap": 1
+          },
+          "price": {
+            "amount": 5238.0,
+            "currency": "BRL",
+            "includes_infants_on_lap": null,
+            "includes_taxes": null,
+            "interpretation": "provider_value_scope_unknown",
+            "scope": "unknown"
+          },
+          "provider": "serpapi",
+          "route": {
+            "destination": "MCO",
+            "origin": "VCP",
+            "return_destination": "GRU",
+            "return_origin": "FLL"
+          },
+          "route_verified": false,
+          "source": "best_flights",
+          "status": "pending"
+        },
+        {
+          "baggage": {
+            "counted_in_price": false,
+            "included": false,
+            "status": "unknown"
+          },
+          "comparison_eligible": false,
+          "compatibility_key": "5e0c483834ac12e171ea",
+          "currency": "BRL",
+          "id": "offer-fd65c695ad0544c8c0ef",
           "itinerary": {
             "segments": [
               {
@@ -2758,12 +3022,12 @@
             ],
             "stops": 0,
             "total_duration_minutes": 555,
-            "type": "round_trip"
+            "type": "multi_city"
           },
           "links": {
-            "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDVkNQcgcIARIDTUNPGh4SCjIwMjctMDMtMTRqBwgBEgNNQ09yBwgBEgNWQ1BAAUABQANIAXABmAEB&tfu=EgIIAQ"
+            "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDVkNQcgcIARIDTUNPGh4SCjIwMjctMDMtMTRqBwgBEgNGTExyBwgBEgNHUlVAAUABQANIAXABmAED&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T19:44:45Z",
+          "observed_at_utc": "2026-09-22T20:09:23Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -2771,7 +3035,7 @@
             "infants_on_lap": 1
           },
           "price": {
-            "amount": 5061.5,
+            "amount": 5315.0,
             "currency": "BRL",
             "includes_infants_on_lap": null,
             "includes_taxes": null,
@@ -2781,11 +3045,13 @@
           "provider": "serpapi",
           "route": {
             "destination": "MCO",
-            "origin": "VCP"
+            "origin": "VCP",
+            "return_destination": "GRU",
+            "return_origin": "FLL"
           },
-          "route_verified": true,
+          "route_verified": false,
           "source": "best_flights",
-          "status": "complete"
+          "status": "pending"
         },
         {
           "baggage": {
@@ -2793,150 +3059,72 @@
             "included": false,
             "status": "unknown"
           },
-          "comparison_eligible": true,
-          "compatibility_key": "fe54b679563348f2606e",
+          "comparison_eligible": false,
+          "compatibility_key": "5e0c483834ac12e171ea",
           "currency": "BRL",
-          "id": "offer-7fbb2c9638a6af77db55",
+          "id": "offer-a02c57a4371fe46bdecb",
           "itinerary": {
             "segments": [
               {
                 "airline": "Azul",
                 "arrival_airport": {
-                  "id": "CNF",
-                  "name": "Aeroporto Internacional Belo Horizonte/Confins–Tancredo Neves",
-                  "time": "2027-03-05 22:55"
+                  "id": "GIG",
+                  "name": "Aeroporto Internacional do Rio de Janeiro - Galeão – Antonio Carlos Jobim",
+                  "time": "2027-03-05 16:20"
                 },
                 "available": true,
                 "departure_airport": {
                   "id": "VCP",
                   "name": "Aeroporto Internacional de Viracopos",
-                  "time": "2027-03-05 21:45"
+                  "time": "2027-03-05 15:15"
                 },
-                "duration_minutes": 70,
-                "flight_number": "AD 4484",
+                "duration_minutes": 65,
+                "flight_number": "AD 4037",
                 "travel_class": "Economy"
               },
               {
-                "airline": "Azul",
+                "airline": "Air Canada",
+                "arrival_airport": {
+                  "id": "YYZ",
+                  "name": "Aeroporto Internacional Pearson de Toronto",
+                  "time": "2027-03-06 05:35"
+                },
+                "available": true,
+                "departure_airport": {
+                  "id": "GIG",
+                  "name": "Aeroporto Internacional do Rio de Janeiro - Galeão – Antonio Carlos Jobim",
+                  "time": "2027-03-05 21:00"
+                },
+                "duration_minutes": 635,
+                "flight_number": "AC 85",
+                "travel_class": "Economy"
+              },
+              {
+                "airline": "Air Canada",
                 "arrival_airport": {
                   "id": "MCO",
                   "name": "Aeroporto Internacional de Orlando",
-                  "time": "2027-03-06 19:30"
+                  "time": "2027-03-06 19:45"
                 },
                 "available": true,
                 "departure_airport": {
-                  "id": "CNF",
-                  "name": "Aeroporto Internacional Belo Horizonte/Confins–Tancredo Neves",
-                  "time": "2027-03-06 12:25"
+                  "id": "YYZ",
+                  "name": "Aeroporto Internacional Pearson de Toronto",
+                  "time": "2027-03-06 16:50"
                 },
-                "duration_minutes": 545,
-                "flight_number": "AD 8730",
-                "travel_class": "Economy"
-              }
-            ],
-            "stops": 1,
-            "total_duration_minutes": 1425,
-            "type": "round_trip"
-          },
-          "links": {
-            "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDVkNQcgcIARIDTUNPGh4SCjIwMjctMDMtMTRqBwgBEgNNQ09yBwgBEgNWQ1BAAUABQANIAXABmAEB&tfu=EgIIAQ"
-          },
-          "observed_at_utc": "2026-09-22T19:44:45Z",
-          "passengers": {
-            "adults": 2,
-            "children": 0,
-            "infants_in_seat": 0,
-            "infants_on_lap": 1
-          },
-          "price": {
-            "amount": 5453.5,
-            "currency": "BRL",
-            "includes_infants_on_lap": null,
-            "includes_taxes": null,
-            "interpretation": "provider_value_scope_unknown",
-            "scope": "unknown"
-          },
-          "provider": "serpapi",
-          "route": {
-            "destination": "MCO",
-            "origin": "VCP"
-          },
-          "route_verified": true,
-          "source": "best_flights",
-          "status": "complete"
-        },
-        {
-          "baggage": {
-            "counted_in_price": false,
-            "included": false,
-            "status": "unknown"
-          },
-          "comparison_eligible": true,
-          "compatibility_key": "fe54b679563348f2606e",
-          "currency": "BRL",
-          "id": "offer-e3e710450801e31182b2",
-          "itinerary": {
-            "segments": [
-              {
-                "airline": "Azul",
-                "arrival_airport": {
-                  "id": "FLL",
-                  "name": "Aeroporto Internacional de Fort Lauderdale-Hollywood",
-                  "time": "2027-03-06 05:55"
-                },
-                "available": true,
-                "departure_airport": {
-                  "id": "VCP",
-                  "name": "Aeroporto Internacional de Viracopos",
-                  "time": "2027-03-05 23:05"
-                },
-                "duration_minutes": 530,
-                "flight_number": "AD 8704",
-                "travel_class": "Economy"
-              },
-              {
-                "airline": "United",
-                "arrival_airport": {
-                  "id": "IAH",
-                  "name": "Aeroporto Intercontinental George Bush",
-                  "time": "2027-03-06 11:00"
-                },
-                "available": true,
-                "departure_airport": {
-                  "id": "FLL",
-                  "name": "Aeroporto Internacional de Fort Lauderdale-Hollywood",
-                  "time": "2027-03-06 09:00"
-                },
-                "duration_minutes": 180,
-                "flight_number": "UA 722",
-                "travel_class": "Economy"
-              },
-              {
-                "airline": "United",
-                "arrival_airport": {
-                  "id": "MCO",
-                  "name": "Aeroporto Internacional de Orlando",
-                  "time": "2027-03-06 15:40"
-                },
-                "available": true,
-                "departure_airport": {
-                  "id": "IAH",
-                  "name": "Aeroporto Intercontinental George Bush",
-                  "time": "2027-03-06 12:20"
-                },
-                "duration_minutes": 140,
-                "flight_number": "UA 2662",
+                "duration_minutes": 175,
+                "flight_number": "AC 1676",
                 "travel_class": "Economy"
               }
             ],
             "stops": 2,
-            "total_duration_minutes": 1115,
-            "type": "round_trip"
+            "total_duration_minutes": 1830,
+            "type": "multi_city"
           },
           "links": {
-            "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDVkNQcgcIARIDTUNPGh4SCjIwMjctMDMtMTRqBwgBEgNNQ09yBwgBEgNWQ1BAAUABQANIAXABmAEB&tfu=EgIIAQ"
+            "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDVkNQcgcIARIDTUNPGh4SCjIwMjctMDMtMTRqBwgBEgNGTExyBwgBEgNHUlVAAUABQANIAXABmAED&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T19:44:45Z",
+          "observed_at_utc": "2026-09-22T20:09:23Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -2944,7 +3132,7 @@
             "infants_on_lap": 1
           },
           "price": {
-            "amount": 38506,
+            "amount": 4889.5,
             "currency": "BRL",
             "includes_infants_on_lap": null,
             "includes_taxes": null,
@@ -2954,11 +3142,13 @@
           "provider": "serpapi",
           "route": {
             "destination": "MCO",
-            "origin": "VCP"
+            "origin": "VCP",
+            "return_destination": "GRU",
+            "return_origin": "FLL"
           },
-          "route_verified": true,
+          "route_verified": false,
           "source": "other_flights",
-          "status": "complete"
+          "status": "pending"
         },
         {
           "baggage": {
@@ -2966,10 +3156,204 @@
             "included": false,
             "status": "unknown"
           },
-          "comparison_eligible": true,
-          "compatibility_key": "fe54b679563348f2606e",
+          "comparison_eligible": false,
+          "compatibility_key": "5e0c483834ac12e171ea",
           "currency": "BRL",
-          "id": "offer-e839281c9a97479b3240",
+          "id": "offer-cd566775bbe9f7ea73e2",
+          "itinerary": {
+            "segments": [
+              {
+                "airline": "Gol",
+                "arrival_airport": {
+                  "id": "GIG",
+                  "name": "Aeroporto Internacional do Rio de Janeiro - Galeão – Antonio Carlos Jobim",
+                  "time": "2027-03-05 11:45"
+                },
+                "available": true,
+                "departure_airport": {
+                  "id": "VCP",
+                  "name": "Aeroporto Internacional de Viracopos",
+                  "time": "2027-03-05 10:35"
+                },
+                "duration_minutes": 70,
+                "flight_number": "G3 2095",
+                "travel_class": "Economy"
+              },
+              {
+                "airline": "Avianca",
+                "arrival_airport": {
+                  "id": "BOG",
+                  "name": "El Dorado International Airport",
+                  "time": "2027-03-06 06:00"
+                },
+                "available": true,
+                "departure_airport": {
+                  "id": "GIG",
+                  "name": "Aeroporto Internacional do Rio de Janeiro - Galeão – Antonio Carlos Jobim",
+                  "time": "2027-03-06 01:40"
+                },
+                "duration_minutes": 380,
+                "flight_number": "AV 198",
+                "travel_class": "Economy"
+              },
+              {
+                "airline": "Avianca",
+                "arrival_airport": {
+                  "id": "MCO",
+                  "name": "Aeroporto Internacional de Orlando",
+                  "time": "2027-03-06 12:35"
+                },
+                "available": true,
+                "departure_airport": {
+                  "id": "BOG",
+                  "name": "El Dorado International Airport",
+                  "time": "2027-03-06 08:20"
+                },
+                "duration_minutes": 255,
+                "flight_number": "AV 28",
+                "travel_class": "Economy"
+              }
+            ],
+            "stops": 2,
+            "total_duration_minutes": 1680,
+            "type": "multi_city"
+          },
+          "links": {
+            "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDVkNQcgcIARIDTUNPGh4SCjIwMjctMDMtMTRqBwgBEgNGTExyBwgBEgNHUlVAAUABQANIAXABmAED&tfu=EgIIAQ"
+          },
+          "observed_at_utc": "2026-09-22T20:09:23Z",
+          "passengers": {
+            "adults": 2,
+            "children": 0,
+            "infants_in_seat": 0,
+            "infants_on_lap": 1
+          },
+          "price": {
+            "amount": 5192.0,
+            "currency": "BRL",
+            "includes_infants_on_lap": null,
+            "includes_taxes": null,
+            "interpretation": "provider_value_scope_unknown",
+            "scope": "unknown"
+          },
+          "provider": "serpapi",
+          "route": {
+            "destination": "MCO",
+            "origin": "VCP",
+            "return_destination": "GRU",
+            "return_origin": "FLL"
+          },
+          "route_verified": false,
+          "source": "other_flights",
+          "status": "pending"
+        },
+        {
+          "baggage": {
+            "counted_in_price": false,
+            "included": false,
+            "status": "unknown"
+          },
+          "comparison_eligible": false,
+          "compatibility_key": "5e0c483834ac12e171ea",
+          "currency": "BRL",
+          "id": "offer-6b581ba3d09cfcdf9aaa",
+          "itinerary": {
+            "segments": [
+              {
+                "airline": "Gol",
+                "arrival_airport": {
+                  "id": "GIG",
+                  "name": "Aeroporto Internacional do Rio de Janeiro - Galeão – Antonio Carlos Jobim",
+                  "time": "2027-03-05 11:45"
+                },
+                "available": true,
+                "departure_airport": {
+                  "id": "VCP",
+                  "name": "Aeroporto Internacional de Viracopos",
+                  "time": "2027-03-05 10:35"
+                },
+                "duration_minutes": 70,
+                "flight_number": "G3 2095",
+                "travel_class": "Economy"
+              },
+              {
+                "airline": "Avianca",
+                "arrival_airport": {
+                  "id": "BOG",
+                  "name": "El Dorado International Airport",
+                  "time": "2027-03-05 21:10"
+                },
+                "available": true,
+                "departure_airport": {
+                  "id": "GIG",
+                  "name": "Aeroporto Internacional do Rio de Janeiro - Galeão – Antonio Carlos Jobim",
+                  "time": "2027-03-05 16:50"
+                },
+                "duration_minutes": 380,
+                "flight_number": "AV 146",
+                "travel_class": "Economy"
+              },
+              {
+                "airline": "Avianca",
+                "arrival_airport": {
+                  "id": "MCO",
+                  "name": "Aeroporto Internacional de Orlando",
+                  "time": "2027-03-06 12:35"
+                },
+                "available": true,
+                "departure_airport": {
+                  "id": "BOG",
+                  "name": "El Dorado International Airport",
+                  "time": "2027-03-06 08:20"
+                },
+                "duration_minutes": 255,
+                "flight_number": "AV 28",
+                "travel_class": "Economy"
+              }
+            ],
+            "stops": 2,
+            "total_duration_minutes": 1680,
+            "type": "multi_city"
+          },
+          "links": {
+            "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDVkNQcgcIARIDTUNPGh4SCjIwMjctMDMtMTRqBwgBEgNGTExyBwgBEgNHUlVAAUABQANIAXABmAED&tfu=EgIIAQ"
+          },
+          "observed_at_utc": "2026-09-22T20:09:23Z",
+          "passengers": {
+            "adults": 2,
+            "children": 0,
+            "infants_in_seat": 0,
+            "infants_on_lap": 1
+          },
+          "price": {
+            "amount": 5192.0,
+            "currency": "BRL",
+            "includes_infants_on_lap": null,
+            "includes_taxes": null,
+            "interpretation": "provider_value_scope_unknown",
+            "scope": "unknown"
+          },
+          "provider": "serpapi",
+          "route": {
+            "destination": "MCO",
+            "origin": "VCP",
+            "return_destination": "GRU",
+            "return_origin": "FLL"
+          },
+          "route_verified": false,
+          "source": "other_flights",
+          "status": "pending"
+        },
+        {
+          "baggage": {
+            "counted_in_price": false,
+            "included": false,
+            "status": "unknown"
+          },
+          "comparison_eligible": false,
+          "compatibility_key": "5e0c483834ac12e171ea",
+          "currency": "BRL",
+          "id": "offer-658054645bbf1ee27667",
           "itinerary": {
             "segments": [
               {
@@ -3026,12 +3410,12 @@
             ],
             "stops": 2,
             "total_duration_minutes": 1080,
-            "type": "round_trip"
+            "type": "multi_city"
           },
           "links": {
-            "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDVkNQcgcIARIDTUNPGh4SCjIwMjctMDMtMTRqBwgBEgNNQ09yBwgBEgNWQ1BAAUABQANIAXABmAEB&tfu=EgIIAQ"
+            "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDVkNQcgcIARIDTUNPGh4SCjIwMjctMDMtMTRqBwgBEgNGTExyBwgBEgNHUlVAAUABQANIAXABmAED&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T19:44:45Z",
+          "observed_at_utc": "2026-09-22T20:09:23Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -3039,7 +3423,7 @@
             "infants_on_lap": 1
           },
           "price": {
-            "amount": 38544,
+            "amount": 23193.5,
             "currency": "BRL",
             "includes_infants_on_lap": null,
             "includes_taxes": null,
@@ -3049,11 +3433,13 @@
           "provider": "serpapi",
           "route": {
             "destination": "MCO",
-            "origin": "VCP"
+            "origin": "VCP",
+            "return_destination": "GRU",
+            "return_origin": "FLL"
           },
-          "route_verified": true,
+          "route_verified": false,
           "source": "other_flights",
-          "status": "complete"
+          "status": "pending"
         },
         {
           "baggage": {
@@ -3061,44 +3447,27 @@
             "included": false,
             "status": "unknown"
           },
-          "comparison_eligible": true,
-          "compatibility_key": "fe54b679563348f2606e",
+          "comparison_eligible": false,
+          "compatibility_key": "5e0c483834ac12e171ea",
           "currency": "BRL",
-          "id": "offer-ad786cc5bbdd03870055",
+          "id": "offer-b04a33ef5f3dd92017d0",
           "itinerary": {
             "segments": [
               {
                 "airline": "Azul",
                 "arrival_airport": {
-                  "id": "GIG",
-                  "name": "Aeroporto Internacional do Rio de Janeiro - Galeão – Antonio Carlos Jobim",
-                  "time": "2027-03-06 00:25"
+                  "id": "CNF",
+                  "name": "Aeroporto Internacional Belo Horizonte/Confins–Tancredo Neves",
+                  "time": "2027-03-05 22:55"
                 },
                 "available": true,
                 "departure_airport": {
                   "id": "VCP",
                   "name": "Aeroporto Internacional de Viracopos",
-                  "time": "2027-03-05 23:20"
+                  "time": "2027-03-05 21:45"
                 },
-                "duration_minutes": 65,
-                "flight_number": "AD 4449",
-                "travel_class": "Economy"
-              },
-              {
-                "airline": "Azul",
-                "arrival_airport": {
-                  "id": "CNF",
-                  "name": "Aeroporto Internacional Belo Horizonte/Confins–Tancredo Neves",
-                  "time": "2027-03-06 07:15"
-                },
-                "available": true,
-                "departure_airport": {
-                  "id": "GIG",
-                  "name": "Aeroporto Internacional do Rio de Janeiro - Galeão – Antonio Carlos Jobim",
-                  "time": "2027-03-06 06:10"
-                },
-                "duration_minutes": 65,
-                "flight_number": "AD 4505",
+                "duration_minutes": 70,
+                "flight_number": "AD 4484",
                 "travel_class": "Economy"
               },
               {
@@ -3119,14 +3488,14 @@
                 "travel_class": "Economy"
               }
             ],
-            "stops": 2,
-            "total_duration_minutes": 1330,
-            "type": "round_trip"
+            "stops": 1,
+            "total_duration_minutes": 1425,
+            "type": "multi_city"
           },
           "links": {
-            "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDVkNQcgcIARIDTUNPGh4SCjIwMjctMDMtMTRqBwgBEgNNQ09yBwgBEgNWQ1BAAUABQANIAXABmAEB&tfu=EgIIAQ"
+            "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDVkNQcgcIARIDTUNPGh4SCjIwMjctMDMtMTRqBwgBEgNGTExyBwgBEgNHUlVAAUABQANIAXABmAED&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T19:44:45Z",
+          "observed_at_utc": "2026-09-22T20:09:23Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -3134,7 +3503,7 @@
             "infants_on_lap": 1
           },
           "price": {
-            "amount": 38636,
+            "amount": 23285.5,
             "currency": "BRL",
             "includes_infants_on_lap": null,
             "includes_taxes": null,
@@ -3144,116 +3513,23 @@
           "provider": "serpapi",
           "route": {
             "destination": "MCO",
-            "origin": "VCP"
+            "origin": "VCP",
+            "return_destination": "GRU",
+            "return_origin": "FLL"
           },
-          "route_verified": true,
+          "route_verified": false,
           "source": "other_flights",
-          "status": "complete"
-        },
-        {
-          "baggage": {
-            "counted_in_price": false,
-            "included": false,
-            "status": "unknown"
-          },
-          "comparison_eligible": true,
-          "compatibility_key": "fe54b679563348f2606e",
-          "currency": "BRL",
-          "id": "offer-83c0a9e63ef0eb7d1a4f",
-          "itinerary": {
-            "segments": [
-              {
-                "airline": "Azul",
-                "arrival_airport": {
-                  "id": "FLL",
-                  "name": "Aeroporto Internacional de Fort Lauderdale-Hollywood",
-                  "time": "2027-03-06 05:55"
-                },
-                "available": true,
-                "departure_airport": {
-                  "id": "VCP",
-                  "name": "Aeroporto Internacional de Viracopos",
-                  "time": "2027-03-05 23:05"
-                },
-                "duration_minutes": 530,
-                "flight_number": "AD 8704",
-                "travel_class": "Economy"
-              },
-              {
-                "airline": "United",
-                "arrival_airport": {
-                  "id": "IAD",
-                  "name": "Aeroporto Internacional Washington Dulles",
-                  "time": "2027-03-06 11:10"
-                },
-                "available": true,
-                "departure_airport": {
-                  "id": "FLL",
-                  "name": "Aeroporto Internacional de Fort Lauderdale-Hollywood",
-                  "time": "2027-03-06 08:50"
-                },
-                "duration_minutes": 140,
-                "flight_number": "UA 2169",
-                "travel_class": "Economy"
-              },
-              {
-                "airline": "United",
-                "arrival_airport": {
-                  "id": "MCO",
-                  "name": "Aeroporto Internacional de Orlando",
-                  "time": "2027-03-06 14:59"
-                },
-                "available": true,
-                "departure_airport": {
-                  "id": "IAD",
-                  "name": "Aeroporto Internacional Washington Dulles",
-                  "time": "2027-03-06 12:40"
-                },
-                "duration_minutes": 139,
-                "flight_number": "UA 2206",
-                "travel_class": "Economy"
-              }
-            ],
-            "stops": 2,
-            "total_duration_minutes": 1074,
-            "type": "round_trip"
-          },
-          "links": {
-            "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDVkNQcgcIARIDTUNPGh4SCjIwMjctMDMtMTRqBwgBEgNNQ09yBwgBEgNWQ1BAAUABQANIAXABmAEB&tfu=EgIIAQ"
-          },
-          "observed_at_utc": "2026-09-22T19:44:45Z",
-          "passengers": {
-            "adults": 2,
-            "children": 0,
-            "infants_in_seat": 0,
-            "infants_on_lap": 1
-          },
-          "price": {
-            "amount": 41346,
-            "currency": "BRL",
-            "includes_infants_on_lap": null,
-            "includes_taxes": null,
-            "interpretation": "provider_value_scope_unknown",
-            "scope": "unknown"
-          },
-          "provider": "serpapi",
-          "route": {
-            "destination": "MCO",
-            "origin": "VCP"
-          },
-          "route_verified": true,
-          "source": "other_flights",
-          "status": "complete"
+          "status": "pending"
         }
       ],
-      "last_valid_run_id": "run-d55ee0a41703829d67f3",
+      "last_valid_run_id": "run-6045992ffc91fa3471af",
       "status": "success"
     },
     "VCP-MIA": {
-      "last_attempt_at_utc": "2026-09-22T19:44:45Z",
+      "last_attempt_at_utc": "2026-09-22T20:09:23Z",
       "last_error": null,
       "last_result_status": "success",
-      "last_success_at_utc": "2026-09-22T19:44:45Z",
+      "last_success_at_utc": "2026-09-22T20:09:23Z",
       "last_valid_offers": [
         {
           "baggage": {
@@ -3261,10 +3537,10 @@
             "included": false,
             "status": "unknown"
           },
-          "comparison_eligible": true,
-          "compatibility_key": "0bccd820a515d9f9f94a",
+          "comparison_eligible": false,
+          "compatibility_key": "8ff8756f7530f8eae235",
           "currency": "BRL",
-          "id": "offer-83084789ab58a9c610b0",
+          "id": "offer-2081643cfc3b4bedf85c",
           "itinerary": {
             "segments": [
               {
@@ -3321,12 +3597,12 @@
             ],
             "stops": 2,
             "total_duration_minutes": 890,
-            "type": "round_trip"
+            "type": "multi_city"
           },
           "links": {
-            "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDVkNQcgcIARIDTUlBGh4SCjIwMjctMDMtMTRqBwgBEgNNSUFyBwgBEgNWQ1BAAUABQANIAXABmAEB&tfu=EgIIAQ"
+            "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDVkNQcgcIARIDTUlBGh4SCjIwMjctMDMtMTRqBwgBEgNNQ09yBwgBEgNHUlVAAUABQANIAXABmAED&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T19:44:45Z",
+          "observed_at_utc": "2026-09-22T20:09:23Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -3334,7 +3610,7 @@
             "infants_on_lap": 1
           },
           "price": {
-            "amount": 4823,
+            "amount": 4588.0,
             "currency": "BRL",
             "includes_infants_on_lap": null,
             "includes_taxes": null,
@@ -3344,11 +3620,13 @@
           "provider": "serpapi",
           "route": {
             "destination": "MIA",
-            "origin": "VCP"
+            "origin": "VCP",
+            "return_destination": "GRU",
+            "return_origin": "MCO"
           },
-          "route_verified": true,
+          "route_verified": false,
           "source": "best_flights",
-          "status": "complete"
+          "status": "pending"
         },
         {
           "baggage": {
@@ -3356,10 +3634,10 @@
             "included": false,
             "status": "unknown"
           },
-          "comparison_eligible": true,
-          "compatibility_key": "0bccd820a515d9f9f94a",
+          "comparison_eligible": false,
+          "compatibility_key": "8ff8756f7530f8eae235",
           "currency": "BRL",
-          "id": "offer-bd2ee8a2ce9e934ebae3",
+          "id": "offer-fd35c21d432e60e641df",
           "itinerary": {
             "segments": [
               {
@@ -3399,12 +3677,12 @@
             ],
             "stops": 1,
             "total_duration_minutes": 1225,
-            "type": "round_trip"
+            "type": "multi_city"
           },
           "links": {
-            "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDVkNQcgcIARIDTUlBGh4SCjIwMjctMDMtMTRqBwgBEgNNSUFyBwgBEgNWQ1BAAUABQANIAXABmAEB&tfu=EgIIAQ"
+            "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDVkNQcgcIARIDTUlBGh4SCjIwMjctMDMtMTRqBwgBEgNNQ09yBwgBEgNHUlVAAUABQANIAXABmAED&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T19:44:45Z",
+          "observed_at_utc": "2026-09-22T20:09:23Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -3412,7 +3690,7 @@
             "infants_on_lap": 1
           },
           "price": {
-            "amount": 5904,
+            "amount": 6029.0,
             "currency": "BRL",
             "includes_infants_on_lap": null,
             "includes_taxes": null,
@@ -3422,11 +3700,13 @@
           "provider": "serpapi",
           "route": {
             "destination": "MIA",
-            "origin": "VCP"
+            "origin": "VCP",
+            "return_destination": "GRU",
+            "return_origin": "MCO"
           },
-          "route_verified": true,
+          "route_verified": false,
           "source": "best_flights",
-          "status": "complete"
+          "status": "pending"
         },
         {
           "baggage": {
@@ -3434,10 +3714,10 @@
             "included": false,
             "status": "unknown"
           },
-          "comparison_eligible": true,
-          "compatibility_key": "0bccd820a515d9f9f94a",
+          "comparison_eligible": false,
+          "compatibility_key": "8ff8756f7530f8eae235",
           "currency": "BRL",
-          "id": "offer-a32f86bd127b446e7ef8",
+          "id": "offer-b968146aa5a3035934c6",
           "itinerary": {
             "segments": [
               {
@@ -3494,12 +3774,12 @@
             ],
             "stops": 2,
             "total_duration_minutes": 1095,
-            "type": "round_trip"
+            "type": "multi_city"
           },
           "links": {
-            "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDVkNQcgcIARIDTUlBGh4SCjIwMjctMDMtMTRqBwgBEgNNSUFyBwgBEgNWQ1BAAUABQANIAXABmAEB&tfu=EgIIAQ"
+            "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDVkNQcgcIARIDTUlBGh4SCjIwMjctMDMtMTRqBwgBEgNNQ09yBwgBEgNHUlVAAUABQANIAXABmAED&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T19:44:45Z",
+          "observed_at_utc": "2026-09-22T20:09:23Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -3507,7 +3787,7 @@
             "infants_on_lap": 1
           },
           "price": {
-            "amount": 4823,
+            "amount": 4588.0,
             "currency": "BRL",
             "includes_infants_on_lap": null,
             "includes_taxes": null,
@@ -3517,11 +3797,13 @@
           "provider": "serpapi",
           "route": {
             "destination": "MIA",
-            "origin": "VCP"
+            "origin": "VCP",
+            "return_destination": "GRU",
+            "return_origin": "MCO"
           },
-          "route_verified": true,
+          "route_verified": false,
           "source": "other_flights",
-          "status": "complete"
+          "status": "pending"
         },
         {
           "baggage": {
@@ -3529,10 +3811,107 @@
             "included": false,
             "status": "unknown"
           },
-          "comparison_eligible": true,
-          "compatibility_key": "0bccd820a515d9f9f94a",
+          "comparison_eligible": false,
+          "compatibility_key": "8ff8756f7530f8eae235",
           "currency": "BRL",
-          "id": "offer-76666b1859cd37d93295",
+          "id": "offer-3471ea84f9c3765dd07b",
+          "itinerary": {
+            "segments": [
+              {
+                "airline": "Azul",
+                "arrival_airport": {
+                  "id": "GIG",
+                  "name": "Aeroporto Internacional do Rio de Janeiro - Galeão – Antonio Carlos Jobim",
+                  "time": "2027-03-05 16:20"
+                },
+                "available": true,
+                "departure_airport": {
+                  "id": "VCP",
+                  "name": "Aeroporto Internacional de Viracopos",
+                  "time": "2027-03-05 15:15"
+                },
+                "duration_minutes": 65,
+                "flight_number": "AD 4037",
+                "travel_class": "Economy"
+              },
+              {
+                "airline": "Air Canada",
+                "arrival_airport": {
+                  "id": "YYZ",
+                  "name": "Aeroporto Internacional Pearson de Toronto",
+                  "time": "2027-03-06 05:35"
+                },
+                "available": true,
+                "departure_airport": {
+                  "id": "GIG",
+                  "name": "Aeroporto Internacional do Rio de Janeiro - Galeão – Antonio Carlos Jobim",
+                  "time": "2027-03-05 21:00"
+                },
+                "duration_minutes": 635,
+                "flight_number": "AC 85",
+                "travel_class": "Economy"
+              },
+              {
+                "airline": "Air Canada",
+                "arrival_airport": {
+                  "id": "MIA",
+                  "name": "Aeroporto Internacional de Miami",
+                  "time": "2027-03-06 11:08"
+                },
+                "available": true,
+                "departure_airport": {
+                  "id": "YYZ",
+                  "name": "Aeroporto Internacional Pearson de Toronto",
+                  "time": "2027-03-06 07:40"
+                },
+                "duration_minutes": 208,
+                "flight_number": "AC 1210",
+                "travel_class": "Economy"
+              }
+            ],
+            "stops": 2,
+            "total_duration_minutes": 1313,
+            "type": "multi_city"
+          },
+          "links": {
+            "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDVkNQcgcIARIDTUlBGh4SCjIwMjctMDMtMTRqBwgBEgNNQ09yBwgBEgNHUlVAAUABQANIAXABmAED&tfu=EgIIAQ"
+          },
+          "observed_at_utc": "2026-09-22T20:09:23Z",
+          "passengers": {
+            "adults": 2,
+            "children": 0,
+            "infants_in_seat": 0,
+            "infants_on_lap": 1
+          },
+          "price": {
+            "amount": 6181.5,
+            "currency": "BRL",
+            "includes_infants_on_lap": null,
+            "includes_taxes": null,
+            "interpretation": "provider_value_scope_unknown",
+            "scope": "unknown"
+          },
+          "provider": "serpapi",
+          "route": {
+            "destination": "MIA",
+            "origin": "VCP",
+            "return_destination": "GRU",
+            "return_origin": "MCO"
+          },
+          "route_verified": false,
+          "source": "other_flights",
+          "status": "pending"
+        },
+        {
+          "baggage": {
+            "counted_in_price": false,
+            "included": false,
+            "status": "unknown"
+          },
+          "comparison_eligible": false,
+          "compatibility_key": "8ff8756f7530f8eae235",
+          "currency": "BRL",
+          "id": "offer-67c50c509c199cdb0eef",
           "itinerary": {
             "segments": [
               {
@@ -3589,12 +3968,12 @@
             ],
             "stops": 2,
             "total_duration_minutes": 1430,
-            "type": "round_trip"
+            "type": "multi_city"
           },
           "links": {
-            "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDVkNQcgcIARIDTUlBGh4SCjIwMjctMDMtMTRqBwgBEgNNSUFyBwgBEgNWQ1BAAUABQANIAXABmAEB&tfu=EgIIAQ"
+            "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDVkNQcgcIARIDTUlBGh4SCjIwMjctMDMtMTRqBwgBEgNNQ09yBwgBEgNHUlVAAUABQANIAXABmAED&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T19:44:45Z",
+          "observed_at_utc": "2026-09-22T20:09:23Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -3602,7 +3981,7 @@
             "infants_on_lap": 1
           },
           "price": {
-            "amount": 6474,
+            "amount": 9593.0,
             "currency": "BRL",
             "includes_infants_on_lap": null,
             "includes_taxes": null,
@@ -3612,11 +3991,13 @@
           "provider": "serpapi",
           "route": {
             "destination": "MIA",
-            "origin": "VCP"
+            "origin": "VCP",
+            "return_destination": "GRU",
+            "return_origin": "MCO"
           },
-          "route_verified": true,
+          "route_verified": false,
           "source": "other_flights",
-          "status": "complete"
+          "status": "pending"
         },
         {
           "baggage": {
@@ -3624,10 +4005,10 @@
             "included": false,
             "status": "unknown"
           },
-          "comparison_eligible": true,
-          "compatibility_key": "0bccd820a515d9f9f94a",
+          "comparison_eligible": false,
+          "compatibility_key": "8ff8756f7530f8eae235",
           "currency": "BRL",
-          "id": "offer-09633509fee5413da01b",
+          "id": "offer-20b665e11d94de8de01e",
           "itinerary": {
             "segments": [
               {
@@ -3684,12 +4065,12 @@
             ],
             "stops": 2,
             "total_duration_minutes": 1505,
-            "type": "round_trip"
+            "type": "multi_city"
           },
           "links": {
-            "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDVkNQcgcIARIDTUlBGh4SCjIwMjctMDMtMTRqBwgBEgNNSUFyBwgBEgNWQ1BAAUABQANIAXABmAEB&tfu=EgIIAQ"
+            "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDVkNQcgcIARIDTUlBGh4SCjIwMjctMDMtMTRqBwgBEgNNQ09yBwgBEgNHUlVAAUABQANIAXABmAED&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T19:44:45Z",
+          "observed_at_utc": "2026-09-22T20:09:23Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -3697,7 +4078,7 @@
             "infants_on_lap": 1
           },
           "price": {
-            "amount": 6474,
+            "amount": 9616.0,
             "currency": "BRL",
             "includes_infants_on_lap": null,
             "includes_taxes": null,
@@ -3707,11 +4088,13 @@
           "provider": "serpapi",
           "route": {
             "destination": "MIA",
-            "origin": "VCP"
+            "origin": "VCP",
+            "return_destination": "GRU",
+            "return_origin": "MCO"
           },
-          "route_verified": true,
+          "route_verified": false,
           "source": "other_flights",
-          "status": "complete"
+          "status": "pending"
         },
         {
           "baggage": {
@@ -3719,10 +4102,10 @@
             "included": false,
             "status": "unknown"
           },
-          "comparison_eligible": true,
-          "compatibility_key": "0bccd820a515d9f9f94a",
+          "comparison_eligible": false,
+          "compatibility_key": "8ff8756f7530f8eae235",
           "currency": "BRL",
-          "id": "offer-5d683c5df834bee9f887",
+          "id": "offer-70d9a9ad58b952024426",
           "itinerary": {
             "segments": [
               {
@@ -3779,12 +4162,12 @@
             ],
             "stops": 2,
             "total_duration_minutes": 1081,
-            "type": "round_trip"
+            "type": "multi_city"
           },
           "links": {
-            "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDVkNQcgcIARIDTUlBGh4SCjIwMjctMDMtMTRqBwgBEgNNSUFyBwgBEgNWQ1BAAUABQANIAXABmAEB&tfu=EgIIAQ"
+            "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDVkNQcgcIARIDTUlBGh4SCjIwMjctMDMtMTRqBwgBEgNNQ09yBwgBEgNHUlVAAUABQANIAXABmAED&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T19:44:45Z",
+          "observed_at_utc": "2026-09-22T20:09:23Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -3792,7 +4175,7 @@
             "infants_on_lap": 1
           },
           "price": {
-            "amount": 38544,
+            "amount": 22388.5,
             "currency": "BRL",
             "includes_infants_on_lap": null,
             "includes_taxes": null,
@@ -3802,14 +4185,16 @@
           "provider": "serpapi",
           "route": {
             "destination": "MIA",
-            "origin": "VCP"
+            "origin": "VCP",
+            "return_destination": "GRU",
+            "return_origin": "MCO"
           },
-          "route_verified": true,
+          "route_verified": false,
           "source": "other_flights",
-          "status": "complete"
+          "status": "pending"
         }
       ],
-      "last_valid_run_id": "run-d55ee0a41703829d67f3",
+      "last_valid_run_id": "run-6045992ffc91fa3471af",
       "status": "success"
     }
   },
