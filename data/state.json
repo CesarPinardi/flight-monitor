@@ -4,73 +4,73 @@
       "FLL-GRU:return:4bf4b40bbc893d9d044c": {
         "currency": "BRL",
         "fingerprint": "53c07ec5667be8757157",
-        "observed_at_utc": "2026-09-22T21:07:22Z",
+        "observed_at_utc": "2026-09-22T21:08:48Z",
         "price": 2787.0
       },
       "FLL-VCP:return:66d5f9163819d4993d14": {
         "currency": "BRL",
         "fingerprint": "870e911e327bc3f904f2",
-        "observed_at_utc": "2026-09-22T21:07:22Z",
+        "observed_at_utc": "2026-09-22T21:08:48Z",
         "price": 2264.0
       },
       "GRU-FLL:outbound:35ff52af35b3d6cbf5c0": {
         "currency": "BRL",
         "fingerprint": "60b250e5b84a3ea42aa5",
-        "observed_at_utc": "2026-09-22T21:07:22Z",
+        "observed_at_utc": "2026-09-22T21:08:48Z",
         "price": 3122.0
       },
       "GRU-MCO:outbound:97748db1c401e9b2df72": {
         "currency": "BRL",
         "fingerprint": "c6ecbee260c478ce2106",
-        "observed_at_utc": "2026-09-22T21:07:22Z",
+        "observed_at_utc": "2026-09-22T21:08:48Z",
         "price": 2039.5
       },
       "GRU-MIA:outbound:3a803e2ae79dd172e9b7": {
         "currency": "BRL",
         "fingerprint": "0fd92ff02f9ca2a38e0d",
-        "observed_at_utc": "2026-09-22T21:07:22Z",
+        "observed_at_utc": "2026-09-22T21:08:48Z",
         "price": 1324.5
       },
       "MCO-GRU:return:8adf1638768e7cdf3df3": {
         "currency": "BRL",
         "fingerprint": "0c439f0aaf3593981d68",
-        "observed_at_utc": "2026-09-22T21:07:22Z",
+        "observed_at_utc": "2026-09-22T21:08:48Z",
         "price": 1796.5
       },
       "MCO-VCP:return:18d76f72b813e9da6b59": {
         "currency": "BRL",
         "fingerprint": "a51ae4d7da69d45efa1a",
-        "observed_at_utc": "2026-09-22T21:07:22Z",
+        "observed_at_utc": "2026-09-22T21:08:48Z",
         "price": 1965.0
       },
       "MIA-GRU:return:3227e992b73065630616": {
         "currency": "BRL",
         "fingerprint": "65fcd55f6a2c77152191",
-        "observed_at_utc": "2026-09-22T21:07:22Z",
+        "observed_at_utc": "2026-09-22T21:08:48Z",
         "price": 1731.0
       },
       "MIA-VCP:return:ae54ee5f489e8719e797": {
         "currency": "BRL",
         "fingerprint": "f6c103a934ef96849e6d",
-        "observed_at_utc": "2026-09-22T21:07:22Z",
+        "observed_at_utc": "2026-09-22T21:08:48Z",
         "price": 2798.5
       },
       "VCP-FLL:outbound:0103a9ee05a40bb6956a": {
         "currency": "BRL",
         "fingerprint": "1b923e8710ab0d0994e5",
-        "observed_at_utc": "2026-09-22T21:07:22Z",
+        "observed_at_utc": "2026-09-22T21:08:48Z",
         "price": 2704.0
       },
       "VCP-MCO:outbound:8793c5fa52b58ffcd6bb": {
         "currency": "BRL",
         "fingerprint": "a6e6f3263fe835873524",
-        "observed_at_utc": "2026-09-22T21:07:22Z",
+        "observed_at_utc": "2026-09-22T21:08:48Z",
         "price": 2405.0
       },
       "VCP-MIA:outbound:1dc75da22627c18f5377": {
         "currency": "BRL",
         "fingerprint": "fc81eedc762f4b07e2d7",
-        "observed_at_utc": "2026-09-22T21:07:22Z",
+        "observed_at_utc": "2026-09-22T21:08:48Z",
         "price": 2791.0
       }
     },
@@ -86,30 +86,30 @@
         "alerted": false
       }
     },
-    "last_evaluated_at_utc": "2026-09-22T21:07:22Z",
+    "last_evaluated_at_utc": "2026-09-22T21:08:48Z",
     "schema_version": 1,
     "sent": {}
   },
   "budget": {
     "basic_limit": 186,
-    "basic_used": 48,
+    "basic_used": 66,
     "extra_limit": 0,
     "extra_used": 0,
     "month": "2026-09",
     "monthly_call_limit": 250,
-    "remaining": 138,
+    "remaining": 120,
     "total_limit": 186
   },
-  "last_run_at_utc": "2026-09-22T21:07:22Z",
-  "last_run_id": "run-e9126e11336842230a3e",
+  "last_run_at_utc": "2026-09-22T21:08:48Z",
+  "last_run_id": "run-da4274443a66988a6844",
   "last_run_local_date": "2026-09-22",
   "month": "2026-09",
   "routes": {
     "FLL-GRU:return": {
-      "last_attempt_at_utc": "2026-09-22T21:07:22Z",
+      "last_attempt_at_utc": "2026-09-22T21:08:48Z",
       "last_error": null,
       "last_result_status": "success",
-      "last_success_at_utc": "2026-09-22T21:07:22Z",
+      "last_success_at_utc": "2026-09-22T21:08:48Z",
       "last_valid_offers": [
         {
           "baggage": {
@@ -165,7 +165,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTE0agcIARIDRkxMcgcIARIDR1JVQAFAAUADSAFwAZgBAg&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -244,7 +244,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTE0agcIARIDRkxMcgcIARIDR1JVQAFAAUADSAFwAZgBAg&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -323,7 +323,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTE0agcIARIDRkxMcgcIARIDR1JVQAFAAUADSAFwAZgBAg&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -402,7 +402,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTE0agcIARIDRkxMcgcIARIDR1JVQAFAAUADSAFwAZgBAg&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -481,7 +481,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTE0agcIARIDRkxMcgcIARIDR1JVQAFAAUADSAFwAZgBAg&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -560,7 +560,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTE0agcIARIDRkxMcgcIARIDR1JVQAFAAUADSAFwAZgBAg&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -639,7 +639,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTE0agcIARIDRkxMcgcIARIDR1JVQAFAAUADSAFwAZgBAg&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -718,7 +718,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTE0agcIARIDRkxMcgcIARIDR1JVQAFAAUADSAFwAZgBAg&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -744,14 +744,14 @@
           "status": "complete"
         }
       ],
-      "last_valid_run_id": "run-e9126e11336842230a3e",
+      "last_valid_run_id": "run-da4274443a66988a6844",
       "status": "success"
     },
     "FLL-VCP:return": {
-      "last_attempt_at_utc": "2026-09-22T21:07:22Z",
+      "last_attempt_at_utc": "2026-09-22T21:08:48Z",
       "last_error": null,
       "last_result_status": "success",
-      "last_success_at_utc": "2026-09-22T21:07:22Z",
+      "last_success_at_utc": "2026-09-22T21:08:48Z",
       "last_valid_offers": [
         {
           "baggage": {
@@ -790,7 +790,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTE0agcIARIDRkxMcgcIARIDVkNQQAFAAUADSAFwAZgBAg&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -886,7 +886,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTE0agcIARIDRkxMcgcIARIDVkNQQAFAAUADSAFwAZgBAg&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -982,7 +982,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTE0agcIARIDRkxMcgcIARIDVkNQQAFAAUADSAFwAZgBAg&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -1078,7 +1078,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTE0agcIARIDRkxMcgcIARIDVkNQQAFAAUADSAFwAZgBAg&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -1174,7 +1174,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTE0agcIARIDRkxMcgcIARIDVkNQQAFAAUADSAFwAZgBAg&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -1270,7 +1270,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTE0agcIARIDRkxMcgcIARIDVkNQQAFAAUADSAFwAZgBAg&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -1366,7 +1366,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTE0agcIARIDRkxMcgcIARIDVkNQQAFAAUADSAFwAZgBAg&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -1462,7 +1462,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTE0agcIARIDRkxMcgcIARIDVkNQQAFAAUADSAFwAZgBAg&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -1488,14 +1488,14 @@
           "status": "complete"
         }
       ],
-      "last_valid_run_id": "run-e9126e11336842230a3e",
+      "last_valid_run_id": "run-da4274443a66988a6844",
       "status": "success"
     },
     "GRU-FLL:MIA-VCP": {
-      "last_attempt_at_utc": "2026-09-22T21:07:22Z",
+      "last_attempt_at_utc": "2026-09-22T21:08:48Z",
       "last_error": null,
       "last_result_status": "success",
-      "last_success_at_utc": "2026-09-22T21:07:22Z",
+      "last_success_at_utc": "2026-09-22T21:08:48Z",
       "last_valid_offers": [
         {
           "baggage": {
@@ -1551,7 +1551,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDR1JVcgcIARIDRkxMGh4SCjIwMjctMDMtMTRqBwgBEgNNSUFyBwgBEgNWQ1BAAUABQANIAXABmAED&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -1631,7 +1631,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDR1JVcgcIARIDRkxMGh4SCjIwMjctMDMtMTRqBwgBEgNNSUFyBwgBEgNWQ1BAAUABQANIAXABmAED&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -1711,7 +1711,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDR1JVcgcIARIDRkxMGh4SCjIwMjctMDMtMTRqBwgBEgNNSUFyBwgBEgNWQ1BAAUABQANIAXABmAED&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -1808,7 +1808,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDR1JVcgcIARIDRkxMGh4SCjIwMjctMDMtMTRqBwgBEgNNSUFyBwgBEgNWQ1BAAUABQANIAXABmAED&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -1888,7 +1888,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDR1JVcgcIARIDRkxMGh4SCjIwMjctMDMtMTRqBwgBEgNNSUFyBwgBEgNWQ1BAAUABQANIAXABmAED&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -1968,7 +1968,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDR1JVcgcIARIDRkxMGh4SCjIwMjctMDMtMTRqBwgBEgNNSUFyBwgBEgNWQ1BAAUABQANIAXABmAED&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -2048,7 +2048,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDR1JVcgcIARIDRkxMGh4SCjIwMjctMDMtMTRqBwgBEgNNSUFyBwgBEgNWQ1BAAUABQANIAXABmAED&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -2128,7 +2128,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDR1JVcgcIARIDRkxMGh4SCjIwMjctMDMtMTRqBwgBEgNNSUFyBwgBEgNWQ1BAAUABQANIAXABmAED&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -2208,7 +2208,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDR1JVcgcIARIDRkxMGh4SCjIwMjctMDMtMTRqBwgBEgNNSUFyBwgBEgNWQ1BAAUABQANIAXABmAED&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -2288,7 +2288,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDR1JVcgcIARIDRkxMGh4SCjIwMjctMDMtMTRqBwgBEgNNSUFyBwgBEgNWQ1BAAUABQANIAXABmAED&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -2368,7 +2368,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDR1JVcgcIARIDRkxMGh4SCjIwMjctMDMtMTRqBwgBEgNNSUFyBwgBEgNWQ1BAAUABQANIAXABmAED&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -2395,14 +2395,14 @@
           "status": "pending"
         }
       ],
-      "last_valid_run_id": "run-e9126e11336842230a3e",
+      "last_valid_run_id": "run-da4274443a66988a6844",
       "status": "success"
     },
     "GRU-FLL:outbound": {
-      "last_attempt_at_utc": "2026-09-22T21:07:22Z",
+      "last_attempt_at_utc": "2026-09-22T21:08:48Z",
       "last_error": null,
       "last_result_status": "success",
-      "last_success_at_utc": "2026-09-22T21:07:22Z",
+      "last_success_at_utc": "2026-09-22T21:08:48Z",
       "last_valid_offers": [
         {
           "baggage": {
@@ -2458,7 +2458,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDR1JVcgcIARIDRkxMQAFAAUADSAFwAZgBAg&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -2537,7 +2537,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDR1JVcgcIARIDRkxMQAFAAUADSAFwAZgBAg&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -2616,7 +2616,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDR1JVcgcIARIDRkxMQAFAAUADSAFwAZgBAg&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -2695,7 +2695,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDR1JVcgcIARIDRkxMQAFAAUADSAFwAZgBAg&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -2774,7 +2774,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDR1JVcgcIARIDRkxMQAFAAUADSAFwAZgBAg&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -2853,7 +2853,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDR1JVcgcIARIDRkxMQAFAAUADSAFwAZgBAg&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -2932,7 +2932,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDR1JVcgcIARIDRkxMQAFAAUADSAFwAZgBAg&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -3011,7 +3011,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDR1JVcgcIARIDRkxMQAFAAUADSAFwAZgBAg&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -3090,7 +3090,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDR1JVcgcIARIDRkxMQAFAAUADSAFwAZgBAg&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -3186,7 +3186,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDR1JVcgcIARIDRkxMQAFAAUADSAFwAZgBAg&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -3212,14 +3212,14 @@
           "status": "complete"
         }
       ],
-      "last_valid_run_id": "run-e9126e11336842230a3e",
+      "last_valid_run_id": "run-da4274443a66988a6844",
       "status": "success"
     },
     "GRU-MCO:FLL-VCP": {
-      "last_attempt_at_utc": "2026-09-22T21:07:22Z",
+      "last_attempt_at_utc": "2026-09-22T21:08:48Z",
       "last_error": null,
       "last_result_status": "success",
-      "last_success_at_utc": "2026-09-22T21:07:22Z",
+      "last_success_at_utc": "2026-09-22T21:08:48Z",
       "last_valid_offers": [
         {
           "baggage": {
@@ -3275,7 +3275,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDR1JVcgcIARIDTUNPGh4SCjIwMjctMDMtMTRqBwgBEgNGTExyBwgBEgNWQ1BAAUABQANIAXABmAED&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -3338,7 +3338,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDR1JVcgcIARIDTUNPGh4SCjIwMjctMDMtMTRqBwgBEgNGTExyBwgBEgNWQ1BAAUABQANIAXABmAED&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -3401,7 +3401,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDR1JVcgcIARIDTUNPGh4SCjIwMjctMDMtMTRqBwgBEgNGTExyBwgBEgNWQ1BAAUABQANIAXABmAED&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -3481,7 +3481,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDR1JVcgcIARIDTUNPGh4SCjIwMjctMDMtMTRqBwgBEgNGTExyBwgBEgNWQ1BAAUABQANIAXABmAED&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -3561,7 +3561,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDR1JVcgcIARIDTUNPGh4SCjIwMjctMDMtMTRqBwgBEgNGTExyBwgBEgNWQ1BAAUABQANIAXABmAED&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -3641,7 +3641,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDR1JVcgcIARIDTUNPGh4SCjIwMjctMDMtMTRqBwgBEgNGTExyBwgBEgNWQ1BAAUABQANIAXABmAED&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -3721,7 +3721,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDR1JVcgcIARIDTUNPGh4SCjIwMjctMDMtMTRqBwgBEgNGTExyBwgBEgNWQ1BAAUABQANIAXABmAED&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -3801,7 +3801,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDR1JVcgcIARIDTUNPGh4SCjIwMjctMDMtMTRqBwgBEgNGTExyBwgBEgNWQ1BAAUABQANIAXABmAED&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -3881,7 +3881,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDR1JVcgcIARIDTUNPGh4SCjIwMjctMDMtMTRqBwgBEgNGTExyBwgBEgNWQ1BAAUABQANIAXABmAED&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -3908,14 +3908,14 @@
           "status": "pending"
         }
       ],
-      "last_valid_run_id": "run-e9126e11336842230a3e",
+      "last_valid_run_id": "run-da4274443a66988a6844",
       "status": "success"
     },
     "GRU-MCO:outbound": {
-      "last_attempt_at_utc": "2026-09-22T21:07:22Z",
+      "last_attempt_at_utc": "2026-09-22T21:08:48Z",
       "last_error": null,
       "last_result_status": "success",
-      "last_success_at_utc": "2026-09-22T21:07:22Z",
+      "last_success_at_utc": "2026-09-22T21:08:48Z",
       "last_valid_offers": [
         {
           "baggage": {
@@ -3971,7 +3971,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDR1JVcgcIARIDTUNPQAFAAUADSAFwAZgBAg&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -4050,7 +4050,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDR1JVcgcIARIDTUNPQAFAAUADSAFwAZgBAg&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -4129,7 +4129,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDR1JVcgcIARIDTUNPQAFAAUADSAFwAZgBAg&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -4208,7 +4208,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDR1JVcgcIARIDTUNPQAFAAUADSAFwAZgBAg&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -4287,7 +4287,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDR1JVcgcIARIDTUNPQAFAAUADSAFwAZgBAg&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -4366,7 +4366,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDR1JVcgcIARIDTUNPQAFAAUADSAFwAZgBAg&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -4445,7 +4445,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDR1JVcgcIARIDTUNPQAFAAUADSAFwAZgBAg&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -4524,7 +4524,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDR1JVcgcIARIDTUNPQAFAAUADSAFwAZgBAg&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -4603,7 +4603,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDR1JVcgcIARIDTUNPQAFAAUADSAFwAZgBAg&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -4682,7 +4682,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDR1JVcgcIARIDTUNPQAFAAUADSAFwAZgBAg&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -4744,7 +4744,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDR1JVcgcIARIDTUNPQAFAAUADSAFwAZgBAg&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -4806,7 +4806,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDR1JVcgcIARIDTUNPQAFAAUADSAFwAZgBAg&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -4832,14 +4832,14 @@
           "status": "complete"
         }
       ],
-      "last_valid_run_id": "run-e9126e11336842230a3e",
+      "last_valid_run_id": "run-da4274443a66988a6844",
       "status": "success"
     },
     "GRU-MIA:MCO-VCP": {
-      "last_attempt_at_utc": "2026-09-22T21:07:22Z",
+      "last_attempt_at_utc": "2026-09-22T21:08:48Z",
       "last_error": null,
       "last_result_status": "success",
-      "last_success_at_utc": "2026-09-22T21:07:22Z",
+      "last_success_at_utc": "2026-09-22T21:08:48Z",
       "last_valid_offers": [
         {
           "baggage": {
@@ -4895,7 +4895,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDR1JVcgcIARIDTUlBGh4SCjIwMjctMDMtMTRqBwgBEgNNQ09yBwgBEgNWQ1BAAUABQANIAXABmAED&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -4958,7 +4958,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDR1JVcgcIARIDTUlBGh4SCjIwMjctMDMtMTRqBwgBEgNNQ09yBwgBEgNWQ1BAAUABQANIAXABmAED&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -5021,7 +5021,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDR1JVcgcIARIDTUlBGh4SCjIwMjctMDMtMTRqBwgBEgNNQ09yBwgBEgNWQ1BAAUABQANIAXABmAED&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -5084,7 +5084,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDR1JVcgcIARIDTUlBGh4SCjIwMjctMDMtMTRqBwgBEgNNQ09yBwgBEgNWQ1BAAUABQANIAXABmAED&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -5164,7 +5164,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDR1JVcgcIARIDTUlBGh4SCjIwMjctMDMtMTRqBwgBEgNNQ09yBwgBEgNWQ1BAAUABQANIAXABmAED&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -5244,7 +5244,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDR1JVcgcIARIDTUlBGh4SCjIwMjctMDMtMTRqBwgBEgNNQ09yBwgBEgNWQ1BAAUABQANIAXABmAED&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -5324,7 +5324,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDR1JVcgcIARIDTUlBGh4SCjIwMjctMDMtMTRqBwgBEgNNQ09yBwgBEgNWQ1BAAUABQANIAXABmAED&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -5404,7 +5404,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDR1JVcgcIARIDTUlBGh4SCjIwMjctMDMtMTRqBwgBEgNNQ09yBwgBEgNWQ1BAAUABQANIAXABmAED&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -5467,7 +5467,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDR1JVcgcIARIDTUlBGh4SCjIwMjctMDMtMTRqBwgBEgNNQ09yBwgBEgNWQ1BAAUABQANIAXABmAED&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -5530,7 +5530,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDR1JVcgcIARIDTUlBGh4SCjIwMjctMDMtMTRqBwgBEgNNQ09yBwgBEgNWQ1BAAUABQANIAXABmAED&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -5593,7 +5593,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDR1JVcgcIARIDTUlBGh4SCjIwMjctMDMtMTRqBwgBEgNNQ09yBwgBEgNWQ1BAAUABQANIAXABmAED&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -5620,14 +5620,14 @@
           "status": "pending"
         }
       ],
-      "last_valid_run_id": "run-e9126e11336842230a3e",
+      "last_valid_run_id": "run-da4274443a66988a6844",
       "status": "success"
     },
     "GRU-MIA:outbound": {
-      "last_attempt_at_utc": "2026-09-22T21:07:22Z",
+      "last_attempt_at_utc": "2026-09-22T21:08:48Z",
       "last_error": null,
       "last_result_status": "success",
-      "last_success_at_utc": "2026-09-22T21:07:22Z",
+      "last_success_at_utc": "2026-09-22T21:08:48Z",
       "last_valid_offers": [
         {
           "baggage": {
@@ -5683,7 +5683,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDR1JVcgcIARIDTUlBQAFAAUADSAFwAZgBAg&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -5762,7 +5762,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDR1JVcgcIARIDTUlBQAFAAUADSAFwAZgBAg&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -5824,7 +5824,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDR1JVcgcIARIDTUlBQAFAAUADSAFwAZgBAg&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -5903,7 +5903,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDR1JVcgcIARIDTUlBQAFAAUADSAFwAZgBAg&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -5982,7 +5982,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDR1JVcgcIARIDTUlBQAFAAUADSAFwAZgBAg&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -6061,7 +6061,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDR1JVcgcIARIDTUlBQAFAAUADSAFwAZgBAg&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -6123,7 +6123,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDR1JVcgcIARIDTUlBQAFAAUADSAFwAZgBAg&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -6185,7 +6185,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDR1JVcgcIARIDTUlBQAFAAUADSAFwAZgBAg&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -6264,7 +6264,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDR1JVcgcIARIDTUlBQAFAAUADSAFwAZgBAg&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -6326,7 +6326,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDR1JVcgcIARIDTUlBQAFAAUADSAFwAZgBAg&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -6388,7 +6388,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDR1JVcgcIARIDTUlBQAFAAUADSAFwAZgBAg&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -6450,7 +6450,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDR1JVcgcIARIDTUlBQAFAAUADSAFwAZgBAg&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -6476,14 +6476,14 @@
           "status": "complete"
         }
       ],
-      "last_valid_run_id": "run-e9126e11336842230a3e",
+      "last_valid_run_id": "run-da4274443a66988a6844",
       "status": "success"
     },
     "MCO-GRU:return": {
-      "last_attempt_at_utc": "2026-09-22T21:07:22Z",
+      "last_attempt_at_utc": "2026-09-22T21:08:48Z",
       "last_error": null,
       "last_result_status": "success",
-      "last_success_at_utc": "2026-09-22T21:07:22Z",
+      "last_success_at_utc": "2026-09-22T21:08:48Z",
       "last_valid_offers": [
         {
           "baggage": {
@@ -6522,7 +6522,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTE0agcIARIDTUNPcgcIARIDR1JVQAFAAUADSAFwAZgBAg&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -6584,7 +6584,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTE0agcIARIDTUNPcgcIARIDR1JVQAFAAUADSAFwAZgBAg&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -6663,7 +6663,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTE0agcIARIDTUNPcgcIARIDR1JVQAFAAUADSAFwAZgBAg&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -6742,7 +6742,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTE0agcIARIDTUNPcgcIARIDR1JVQAFAAUADSAFwAZgBAg&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -6821,7 +6821,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTE0agcIARIDTUNPcgcIARIDR1JVQAFAAUADSAFwAZgBAg&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -6900,7 +6900,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTE0agcIARIDTUNPcgcIARIDR1JVQAFAAUADSAFwAZgBAg&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -6979,7 +6979,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTE0agcIARIDTUNPcgcIARIDR1JVQAFAAUADSAFwAZgBAg&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -7058,7 +7058,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTE0agcIARIDTUNPcgcIARIDR1JVQAFAAUADSAFwAZgBAg&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -7137,7 +7137,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTE0agcIARIDTUNPcgcIARIDR1JVQAFAAUADSAFwAZgBAg&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -7163,14 +7163,14 @@
           "status": "complete"
         }
       ],
-      "last_valid_run_id": "run-e9126e11336842230a3e",
+      "last_valid_run_id": "run-da4274443a66988a6844",
       "status": "success"
     },
     "MCO-VCP:return": {
-      "last_attempt_at_utc": "2026-09-22T21:07:22Z",
+      "last_attempt_at_utc": "2026-09-22T21:08:48Z",
       "last_error": null,
       "last_result_status": "success",
-      "last_success_at_utc": "2026-09-22T21:07:22Z",
+      "last_success_at_utc": "2026-09-22T21:08:48Z",
       "last_valid_offers": [
         {
           "baggage": {
@@ -7243,7 +7243,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTE0agcIARIDTUNPcgcIARIDVkNQQAFAAUADSAFwAZgBAg&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -7305,7 +7305,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTE0agcIARIDTUNPcgcIARIDVkNQQAFAAUADSAFwAZgBAg&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -7401,7 +7401,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTE0agcIARIDTUNPcgcIARIDVkNQQAFAAUADSAFwAZgBAg&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -7480,7 +7480,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTE0agcIARIDTUNPcgcIARIDVkNQQAFAAUADSAFwAZgBAg&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -7559,7 +7559,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTE0agcIARIDTUNPcgcIARIDVkNQQAFAAUADSAFwAZgBAg&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -7655,7 +7655,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTE0agcIARIDTUNPcgcIARIDVkNQQAFAAUADSAFwAZgBAg&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -7751,7 +7751,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTE0agcIARIDTUNPcgcIARIDVkNQQAFAAUADSAFwAZgBAg&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -7847,7 +7847,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTE0agcIARIDTUNPcgcIARIDVkNQQAFAAUADSAFwAZgBAg&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -7873,14 +7873,14 @@
           "status": "complete"
         }
       ],
-      "last_valid_run_id": "run-e9126e11336842230a3e",
+      "last_valid_run_id": "run-da4274443a66988a6844",
       "status": "success"
     },
     "MIA-GRU:return": {
-      "last_attempt_at_utc": "2026-09-22T21:07:22Z",
+      "last_attempt_at_utc": "2026-09-22T21:08:48Z",
       "last_error": null,
       "last_result_status": "success",
-      "last_success_at_utc": "2026-09-22T21:07:22Z",
+      "last_success_at_utc": "2026-09-22T21:08:48Z",
       "last_valid_offers": [
         {
           "baggage": {
@@ -7936,7 +7936,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTE0agcIARIDTUlBcgcIARIDR1JVQAFAAUADSAFwAZgBAg&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -7998,7 +7998,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTE0agcIARIDTUlBcgcIARIDR1JVQAFAAUADSAFwAZgBAg&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -8060,7 +8060,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTE0agcIARIDTUlBcgcIARIDR1JVQAFAAUADSAFwAZgBAg&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -8139,7 +8139,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTE0agcIARIDTUlBcgcIARIDR1JVQAFAAUADSAFwAZgBAg&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -8218,7 +8218,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTE0agcIARIDTUlBcgcIARIDR1JVQAFAAUADSAFwAZgBAg&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -8280,7 +8280,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTE0agcIARIDTUlBcgcIARIDR1JVQAFAAUADSAFwAZgBAg&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -8342,7 +8342,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTE0agcIARIDTUlBcgcIARIDR1JVQAFAAUADSAFwAZgBAg&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -8404,7 +8404,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTE0agcIARIDTUlBcgcIARIDR1JVQAFAAUADSAFwAZgBAg&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -8466,7 +8466,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTE0agcIARIDTUlBcgcIARIDR1JVQAFAAUADSAFwAZgBAg&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -8545,7 +8545,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTE0agcIARIDTUlBcgcIARIDR1JVQAFAAUADSAFwAZgBAg&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -8571,14 +8571,14 @@
           "status": "complete"
         }
       ],
-      "last_valid_run_id": "run-e9126e11336842230a3e",
+      "last_valid_run_id": "run-da4274443a66988a6844",
       "status": "success"
     },
     "MIA-VCP:return": {
-      "last_attempt_at_utc": "2026-09-22T21:07:22Z",
+      "last_attempt_at_utc": "2026-09-22T21:08:48Z",
       "last_error": null,
       "last_result_status": "success",
-      "last_success_at_utc": "2026-09-22T21:07:22Z",
+      "last_success_at_utc": "2026-09-22T21:08:48Z",
       "last_valid_offers": [
         {
           "baggage": {
@@ -8651,7 +8651,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTE0agcIARIDTUlBcgcIARIDVkNQQAFAAUADSAFwAZgBAg&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -8747,7 +8747,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTE0agcIARIDTUlBcgcIARIDVkNQQAFAAUADSAFwAZgBAg&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -8826,7 +8826,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTE0agcIARIDTUlBcgcIARIDVkNQQAFAAUADSAFwAZgBAg&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -8922,7 +8922,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTE0agcIARIDTUlBcgcIARIDVkNQQAFAAUADSAFwAZgBAg&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -9018,7 +9018,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTE0agcIARIDTUlBcgcIARIDVkNQQAFAAUADSAFwAZgBAg&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -9114,7 +9114,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTE0agcIARIDTUlBcgcIARIDVkNQQAFAAUADSAFwAZgBAg&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -9193,7 +9193,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTE0agcIARIDTUlBcgcIARIDVkNQQAFAAUADSAFwAZgBAg&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -9272,7 +9272,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTE0agcIARIDTUlBcgcIARIDVkNQQAFAAUADSAFwAZgBAg&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -9351,7 +9351,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTE0agcIARIDTUlBcgcIARIDVkNQQAFAAUADSAFwAZgBAg&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -9377,14 +9377,14 @@
           "status": "complete"
         }
       ],
-      "last_valid_run_id": "run-e9126e11336842230a3e",
+      "last_valid_run_id": "run-da4274443a66988a6844",
       "status": "success"
     },
     "VCP-FLL:MIA-GRU": {
-      "last_attempt_at_utc": "2026-09-22T21:07:22Z",
+      "last_attempt_at_utc": "2026-09-22T21:08:48Z",
       "last_error": null,
       "last_result_status": "success",
-      "last_success_at_utc": "2026-09-22T21:07:22Z",
+      "last_success_at_utc": "2026-09-22T21:08:48Z",
       "last_valid_offers": [
         {
           "baggage": {
@@ -9423,7 +9423,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDVkNQcgcIARIDRkxMGh4SCjIwMjctMDMtMTRqBwgBEgNNSUFyBwgBEgNHUlVAAUABQANIAXABmAED&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -9520,7 +9520,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDVkNQcgcIARIDRkxMGh4SCjIwMjctMDMtMTRqBwgBEgNNSUFyBwgBEgNHUlVAAUABQANIAXABmAED&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -9617,7 +9617,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDVkNQcgcIARIDRkxMGh4SCjIwMjctMDMtMTRqBwgBEgNNSUFyBwgBEgNHUlVAAUABQANIAXABmAED&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -9644,14 +9644,14 @@
           "status": "pending"
         }
       ],
-      "last_valid_run_id": "run-e9126e11336842230a3e",
+      "last_valid_run_id": "run-da4274443a66988a6844",
       "status": "success"
     },
     "VCP-FLL:outbound": {
-      "last_attempt_at_utc": "2026-09-22T21:07:22Z",
+      "last_attempt_at_utc": "2026-09-22T21:08:48Z",
       "last_error": null,
       "last_result_status": "success",
-      "last_success_at_utc": "2026-09-22T21:07:22Z",
+      "last_success_at_utc": "2026-09-22T21:08:48Z",
       "last_valid_offers": [
         {
           "baggage": {
@@ -9690,7 +9690,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDVkNQcgcIARIDRkxMQAFAAUADSAFwAZgBAg&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -9786,7 +9786,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDVkNQcgcIARIDRkxMQAFAAUADSAFwAZgBAg&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -9812,14 +9812,14 @@
           "status": "complete"
         }
       ],
-      "last_valid_run_id": "run-e9126e11336842230a3e",
+      "last_valid_run_id": "run-da4274443a66988a6844",
       "status": "success"
     },
     "VCP-MCO:FLL-GRU": {
-      "last_attempt_at_utc": "2026-09-22T21:07:22Z",
+      "last_attempt_at_utc": "2026-09-22T21:08:48Z",
       "last_error": null,
       "last_result_status": "success",
-      "last_success_at_utc": "2026-09-22T21:07:22Z",
+      "last_success_at_utc": "2026-09-22T21:08:48Z",
       "last_valid_offers": [
         {
           "baggage": {
@@ -9892,7 +9892,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDVkNQcgcIARIDTUNPGh4SCjIwMjctMDMtMTRqBwgBEgNGTExyBwgBEgNHUlVAAUABQANIAXABmAED&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -9955,7 +9955,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDVkNQcgcIARIDTUNPGh4SCjIwMjctMDMtMTRqBwgBEgNGTExyBwgBEgNHUlVAAUABQANIAXABmAED&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -10052,7 +10052,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDVkNQcgcIARIDTUNPGh4SCjIwMjctMDMtMTRqBwgBEgNGTExyBwgBEgNHUlVAAUABQANIAXABmAED&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -10115,7 +10115,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDVkNQcgcIARIDTUNPGh4SCjIwMjctMDMtMTRqBwgBEgNGTExyBwgBEgNHUlVAAUABQANIAXABmAED&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -10212,7 +10212,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDVkNQcgcIARIDTUNPGh4SCjIwMjctMDMtMTRqBwgBEgNGTExyBwgBEgNHUlVAAUABQANIAXABmAED&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -10309,7 +10309,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDVkNQcgcIARIDTUNPGh4SCjIwMjctMDMtMTRqBwgBEgNGTExyBwgBEgNHUlVAAUABQANIAXABmAED&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -10406,7 +10406,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDVkNQcgcIARIDTUNPGh4SCjIwMjctMDMtMTRqBwgBEgNGTExyBwgBEgNHUlVAAUABQANIAXABmAED&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -10503,7 +10503,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDVkNQcgcIARIDTUNPGh4SCjIwMjctMDMtMTRqBwgBEgNGTExyBwgBEgNHUlVAAUABQANIAXABmAED&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -10583,7 +10583,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDVkNQcgcIARIDTUNPGh4SCjIwMjctMDMtMTRqBwgBEgNGTExyBwgBEgNHUlVAAUABQANIAXABmAED&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -10610,14 +10610,14 @@
           "status": "pending"
         }
       ],
-      "last_valid_run_id": "run-e9126e11336842230a3e",
+      "last_valid_run_id": "run-da4274443a66988a6844",
       "status": "success"
     },
     "VCP-MCO:outbound": {
-      "last_attempt_at_utc": "2026-09-22T21:07:22Z",
+      "last_attempt_at_utc": "2026-09-22T21:08:48Z",
       "last_error": null,
       "last_result_status": "success",
-      "last_success_at_utc": "2026-09-22T21:07:22Z",
+      "last_success_at_utc": "2026-09-22T21:08:48Z",
       "last_valid_offers": [
         {
           "baggage": {
@@ -10656,7 +10656,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDVkNQcgcIARIDTUNPQAFAAUADSAFwAZgBAg&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -10752,7 +10752,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDVkNQcgcIARIDTUNPQAFAAUADSAFwAZgBAg&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -10814,7 +10814,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDVkNQcgcIARIDTUNPQAFAAUADSAFwAZgBAg&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -10893,7 +10893,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDVkNQcgcIARIDTUNPQAFAAUADSAFwAZgBAg&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -10989,7 +10989,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDVkNQcgcIARIDTUNPQAFAAUADSAFwAZgBAg&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -11015,14 +11015,14 @@
           "status": "complete"
         }
       ],
-      "last_valid_run_id": "run-e9126e11336842230a3e",
+      "last_valid_run_id": "run-da4274443a66988a6844",
       "status": "success"
     },
     "VCP-MIA:MCO-GRU": {
-      "last_attempt_at_utc": "2026-09-22T21:07:22Z",
+      "last_attempt_at_utc": "2026-09-22T21:08:48Z",
       "last_error": null,
       "last_result_status": "success",
-      "last_success_at_utc": "2026-09-22T21:07:22Z",
+      "last_success_at_utc": "2026-09-22T21:08:48Z",
       "last_valid_offers": [
         {
           "baggage": {
@@ -11095,7 +11095,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDVkNQcgcIARIDTUlBGh4SCjIwMjctMDMtMTRqBwgBEgNNQ09yBwgBEgNHUlVAAUABQANIAXABmAED&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -11175,7 +11175,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDVkNQcgcIARIDTUlBGh4SCjIwMjctMDMtMTRqBwgBEgNNQ09yBwgBEgNHUlVAAUABQANIAXABmAED&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -11272,7 +11272,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDVkNQcgcIARIDTUlBGh4SCjIwMjctMDMtMTRqBwgBEgNNQ09yBwgBEgNHUlVAAUABQANIAXABmAED&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -11369,7 +11369,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDVkNQcgcIARIDTUlBGh4SCjIwMjctMDMtMTRqBwgBEgNNQ09yBwgBEgNHUlVAAUABQANIAXABmAED&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -11466,7 +11466,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDVkNQcgcIARIDTUlBGh4SCjIwMjctMDMtMTRqBwgBEgNNQ09yBwgBEgNHUlVAAUABQANIAXABmAED&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -11563,7 +11563,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDVkNQcgcIARIDTUlBGh4SCjIwMjctMDMtMTRqBwgBEgNNQ09yBwgBEgNHUlVAAUABQANIAXABmAED&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -11660,7 +11660,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDVkNQcgcIARIDTUlBGh4SCjIwMjctMDMtMTRqBwgBEgNNQ09yBwgBEgNHUlVAAUABQANIAXABmAED&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -11687,14 +11687,14 @@
           "status": "pending"
         }
       ],
-      "last_valid_run_id": "run-e9126e11336842230a3e",
+      "last_valid_run_id": "run-da4274443a66988a6844",
       "status": "success"
     },
     "VCP-MIA:outbound": {
-      "last_attempt_at_utc": "2026-09-22T21:07:22Z",
+      "last_attempt_at_utc": "2026-09-22T21:08:48Z",
       "last_error": null,
       "last_result_status": "success",
-      "last_success_at_utc": "2026-09-22T21:07:22Z",
+      "last_success_at_utc": "2026-09-22T21:08:48Z",
       "last_valid_offers": [
         {
           "baggage": {
@@ -11767,7 +11767,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDVkNQcgcIARIDTUlBQAFAAUADSAFwAZgBAg&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -11863,7 +11863,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDVkNQcgcIARIDTUlBQAFAAUADSAFwAZgBAg&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -11942,7 +11942,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDVkNQcgcIARIDTUlBQAFAAUADSAFwAZgBAg&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -12038,7 +12038,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDVkNQcgcIARIDTUlBQAFAAUADSAFwAZgBAg&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -12134,7 +12134,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDVkNQcgcIARIDTUlBQAFAAUADSAFwAZgBAg&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -12230,7 +12230,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDVkNQcgcIARIDTUlBQAFAAUADSAFwAZgBAg&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -12326,7 +12326,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDVkNQcgcIARIDTUlBQAFAAUADSAFwAZgBAg&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -12422,7 +12422,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDVkNQcgcIARIDTUlBQAFAAUADSAFwAZgBAg&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -12518,7 +12518,7 @@
           "links": {
             "google_flights": "https://www.google.com/travel/flights?hl=pt-BR&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI3LTAzLTA1agcIARIDVkNQcgcIARIDTUlBQAFAAUADSAFwAZgBAg&tfu=EgIIAQ"
           },
-          "observed_at_utc": "2026-09-22T21:07:22Z",
+          "observed_at_utc": "2026-09-22T21:08:48Z",
           "passengers": {
             "adults": 2,
             "children": 0,
@@ -12544,7 +12544,7 @@
           "status": "complete"
         }
       ],
-      "last_valid_run_id": "run-e9126e11336842230a3e",
+      "last_valid_run_id": "run-da4274443a66988a6844",
       "status": "success"
     }
   },
