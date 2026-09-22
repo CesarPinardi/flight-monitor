@@ -10,5 +10,10 @@
   "cabin": "economy",
   "currency": "BRL",
   "trip_type": "round_trip",
-  "payment_type": "cash_only"
+  "payment_type": "cash_only",
+  "daily_basic_searches": 6,
+  "monthly_basic_limit": 186,
+  "monthly_call_limit": 250,
+  "extra_calls_limit": 0,
+  "alert_price_ceiling": null
 }

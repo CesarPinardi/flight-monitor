@@ -1,0 +1,127 @@
+name: Flight Monitor
+
+on:
+  schedule:
+    # 10:17 UTC; fora da virada da hora. GitHub cron usa UTC.
+    - cron: "17 10 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: flight-monitor-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    env:
+      SERPAPI_API_KEY: ${{ secrets.SERPAPI_API_KEY }}
+      TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+      TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Validate fixtures and workflow contract
+        run: |
+          set -euo pipefail
+          test -f .github/workflows/monitor.yml
+          grep -q 'workflow_dispatch:' .github/workflows/monitor.yml
+          grep -q 'runs-on: ubuntu-latest' .github/workflows/monitor.yml
+          grep -q 'timeout-minutes:' .github/workflows/monitor.yml
+          grep -q 'contents: write' .github/workflows/monitor.yml
+          PYTHONPATH=src python -m unittest discover -s tests -v
+
+      - name: Run monitor when SerpApi is configured
+        id: run-monitor
+        run: |
+          set -uo pipefail
+          if [[ -z "${SERPAPI_API_KEY}" ]]; then
+            echo "SERPAPI_API_KEY ausente; consulta real não executada."
+            printf '%s\n' '{"status":"not_configured","reason":"SERPAPI_API_KEY"}' > monitor-result.json
+            echo "exit_code=0" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          set +e
+          PYTHONPATH=src python -m flight_monitor > monitor-result.json
+          monitor_exit=$?
+          set -e
+          cat monitor-result.json
+          echo "exit_code=${monitor_exit}" >> "$GITHUB_OUTPUT"
+          # Persistir/publicar antes de falhar por quota ou falha de consulta.
+          exit 0
+
+      - name: Audit generated data and logs
+        run: |
+          set -euo pipefail
+          PYTHONPATH=src python scripts/audit_sanitized_data.py \
+            monitor-result.json data/history.json data/state.json data/public/data.json
+
+      - name: Persist sanitized monitor state
+        if: github.ref == format('refs/heads/{0}', github.event.repository.default_branch)
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          for path in data/history.json data/state.json data/public/data.json; do
+            if [[ -f "${path}" ]]; then
+              git add "${path}"
+            fi
+          done
+          if git diff --cached --quiet; then
+            echo "Nenhuma mudança de histórico, orçamento ou alertas."
+            exit 0
+          fi
+          git commit -m "chore: persist flight monitor state [skip ci]"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
+
+      - name: Prepare Pages artifact
+        run: |
+          set -euo pipefail
+          rm -rf site
+          mkdir -p site
+          cp -R frontend/. site/
+          if [[ -f data/public/data.json ]]; then
+            mkdir -p site/data/public
+            cp data/public/data.json site/data/public/data.json
+          fi
+          PYTHONPATH=src python scripts/audit_sanitized_data.py site/data/public/data.json
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: site
+
+      - name: Deploy to Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+
+      - name: Report monitor result
+        if: always()
+        run: |
+          set -euo pipefail
+          monitor_exit="${{ steps.run-monitor.outputs.exit_code || '0' }}"
+          if [[ "${monitor_exit}" != "0" ]]; then
+            echo "Consulta terminou com código ${monitor_exit}; estado já foi persistido/publicado."
+            exit 1
+          fi

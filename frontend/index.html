@@ -3,19 +3,114 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Flight Monitor</title>
+    <meta name="description" content="Painel público de monitoramento de passagens aéreas." />
+    <title>Flight Monitor | Passagens</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <main class="container">
-      <p class="eyebrow">Flight Monitor</p>
-      <h1>Monitor de passagens</h1>
-      <p id="status">Painel inicial. Ainda não há consultas nem histórico publicado.</p>
-      <section aria-labelledby="search-title">
-        <h2 id="search-title">Busca configurada</h2>
-        <dl id="search-config"></dl>
+    <header class="site-header">
+      <div class="shell header-content">
+        <a class="brand" href="./" aria-label="Flight Monitor, início">
+          <span class="brand-mark" aria-hidden="true">✈</span>
+          <span>Flight Monitor</span>
+        </a>
+        <p class="eyebrow">Painel somente leitura</p>
+      </div>
+    </header>
+
+    <main class="shell">
+      <section class="intro" aria-labelledby="page-title">
+        <div>
+          <p class="eyebrow">Monitor de passagens</p>
+          <h1 id="page-title">Busca para Orlando e Miami</h1>
+          <p class="lede">Ofertas confirmadas encontradas pela última consulta pública.</p>
+        </div>
+        <div class="run-meta">
+          <span id="status-badge" class="status-badge status-loading">Carregando dados</span>
+          <span id="last-updated">Última consulta: aguardando arquivo público</span>
+          <button id="reload" class="button button-secondary" type="button">Atualizar dados</button>
+        </div>
       </section>
+
+      <div id="data-alert" class="notice" role="status" hidden></div>
+
+      <section class="panel" aria-labelledby="search-title">
+        <div class="section-heading">
+          <div><p class="section-kicker">Contexto</p><h2 id="search-title">Busca configurada</h2></div>
+          <span id="schema-label" class="muted">JSON público</span>
+        </div>
+        <dl id="search-config" class="config-grid"></dl>
+      </section>
+
+      <section class="metric-grid" aria-label="Resumo da consulta">
+        <article class="metric-card metric-featured">
+          <p class="metric-label">Melhor preço confirmado</p>
+          <p id="best-price" class="metric-value">—</p>
+          <p id="best-price-detail" class="metric-detail">Nenhuma oferta completa publicada.</p>
+        </article>
+        <article class="metric-card">
+          <p class="metric-label">Menor histórico comparável</p>
+          <p id="history-price" class="metric-value">—</p>
+          <p id="history-price-detail" class="metric-detail">Histórico diário por rota.</p>
+        </article>
+        <article class="metric-card">
+          <p class="metric-label">Ofertas exibidas</p>
+          <p id="offer-count" class="metric-value">0</p>
+          <p id="offer-count-detail" class="metric-detail">Após filtros.</p>
+        </article>
+      </section>
+
+      <section class="panel" aria-labelledby="filters-title">
+        <div class="section-heading">
+          <div><p class="section-kicker">Explorar</p><h2 id="filters-title">Filtros</h2></div>
+          <button id="clear-filters" class="button button-quiet" type="button">Limpar filtros</button>
+        </div>
+        <form id="filters" class="filter-grid">
+          <label>Rota<select id="route-filter" name="route"><option value="">Todas as rotas</option></select></label>
+          <label>Companhia<select id="airline-filter" name="airline"><option value="">Todas as companhias</option></select></label>
+          <label>Escalas<select id="stops-filter" name="stops"><option value="">Qualquer número</option><option value="0">Direto</option><option value="1">1 escala</option><option value="2">2 ou mais</option></select></label>
+          <label>Ordenar por<select id="sort-filter" name="sort"><option value="price">Menor preço</option><option value="duration">Menor duração</option><option value="stops">Menos escalas</option></select></label>
+        </form>
+      </section>
+
+      <section class="panel" aria-labelledby="offers-title">
+        <div class="section-heading">
+          <div><p class="section-kicker">Resultados</p><h2 id="offers-title">Ofertas por rota</h2></div>
+          <span id="offers-note" class="muted">Valores sem inferência.</span>
+        </div>
+        <div id="offers" class="offer-list" aria-live="polite"></div>
+      </section>
+
+      <section class="panel" aria-labelledby="routes-title">
+        <div class="section-heading">
+          <div><p class="section-kicker">Cobertura</p><h2 id="routes-title">Status das rotas</h2></div>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <caption class="sr-only">Status, melhor preço e última consulta por rota</caption>
+            <thead><tr><th scope="col">Rota</th><th scope="col">Status</th><th scope="col">Melhor preço</th><th scope="col">Última consulta válida</th></tr></thead>
+            <tbody id="routes"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="panel" aria-labelledby="history-title">
+        <div class="section-heading">
+          <div><p class="section-kicker">Tendência</p><h2 id="history-title">Histórico comparável</h2></div>
+          <span id="history-kind" class="muted">Menor preço diário</span>
+        </div>
+        <p id="history-description" class="supporting-copy">Cada ponto mostra menor preço confirmado encontrado por rota em uma consulta. Não é uma oferta reservada.</p>
+        <div id="history" class="history-list" aria-live="polite"></div>
+      </section>
+
+      <aside class="disclaimer" aria-labelledby="notes-title">
+        <h2 id="notes-title">Notas sobre os dados</h2>
+        <p id="disclaimer">Preço mantém interpretação da fonte. Taxas, bebê de colo, bagagem e inventário não são inferidos.</p>
+        <p>Dados antigos permanecem visíveis quando uma rota falha. Eles aparecem marcados como antigos e não significam disponibilidade para compra.</p>
+      </aside>
     </main>
-    <script src="app.js"></script>
+
+    <footer class="site-footer"><div class="shell"><p>Flight Monitor · dados públicos sanitizados · moeda configurada em BRL</p></div></footer>
+    <script src="app.js" defer></script>
   </body>
 </html>
