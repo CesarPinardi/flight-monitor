@@ -254,8 +254,23 @@ def normalize_offer(flight: Mapping[str, Any], request: SearchRequest, route: Ro
     last_airport = segments[-1].get("arrival_airport") if segments and isinstance(segments[-1], Mapping) else None
     first_departure = first_airport.get("id") if isinstance(first_airport, Mapping) else None
     last_arrival = last_airport.get("id") if isinstance(last_airport, Mapping) else None
-    route_verified = first_departure == route.origin and last_arrival == (route.return_destination or route.destination)
-    if route.return_origin and route.return_destination:
+    endpoint_ids = {
+        airport_id
+        for segment in segments
+        for airport in (segment.get("departure_airport"), segment.get("arrival_airport"))
+        if isinstance(airport, Mapping)
+        for airport_id in (airport.get("id"),)
+        if isinstance(airport_id, str)
+    }
+    if request.trip_type == "multi_city" and route.return_origin and route.return_destination:
+        route_verified = (
+            str(flight.get("type", "")).lower() == "multi-city"
+            and first_departure == route.origin
+            and route.destination in endpoint_ids
+        )
+    else:
+        route_verified = first_departure == route.origin and last_arrival == route.destination
+    if route.return_origin and route.return_destination and request.trip_type != "multi_city":
         endpoint_ids = {
             airport_id
             for segment in segments

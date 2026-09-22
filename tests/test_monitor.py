@@ -5,7 +5,8 @@ from pathlib import Path
 import tempfile
 import unittest
 
-from flight_monitor.monitor import _request, load_config, routes_from_config, run_monitor
+from flight_monitor.monitor import _request, load_config, normalize_offer, routes_from_config, run_monitor
+from flight_monitor.serpapi import normalize_response
 from flight_monitor.storage import ConcurrentRunError, JsonStore
 
 
@@ -113,6 +114,21 @@ class MonitorTests(unittest.TestCase):
                 {"departure_id": "MCO", "arrival_id": "GRU", "date": "2027-03-14"},
             ],
         )
+
+    def test_multi_city_package_price_is_comparable_from_provider_result(self):
+        route = routes_from_config(CONFIG)[12]
+        request = _request(CONFIG, route)
+        payload = deepcopy(FIXTURE)
+        flight = payload["best_flights"][0]
+        flight["flights"][0]["departure_airport"]["id"] = route.origin
+        flight["flights"][0]["arrival_airport"]["id"] = route.destination
+        flight["type"] = "Multi-city"
+        normalized = normalize_response(payload, request)["flights"][0]
+
+        offer = normalize_offer(normalized, request, route, "2027-01-10T15:00:00Z")
+
+        self.assertTrue(offer["route_verified"])
+        self.assertTrue(offer["comparison_eligible"])
 
     def test_missing_fixture_is_partial_failure_and_last_valid_offer_stays_stale(self):
         with tempfile.TemporaryDirectory() as root:
