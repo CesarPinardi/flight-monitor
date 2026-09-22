@@ -45,7 +45,7 @@ A documentação oficial define `price` como inteiro na moeda selecionada. Ela n
 - `includes_infants_on_lap: null`;
 - `group_total_verified: false`.
 
-Nenhum preço é multiplicado, dividido ou estimado.
+O preço persistido pelo monitor é normalizado por passageiro pagante. Bebê de colo não entra no divisor porque a fonte não confirma sua inclusão; escopo original, taxas e total do grupo continuam desconhecidos.
 
 `segments_available` significa somente que cada segmento retornado tem dados de aeroporto de partida e chegada. Não significa assento, inventário, tarifa ainda vendável ou reserva confirmada. A reserva não é executada.
 

@@ -129,9 +129,18 @@ def _number(value: Any) -> int | float | None:
     return value
 
 
+def _per_person_amount(amount: int | float | None, request: SearchRequest) -> int | float | None:
+    if amount is None:
+        return None
+    paid_passengers = request.adults + request.children + request.infants_in_seat
+    if paid_passengers <= 0:
+        return amount
+    return round(amount / paid_passengers, 2)
+
+
 def normalize_offer(flight: Mapping[str, Any], request: SearchRequest, route: Route, observed_at_utc: str) -> dict[str, Any]:
     price = flight.get("price") if isinstance(flight.get("price"), Mapping) else {}
-    amount = _number(price.get("amount"))
+    amount = _per_person_amount(_number(price.get("amount")), request)
     segments = flight.get("segments") if isinstance(flight.get("segments"), list) else []
     first_airport = segments[0].get("departure_airport") if segments and isinstance(segments[0], Mapping) else None
     last_airport = segments[-1].get("arrival_airport") if segments and isinstance(segments[-1], Mapping) else None
@@ -315,7 +324,7 @@ def _public_data(
         "offers": offers,
         "comparisons": _comparisons(offers),
         "history": _public_history(history),
-        "disclaimer": "Preço mantém interpretação da fonte. Taxas, bebê de colo, bagagem e inventário não são inferidos.",
+        "disclaimer": "Preço por passageiro pagante. Escopo original da fonte, taxas, bebê de colo, bagagem e inventário não são inferidos.",
     }
 
 

@@ -78,7 +78,7 @@ PYTHONPATH=src python -m flight_monitor --dry-run --local
 
 Saídas atômicas: `data/history.json`, `data/state.json` e `data/public/data.json`. O lock `data/.monitor.lock` bloqueia concorrência. A segunda execução no mesmo dia local (`America/Sao_Paulo`) é ignorada; use `--force` somente para execução manual explícita.
 
-Cada oferta tem identificador estável, rota, passageiros, preço sem inferência, moeda, segmentos, fonte e `observed_at_utc`. Oferta pendente não entra em comparação. Bagagem desconhecida permanece não incluída. Falhas preservam último resultado válido e marcam dados antigos.
+Cada oferta tem identificador estável, rota, passageiros, preço por passageiro pagante, moeda, segmentos, fonte e `observed_at_utc`. Oferta pendente não entra em comparação. Bagagem desconhecida permanece não incluída. Falhas preservam último resultado válido e marcam dados antigos.
 
 ## Frontend local
 

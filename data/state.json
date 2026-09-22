@@ -5,37 +5,37 @@
         "currency": "BRL",
         "fingerprint": "d599cc697b4b4c10dde8",
         "observed_at_utc": "2026-09-22T19:44:45Z",
-        "price": 7631
+        "price": 3815.5
       },
       "GRU-MCO:a78af0083d39dc95bce9": {
         "currency": "BRL",
         "fingerprint": "9cf80cf11b898a6f1b3e",
         "observed_at_utc": "2026-09-22T19:44:45Z",
-        "price": 6848
+        "price": 3424
       },
       "GRU-MIA:027c75b51369987e255b": {
         "currency": "BRL",
         "fingerprint": "18b86f6c1894622cb88d",
         "observed_at_utc": "2026-09-22T19:44:45Z",
-        "price": 6116
+        "price": 3058
       },
       "VCP-FLL:a1882742b58990f89701": {
         "currency": "BRL",
         "fingerprint": "6dd65cf13356f5fa2305",
         "observed_at_utc": "2026-09-22T19:44:45Z",
-        "price": 11068
+        "price": 5534
       },
       "VCP-MCO:fe54b679563348f2606e": {
         "currency": "BRL",
         "fingerprint": "b4e28c097a63687a5ec2",
         "observed_at_utc": "2026-09-22T19:44:45Z",
-        "price": 8255
+        "price": 4127.5
       },
       "VCP-MIA:0bccd820a515d9f9f94a": {
         "currency": "BRL",
         "fingerprint": "476a9d1fde98b0be01c8",
         "observed_at_utc": "2026-09-22T19:44:45Z",
-        "price": 9646
+        "price": 4823
       }
     },
     "first_alert_sent": false,
@@ -137,7 +137,7 @@
             "infants_on_lap": 1
           },
           "price": {
-            "amount": 7631,
+            "amount": 3815.5,
             "currency": "BRL",
             "includes_infants_on_lap": null,
             "includes_taxes": null,
@@ -215,7 +215,7 @@
             "infants_on_lap": 1
           },
           "price": {
-            "amount": 7631,
+            "amount": 3815.5,
             "currency": "BRL",
             "includes_infants_on_lap": null,
             "includes_taxes": null,
@@ -293,7 +293,7 @@
             "infants_on_lap": 1
           },
           "price": {
-            "amount": 8017,
+            "amount": 4008.5,
             "currency": "BRL",
             "includes_infants_on_lap": null,
             "includes_taxes": null,
@@ -371,7 +371,7 @@
             "infants_on_lap": 1
           },
           "price": {
-            "amount": 7631,
+            "amount": 3815.5,
             "currency": "BRL",
             "includes_infants_on_lap": null,
             "includes_taxes": null,
@@ -449,7 +449,7 @@
             "infants_on_lap": 1
           },
           "price": {
-            "amount": 8017,
+            "amount": 4008.5,
             "currency": "BRL",
             "includes_infants_on_lap": null,
             "includes_taxes": null,
@@ -527,7 +527,7 @@
             "infants_on_lap": 1
           },
           "price": {
-            "amount": 10184,
+            "amount": 5092,
             "currency": "BRL",
             "includes_infants_on_lap": null,
             "includes_taxes": null,
@@ -605,7 +605,7 @@
             "infants_on_lap": 1
           },
           "price": {
-            "amount": 10262,
+            "amount": 5131,
             "currency": "BRL",
             "includes_infants_on_lap": null,
             "includes_taxes": null,
@@ -683,7 +683,7 @@
             "infants_on_lap": 1
           },
           "price": {
-            "amount": 10758,
+            "amount": 5379,
             "currency": "BRL",
             "includes_infants_on_lap": null,
             "includes_taxes": null,
@@ -761,7 +761,7 @@
             "infants_on_lap": 1
           },
           "price": {
-            "amount": 13943,
+            "amount": 6971.5,
             "currency": "BRL",
             "includes_infants_on_lap": null,
             "includes_taxes": null,
@@ -849,7 +849,7 @@
             "infants_on_lap": 1
           },
           "price": {
-            "amount": 6848,
+            "amount": 3424,
             "currency": "BRL",
             "includes_infants_on_lap": null,
             "includes_taxes": null,
@@ -927,7 +927,7 @@
             "infants_on_lap": 1
           },
           "price": {
-            "amount": 7278,
+            "amount": 3639,
             "currency": "BRL",
             "includes_infants_on_lap": null,
             "includes_taxes": null,
@@ -1005,7 +1005,7 @@
             "infants_on_lap": 1
           },
           "price": {
-            "amount": 7822,
+            "amount": 3911,
             "currency": "BRL",
             "includes_infants_on_lap": null,
             "includes_taxes": null,
@@ -1066,7 +1066,7 @@
             "infants_on_lap": 1
           },
           "price": {
-            "amount": 10539,
+            "amount": 5269.5,
             "currency": "BRL",
             "includes_infants_on_lap": null,
             "includes_taxes": null,
@@ -1144,7 +1144,7 @@
             "infants_on_lap": 1
           },
           "price": {
-            "amount": 6848,
+            "amount": 3424,
             "currency": "BRL",
             "includes_infants_on_lap": null,
             "includes_taxes": null,
@@ -1222,7 +1222,7 @@
             "infants_on_lap": 1
           },
           "price": {
-            "amount": 7278,
+            "amount": 3639,
             "currency": "BRL",
             "includes_infants_on_lap": null,
             "includes_taxes": null,
@@ -1300,7 +1300,7 @@
             "infants_on_lap": 1
           },
           "price": {
-            "amount": 8323,
+            "amount": 4161.5,
             "currency": "BRL",
             "includes_infants_on_lap": null,
             "includes_taxes": null,
@@ -1378,7 +1378,7 @@
             "infants_on_lap": 1
           },
           "price": {
-            "amount": 8323,
+            "amount": 4161.5,
             "currency": "BRL",
             "includes_infants_on_lap": null,
             "includes_taxes": null,
@@ -1456,7 +1456,7 @@
             "infants_on_lap": 1
           },
           "price": {
-            "amount": 10262,
+            "amount": 5131,
             "currency": "BRL",
             "includes_infants_on_lap": null,
             "includes_taxes": null,
@@ -1517,7 +1517,7 @@
             "infants_on_lap": 1
           },
           "price": {
-            "amount": 10478,
+            "amount": 5239,
             "currency": "BRL",
             "includes_infants_on_lap": null,
             "includes_taxes": null,
@@ -1605,7 +1605,7 @@
             "infants_on_lap": 1
           },
           "price": {
-            "amount": 6116,
+            "amount": 3058,
             "currency": "BRL",
             "includes_infants_on_lap": null,
             "includes_taxes": null,
@@ -1683,7 +1683,7 @@
             "infants_on_lap": 1
           },
           "price": {
-            "amount": 7412,
+            "amount": 3706,
             "currency": "BRL",
             "includes_infants_on_lap": null,
             "includes_taxes": null,
@@ -1744,7 +1744,7 @@
             "infants_on_lap": 1
           },
           "price": {
-            "amount": 9854,
+            "amount": 4927,
             "currency": "BRL",
             "includes_infants_on_lap": null,
             "includes_taxes": null,
@@ -1805,7 +1805,7 @@
             "infants_on_lap": 1
           },
           "price": {
-            "amount": 9854,
+            "amount": 4927,
             "currency": "BRL",
             "includes_infants_on_lap": null,
             "includes_taxes": null,
@@ -1866,7 +1866,7 @@
             "infants_on_lap": 1
           },
           "price": {
-            "amount": 9854,
+            "amount": 4927,
             "currency": "BRL",
             "includes_infants_on_lap": null,
             "includes_taxes": null,
@@ -1944,7 +1944,7 @@
             "infants_on_lap": 1
           },
           "price": {
-            "amount": 8781,
+            "amount": 4390.5,
             "currency": "BRL",
             "includes_infants_on_lap": null,
             "includes_taxes": null,
@@ -2022,7 +2022,7 @@
             "infants_on_lap": 1
           },
           "price": {
-            "amount": 8781,
+            "amount": 4390.5,
             "currency": "BRL",
             "includes_infants_on_lap": null,
             "includes_taxes": null,
@@ -2100,7 +2100,7 @@
             "infants_on_lap": 1
           },
           "price": {
-            "amount": 8781,
+            "amount": 4390.5,
             "currency": "BRL",
             "includes_infants_on_lap": null,
             "includes_taxes": null,
@@ -2161,7 +2161,7 @@
             "infants_on_lap": 1
           },
           "price": {
-            "amount": 12712,
+            "amount": 6356,
             "currency": "BRL",
             "includes_infants_on_lap": null,
             "includes_taxes": null,
@@ -2222,7 +2222,7 @@
             "infants_on_lap": 1
           },
           "price": {
-            "amount": 12712,
+            "amount": 6356,
             "currency": "BRL",
             "includes_infants_on_lap": null,
             "includes_taxes": null,
@@ -2283,7 +2283,7 @@
             "infants_on_lap": 1
           },
           "price": {
-            "amount": 12712,
+            "amount": 6356,
             "currency": "BRL",
             "includes_infants_on_lap": null,
             "includes_taxes": null,
@@ -2354,7 +2354,7 @@
             "infants_on_lap": 1
           },
           "price": {
-            "amount": 11068,
+            "amount": 5534,
             "currency": "BRL",
             "includes_infants_on_lap": null,
             "includes_taxes": null,
@@ -2449,7 +2449,7 @@
             "infants_on_lap": 1
           },
           "price": {
-            "amount": 12926,
+            "amount": 6463,
             "currency": "BRL",
             "includes_infants_on_lap": null,
             "includes_taxes": null,
@@ -2544,7 +2544,7 @@
             "infants_on_lap": 1
           },
           "price": {
-            "amount": 64120,
+            "amount": 32060,
             "currency": "BRL",
             "includes_infants_on_lap": null,
             "includes_taxes": null,
@@ -2649,7 +2649,7 @@
             "infants_on_lap": 1
           },
           "price": {
-            "amount": 8255,
+            "amount": 4127.5,
             "currency": "BRL",
             "includes_infants_on_lap": null,
             "includes_taxes": null,
@@ -2710,7 +2710,7 @@
             "infants_on_lap": 1
           },
           "price": {
-            "amount": 9915,
+            "amount": 4957.5,
             "currency": "BRL",
             "includes_infants_on_lap": null,
             "includes_taxes": null,
@@ -2771,7 +2771,7 @@
             "infants_on_lap": 1
           },
           "price": {
-            "amount": 10123,
+            "amount": 5061.5,
             "currency": "BRL",
             "includes_infants_on_lap": null,
             "includes_taxes": null,
@@ -2849,7 +2849,7 @@
             "infants_on_lap": 1
           },
           "price": {
-            "amount": 10907,
+            "amount": 5453.5,
             "currency": "BRL",
             "includes_infants_on_lap": null,
             "includes_taxes": null,
@@ -2944,7 +2944,7 @@
             "infants_on_lap": 1
           },
           "price": {
-            "amount": 77012,
+            "amount": 38506,
             "currency": "BRL",
             "includes_infants_on_lap": null,
             "includes_taxes": null,
@@ -3039,7 +3039,7 @@
             "infants_on_lap": 1
           },
           "price": {
-            "amount": 77088,
+            "amount": 38544,
             "currency": "BRL",
             "includes_infants_on_lap": null,
             "includes_taxes": null,
@@ -3134,7 +3134,7 @@
             "infants_on_lap": 1
           },
           "price": {
-            "amount": 77272,
+            "amount": 38636,
             "currency": "BRL",
             "includes_infants_on_lap": null,
             "includes_taxes": null,
@@ -3229,7 +3229,7 @@
             "infants_on_lap": 1
           },
           "price": {
-            "amount": 82692,
+            "amount": 41346,
             "currency": "BRL",
             "includes_infants_on_lap": null,
             "includes_taxes": null,
@@ -3334,7 +3334,7 @@
             "infants_on_lap": 1
           },
           "price": {
-            "amount": 9646,
+            "amount": 4823,
             "currency": "BRL",
             "includes_infants_on_lap": null,
             "includes_taxes": null,
@@ -3412,7 +3412,7 @@
             "infants_on_lap": 1
           },
           "price": {
-            "amount": 11808,
+            "amount": 5904,
             "currency": "BRL",
             "includes_infants_on_lap": null,
             "includes_taxes": null,
@@ -3507,7 +3507,7 @@
             "infants_on_lap": 1
           },
           "price": {
-            "amount": 9646,
+            "amount": 4823,
             "currency": "BRL",
             "includes_infants_on_lap": null,
             "includes_taxes": null,
@@ -3602,7 +3602,7 @@
             "infants_on_lap": 1
           },
           "price": {
-            "amount": 12948,
+            "amount": 6474,
             "currency": "BRL",
             "includes_infants_on_lap": null,
             "includes_taxes": null,
@@ -3697,7 +3697,7 @@
             "infants_on_lap": 1
           },
           "price": {
-            "amount": 12948,
+            "amount": 6474,
             "currency": "BRL",
             "includes_infants_on_lap": null,
             "includes_taxes": null,
@@ -3792,7 +3792,7 @@
             "infants_on_lap": 1
           },
           "price": {
-            "amount": 77088,
+            "amount": 38544,
             "currency": "BRL",
             "includes_infants_on_lap": null,
             "includes_taxes": null,

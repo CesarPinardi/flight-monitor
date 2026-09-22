@@ -43,6 +43,8 @@ class MonitorTests(unittest.TestCase):
             self.assertEqual(len(public["history"]["entries"][0]["routes"]), 6)
             self.assertTrue(public["offers"][0]["id"].startswith("offer-"))
             self.assertFalse(public["offers"][0]["baggage"]["included"])
+            self.assertEqual(public["offers"][0]["price"]["amount"], 6225)
+            self.assertIn("passageiro pagante", public["disclaimer"])
             self.assertEqual(public["offers"][0]["price"]["interpretation"], "provider_value_scope_unknown")
             self.assertEqual(result["telegram"]["status"], "local")
             self.assertFalse(json.loads((Path(root) / "data/state.json").read_text())["alerts"]["first_alert_sent"])
