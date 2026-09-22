@@ -126,6 +126,7 @@ jobs:
           if [[ -f data/public/data.json ]]; then
             mkdir -p site/data/public
             cp data/public/data.json site/data/public/data.json
+                        cp data/public/data.json site/data.json
           fi
           PYTHONPATH=src python scripts/audit_sanitized_data.py site/data/public/data.json
 
