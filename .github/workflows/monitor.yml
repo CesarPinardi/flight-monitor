@@ -5,6 +5,15 @@ on:
     # 10:17 UTC; fora da virada da hora. GitHub cron usa UTC.
     - cron: "17 10 * * *"
   workflow_dispatch:
+    inputs:
+      mode:
+        description: "calibration faz uma busca GRU-MCO; full executa seis rotas"
+        required: true
+        default: full
+        type: choice
+        options:
+          - calibration
+          - full
 
 permissions:
   contents: write
@@ -55,6 +64,7 @@ jobs:
 
       - name: Run monitor when SerpApi is configured
         id: run-monitor
+        if: github.event_name != 'workflow_dispatch' || inputs.mode != 'calibration'
         run: |
           set -uo pipefail
           if [[ -z "${SERPAPI_API_KEY}" ]]; then
@@ -72,6 +82,16 @@ jobs:
           echo "exit_code=${monitor_exit}" >> "$GITHUB_OUTPUT"
           # Persistir/publicar antes de falhar por quota ou falha de consulta.
           exit 0
+
+      - name: Validate one GRU-MCO search
+        if: github.event_name == 'workflow_dispatch' && inputs.mode == 'calibration'
+        run: |
+          set -euo pipefail
+          if [[ -z "${SERPAPI_API_KEY}" ]]; then
+            echo "SERPAPI_API_KEY ausente; calibração não executada." >&2
+            exit 1
+          fi
+          PYTHONPATH=src python scripts/validate_serpapi.py
 
       - name: Audit generated data and logs
         run: |

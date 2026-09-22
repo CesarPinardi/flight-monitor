@@ -31,8 +31,10 @@ O artifact contém `frontend/` e, quando existir, `data/public/data.json` em `da
 Execução manual:
 
 1. Abra Actions, workflow `Flight Monitor`, `Run workflow`.
-2. Use branch padrão.
-3. Confira resumo, orçamento e `telegram.status` no resultado.
+2. Para teste inicial, escolha `calibration`. Essa opção faz somente uma busca GRU–MCO e não envia Telegram.
+3. Use `full` somente após validar preço, passageiros, taxas e escopo.
+4. Use branch padrão.
+5. Confira resumo, orçamento e `telegram.status` no resultado.
 
 O comando ignora segunda execução no mesmo dia local. `--force` existe apenas para operação local explícita. Cota, falhas e dados antigos aparecem no estado; não há retry automático. Ao atingir limite, novas consultas param. Para pausar, desative workflow ou remova secrets; para encerrar após 14/03/2027, desative workflow e mantenha painel/histórico publicados.
 
