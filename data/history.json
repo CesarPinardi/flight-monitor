@@ -133570,6 +133570,1275 @@
       "schema_version": 1,
       "search_signature": "{\"adults\":2,\"cabin\":\"economy\",\"children\":0,\"currency\":\"BRL\",\"departure_date\":\"2027-03-05\",\"destinations\":[\"MCO\",\"FLL\",\"MIA\"],\"include_packages\":true,\"infants_in_seat\":0,\"infants_on_lap\":1,\"itineraries\":[{\"outbound\":{\"destination\":\"MCO\",\"origin\":\"GRU\"},\"return\":{\"destination\":\"GRU\",\"origin\":\"MCO\"}},{\"outbound\":{\"destination\":\"MCO\",\"origin\":\"GRU\"},\"return\":{\"destination\":\"VCP\",\"origin\":\"MCO\"}},{\"outbound\":{\"destination\":\"MCO\",\"origin\":\"GRU\"},\"return\":{\"destination\":\"GRU\",\"origin\":\"FLL\"}},{\"outbound\":{\"destination\":\"MCO\",\"origin\":\"GRU\"},\"return\":{\"destination\":\"VCP\",\"origin\":\"FLL\"}},{\"outbound\":{\"destination\":\"MCO\",\"origin\":\"GRU\"},\"return\":{\"destination\":\"GRU\",\"origin\":\"MIA\"}},{\"outbound\":{\"destination\":\"MCO\",\"origin\":\"GRU\"},\"return\":{\"destination\":\"VCP\",\"origin\":\"MIA\"}},{\"outbound\":{\"destination\":\"FLL\",\"origin\":\"GRU\"},\"return\":{\"destination\":\"GRU\",\"origin\":\"MCO\"}},{\"outbound\":{\"destination\":\"FLL\",\"origin\":\"GRU\"},\"return\":{\"destination\":\"VCP\",\"origin\":\"MCO\"}},{\"outbound\":{\"destination\":\"FLL\",\"origin\":\"GRU\"},\"return\":{\"destination\":\"GRU\",\"origin\":\"FLL\"}},{\"outbound\":{\"destination\":\"FLL\",\"origin\":\"GRU\"},\"return\":{\"destination\":\"VCP\",\"origin\":\"FLL\"}},{\"outbound\":{\"destination\":\"FLL\",\"origin\":\"GRU\"},\"return\":{\"destination\":\"GRU\",\"origin\":\"MIA\"}},{\"outbound\":{\"destination\":\"FLL\",\"origin\":\"GRU\"},\"return\":{\"destination\":\"VCP\",\"origin\":\"MIA\"}},{\"outbound\":{\"destination\":\"MIA\",\"origin\":\"GRU\"},\"return\":{\"destination\":\"GRU\",\"origin\":\"MCO\"}},{\"outbound\":{\"destination\":\"MIA\",\"origin\":\"GRU\"},\"return\":{\"destination\":\"VCP\",\"origin\":\"MCO\"}},{\"outbound\":{\"destination\":\"MIA\",\"origin\":\"GRU\"},\"return\":{\"destination\":\"GRU\",\"origin\":\"FLL\"}},{\"outbound\":{\"destination\":\"MIA\",\"origin\":\"GRU\"},\"return\":{\"destination\":\"VCP\",\"origin\":\"FLL\"}},{\"outbound\":{\"destination\":\"MIA\",\"origin\":\"GRU\"},\"return\":{\"destination\":\"GRU\",\"origin\":\"MIA\"}},{\"outbound\":{\"destination\":\"MIA\",\"origin\":\"GRU\"},\"return\":{\"destination\":\"VCP\",\"origin\":\"MIA\"}},{\"outbound\":{\"destination\":\"MCO\",\"origin\":\"VCP\"},\"return\":{\"destination\":\"GRU\",\"origin\":\"MCO\"}},{\"outbound\":{\"destination\":\"MCO\",\"origin\":\"VCP\"},\"return\":{\"destination\":\"VCP\",\"origin\":\"MCO\"}},{\"outbound\":{\"destination\":\"MCO\",\"origin\":\"VCP\"},\"return\":{\"destination\":\"GRU\",\"origin\":\"FLL\"}},{\"outbound\":{\"destination\":\"MCO\",\"origin\":\"VCP\"},\"return\":{\"destination\":\"VCP\",\"origin\":\"FLL\"}},{\"outbound\":{\"destination\":\"MCO\",\"origin\":\"VCP\"},\"return\":{\"destination\":\"GRU\",\"origin\":\"MIA\"}},{\"outbound\":{\"destination\":\"MCO\",\"origin\":\"VCP\"},\"return\":{\"destination\":\"VCP\",\"origin\":\"MIA\"}},{\"outbound\":{\"destination\":\"FLL\",\"origin\":\"VCP\"},\"return\":{\"destination\":\"GRU\",\"origin\":\"MCO\"}},{\"outbound\":{\"destination\":\"FLL\",\"origin\":\"VCP\"},\"return\":{\"destination\":\"VCP\",\"origin\":\"MCO\"}},{\"outbound\":{\"destination\":\"FLL\",\"origin\":\"VCP\"},\"return\":{\"destination\":\"GRU\",\"origin\":\"FLL\"}},{\"outbound\":{\"destination\":\"FLL\",\"origin\":\"VCP\"},\"return\":{\"destination\":\"VCP\",\"origin\":\"FLL\"}},{\"outbound\":{\"destination\":\"FLL\",\"origin\":\"VCP\"},\"return\":{\"destination\":\"GRU\",\"origin\":\"MIA\"}},{\"outbound\":{\"destination\":\"FLL\",\"origin\":\"VCP\"},\"return\":{\"destination\":\"VCP\",\"origin\":\"MIA\"}},{\"outbound\":{\"destination\":\"MIA\",\"origin\":\"VCP\"},\"return\":{\"destination\":\"GRU\",\"origin\":\"MCO\"}},{\"outbound\":{\"destination\":\"MIA\",\"origin\":\"VCP\"},\"return\":{\"destination\":\"VCP\",\"origin\":\"MCO\"}},{\"outbound\":{\"destination\":\"MIA\",\"origin\":\"VCP\"},\"return\":{\"destination\":\"GRU\",\"origin\":\"FLL\"}},{\"outbound\":{\"destination\":\"MIA\",\"origin\":\"VCP\"},\"return\":{\"destination\":\"VCP\",\"origin\":\"FLL\"}},{\"outbound\":{\"destination\":\"MIA\",\"origin\":\"VCP\"},\"return\":{\"destination\":\"GRU\",\"origin\":\"MIA\"}},{\"outbound\":{\"destination\":\"MIA\",\"origin\":\"VCP\"},\"return\":{\"destination\":\"VCP\",\"origin\":\"MIA\"}}],\"origins\":[\"GRU\",\"VCP\"],\"payment_type\":\"cash_only\",\"return_date\":\"2027-03-14\",\"trip_leg\":\"both\",\"trip_type\":\"one_way\"}",
       "status": "quota"
+    },
+    {
+      "recorded_at_utc": "2026-09-24T15:13:58Z",
+      "results": [
+        {
+          "error": "SerpApi call budget exhausted (0)",
+          "error_code": "quota_exhausted",
+          "is_extra": false,
+          "offers": [],
+          "request": {
+            "adults": "2",
+            "arrival_id": "MCO",
+            "children": "0",
+            "currency": "BRL",
+            "departure_id": "GRU",
+            "engine": "google_flights",
+            "gl": "br",
+            "hl": "pt-BR",
+            "infants_in_seat": "0",
+            "infants_on_lap": "1",
+            "outbound_date": "2027-03-05",
+            "travel_class": "1",
+            "type": "2"
+          },
+          "route": {
+            "destination": "MCO",
+            "leg": "outbound",
+            "origin": "GRU"
+          },
+          "status": "quota"
+        },
+        {
+          "error": "SerpApi call budget exhausted (0)",
+          "error_code": "quota_exhausted",
+          "is_extra": false,
+          "offers": [],
+          "request": {
+            "adults": "2",
+            "arrival_id": "FLL",
+            "children": "0",
+            "currency": "BRL",
+            "departure_id": "GRU",
+            "engine": "google_flights",
+            "gl": "br",
+            "hl": "pt-BR",
+            "infants_in_seat": "0",
+            "infants_on_lap": "1",
+            "outbound_date": "2027-03-05",
+            "travel_class": "1",
+            "type": "2"
+          },
+          "route": {
+            "destination": "FLL",
+            "leg": "outbound",
+            "origin": "GRU"
+          },
+          "status": "quota"
+        },
+        {
+          "error": "SerpApi call budget exhausted (0)",
+          "error_code": "quota_exhausted",
+          "is_extra": false,
+          "offers": [],
+          "request": {
+            "adults": "2",
+            "arrival_id": "MIA",
+            "children": "0",
+            "currency": "BRL",
+            "departure_id": "GRU",
+            "engine": "google_flights",
+            "gl": "br",
+            "hl": "pt-BR",
+            "infants_in_seat": "0",
+            "infants_on_lap": "1",
+            "outbound_date": "2027-03-05",
+            "travel_class": "1",
+            "type": "2"
+          },
+          "route": {
+            "destination": "MIA",
+            "leg": "outbound",
+            "origin": "GRU"
+          },
+          "status": "quota"
+        },
+        {
+          "error": "SerpApi call budget exhausted (0)",
+          "error_code": "quota_exhausted",
+          "is_extra": false,
+          "offers": [],
+          "request": {
+            "adults": "2",
+            "arrival_id": "MCO",
+            "children": "0",
+            "currency": "BRL",
+            "departure_id": "VCP",
+            "engine": "google_flights",
+            "gl": "br",
+            "hl": "pt-BR",
+            "infants_in_seat": "0",
+            "infants_on_lap": "1",
+            "outbound_date": "2027-03-05",
+            "travel_class": "1",
+            "type": "2"
+          },
+          "route": {
+            "destination": "MCO",
+            "leg": "outbound",
+            "origin": "VCP"
+          },
+          "status": "quota"
+        },
+        {
+          "error": "SerpApi call budget exhausted (0)",
+          "error_code": "quota_exhausted",
+          "is_extra": false,
+          "offers": [],
+          "request": {
+            "adults": "2",
+            "arrival_id": "FLL",
+            "children": "0",
+            "currency": "BRL",
+            "departure_id": "VCP",
+            "engine": "google_flights",
+            "gl": "br",
+            "hl": "pt-BR",
+            "infants_in_seat": "0",
+            "infants_on_lap": "1",
+            "outbound_date": "2027-03-05",
+            "travel_class": "1",
+            "type": "2"
+          },
+          "route": {
+            "destination": "FLL",
+            "leg": "outbound",
+            "origin": "VCP"
+          },
+          "status": "quota"
+        },
+        {
+          "error": "SerpApi call budget exhausted (0)",
+          "error_code": "quota_exhausted",
+          "is_extra": false,
+          "offers": [],
+          "request": {
+            "adults": "2",
+            "arrival_id": "MIA",
+            "children": "0",
+            "currency": "BRL",
+            "departure_id": "VCP",
+            "engine": "google_flights",
+            "gl": "br",
+            "hl": "pt-BR",
+            "infants_in_seat": "0",
+            "infants_on_lap": "1",
+            "outbound_date": "2027-03-05",
+            "travel_class": "1",
+            "type": "2"
+          },
+          "route": {
+            "destination": "MIA",
+            "leg": "outbound",
+            "origin": "VCP"
+          },
+          "status": "quota"
+        },
+        {
+          "error": "SerpApi call budget exhausted (0)",
+          "error_code": "quota_exhausted",
+          "is_extra": false,
+          "offers": [],
+          "request": {
+            "adults": "2",
+            "arrival_id": "GRU",
+            "children": "0",
+            "currency": "BRL",
+            "departure_id": "MCO",
+            "engine": "google_flights",
+            "gl": "br",
+            "hl": "pt-BR",
+            "infants_in_seat": "0",
+            "infants_on_lap": "1",
+            "outbound_date": "2027-03-14",
+            "travel_class": "1",
+            "type": "2"
+          },
+          "route": {
+            "destination": "GRU",
+            "leg": "return",
+            "origin": "MCO"
+          },
+          "status": "quota"
+        },
+        {
+          "error": "SerpApi call budget exhausted (0)",
+          "error_code": "quota_exhausted",
+          "is_extra": false,
+          "offers": [],
+          "request": {
+            "adults": "2",
+            "arrival_id": "VCP",
+            "children": "0",
+            "currency": "BRL",
+            "departure_id": "MCO",
+            "engine": "google_flights",
+            "gl": "br",
+            "hl": "pt-BR",
+            "infants_in_seat": "0",
+            "infants_on_lap": "1",
+            "outbound_date": "2027-03-14",
+            "travel_class": "1",
+            "type": "2"
+          },
+          "route": {
+            "destination": "VCP",
+            "leg": "return",
+            "origin": "MCO"
+          },
+          "status": "quota"
+        },
+        {
+          "error": "SerpApi call budget exhausted (0)",
+          "error_code": "quota_exhausted",
+          "is_extra": false,
+          "offers": [],
+          "request": {
+            "adults": "2",
+            "arrival_id": "GRU",
+            "children": "0",
+            "currency": "BRL",
+            "departure_id": "FLL",
+            "engine": "google_flights",
+            "gl": "br",
+            "hl": "pt-BR",
+            "infants_in_seat": "0",
+            "infants_on_lap": "1",
+            "outbound_date": "2027-03-14",
+            "travel_class": "1",
+            "type": "2"
+          },
+          "route": {
+            "destination": "GRU",
+            "leg": "return",
+            "origin": "FLL"
+          },
+          "status": "quota"
+        },
+        {
+          "error": "SerpApi call budget exhausted (0)",
+          "error_code": "quota_exhausted",
+          "is_extra": false,
+          "offers": [],
+          "request": {
+            "adults": "2",
+            "arrival_id": "VCP",
+            "children": "0",
+            "currency": "BRL",
+            "departure_id": "FLL",
+            "engine": "google_flights",
+            "gl": "br",
+            "hl": "pt-BR",
+            "infants_in_seat": "0",
+            "infants_on_lap": "1",
+            "outbound_date": "2027-03-14",
+            "travel_class": "1",
+            "type": "2"
+          },
+          "route": {
+            "destination": "VCP",
+            "leg": "return",
+            "origin": "FLL"
+          },
+          "status": "quota"
+        },
+        {
+          "error": "SerpApi call budget exhausted (0)",
+          "error_code": "quota_exhausted",
+          "is_extra": false,
+          "offers": [],
+          "request": {
+            "adults": "2",
+            "arrival_id": "GRU",
+            "children": "0",
+            "currency": "BRL",
+            "departure_id": "MIA",
+            "engine": "google_flights",
+            "gl": "br",
+            "hl": "pt-BR",
+            "infants_in_seat": "0",
+            "infants_on_lap": "1",
+            "outbound_date": "2027-03-14",
+            "travel_class": "1",
+            "type": "2"
+          },
+          "route": {
+            "destination": "GRU",
+            "leg": "return",
+            "origin": "MIA"
+          },
+          "status": "quota"
+        },
+        {
+          "error": "SerpApi call budget exhausted (0)",
+          "error_code": "quota_exhausted",
+          "is_extra": false,
+          "offers": [],
+          "request": {
+            "adults": "2",
+            "arrival_id": "VCP",
+            "children": "0",
+            "currency": "BRL",
+            "departure_id": "MIA",
+            "engine": "google_flights",
+            "gl": "br",
+            "hl": "pt-BR",
+            "infants_in_seat": "0",
+            "infants_on_lap": "1",
+            "outbound_date": "2027-03-14",
+            "travel_class": "1",
+            "type": "2"
+          },
+          "route": {
+            "destination": "VCP",
+            "leg": "return",
+            "origin": "MIA"
+          },
+          "status": "quota"
+        },
+        {
+          "error": "SerpApi call budget exhausted (0)",
+          "error_code": "quota_exhausted",
+          "is_extra": false,
+          "offers": [],
+          "request": {
+            "adults": "2",
+            "children": "0",
+            "currency": "BRL",
+            "engine": "google_flights",
+            "gl": "br",
+            "hl": "pt-BR",
+            "infants_in_seat": "0",
+            "infants_on_lap": "1",
+            "multi_city_json": "[{\"departure_id\":\"GRU\",\"arrival_id\":\"MCO\",\"date\":\"2027-03-05\"},{\"departure_id\":\"MCO\",\"arrival_id\":\"GRU\",\"date\":\"2027-03-14\"}]",
+            "travel_class": "1",
+            "type": "3"
+          },
+          "route": {
+            "destination": "MCO",
+            "origin": "GRU",
+            "return_destination": "GRU",
+            "return_origin": "MCO"
+          },
+          "status": "quota"
+        },
+        {
+          "error": "SerpApi call budget exhausted (0)",
+          "error_code": "quota_exhausted",
+          "is_extra": false,
+          "offers": [],
+          "request": {
+            "adults": "2",
+            "children": "0",
+            "currency": "BRL",
+            "engine": "google_flights",
+            "gl": "br",
+            "hl": "pt-BR",
+            "infants_in_seat": "0",
+            "infants_on_lap": "1",
+            "multi_city_json": "[{\"departure_id\":\"GRU\",\"arrival_id\":\"MCO\",\"date\":\"2027-03-05\"},{\"departure_id\":\"MCO\",\"arrival_id\":\"VCP\",\"date\":\"2027-03-14\"}]",
+            "travel_class": "1",
+            "type": "3"
+          },
+          "route": {
+            "destination": "MCO",
+            "origin": "GRU",
+            "return_destination": "VCP",
+            "return_origin": "MCO"
+          },
+          "status": "quota"
+        },
+        {
+          "error": "SerpApi call budget exhausted (0)",
+          "error_code": "quota_exhausted",
+          "is_extra": false,
+          "offers": [],
+          "request": {
+            "adults": "2",
+            "children": "0",
+            "currency": "BRL",
+            "engine": "google_flights",
+            "gl": "br",
+            "hl": "pt-BR",
+            "infants_in_seat": "0",
+            "infants_on_lap": "1",
+            "multi_city_json": "[{\"departure_id\":\"GRU\",\"arrival_id\":\"MCO\",\"date\":\"2027-03-05\"},{\"departure_id\":\"FLL\",\"arrival_id\":\"GRU\",\"date\":\"2027-03-14\"}]",
+            "travel_class": "1",
+            "type": "3"
+          },
+          "route": {
+            "destination": "MCO",
+            "origin": "GRU",
+            "return_destination": "GRU",
+            "return_origin": "FLL"
+          },
+          "status": "quota"
+        },
+        {
+          "error": "SerpApi call budget exhausted (0)",
+          "error_code": "quota_exhausted",
+          "is_extra": false,
+          "offers": [],
+          "request": {
+            "adults": "2",
+            "children": "0",
+            "currency": "BRL",
+            "engine": "google_flights",
+            "gl": "br",
+            "hl": "pt-BR",
+            "infants_in_seat": "0",
+            "infants_on_lap": "1",
+            "multi_city_json": "[{\"departure_id\":\"GRU\",\"arrival_id\":\"MCO\",\"date\":\"2027-03-05\"},{\"departure_id\":\"FLL\",\"arrival_id\":\"VCP\",\"date\":\"2027-03-14\"}]",
+            "travel_class": "1",
+            "type": "3"
+          },
+          "route": {
+            "destination": "MCO",
+            "origin": "GRU",
+            "return_destination": "VCP",
+            "return_origin": "FLL"
+          },
+          "status": "quota"
+        },
+        {
+          "error": "SerpApi call budget exhausted (0)",
+          "error_code": "quota_exhausted",
+          "is_extra": false,
+          "offers": [],
+          "request": {
+            "adults": "2",
+            "children": "0",
+            "currency": "BRL",
+            "engine": "google_flights",
+            "gl": "br",
+            "hl": "pt-BR",
+            "infants_in_seat": "0",
+            "infants_on_lap": "1",
+            "multi_city_json": "[{\"departure_id\":\"GRU\",\"arrival_id\":\"MCO\",\"date\":\"2027-03-05\"},{\"departure_id\":\"MIA\",\"arrival_id\":\"GRU\",\"date\":\"2027-03-14\"}]",
+            "travel_class": "1",
+            "type": "3"
+          },
+          "route": {
+            "destination": "MCO",
+            "origin": "GRU",
+            "return_destination": "GRU",
+            "return_origin": "MIA"
+          },
+          "status": "quota"
+        },
+        {
+          "error": "SerpApi call budget exhausted (0)",
+          "error_code": "quota_exhausted",
+          "is_extra": false,
+          "offers": [],
+          "request": {
+            "adults": "2",
+            "children": "0",
+            "currency": "BRL",
+            "engine": "google_flights",
+            "gl": "br",
+            "hl": "pt-BR",
+            "infants_in_seat": "0",
+            "infants_on_lap": "1",
+            "multi_city_json": "[{\"departure_id\":\"GRU\",\"arrival_id\":\"MCO\",\"date\":\"2027-03-05\"},{\"departure_id\":\"MIA\",\"arrival_id\":\"VCP\",\"date\":\"2027-03-14\"}]",
+            "travel_class": "1",
+            "type": "3"
+          },
+          "route": {
+            "destination": "MCO",
+            "origin": "GRU",
+            "return_destination": "VCP",
+            "return_origin": "MIA"
+          },
+          "status": "quota"
+        },
+        {
+          "error": "SerpApi call budget exhausted (0)",
+          "error_code": "quota_exhausted",
+          "is_extra": false,
+          "offers": [],
+          "request": {
+            "adults": "2",
+            "children": "0",
+            "currency": "BRL",
+            "engine": "google_flights",
+            "gl": "br",
+            "hl": "pt-BR",
+            "infants_in_seat": "0",
+            "infants_on_lap": "1",
+            "multi_city_json": "[{\"departure_id\":\"GRU\",\"arrival_id\":\"FLL\",\"date\":\"2027-03-05\"},{\"departure_id\":\"MCO\",\"arrival_id\":\"GRU\",\"date\":\"2027-03-14\"}]",
+            "travel_class": "1",
+            "type": "3"
+          },
+          "route": {
+            "destination": "FLL",
+            "origin": "GRU",
+            "return_destination": "GRU",
+            "return_origin": "MCO"
+          },
+          "status": "quota"
+        },
+        {
+          "error": "SerpApi call budget exhausted (0)",
+          "error_code": "quota_exhausted",
+          "is_extra": false,
+          "offers": [],
+          "request": {
+            "adults": "2",
+            "children": "0",
+            "currency": "BRL",
+            "engine": "google_flights",
+            "gl": "br",
+            "hl": "pt-BR",
+            "infants_in_seat": "0",
+            "infants_on_lap": "1",
+            "multi_city_json": "[{\"departure_id\":\"GRU\",\"arrival_id\":\"FLL\",\"date\":\"2027-03-05\"},{\"departure_id\":\"MCO\",\"arrival_id\":\"VCP\",\"date\":\"2027-03-14\"}]",
+            "travel_class": "1",
+            "type": "3"
+          },
+          "route": {
+            "destination": "FLL",
+            "origin": "GRU",
+            "return_destination": "VCP",
+            "return_origin": "MCO"
+          },
+          "status": "quota"
+        },
+        {
+          "error": "SerpApi call budget exhausted (0)",
+          "error_code": "quota_exhausted",
+          "is_extra": false,
+          "offers": [],
+          "request": {
+            "adults": "2",
+            "children": "0",
+            "currency": "BRL",
+            "engine": "google_flights",
+            "gl": "br",
+            "hl": "pt-BR",
+            "infants_in_seat": "0",
+            "infants_on_lap": "1",
+            "multi_city_json": "[{\"departure_id\":\"GRU\",\"arrival_id\":\"FLL\",\"date\":\"2027-03-05\"},{\"departure_id\":\"FLL\",\"arrival_id\":\"GRU\",\"date\":\"2027-03-14\"}]",
+            "travel_class": "1",
+            "type": "3"
+          },
+          "route": {
+            "destination": "FLL",
+            "origin": "GRU",
+            "return_destination": "GRU",
+            "return_origin": "FLL"
+          },
+          "status": "quota"
+        },
+        {
+          "error": "SerpApi call budget exhausted (0)",
+          "error_code": "quota_exhausted",
+          "is_extra": false,
+          "offers": [],
+          "request": {
+            "adults": "2",
+            "children": "0",
+            "currency": "BRL",
+            "engine": "google_flights",
+            "gl": "br",
+            "hl": "pt-BR",
+            "infants_in_seat": "0",
+            "infants_on_lap": "1",
+            "multi_city_json": "[{\"departure_id\":\"GRU\",\"arrival_id\":\"FLL\",\"date\":\"2027-03-05\"},{\"departure_id\":\"FLL\",\"arrival_id\":\"VCP\",\"date\":\"2027-03-14\"}]",
+            "travel_class": "1",
+            "type": "3"
+          },
+          "route": {
+            "destination": "FLL",
+            "origin": "GRU",
+            "return_destination": "VCP",
+            "return_origin": "FLL"
+          },
+          "status": "quota"
+        },
+        {
+          "error": "SerpApi call budget exhausted (0)",
+          "error_code": "quota_exhausted",
+          "is_extra": false,
+          "offers": [],
+          "request": {
+            "adults": "2",
+            "children": "0",
+            "currency": "BRL",
+            "engine": "google_flights",
+            "gl": "br",
+            "hl": "pt-BR",
+            "infants_in_seat": "0",
+            "infants_on_lap": "1",
+            "multi_city_json": "[{\"departure_id\":\"GRU\",\"arrival_id\":\"FLL\",\"date\":\"2027-03-05\"},{\"departure_id\":\"MIA\",\"arrival_id\":\"GRU\",\"date\":\"2027-03-14\"}]",
+            "travel_class": "1",
+            "type": "3"
+          },
+          "route": {
+            "destination": "FLL",
+            "origin": "GRU",
+            "return_destination": "GRU",
+            "return_origin": "MIA"
+          },
+          "status": "quota"
+        },
+        {
+          "error": "SerpApi call budget exhausted (0)",
+          "error_code": "quota_exhausted",
+          "is_extra": false,
+          "offers": [],
+          "request": {
+            "adults": "2",
+            "children": "0",
+            "currency": "BRL",
+            "engine": "google_flights",
+            "gl": "br",
+            "hl": "pt-BR",
+            "infants_in_seat": "0",
+            "infants_on_lap": "1",
+            "multi_city_json": "[{\"departure_id\":\"GRU\",\"arrival_id\":\"FLL\",\"date\":\"2027-03-05\"},{\"departure_id\":\"MIA\",\"arrival_id\":\"VCP\",\"date\":\"2027-03-14\"}]",
+            "travel_class": "1",
+            "type": "3"
+          },
+          "route": {
+            "destination": "FLL",
+            "origin": "GRU",
+            "return_destination": "VCP",
+            "return_origin": "MIA"
+          },
+          "status": "quota"
+        },
+        {
+          "error": "SerpApi call budget exhausted (0)",
+          "error_code": "quota_exhausted",
+          "is_extra": false,
+          "offers": [],
+          "request": {
+            "adults": "2",
+            "children": "0",
+            "currency": "BRL",
+            "engine": "google_flights",
+            "gl": "br",
+            "hl": "pt-BR",
+            "infants_in_seat": "0",
+            "infants_on_lap": "1",
+            "multi_city_json": "[{\"departure_id\":\"GRU\",\"arrival_id\":\"MIA\",\"date\":\"2027-03-05\"},{\"departure_id\":\"MCO\",\"arrival_id\":\"GRU\",\"date\":\"2027-03-14\"}]",
+            "travel_class": "1",
+            "type": "3"
+          },
+          "route": {
+            "destination": "MIA",
+            "origin": "GRU",
+            "return_destination": "GRU",
+            "return_origin": "MCO"
+          },
+          "status": "quota"
+        },
+        {
+          "error": "SerpApi call budget exhausted (0)",
+          "error_code": "quota_exhausted",
+          "is_extra": false,
+          "offers": [],
+          "request": {
+            "adults": "2",
+            "children": "0",
+            "currency": "BRL",
+            "engine": "google_flights",
+            "gl": "br",
+            "hl": "pt-BR",
+            "infants_in_seat": "0",
+            "infants_on_lap": "1",
+            "multi_city_json": "[{\"departure_id\":\"GRU\",\"arrival_id\":\"MIA\",\"date\":\"2027-03-05\"},{\"departure_id\":\"MCO\",\"arrival_id\":\"VCP\",\"date\":\"2027-03-14\"}]",
+            "travel_class": "1",
+            "type": "3"
+          },
+          "route": {
+            "destination": "MIA",
+            "origin": "GRU",
+            "return_destination": "VCP",
+            "return_origin": "MCO"
+          },
+          "status": "quota"
+        },
+        {
+          "error": "SerpApi call budget exhausted (0)",
+          "error_code": "quota_exhausted",
+          "is_extra": false,
+          "offers": [],
+          "request": {
+            "adults": "2",
+            "children": "0",
+            "currency": "BRL",
+            "engine": "google_flights",
+            "gl": "br",
+            "hl": "pt-BR",
+            "infants_in_seat": "0",
+            "infants_on_lap": "1",
+            "multi_city_json": "[{\"departure_id\":\"GRU\",\"arrival_id\":\"MIA\",\"date\":\"2027-03-05\"},{\"departure_id\":\"FLL\",\"arrival_id\":\"GRU\",\"date\":\"2027-03-14\"}]",
+            "travel_class": "1",
+            "type": "3"
+          },
+          "route": {
+            "destination": "MIA",
+            "origin": "GRU",
+            "return_destination": "GRU",
+            "return_origin": "FLL"
+          },
+          "status": "quota"
+        },
+        {
+          "error": "SerpApi call budget exhausted (0)",
+          "error_code": "quota_exhausted",
+          "is_extra": false,
+          "offers": [],
+          "request": {
+            "adults": "2",
+            "children": "0",
+            "currency": "BRL",
+            "engine": "google_flights",
+            "gl": "br",
+            "hl": "pt-BR",
+            "infants_in_seat": "0",
+            "infants_on_lap": "1",
+            "multi_city_json": "[{\"departure_id\":\"GRU\",\"arrival_id\":\"MIA\",\"date\":\"2027-03-05\"},{\"departure_id\":\"FLL\",\"arrival_id\":\"VCP\",\"date\":\"2027-03-14\"}]",
+            "travel_class": "1",
+            "type": "3"
+          },
+          "route": {
+            "destination": "MIA",
+            "origin": "GRU",
+            "return_destination": "VCP",
+            "return_origin": "FLL"
+          },
+          "status": "quota"
+        },
+        {
+          "error": "SerpApi call budget exhausted (0)",
+          "error_code": "quota_exhausted",
+          "is_extra": false,
+          "offers": [],
+          "request": {
+            "adults": "2",
+            "children": "0",
+            "currency": "BRL",
+            "engine": "google_flights",
+            "gl": "br",
+            "hl": "pt-BR",
+            "infants_in_seat": "0",
+            "infants_on_lap": "1",
+            "multi_city_json": "[{\"departure_id\":\"GRU\",\"arrival_id\":\"MIA\",\"date\":\"2027-03-05\"},{\"departure_id\":\"MIA\",\"arrival_id\":\"GRU\",\"date\":\"2027-03-14\"}]",
+            "travel_class": "1",
+            "type": "3"
+          },
+          "route": {
+            "destination": "MIA",
+            "origin": "GRU",
+            "return_destination": "GRU",
+            "return_origin": "MIA"
+          },
+          "status": "quota"
+        },
+        {
+          "error": "SerpApi call budget exhausted (0)",
+          "error_code": "quota_exhausted",
+          "is_extra": false,
+          "offers": [],
+          "request": {
+            "adults": "2",
+            "children": "0",
+            "currency": "BRL",
+            "engine": "google_flights",
+            "gl": "br",
+            "hl": "pt-BR",
+            "infants_in_seat": "0",
+            "infants_on_lap": "1",
+            "multi_city_json": "[{\"departure_id\":\"GRU\",\"arrival_id\":\"MIA\",\"date\":\"2027-03-05\"},{\"departure_id\":\"MIA\",\"arrival_id\":\"VCP\",\"date\":\"2027-03-14\"}]",
+            "travel_class": "1",
+            "type": "3"
+          },
+          "route": {
+            "destination": "MIA",
+            "origin": "GRU",
+            "return_destination": "VCP",
+            "return_origin": "MIA"
+          },
+          "status": "quota"
+        },
+        {
+          "error": "SerpApi call budget exhausted (0)",
+          "error_code": "quota_exhausted",
+          "is_extra": false,
+          "offers": [],
+          "request": {
+            "adults": "2",
+            "children": "0",
+            "currency": "BRL",
+            "engine": "google_flights",
+            "gl": "br",
+            "hl": "pt-BR",
+            "infants_in_seat": "0",
+            "infants_on_lap": "1",
+            "multi_city_json": "[{\"departure_id\":\"VCP\",\"arrival_id\":\"MCO\",\"date\":\"2027-03-05\"},{\"departure_id\":\"MCO\",\"arrival_id\":\"GRU\",\"date\":\"2027-03-14\"}]",
+            "travel_class": "1",
+            "type": "3"
+          },
+          "route": {
+            "destination": "MCO",
+            "origin": "VCP",
+            "return_destination": "GRU",
+            "return_origin": "MCO"
+          },
+          "status": "quota"
+        },
+        {
+          "error": "SerpApi call budget exhausted (0)",
+          "error_code": "quota_exhausted",
+          "is_extra": false,
+          "offers": [],
+          "request": {
+            "adults": "2",
+            "children": "0",
+            "currency": "BRL",
+            "engine": "google_flights",
+            "gl": "br",
+            "hl": "pt-BR",
+            "infants_in_seat": "0",
+            "infants_on_lap": "1",
+            "multi_city_json": "[{\"departure_id\":\"VCP\",\"arrival_id\":\"MCO\",\"date\":\"2027-03-05\"},{\"departure_id\":\"MCO\",\"arrival_id\":\"VCP\",\"date\":\"2027-03-14\"}]",
+            "travel_class": "1",
+            "type": "3"
+          },
+          "route": {
+            "destination": "MCO",
+            "origin": "VCP",
+            "return_destination": "VCP",
+            "return_origin": "MCO"
+          },
+          "status": "quota"
+        },
+        {
+          "error": "SerpApi call budget exhausted (0)",
+          "error_code": "quota_exhausted",
+          "is_extra": false,
+          "offers": [],
+          "request": {
+            "adults": "2",
+            "children": "0",
+            "currency": "BRL",
+            "engine": "google_flights",
+            "gl": "br",
+            "hl": "pt-BR",
+            "infants_in_seat": "0",
+            "infants_on_lap": "1",
+            "multi_city_json": "[{\"departure_id\":\"VCP\",\"arrival_id\":\"MCO\",\"date\":\"2027-03-05\"},{\"departure_id\":\"FLL\",\"arrival_id\":\"GRU\",\"date\":\"2027-03-14\"}]",
+            "travel_class": "1",
+            "type": "3"
+          },
+          "route": {
+            "destination": "MCO",
+            "origin": "VCP",
+            "return_destination": "GRU",
+            "return_origin": "FLL"
+          },
+          "status": "quota"
+        },
+        {
+          "error": "SerpApi call budget exhausted (0)",
+          "error_code": "quota_exhausted",
+          "is_extra": false,
+          "offers": [],
+          "request": {
+            "adults": "2",
+            "children": "0",
+            "currency": "BRL",
+            "engine": "google_flights",
+            "gl": "br",
+            "hl": "pt-BR",
+            "infants_in_seat": "0",
+            "infants_on_lap": "1",
+            "multi_city_json": "[{\"departure_id\":\"VCP\",\"arrival_id\":\"MCO\",\"date\":\"2027-03-05\"},{\"departure_id\":\"FLL\",\"arrival_id\":\"VCP\",\"date\":\"2027-03-14\"}]",
+            "travel_class": "1",
+            "type": "3"
+          },
+          "route": {
+            "destination": "MCO",
+            "origin": "VCP",
+            "return_destination": "VCP",
+            "return_origin": "FLL"
+          },
+          "status": "quota"
+        },
+        {
+          "error": "SerpApi call budget exhausted (0)",
+          "error_code": "quota_exhausted",
+          "is_extra": false,
+          "offers": [],
+          "request": {
+            "adults": "2",
+            "children": "0",
+            "currency": "BRL",
+            "engine": "google_flights",
+            "gl": "br",
+            "hl": "pt-BR",
+            "infants_in_seat": "0",
+            "infants_on_lap": "1",
+            "multi_city_json": "[{\"departure_id\":\"VCP\",\"arrival_id\":\"MCO\",\"date\":\"2027-03-05\"},{\"departure_id\":\"MIA\",\"arrival_id\":\"GRU\",\"date\":\"2027-03-14\"}]",
+            "travel_class": "1",
+            "type": "3"
+          },
+          "route": {
+            "destination": "MCO",
+            "origin": "VCP",
+            "return_destination": "GRU",
+            "return_origin": "MIA"
+          },
+          "status": "quota"
+        },
+        {
+          "error": "SerpApi call budget exhausted (0)",
+          "error_code": "quota_exhausted",
+          "is_extra": false,
+          "offers": [],
+          "request": {
+            "adults": "2",
+            "children": "0",
+            "currency": "BRL",
+            "engine": "google_flights",
+            "gl": "br",
+            "hl": "pt-BR",
+            "infants_in_seat": "0",
+            "infants_on_lap": "1",
+            "multi_city_json": "[{\"departure_id\":\"VCP\",\"arrival_id\":\"MCO\",\"date\":\"2027-03-05\"},{\"departure_id\":\"MIA\",\"arrival_id\":\"VCP\",\"date\":\"2027-03-14\"}]",
+            "travel_class": "1",
+            "type": "3"
+          },
+          "route": {
+            "destination": "MCO",
+            "origin": "VCP",
+            "return_destination": "VCP",
+            "return_origin": "MIA"
+          },
+          "status": "quota"
+        },
+        {
+          "error": "SerpApi call budget exhausted (0)",
+          "error_code": "quota_exhausted",
+          "is_extra": false,
+          "offers": [],
+          "request": {
+            "adults": "2",
+            "children": "0",
+            "currency": "BRL",
+            "engine": "google_flights",
+            "gl": "br",
+            "hl": "pt-BR",
+            "infants_in_seat": "0",
+            "infants_on_lap": "1",
+            "multi_city_json": "[{\"departure_id\":\"VCP\",\"arrival_id\":\"FLL\",\"date\":\"2027-03-05\"},{\"departure_id\":\"MCO\",\"arrival_id\":\"GRU\",\"date\":\"2027-03-14\"}]",
+            "travel_class": "1",
+            "type": "3"
+          },
+          "route": {
+            "destination": "FLL",
+            "origin": "VCP",
+            "return_destination": "GRU",
+            "return_origin": "MCO"
+          },
+          "status": "quota"
+        },
+        {
+          "error": "SerpApi call budget exhausted (0)",
+          "error_code": "quota_exhausted",
+          "is_extra": false,
+          "offers": [],
+          "request": {
+            "adults": "2",
+            "children": "0",
+            "currency": "BRL",
+            "engine": "google_flights",
+            "gl": "br",
+            "hl": "pt-BR",
+            "infants_in_seat": "0",
+            "infants_on_lap": "1",
+            "multi_city_json": "[{\"departure_id\":\"VCP\",\"arrival_id\":\"FLL\",\"date\":\"2027-03-05\"},{\"departure_id\":\"MCO\",\"arrival_id\":\"VCP\",\"date\":\"2027-03-14\"}]",
+            "travel_class": "1",
+            "type": "3"
+          },
+          "route": {
+            "destination": "FLL",
+            "origin": "VCP",
+            "return_destination": "VCP",
+            "return_origin": "MCO"
+          },
+          "status": "quota"
+        },
+        {
+          "error": "SerpApi call budget exhausted (0)",
+          "error_code": "quota_exhausted",
+          "is_extra": false,
+          "offers": [],
+          "request": {
+            "adults": "2",
+            "children": "0",
+            "currency": "BRL",
+            "engine": "google_flights",
+            "gl": "br",
+            "hl": "pt-BR",
+            "infants_in_seat": "0",
+            "infants_on_lap": "1",
+            "multi_city_json": "[{\"departure_id\":\"VCP\",\"arrival_id\":\"FLL\",\"date\":\"2027-03-05\"},{\"departure_id\":\"FLL\",\"arrival_id\":\"GRU\",\"date\":\"2027-03-14\"}]",
+            "travel_class": "1",
+            "type": "3"
+          },
+          "route": {
+            "destination": "FLL",
+            "origin": "VCP",
+            "return_destination": "GRU",
+            "return_origin": "FLL"
+          },
+          "status": "quota"
+        },
+        {
+          "error": "SerpApi call budget exhausted (0)",
+          "error_code": "quota_exhausted",
+          "is_extra": false,
+          "offers": [],
+          "request": {
+            "adults": "2",
+            "children": "0",
+            "currency": "BRL",
+            "engine": "google_flights",
+            "gl": "br",
+            "hl": "pt-BR",
+            "infants_in_seat": "0",
+            "infants_on_lap": "1",
+            "multi_city_json": "[{\"departure_id\":\"VCP\",\"arrival_id\":\"FLL\",\"date\":\"2027-03-05\"},{\"departure_id\":\"FLL\",\"arrival_id\":\"VCP\",\"date\":\"2027-03-14\"}]",
+            "travel_class": "1",
+            "type": "3"
+          },
+          "route": {
+            "destination": "FLL",
+            "origin": "VCP",
+            "return_destination": "VCP",
+            "return_origin": "FLL"
+          },
+          "status": "quota"
+        },
+        {
+          "error": "SerpApi call budget exhausted (0)",
+          "error_code": "quota_exhausted",
+          "is_extra": false,
+          "offers": [],
+          "request": {
+            "adults": "2",
+            "children": "0",
+            "currency": "BRL",
+            "engine": "google_flights",
+            "gl": "br",
+            "hl": "pt-BR",
+            "infants_in_seat": "0",
+            "infants_on_lap": "1",
+            "multi_city_json": "[{\"departure_id\":\"VCP\",\"arrival_id\":\"FLL\",\"date\":\"2027-03-05\"},{\"departure_id\":\"MIA\",\"arrival_id\":\"GRU\",\"date\":\"2027-03-14\"}]",
+            "travel_class": "1",
+            "type": "3"
+          },
+          "route": {
+            "destination": "FLL",
+            "origin": "VCP",
+            "return_destination": "GRU",
+            "return_origin": "MIA"
+          },
+          "status": "quota"
+        },
+        {
+          "error": "SerpApi call budget exhausted (0)",
+          "error_code": "quota_exhausted",
+          "is_extra": false,
+          "offers": [],
+          "request": {
+            "adults": "2",
+            "children": "0",
+            "currency": "BRL",
+            "engine": "google_flights",
+            "gl": "br",
+            "hl": "pt-BR",
+            "infants_in_seat": "0",
+            "infants_on_lap": "1",
+            "multi_city_json": "[{\"departure_id\":\"VCP\",\"arrival_id\":\"FLL\",\"date\":\"2027-03-05\"},{\"departure_id\":\"MIA\",\"arrival_id\":\"VCP\",\"date\":\"2027-03-14\"}]",
+            "travel_class": "1",
+            "type": "3"
+          },
+          "route": {
+            "destination": "FLL",
+            "origin": "VCP",
+            "return_destination": "VCP",
+            "return_origin": "MIA"
+          },
+          "status": "quota"
+        },
+        {
+          "error": "SerpApi call budget exhausted (0)",
+          "error_code": "quota_exhausted",
+          "is_extra": false,
+          "offers": [],
+          "request": {
+            "adults": "2",
+            "children": "0",
+            "currency": "BRL",
+            "engine": "google_flights",
+            "gl": "br",
+            "hl": "pt-BR",
+            "infants_in_seat": "0",
+            "infants_on_lap": "1",
+            "multi_city_json": "[{\"departure_id\":\"VCP\",\"arrival_id\":\"MIA\",\"date\":\"2027-03-05\"},{\"departure_id\":\"MCO\",\"arrival_id\":\"GRU\",\"date\":\"2027-03-14\"}]",
+            "travel_class": "1",
+            "type": "3"
+          },
+          "route": {
+            "destination": "MIA",
+            "origin": "VCP",
+            "return_destination": "GRU",
+            "return_origin": "MCO"
+          },
+          "status": "quota"
+        },
+        {
+          "error": "SerpApi call budget exhausted (0)",
+          "error_code": "quota_exhausted",
+          "is_extra": false,
+          "offers": [],
+          "request": {
+            "adults": "2",
+            "children": "0",
+            "currency": "BRL",
+            "engine": "google_flights",
+            "gl": "br",
+            "hl": "pt-BR",
+            "infants_in_seat": "0",
+            "infants_on_lap": "1",
+            "multi_city_json": "[{\"departure_id\":\"VCP\",\"arrival_id\":\"MIA\",\"date\":\"2027-03-05\"},{\"departure_id\":\"MCO\",\"arrival_id\":\"VCP\",\"date\":\"2027-03-14\"}]",
+            "travel_class": "1",
+            "type": "3"
+          },
+          "route": {
+            "destination": "MIA",
+            "origin": "VCP",
+            "return_destination": "VCP",
+            "return_origin": "MCO"
+          },
+          "status": "quota"
+        },
+        {
+          "error": "SerpApi call budget exhausted (0)",
+          "error_code": "quota_exhausted",
+          "is_extra": false,
+          "offers": [],
+          "request": {
+            "adults": "2",
+            "children": "0",
+            "currency": "BRL",
+            "engine": "google_flights",
+            "gl": "br",
+            "hl": "pt-BR",
+            "infants_in_seat": "0",
+            "infants_on_lap": "1",
+            "multi_city_json": "[{\"departure_id\":\"VCP\",\"arrival_id\":\"MIA\",\"date\":\"2027-03-05\"},{\"departure_id\":\"FLL\",\"arrival_id\":\"GRU\",\"date\":\"2027-03-14\"}]",
+            "travel_class": "1",
+            "type": "3"
+          },
+          "route": {
+            "destination": "MIA",
+            "origin": "VCP",
+            "return_destination": "GRU",
+            "return_origin": "FLL"
+          },
+          "status": "quota"
+        },
+        {
+          "error": "SerpApi call budget exhausted (0)",
+          "error_code": "quota_exhausted",
+          "is_extra": false,
+          "offers": [],
+          "request": {
+            "adults": "2",
+            "children": "0",
+            "currency": "BRL",
+            "engine": "google_flights",
+            "gl": "br",
+            "hl": "pt-BR",
+            "infants_in_seat": "0",
+            "infants_on_lap": "1",
+            "multi_city_json": "[{\"departure_id\":\"VCP\",\"arrival_id\":\"MIA\",\"date\":\"2027-03-05\"},{\"departure_id\":\"FLL\",\"arrival_id\":\"VCP\",\"date\":\"2027-03-14\"}]",
+            "travel_class": "1",
+            "type": "3"
+          },
+          "route": {
+            "destination": "MIA",
+            "origin": "VCP",
+            "return_destination": "VCP",
+            "return_origin": "FLL"
+          },
+          "status": "quota"
+        },
+        {
+          "error": "SerpApi call budget exhausted (0)",
+          "error_code": "quota_exhausted",
+          "is_extra": false,
+          "offers": [],
+          "request": {
+            "adults": "2",
+            "children": "0",
+            "currency": "BRL",
+            "engine": "google_flights",
+            "gl": "br",
+            "hl": "pt-BR",
+            "infants_in_seat": "0",
+            "infants_on_lap": "1",
+            "multi_city_json": "[{\"departure_id\":\"VCP\",\"arrival_id\":\"MIA\",\"date\":\"2027-03-05\"},{\"departure_id\":\"MIA\",\"arrival_id\":\"GRU\",\"date\":\"2027-03-14\"}]",
+            "travel_class": "1",
+            "type": "3"
+          },
+          "route": {
+            "destination": "MIA",
+            "origin": "VCP",
+            "return_destination": "GRU",
+            "return_origin": "MIA"
+          },
+          "status": "quota"
+        },
+        {
+          "error": "SerpApi call budget exhausted (0)",
+          "error_code": "quota_exhausted",
+          "is_extra": false,
+          "offers": [],
+          "request": {
+            "adults": "2",
+            "children": "0",
+            "currency": "BRL",
+            "engine": "google_flights",
+            "gl": "br",
+            "hl": "pt-BR",
+            "infants_in_seat": "0",
+            "infants_on_lap": "1",
+            "multi_city_json": "[{\"departure_id\":\"VCP\",\"arrival_id\":\"MIA\",\"date\":\"2027-03-05\"},{\"departure_id\":\"MIA\",\"arrival_id\":\"VCP\",\"date\":\"2027-03-14\"}]",
+            "travel_class": "1",
+            "type": "3"
+          },
+          "route": {
+            "destination": "MIA",
+            "origin": "VCP",
+            "return_destination": "VCP",
+            "return_origin": "MIA"
+          },
+          "status": "quota"
+        }
+      ],
+      "run_id": "run-d707ae99ec230fd2c9ee",
+      "schema_version": 1,
+      "search_signature": "{\"adults\":2,\"cabin\":\"economy\",\"children\":0,\"currency\":\"BRL\",\"departure_date\":\"2027-03-05\",\"destinations\":[\"MCO\",\"FLL\",\"MIA\"],\"include_packages\":true,\"infants_in_seat\":0,\"infants_on_lap\":1,\"itineraries\":[{\"outbound\":{\"destination\":\"MCO\",\"origin\":\"GRU\"},\"return\":{\"destination\":\"GRU\",\"origin\":\"MCO\"}},{\"outbound\":{\"destination\":\"MCO\",\"origin\":\"GRU\"},\"return\":{\"destination\":\"VCP\",\"origin\":\"MCO\"}},{\"outbound\":{\"destination\":\"MCO\",\"origin\":\"GRU\"},\"return\":{\"destination\":\"GRU\",\"origin\":\"FLL\"}},{\"outbound\":{\"destination\":\"MCO\",\"origin\":\"GRU\"},\"return\":{\"destination\":\"VCP\",\"origin\":\"FLL\"}},{\"outbound\":{\"destination\":\"MCO\",\"origin\":\"GRU\"},\"return\":{\"destination\":\"GRU\",\"origin\":\"MIA\"}},{\"outbound\":{\"destination\":\"MCO\",\"origin\":\"GRU\"},\"return\":{\"destination\":\"VCP\",\"origin\":\"MIA\"}},{\"outbound\":{\"destination\":\"FLL\",\"origin\":\"GRU\"},\"return\":{\"destination\":\"GRU\",\"origin\":\"MCO\"}},{\"outbound\":{\"destination\":\"FLL\",\"origin\":\"GRU\"},\"return\":{\"destination\":\"VCP\",\"origin\":\"MCO\"}},{\"outbound\":{\"destination\":\"FLL\",\"origin\":\"GRU\"},\"return\":{\"destination\":\"GRU\",\"origin\":\"FLL\"}},{\"outbound\":{\"destination\":\"FLL\",\"origin\":\"GRU\"},\"return\":{\"destination\":\"VCP\",\"origin\":\"FLL\"}},{\"outbound\":{\"destination\":\"FLL\",\"origin\":\"GRU\"},\"return\":{\"destination\":\"GRU\",\"origin\":\"MIA\"}},{\"outbound\":{\"destination\":\"FLL\",\"origin\":\"GRU\"},\"return\":{\"destination\":\"VCP\",\"origin\":\"MIA\"}},{\"outbound\":{\"destination\":\"MIA\",\"origin\":\"GRU\"},\"return\":{\"destination\":\"GRU\",\"origin\":\"MCO\"}},{\"outbound\":{\"destination\":\"MIA\",\"origin\":\"GRU\"},\"return\":{\"destination\":\"VCP\",\"origin\":\"MCO\"}},{\"outbound\":{\"destination\":\"MIA\",\"origin\":\"GRU\"},\"return\":{\"destination\":\"GRU\",\"origin\":\"FLL\"}},{\"outbound\":{\"destination\":\"MIA\",\"origin\":\"GRU\"},\"return\":{\"destination\":\"VCP\",\"origin\":\"FLL\"}},{\"outbound\":{\"destination\":\"MIA\",\"origin\":\"GRU\"},\"return\":{\"destination\":\"GRU\",\"origin\":\"MIA\"}},{\"outbound\":{\"destination\":\"MIA\",\"origin\":\"GRU\"},\"return\":{\"destination\":\"VCP\",\"origin\":\"MIA\"}},{\"outbound\":{\"destination\":\"MCO\",\"origin\":\"VCP\"},\"return\":{\"destination\":\"GRU\",\"origin\":\"MCO\"}},{\"outbound\":{\"destination\":\"MCO\",\"origin\":\"VCP\"},\"return\":{\"destination\":\"VCP\",\"origin\":\"MCO\"}},{\"outbound\":{\"destination\":\"MCO\",\"origin\":\"VCP\"},\"return\":{\"destination\":\"GRU\",\"origin\":\"FLL\"}},{\"outbound\":{\"destination\":\"MCO\",\"origin\":\"VCP\"},\"return\":{\"destination\":\"VCP\",\"origin\":\"FLL\"}},{\"outbound\":{\"destination\":\"MCO\",\"origin\":\"VCP\"},\"return\":{\"destination\":\"GRU\",\"origin\":\"MIA\"}},{\"outbound\":{\"destination\":\"MCO\",\"origin\":\"VCP\"},\"return\":{\"destination\":\"VCP\",\"origin\":\"MIA\"}},{\"outbound\":{\"destination\":\"FLL\",\"origin\":\"VCP\"},\"return\":{\"destination\":\"GRU\",\"origin\":\"MCO\"}},{\"outbound\":{\"destination\":\"FLL\",\"origin\":\"VCP\"},\"return\":{\"destination\":\"VCP\",\"origin\":\"MCO\"}},{\"outbound\":{\"destination\":\"FLL\",\"origin\":\"VCP\"},\"return\":{\"destination\":\"GRU\",\"origin\":\"FLL\"}},{\"outbound\":{\"destination\":\"FLL\",\"origin\":\"VCP\"},\"return\":{\"destination\":\"VCP\",\"origin\":\"FLL\"}},{\"outbound\":{\"destination\":\"FLL\",\"origin\":\"VCP\"},\"return\":{\"destination\":\"GRU\",\"origin\":\"MIA\"}},{\"outbound\":{\"destination\":\"FLL\",\"origin\":\"VCP\"},\"return\":{\"destination\":\"VCP\",\"origin\":\"MIA\"}},{\"outbound\":{\"destination\":\"MIA\",\"origin\":\"VCP\"},\"return\":{\"destination\":\"GRU\",\"origin\":\"MCO\"}},{\"outbound\":{\"destination\":\"MIA\",\"origin\":\"VCP\"},\"return\":{\"destination\":\"VCP\",\"origin\":\"MCO\"}},{\"outbound\":{\"destination\":\"MIA\",\"origin\":\"VCP\"},\"return\":{\"destination\":\"GRU\",\"origin\":\"FLL\"}},{\"outbound\":{\"destination\":\"MIA\",\"origin\":\"VCP\"},\"return\":{\"destination\":\"VCP\",\"origin\":\"FLL\"}},{\"outbound\":{\"destination\":\"MIA\",\"origin\":\"VCP\"},\"return\":{\"destination\":\"GRU\",\"origin\":\"MIA\"}},{\"outbound\":{\"destination\":\"MIA\",\"origin\":\"VCP\"},\"return\":{\"destination\":\"VCP\",\"origin\":\"MIA\"}}],\"origins\":[\"GRU\",\"VCP\"],\"payment_type\":\"cash_only\",\"return_date\":\"2027-03-14\",\"trip_leg\":\"both\",\"trip_type\":\"one_way\"}",
+      "status": "quota"
     }
   ],
   "schema_version": 1
