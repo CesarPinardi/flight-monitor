@@ -745,7 +745,7 @@
     }
   ],
   "disclaimer": "Preço por passageiro pagante. Escopo original da fonte, taxas, bebê de colo, bagagem e inventário não são inferidos.",
-  "generated_at_utc": "2026-09-29T16:33:15Z",
+  "generated_at_utc": "2026-09-30T16:26:25Z",
   "history": {
     "description": "Menor preço confirmado por rota em cada consulta diária; não representa uma oferta específica.",
     "entries": [
@@ -5275,11 +5275,486 @@
         ],
         "run_id": "run-0158b5e72100c2a145ea",
         "status": "quota"
+      },
+      {
+        "recorded_at_utc": "2026-09-30T16:26:25Z",
+        "routes": [
+          {
+            "minimum_price": null,
+            "route": {
+              "destination": "MCO",
+              "leg": "outbound",
+              "origin": "GRU"
+            },
+            "status": "quota"
+          },
+          {
+            "minimum_price": null,
+            "route": {
+              "destination": "FLL",
+              "leg": "outbound",
+              "origin": "GRU"
+            },
+            "status": "quota"
+          },
+          {
+            "minimum_price": null,
+            "route": {
+              "destination": "MIA",
+              "leg": "outbound",
+              "origin": "GRU"
+            },
+            "status": "quota"
+          },
+          {
+            "minimum_price": null,
+            "route": {
+              "destination": "MCO",
+              "leg": "outbound",
+              "origin": "VCP"
+            },
+            "status": "quota"
+          },
+          {
+            "minimum_price": null,
+            "route": {
+              "destination": "FLL",
+              "leg": "outbound",
+              "origin": "VCP"
+            },
+            "status": "quota"
+          },
+          {
+            "minimum_price": null,
+            "route": {
+              "destination": "MIA",
+              "leg": "outbound",
+              "origin": "VCP"
+            },
+            "status": "quota"
+          },
+          {
+            "minimum_price": null,
+            "route": {
+              "destination": "GRU",
+              "leg": "return",
+              "origin": "MCO"
+            },
+            "status": "quota"
+          },
+          {
+            "minimum_price": null,
+            "route": {
+              "destination": "VCP",
+              "leg": "return",
+              "origin": "MCO"
+            },
+            "status": "quota"
+          },
+          {
+            "minimum_price": null,
+            "route": {
+              "destination": "GRU",
+              "leg": "return",
+              "origin": "FLL"
+            },
+            "status": "quota"
+          },
+          {
+            "minimum_price": null,
+            "route": {
+              "destination": "VCP",
+              "leg": "return",
+              "origin": "FLL"
+            },
+            "status": "quota"
+          },
+          {
+            "minimum_price": null,
+            "route": {
+              "destination": "GRU",
+              "leg": "return",
+              "origin": "MIA"
+            },
+            "status": "quota"
+          },
+          {
+            "minimum_price": null,
+            "route": {
+              "destination": "VCP",
+              "leg": "return",
+              "origin": "MIA"
+            },
+            "status": "quota"
+          },
+          {
+            "minimum_price": null,
+            "route": {
+              "destination": "MCO",
+              "origin": "GRU",
+              "return_destination": "GRU",
+              "return_origin": "MCO"
+            },
+            "status": "quota"
+          },
+          {
+            "minimum_price": null,
+            "route": {
+              "destination": "MCO",
+              "origin": "GRU",
+              "return_destination": "VCP",
+              "return_origin": "MCO"
+            },
+            "status": "quota"
+          },
+          {
+            "minimum_price": null,
+            "route": {
+              "destination": "MCO",
+              "origin": "GRU",
+              "return_destination": "GRU",
+              "return_origin": "FLL"
+            },
+            "status": "quota"
+          },
+          {
+            "minimum_price": null,
+            "route": {
+              "destination": "MCO",
+              "origin": "GRU",
+              "return_destination": "VCP",
+              "return_origin": "FLL"
+            },
+            "status": "quota"
+          },
+          {
+            "minimum_price": null,
+            "route": {
+              "destination": "MCO",
+              "origin": "GRU",
+              "return_destination": "GRU",
+              "return_origin": "MIA"
+            },
+            "status": "quota"
+          },
+          {
+            "minimum_price": null,
+            "route": {
+              "destination": "MCO",
+              "origin": "GRU",
+              "return_destination": "VCP",
+              "return_origin": "MIA"
+            },
+            "status": "quota"
+          },
+          {
+            "minimum_price": null,
+            "route": {
+              "destination": "FLL",
+              "origin": "GRU",
+              "return_destination": "GRU",
+              "return_origin": "MCO"
+            },
+            "status": "quota"
+          },
+          {
+            "minimum_price": null,
+            "route": {
+              "destination": "FLL",
+              "origin": "GRU",
+              "return_destination": "VCP",
+              "return_origin": "MCO"
+            },
+            "status": "quota"
+          },
+          {
+            "minimum_price": null,
+            "route": {
+              "destination": "FLL",
+              "origin": "GRU",
+              "return_destination": "GRU",
+              "return_origin": "FLL"
+            },
+            "status": "quota"
+          },
+          {
+            "minimum_price": null,
+            "route": {
+              "destination": "FLL",
+              "origin": "GRU",
+              "return_destination": "VCP",
+              "return_origin": "FLL"
+            },
+            "status": "quota"
+          },
+          {
+            "minimum_price": null,
+            "route": {
+              "destination": "FLL",
+              "origin": "GRU",
+              "return_destination": "GRU",
+              "return_origin": "MIA"
+            },
+            "status": "quota"
+          },
+          {
+            "minimum_price": null,
+            "route": {
+              "destination": "FLL",
+              "origin": "GRU",
+              "return_destination": "VCP",
+              "return_origin": "MIA"
+            },
+            "status": "quota"
+          },
+          {
+            "minimum_price": null,
+            "route": {
+              "destination": "MIA",
+              "origin": "GRU",
+              "return_destination": "GRU",
+              "return_origin": "MCO"
+            },
+            "status": "quota"
+          },
+          {
+            "minimum_price": null,
+            "route": {
+              "destination": "MIA",
+              "origin": "GRU",
+              "return_destination": "VCP",
+              "return_origin": "MCO"
+            },
+            "status": "quota"
+          },
+          {
+            "minimum_price": null,
+            "route": {
+              "destination": "MIA",
+              "origin": "GRU",
+              "return_destination": "GRU",
+              "return_origin": "FLL"
+            },
+            "status": "quota"
+          },
+          {
+            "minimum_price": null,
+            "route": {
+              "destination": "MIA",
+              "origin": "GRU",
+              "return_destination": "VCP",
+              "return_origin": "FLL"
+            },
+            "status": "quota"
+          },
+          {
+            "minimum_price": null,
+            "route": {
+              "destination": "MIA",
+              "origin": "GRU",
+              "return_destination": "GRU",
+              "return_origin": "MIA"
+            },
+            "status": "quota"
+          },
+          {
+            "minimum_price": null,
+            "route": {
+              "destination": "MIA",
+              "origin": "GRU",
+              "return_destination": "VCP",
+              "return_origin": "MIA"
+            },
+            "status": "quota"
+          },
+          {
+            "minimum_price": null,
+            "route": {
+              "destination": "MCO",
+              "origin": "VCP",
+              "return_destination": "GRU",
+              "return_origin": "MCO"
+            },
+            "status": "quota"
+          },
+          {
+            "minimum_price": null,
+            "route": {
+              "destination": "MCO",
+              "origin": "VCP",
+              "return_destination": "VCP",
+              "return_origin": "MCO"
+            },
+            "status": "quota"
+          },
+          {
+            "minimum_price": null,
+            "route": {
+              "destination": "MCO",
+              "origin": "VCP",
+              "return_destination": "GRU",
+              "return_origin": "FLL"
+            },
+            "status": "quota"
+          },
+          {
+            "minimum_price": null,
+            "route": {
+              "destination": "MCO",
+              "origin": "VCP",
+              "return_destination": "VCP",
+              "return_origin": "FLL"
+            },
+            "status": "quota"
+          },
+          {
+            "minimum_price": null,
+            "route": {
+              "destination": "MCO",
+              "origin": "VCP",
+              "return_destination": "GRU",
+              "return_origin": "MIA"
+            },
+            "status": "quota"
+          },
+          {
+            "minimum_price": null,
+            "route": {
+              "destination": "MCO",
+              "origin": "VCP",
+              "return_destination": "VCP",
+              "return_origin": "MIA"
+            },
+            "status": "quota"
+          },
+          {
+            "minimum_price": null,
+            "route": {
+              "destination": "FLL",
+              "origin": "VCP",
+              "return_destination": "GRU",
+              "return_origin": "MCO"
+            },
+            "status": "quota"
+          },
+          {
+            "minimum_price": null,
+            "route": {
+              "destination": "FLL",
+              "origin": "VCP",
+              "return_destination": "VCP",
+              "return_origin": "MCO"
+            },
+            "status": "quota"
+          },
+          {
+            "minimum_price": null,
+            "route": {
+              "destination": "FLL",
+              "origin": "VCP",
+              "return_destination": "GRU",
+              "return_origin": "FLL"
+            },
+            "status": "quota"
+          },
+          {
+            "minimum_price": null,
+            "route": {
+              "destination": "FLL",
+              "origin": "VCP",
+              "return_destination": "VCP",
+              "return_origin": "FLL"
+            },
+            "status": "quota"
+          },
+          {
+            "minimum_price": null,
+            "route": {
+              "destination": "FLL",
+              "origin": "VCP",
+              "return_destination": "GRU",
+              "return_origin": "MIA"
+            },
+            "status": "quota"
+          },
+          {
+            "minimum_price": null,
+            "route": {
+              "destination": "FLL",
+              "origin": "VCP",
+              "return_destination": "VCP",
+              "return_origin": "MIA"
+            },
+            "status": "quota"
+          },
+          {
+            "minimum_price": null,
+            "route": {
+              "destination": "MIA",
+              "origin": "VCP",
+              "return_destination": "GRU",
+              "return_origin": "MCO"
+            },
+            "status": "quota"
+          },
+          {
+            "minimum_price": null,
+            "route": {
+              "destination": "MIA",
+              "origin": "VCP",
+              "return_destination": "VCP",
+              "return_origin": "MCO"
+            },
+            "status": "quota"
+          },
+          {
+            "minimum_price": null,
+            "route": {
+              "destination": "MIA",
+              "origin": "VCP",
+              "return_destination": "GRU",
+              "return_origin": "FLL"
+            },
+            "status": "quota"
+          },
+          {
+            "minimum_price": null,
+            "route": {
+              "destination": "MIA",
+              "origin": "VCP",
+              "return_destination": "VCP",
+              "return_origin": "FLL"
+            },
+            "status": "quota"
+          },
+          {
+            "minimum_price": null,
+            "route": {
+              "destination": "MIA",
+              "origin": "VCP",
+              "return_destination": "GRU",
+              "return_origin": "MIA"
+            },
+            "status": "quota"
+          },
+          {
+            "minimum_price": null,
+            "route": {
+              "destination": "MIA",
+              "origin": "VCP",
+              "return_destination": "VCP",
+              "return_origin": "MIA"
+            },
+            "status": "quota"
+          }
+        ],
+        "run_id": "run-511128d566f27ae328be",
+        "status": "quota"
       }
     ],
     "kind": "daily_route_minimum"
   },
-  "last_run_id": "run-0158b5e72100c2a145ea",
+  "last_run_id": "run-511128d566f27ae328be",
   "offers": [
     {
       "baggage": {
@@ -38656,7 +39131,7 @@
     }
   ],
   "presentation": {
-    "generated_at": "2026-09-29T13:33:15.494591-03:00",
+    "generated_at": "2026-09-30T13:26:25.635880-03:00",
     "timezone": "America/Sao_Paulo"
   },
   "routes": {
