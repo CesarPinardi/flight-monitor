@@ -739,7 +739,7 @@
     }
   ],
   "disclaimer": "Preço por passageiro pagante. Escopo original da fonte, taxas, bebê de colo, bagagem e inventário não são inferidos.",
-  "generated_at_utc": "2026-10-04T15:24:59Z",
+  "generated_at_utc": "2026-10-05T19:19:32Z",
   "history": {
     "description": "Menor preço confirmado por rota em cada consulta diária; não representa uma oferta específica.",
     "entries": [
@@ -8196,11 +8196,486 @@
         ],
         "run_id": "run-c4a6b9a3557053847c1f",
         "status": "quota"
+      },
+      {
+        "recorded_at_utc": "2026-10-05T19:19:32Z",
+        "routes": [
+          {
+            "minimum_price": null,
+            "route": {
+              "destination": "MCO",
+              "leg": "outbound",
+              "origin": "GRU"
+            },
+            "status": "quota"
+          },
+          {
+            "minimum_price": null,
+            "route": {
+              "destination": "FLL",
+              "leg": "outbound",
+              "origin": "GRU"
+            },
+            "status": "quota"
+          },
+          {
+            "minimum_price": null,
+            "route": {
+              "destination": "MIA",
+              "leg": "outbound",
+              "origin": "GRU"
+            },
+            "status": "quota"
+          },
+          {
+            "minimum_price": null,
+            "route": {
+              "destination": "MCO",
+              "leg": "outbound",
+              "origin": "VCP"
+            },
+            "status": "quota"
+          },
+          {
+            "minimum_price": null,
+            "route": {
+              "destination": "FLL",
+              "leg": "outbound",
+              "origin": "VCP"
+            },
+            "status": "quota"
+          },
+          {
+            "minimum_price": null,
+            "route": {
+              "destination": "MIA",
+              "leg": "outbound",
+              "origin": "VCP"
+            },
+            "status": "quota"
+          },
+          {
+            "minimum_price": null,
+            "route": {
+              "destination": "GRU",
+              "leg": "return",
+              "origin": "MCO"
+            },
+            "status": "quota"
+          },
+          {
+            "minimum_price": null,
+            "route": {
+              "destination": "VCP",
+              "leg": "return",
+              "origin": "MCO"
+            },
+            "status": "quota"
+          },
+          {
+            "minimum_price": null,
+            "route": {
+              "destination": "GRU",
+              "leg": "return",
+              "origin": "FLL"
+            },
+            "status": "quota"
+          },
+          {
+            "minimum_price": null,
+            "route": {
+              "destination": "VCP",
+              "leg": "return",
+              "origin": "FLL"
+            },
+            "status": "quota"
+          },
+          {
+            "minimum_price": null,
+            "route": {
+              "destination": "GRU",
+              "leg": "return",
+              "origin": "MIA"
+            },
+            "status": "quota"
+          },
+          {
+            "minimum_price": null,
+            "route": {
+              "destination": "VCP",
+              "leg": "return",
+              "origin": "MIA"
+            },
+            "status": "quota"
+          },
+          {
+            "minimum_price": null,
+            "route": {
+              "destination": "MCO",
+              "origin": "GRU",
+              "return_destination": "GRU",
+              "return_origin": "MCO"
+            },
+            "status": "quota"
+          },
+          {
+            "minimum_price": null,
+            "route": {
+              "destination": "MCO",
+              "origin": "GRU",
+              "return_destination": "VCP",
+              "return_origin": "MCO"
+            },
+            "status": "quota"
+          },
+          {
+            "minimum_price": null,
+            "route": {
+              "destination": "MCO",
+              "origin": "GRU",
+              "return_destination": "GRU",
+              "return_origin": "FLL"
+            },
+            "status": "quota"
+          },
+          {
+            "minimum_price": null,
+            "route": {
+              "destination": "MCO",
+              "origin": "GRU",
+              "return_destination": "VCP",
+              "return_origin": "FLL"
+            },
+            "status": "quota"
+          },
+          {
+            "minimum_price": null,
+            "route": {
+              "destination": "MCO",
+              "origin": "GRU",
+              "return_destination": "GRU",
+              "return_origin": "MIA"
+            },
+            "status": "quota"
+          },
+          {
+            "minimum_price": null,
+            "route": {
+              "destination": "MCO",
+              "origin": "GRU",
+              "return_destination": "VCP",
+              "return_origin": "MIA"
+            },
+            "status": "quota"
+          },
+          {
+            "minimum_price": null,
+            "route": {
+              "destination": "FLL",
+              "origin": "GRU",
+              "return_destination": "GRU",
+              "return_origin": "MCO"
+            },
+            "status": "quota"
+          },
+          {
+            "minimum_price": null,
+            "route": {
+              "destination": "FLL",
+              "origin": "GRU",
+              "return_destination": "VCP",
+              "return_origin": "MCO"
+            },
+            "status": "quota"
+          },
+          {
+            "minimum_price": null,
+            "route": {
+              "destination": "FLL",
+              "origin": "GRU",
+              "return_destination": "GRU",
+              "return_origin": "FLL"
+            },
+            "status": "quota"
+          },
+          {
+            "minimum_price": null,
+            "route": {
+              "destination": "FLL",
+              "origin": "GRU",
+              "return_destination": "VCP",
+              "return_origin": "FLL"
+            },
+            "status": "quota"
+          },
+          {
+            "minimum_price": null,
+            "route": {
+              "destination": "FLL",
+              "origin": "GRU",
+              "return_destination": "GRU",
+              "return_origin": "MIA"
+            },
+            "status": "quota"
+          },
+          {
+            "minimum_price": null,
+            "route": {
+              "destination": "FLL",
+              "origin": "GRU",
+              "return_destination": "VCP",
+              "return_origin": "MIA"
+            },
+            "status": "quota"
+          },
+          {
+            "minimum_price": null,
+            "route": {
+              "destination": "MIA",
+              "origin": "GRU",
+              "return_destination": "GRU",
+              "return_origin": "MCO"
+            },
+            "status": "quota"
+          },
+          {
+            "minimum_price": null,
+            "route": {
+              "destination": "MIA",
+              "origin": "GRU",
+              "return_destination": "VCP",
+              "return_origin": "MCO"
+            },
+            "status": "quota"
+          },
+          {
+            "minimum_price": null,
+            "route": {
+              "destination": "MIA",
+              "origin": "GRU",
+              "return_destination": "GRU",
+              "return_origin": "FLL"
+            },
+            "status": "quota"
+          },
+          {
+            "minimum_price": null,
+            "route": {
+              "destination": "MIA",
+              "origin": "GRU",
+              "return_destination": "VCP",
+              "return_origin": "FLL"
+            },
+            "status": "quota"
+          },
+          {
+            "minimum_price": null,
+            "route": {
+              "destination": "MIA",
+              "origin": "GRU",
+              "return_destination": "GRU",
+              "return_origin": "MIA"
+            },
+            "status": "quota"
+          },
+          {
+            "minimum_price": null,
+            "route": {
+              "destination": "MIA",
+              "origin": "GRU",
+              "return_destination": "VCP",
+              "return_origin": "MIA"
+            },
+            "status": "quota"
+          },
+          {
+            "minimum_price": null,
+            "route": {
+              "destination": "MCO",
+              "origin": "VCP",
+              "return_destination": "GRU",
+              "return_origin": "MCO"
+            },
+            "status": "quota"
+          },
+          {
+            "minimum_price": null,
+            "route": {
+              "destination": "MCO",
+              "origin": "VCP",
+              "return_destination": "VCP",
+              "return_origin": "MCO"
+            },
+            "status": "quota"
+          },
+          {
+            "minimum_price": null,
+            "route": {
+              "destination": "MCO",
+              "origin": "VCP",
+              "return_destination": "GRU",
+              "return_origin": "FLL"
+            },
+            "status": "quota"
+          },
+          {
+            "minimum_price": null,
+            "route": {
+              "destination": "MCO",
+              "origin": "VCP",
+              "return_destination": "VCP",
+              "return_origin": "FLL"
+            },
+            "status": "quota"
+          },
+          {
+            "minimum_price": null,
+            "route": {
+              "destination": "MCO",
+              "origin": "VCP",
+              "return_destination": "GRU",
+              "return_origin": "MIA"
+            },
+            "status": "quota"
+          },
+          {
+            "minimum_price": null,
+            "route": {
+              "destination": "MCO",
+              "origin": "VCP",
+              "return_destination": "VCP",
+              "return_origin": "MIA"
+            },
+            "status": "quota"
+          },
+          {
+            "minimum_price": null,
+            "route": {
+              "destination": "FLL",
+              "origin": "VCP",
+              "return_destination": "GRU",
+              "return_origin": "MCO"
+            },
+            "status": "quota"
+          },
+          {
+            "minimum_price": null,
+            "route": {
+              "destination": "FLL",
+              "origin": "VCP",
+              "return_destination": "VCP",
+              "return_origin": "MCO"
+            },
+            "status": "quota"
+          },
+          {
+            "minimum_price": null,
+            "route": {
+              "destination": "FLL",
+              "origin": "VCP",
+              "return_destination": "GRU",
+              "return_origin": "FLL"
+            },
+            "status": "quota"
+          },
+          {
+            "minimum_price": null,
+            "route": {
+              "destination": "FLL",
+              "origin": "VCP",
+              "return_destination": "VCP",
+              "return_origin": "FLL"
+            },
+            "status": "quota"
+          },
+          {
+            "minimum_price": null,
+            "route": {
+              "destination": "FLL",
+              "origin": "VCP",
+              "return_destination": "GRU",
+              "return_origin": "MIA"
+            },
+            "status": "quota"
+          },
+          {
+            "minimum_price": null,
+            "route": {
+              "destination": "FLL",
+              "origin": "VCP",
+              "return_destination": "VCP",
+              "return_origin": "MIA"
+            },
+            "status": "quota"
+          },
+          {
+            "minimum_price": null,
+            "route": {
+              "destination": "MIA",
+              "origin": "VCP",
+              "return_destination": "GRU",
+              "return_origin": "MCO"
+            },
+            "status": "quota"
+          },
+          {
+            "minimum_price": null,
+            "route": {
+              "destination": "MIA",
+              "origin": "VCP",
+              "return_destination": "VCP",
+              "return_origin": "MCO"
+            },
+            "status": "quota"
+          },
+          {
+            "minimum_price": null,
+            "route": {
+              "destination": "MIA",
+              "origin": "VCP",
+              "return_destination": "GRU",
+              "return_origin": "FLL"
+            },
+            "status": "quota"
+          },
+          {
+            "minimum_price": null,
+            "route": {
+              "destination": "MIA",
+              "origin": "VCP",
+              "return_destination": "VCP",
+              "return_origin": "FLL"
+            },
+            "status": "quota"
+          },
+          {
+            "minimum_price": null,
+            "route": {
+              "destination": "MIA",
+              "origin": "VCP",
+              "return_destination": "GRU",
+              "return_origin": "MIA"
+            },
+            "status": "quota"
+          },
+          {
+            "minimum_price": null,
+            "route": {
+              "destination": "MIA",
+              "origin": "VCP",
+              "return_destination": "VCP",
+              "return_origin": "MIA"
+            },
+            "status": "quota"
+          }
+        ],
+        "run_id": "run-dbbafb2d4c589280e872",
+        "status": "quota"
       }
     ],
     "kind": "daily_route_minimum"
   },
-  "last_run_id": "run-c4a6b9a3557053847c1f",
+  "last_run_id": "run-dbbafb2d4c589280e872",
   "offers": [
     {
       "baggage": {
@@ -8279,7 +8754,7 @@
       },
       "route_verified": true,
       "source": "best_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -8359,7 +8834,7 @@
       },
       "route_verified": true,
       "source": "best_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -8439,7 +8914,7 @@
       },
       "route_verified": true,
       "source": "best_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -8519,7 +8994,7 @@
       },
       "route_verified": true,
       "source": "best_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -8599,7 +9074,7 @@
       },
       "route_verified": true,
       "source": "best_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -8679,7 +9154,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -8759,7 +9234,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -8839,7 +9314,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -8902,7 +9377,7 @@
       },
       "route_verified": true,
       "source": "best_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -8999,7 +9474,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -9096,7 +9571,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -9193,7 +9668,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -9290,7 +9765,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -9387,7 +9862,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -9484,7 +9959,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -9581,7 +10056,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -9662,7 +10137,7 @@
       },
       "route_verified": true,
       "source": "best_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -9743,7 +10218,7 @@
       },
       "route_verified": true,
       "source": "best_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -9824,7 +10299,7 @@
       },
       "route_verified": true,
       "source": "best_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -9905,7 +10380,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -9986,7 +10461,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -10067,7 +10542,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -10148,7 +10623,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -10229,7 +10704,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -10310,7 +10785,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -10391,7 +10866,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -10489,7 +10964,7 @@
       },
       "route_verified": true,
       "source": "best_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -10587,7 +11062,7 @@
       },
       "route_verified": true,
       "source": "best_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -10668,7 +11143,7 @@
       },
       "route_verified": true,
       "source": "best_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -10749,7 +11224,7 @@
       },
       "route_verified": true,
       "source": "best_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -10830,7 +11305,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -10911,7 +11386,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -10992,7 +11467,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -11073,7 +11548,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -11154,7 +11629,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -11235,7 +11710,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -11316,7 +11791,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -11397,7 +11872,7 @@
       },
       "route_verified": true,
       "source": "best_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -11478,7 +11953,7 @@
       },
       "route_verified": true,
       "source": "best_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -11559,7 +12034,7 @@
       },
       "route_verified": true,
       "source": "best_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -11640,7 +12115,7 @@
       },
       "route_verified": true,
       "source": "best_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -11721,7 +12196,7 @@
       },
       "route_verified": true,
       "source": "best_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -11819,7 +12294,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -11900,7 +12375,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -11981,7 +12456,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -12062,7 +12537,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -12143,7 +12618,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -12241,7 +12716,7 @@
       },
       "route_verified": true,
       "source": "best_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -12339,7 +12814,7 @@
       },
       "route_verified": true,
       "source": "best_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -12420,7 +12895,7 @@
       },
       "route_verified": true,
       "source": "best_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -12501,7 +12976,7 @@
       },
       "route_verified": true,
       "source": "best_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -12582,7 +13057,7 @@
       },
       "route_verified": true,
       "source": "best_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -12663,7 +13138,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -12744,7 +13219,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -12825,7 +13300,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -12906,7 +13381,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -12987,7 +13462,7 @@
       },
       "route_verified": true,
       "source": "best_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -13068,7 +13543,7 @@
       },
       "route_verified": true,
       "source": "best_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -13149,7 +13624,7 @@
       },
       "route_verified": true,
       "source": "best_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -13230,7 +13705,7 @@
       },
       "route_verified": true,
       "source": "best_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -13311,7 +13786,7 @@
       },
       "route_verified": true,
       "source": "best_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -13392,7 +13867,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -13473,7 +13948,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -13571,7 +14046,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -13652,7 +14127,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -13733,7 +14208,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -13814,7 +14289,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -13895,7 +14370,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -13976,7 +14451,7 @@
       },
       "route_verified": true,
       "source": "best_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -14074,7 +14549,7 @@
       },
       "route_verified": true,
       "source": "best_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -14155,7 +14630,7 @@
       },
       "route_verified": true,
       "source": "best_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -14236,7 +14711,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -14317,7 +14792,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -14415,7 +14890,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -14496,7 +14971,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -14577,7 +15052,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -14658,7 +15133,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -14739,7 +15214,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -14819,7 +15294,7 @@
       },
       "route_verified": true,
       "source": "best_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -14899,7 +15374,7 @@
       },
       "route_verified": true,
       "source": "best_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -14979,7 +15454,7 @@
       },
       "route_verified": true,
       "source": "best_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -15059,7 +15534,7 @@
       },
       "route_verified": true,
       "source": "best_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -15139,7 +15614,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -15219,7 +15694,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -15299,7 +15774,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -15379,7 +15854,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -15460,7 +15935,7 @@
       },
       "route_verified": true,
       "source": "best_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -15541,7 +16016,7 @@
       },
       "route_verified": true,
       "source": "best_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -15622,7 +16097,7 @@
       },
       "route_verified": true,
       "source": "best_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -15703,7 +16178,7 @@
       },
       "route_verified": true,
       "source": "best_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -15784,7 +16259,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -15865,7 +16340,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -15946,7 +16421,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -16027,7 +16502,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -16108,7 +16583,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -16172,7 +16647,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -16236,7 +16711,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -16317,7 +16792,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -16398,7 +16873,7 @@
       },
       "route_verified": true,
       "source": "best_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -16479,7 +16954,7 @@
       },
       "route_verified": true,
       "source": "best_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -16560,7 +17035,7 @@
       },
       "route_verified": true,
       "source": "best_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -16624,7 +17099,7 @@
       },
       "route_verified": true,
       "source": "best_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -16688,7 +17163,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -16769,7 +17244,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -16850,7 +17325,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -16931,7 +17406,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -17012,7 +17487,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -17093,7 +17568,7 @@
       },
       "route_verified": true,
       "source": "best_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -17174,7 +17649,7 @@
       },
       "route_verified": true,
       "source": "best_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -17255,7 +17730,7 @@
       },
       "route_verified": true,
       "source": "best_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -17336,7 +17811,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -17417,7 +17892,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -17498,7 +17973,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -17579,7 +18054,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -17660,7 +18135,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -17741,7 +18216,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -17805,7 +18280,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -17869,7 +18344,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -17950,7 +18425,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -18031,7 +18506,7 @@
       },
       "route_verified": true,
       "source": "best_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -18112,7 +18587,7 @@
       },
       "route_verified": true,
       "source": "best_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -18193,7 +18668,7 @@
       },
       "route_verified": true,
       "source": "best_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -18291,7 +18766,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -18389,7 +18864,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -18487,7 +18962,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -18585,7 +19060,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -18683,7 +19158,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -18764,7 +19239,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -18845,7 +19320,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -18926,7 +19401,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -18990,7 +19465,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -19054,7 +19529,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -19135,7 +19610,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -19216,7 +19691,7 @@
       },
       "route_verified": true,
       "source": "best_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -19297,7 +19772,7 @@
       },
       "route_verified": true,
       "source": "best_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -19378,7 +19853,7 @@
       },
       "route_verified": true,
       "source": "best_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -19442,7 +19917,7 @@
       },
       "route_verified": true,
       "source": "best_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -19523,7 +19998,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -19604,7 +20079,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -19685,7 +20160,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -19766,7 +20241,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -19830,7 +20305,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -19911,7 +20386,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -19992,7 +20467,7 @@
       },
       "route_verified": true,
       "source": "best_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -20073,7 +20548,7 @@
       },
       "route_verified": true,
       "source": "best_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -20154,7 +20629,7 @@
       },
       "route_verified": true,
       "source": "best_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -20235,7 +20710,7 @@
       },
       "route_verified": true,
       "source": "best_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -20316,7 +20791,7 @@
       },
       "route_verified": true,
       "source": "best_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -20380,7 +20855,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -20444,7 +20919,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -20525,7 +21000,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -20605,7 +21080,7 @@
       },
       "route_verified": true,
       "source": "best_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -20685,7 +21160,7 @@
       },
       "route_verified": true,
       "source": "best_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -20765,7 +21240,7 @@
       },
       "route_verified": true,
       "source": "best_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -20845,7 +21320,7 @@
       },
       "route_verified": true,
       "source": "best_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -20925,7 +21400,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -21005,7 +21480,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -21085,7 +21560,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -21165,7 +21640,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -21245,7 +21720,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -21325,7 +21800,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -21388,7 +21863,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -21451,7 +21926,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -21531,7 +22006,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -21612,7 +22087,7 @@
       },
       "route_verified": true,
       "source": "best_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -21693,7 +22168,7 @@
       },
       "route_verified": true,
       "source": "best_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -21774,7 +22249,7 @@
       },
       "route_verified": true,
       "source": "best_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -21838,7 +22313,7 @@
       },
       "route_verified": true,
       "source": "best_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -21919,7 +22394,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -22000,7 +22475,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -22081,7 +22556,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -22162,7 +22637,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -22226,7 +22701,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -22290,7 +22765,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -22354,7 +22829,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -22418,7 +22893,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -22482,7 +22957,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -22563,7 +23038,7 @@
       },
       "route_verified": true,
       "source": "best_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -22627,7 +23102,7 @@
       },
       "route_verified": true,
       "source": "best_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -22691,7 +23166,7 @@
       },
       "route_verified": true,
       "source": "best_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -22755,7 +23230,7 @@
       },
       "route_verified": true,
       "source": "best_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -22819,7 +23294,7 @@
       },
       "route_verified": true,
       "source": "best_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -22900,7 +23375,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -22964,7 +23439,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -23028,7 +23503,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -23109,7 +23584,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -23190,7 +23665,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -23271,7 +23746,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -23352,7 +23827,7 @@
       },
       "route_verified": true,
       "source": "best_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -23416,7 +23891,7 @@
       },
       "route_verified": true,
       "source": "best_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -23480,7 +23955,7 @@
       },
       "route_verified": true,
       "source": "best_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -23561,7 +24036,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -23642,7 +24117,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -23723,7 +24198,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -23787,7 +24262,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -23851,7 +24326,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -23915,7 +24390,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -23979,7 +24454,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -24060,7 +24535,7 @@
       },
       "route_verified": true,
       "source": "best_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -24124,7 +24599,7 @@
       },
       "route_verified": true,
       "source": "best_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -24205,7 +24680,7 @@
       },
       "route_verified": true,
       "source": "best_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -24286,7 +24761,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -24367,7 +24842,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -24431,7 +24906,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -24495,7 +24970,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -24576,7 +25051,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -24657,7 +25132,7 @@
       },
       "route_verified": true,
       "source": "best_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -24738,7 +25213,7 @@
       },
       "route_verified": true,
       "source": "best_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -24802,7 +25277,7 @@
       },
       "route_verified": true,
       "source": "best_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -24866,7 +25341,7 @@
       },
       "route_verified": true,
       "source": "best_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -24930,7 +25405,7 @@
       },
       "route_verified": true,
       "source": "best_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -25011,7 +25486,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -25092,7 +25567,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -25173,7 +25648,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -25237,7 +25712,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -25301,7 +25776,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -25365,7 +25840,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -25429,7 +25904,7 @@
       },
       "route_verified": true,
       "source": "best_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -25493,7 +25968,7 @@
       },
       "route_verified": true,
       "source": "best_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -25557,7 +26032,7 @@
       },
       "route_verified": true,
       "source": "best_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -25638,7 +26113,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -25719,7 +26194,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -25783,7 +26258,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -25847,7 +26322,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -25911,7 +26386,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -25991,7 +26466,7 @@
       },
       "route_verified": true,
       "source": "best_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -26071,7 +26546,7 @@
       },
       "route_verified": true,
       "source": "best_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -26134,7 +26609,7 @@
       },
       "route_verified": true,
       "source": "best_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -26214,7 +26689,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -26294,7 +26769,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -26374,7 +26849,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -26437,7 +26912,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -26500,7 +26975,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -26580,7 +27055,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -26643,7 +27118,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -26706,7 +27181,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -26769,7 +27244,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -26832,7 +27307,7 @@
       },
       "route_verified": true,
       "source": "best_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -26895,7 +27370,7 @@
       },
       "route_verified": true,
       "source": "best_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -26975,7 +27450,7 @@
       },
       "route_verified": true,
       "source": "best_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -27055,7 +27530,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -27135,7 +27610,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -27215,7 +27690,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -27295,7 +27770,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -27375,7 +27850,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -27455,7 +27930,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -27535,7 +28010,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -27615,7 +28090,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -27695,7 +28170,7 @@
       },
       "route_verified": true,
       "source": "best_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -27792,7 +28267,7 @@
       },
       "route_verified": true,
       "source": "best_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -27889,7 +28364,7 @@
       },
       "route_verified": true,
       "source": "best_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -27952,7 +28427,7 @@
       },
       "route_verified": true,
       "source": "best_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -28032,7 +28507,7 @@
       },
       "route_verified": true,
       "source": "best_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -28129,7 +28604,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -28226,7 +28701,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -28323,7 +28798,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -28403,7 +28878,7 @@
       },
       "route_verified": true,
       "source": "best_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -28466,7 +28941,7 @@
       },
       "route_verified": true,
       "source": "best_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -28529,7 +29004,7 @@
       },
       "route_verified": true,
       "source": "best_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -28609,7 +29084,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -28672,7 +29147,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -28735,7 +29210,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -28798,7 +29273,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -28861,7 +29336,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -28941,7 +29416,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -29038,7 +29513,7 @@
       },
       "route_verified": true,
       "source": "best_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -29118,7 +29593,7 @@
       },
       "route_verified": true,
       "source": "best_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -29215,7 +29690,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -29295,7 +29770,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -29392,7 +29867,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -29472,7 +29947,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -29569,7 +30044,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -29633,7 +30108,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -29731,7 +30206,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -29829,7 +30304,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -29927,7 +30402,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -29991,7 +30466,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -30089,7 +30564,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -30187,7 +30662,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -30285,7 +30760,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -30349,7 +30824,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -30447,7 +30922,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -30545,7 +31020,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -30609,7 +31084,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -31486,7 +31961,7 @@
       },
       "route_verified": true,
       "source": "best_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -31583,7 +32058,7 @@
       },
       "route_verified": true,
       "source": "best_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -31680,7 +32155,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -31777,7 +32252,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -31874,7 +32349,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -31972,7 +32447,7 @@
       },
       "route_verified": true,
       "source": "best_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -32036,7 +32511,7 @@
       },
       "route_verified": true,
       "source": "best_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -32134,7 +32609,7 @@
       },
       "route_verified": true,
       "source": "best_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -32198,7 +32673,7 @@
       },
       "route_verified": true,
       "source": "best_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -32296,7 +32771,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -32394,7 +32869,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -32492,7 +32967,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -32573,7 +33048,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -32671,7 +33146,7 @@
       },
       "route_verified": true,
       "source": "best_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -32735,7 +33210,7 @@
       },
       "route_verified": true,
       "source": "best_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -32799,7 +33274,7 @@
       },
       "route_verified": true,
       "source": "best_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -32897,7 +33372,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -32995,7 +33470,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -33093,7 +33568,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -33174,7 +33649,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -33272,7 +33747,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -33370,7 +33845,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -33468,7 +33943,7 @@
       },
       "route_verified": true,
       "source": "best_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -33532,7 +34007,7 @@
       },
       "route_verified": true,
       "source": "best_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -33596,7 +34071,7 @@
       },
       "route_verified": true,
       "source": "best_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -33694,7 +34169,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -33792,7 +34267,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -33890,7 +34365,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -33988,7 +34463,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -34086,7 +34561,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -34167,7 +34642,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -34231,7 +34706,7 @@
       },
       "route_verified": true,
       "source": "best_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -34312,7 +34787,7 @@
       },
       "route_verified": true,
       "source": "best_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -34376,7 +34851,7 @@
       },
       "route_verified": true,
       "source": "best_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -34474,7 +34949,7 @@
       },
       "route_verified": true,
       "source": "best_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -34572,7 +35047,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -34670,7 +35145,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -34768,7 +35243,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -34866,7 +35341,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -34964,7 +35439,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -35062,7 +35537,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -35160,7 +35635,7 @@
       },
       "route_verified": true,
       "source": "best_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -35224,7 +35699,7 @@
       },
       "route_verified": true,
       "source": "best_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -35288,7 +35763,7 @@
       },
       "route_verified": true,
       "source": "best_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -35386,7 +35861,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -35484,7 +35959,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -35582,7 +36057,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -35680,7 +36155,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -35778,7 +36253,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -35859,7 +36334,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -35957,7 +36432,7 @@
       },
       "route_verified": true,
       "source": "best_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -36055,7 +36530,7 @@
       },
       "route_verified": true,
       "source": "best_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -36119,7 +36594,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -36183,7 +36658,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -36264,7 +36739,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -36327,7 +36802,7 @@
       },
       "route_verified": true,
       "source": "best_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -36424,7 +36899,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -36521,7 +36996,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -36601,7 +37076,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -36664,7 +37139,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -36761,7 +37236,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -40412,7 +40887,7 @@
       },
       "route_verified": true,
       "source": "best_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -40509,7 +40984,7 @@
       },
       "route_verified": true,
       "source": "best_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -40589,7 +41064,7 @@
       },
       "route_verified": true,
       "source": "best_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -40686,7 +41161,7 @@
       },
       "route_verified": true,
       "source": "best_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -40783,7 +41258,7 @@
       },
       "route_verified": true,
       "source": "best_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -40880,7 +41355,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -40977,7 +41452,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -41074,7 +41549,7 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     },
     {
@@ -41171,169 +41646,169 @@
       },
       "route_verified": true,
       "source": "other_flights",
-      "stale": false,
+      "stale": true,
       "status": "complete"
     }
   ],
   "presentation": {
-    "generated_at": "2026-10-04T12:24:59.045170-03:00",
+    "generated_at": "2026-10-05T16:19:32.146617-03:00",
     "timezone": "America/Sao_Paulo"
   },
   "routes": {
     "FLL-GRU:return": {
       "last_success_at_utc": "2026-10-04T15:24:59Z",
-      "stale": false,
-      "status": "success"
+      "stale": true,
+      "status": "stale_data"
     },
     "FLL-VCP:return": {
       "last_success_at_utc": "2026-10-04T15:24:59Z",
-      "stale": false,
-      "status": "success"
+      "stale": true,
+      "status": "stale_data"
     },
     "GRU-FLL:FLL-GRU": {
       "last_success_at_utc": "2026-10-04T15:24:59Z",
-      "stale": false,
-      "status": "success"
+      "stale": true,
+      "status": "stale_data"
     },
     "GRU-FLL:FLL-VCP": {
       "last_success_at_utc": "2026-10-04T15:24:59Z",
-      "stale": false,
-      "status": "success"
+      "stale": true,
+      "status": "stale_data"
     },
     "GRU-FLL:MCO-GRU": {
       "last_success_at_utc": "2026-10-04T15:24:59Z",
-      "stale": false,
-      "status": "success"
+      "stale": true,
+      "status": "stale_data"
     },
     "GRU-FLL:MCO-VCP": {
       "last_success_at_utc": "2026-10-04T15:24:59Z",
-      "stale": false,
-      "status": "success"
+      "stale": true,
+      "status": "stale_data"
     },
     "GRU-FLL:MIA-GRU": {
       "last_success_at_utc": "2026-10-04T15:24:59Z",
-      "stale": false,
-      "status": "success"
+      "stale": true,
+      "status": "stale_data"
     },
     "GRU-FLL:MIA-VCP": {
       "last_success_at_utc": "2026-10-04T15:24:59Z",
-      "stale": false,
-      "status": "success"
+      "stale": true,
+      "status": "stale_data"
     },
     "GRU-FLL:outbound": {
       "last_success_at_utc": "2026-10-04T15:24:59Z",
-      "stale": false,
-      "status": "success"
+      "stale": true,
+      "status": "stale_data"
     },
     "GRU-MCO:FLL-GRU": {
       "last_success_at_utc": "2026-10-04T15:24:59Z",
-      "stale": false,
-      "status": "success"
+      "stale": true,
+      "status": "stale_data"
     },
     "GRU-MCO:FLL-VCP": {
       "last_success_at_utc": "2026-10-04T15:24:59Z",
-      "stale": false,
-      "status": "success"
+      "stale": true,
+      "status": "stale_data"
     },
     "GRU-MCO:MCO-GRU": {
       "last_success_at_utc": "2026-10-04T15:24:59Z",
-      "stale": false,
-      "status": "success"
+      "stale": true,
+      "status": "stale_data"
     },
     "GRU-MCO:MCO-VCP": {
       "last_success_at_utc": "2026-10-04T15:24:59Z",
-      "stale": false,
-      "status": "success"
+      "stale": true,
+      "status": "stale_data"
     },
     "GRU-MCO:MIA-GRU": {
       "last_success_at_utc": "2026-10-04T15:24:59Z",
-      "stale": false,
-      "status": "success"
+      "stale": true,
+      "status": "stale_data"
     },
     "GRU-MCO:MIA-VCP": {
       "last_success_at_utc": "2026-10-04T15:24:59Z",
-      "stale": false,
-      "status": "success"
+      "stale": true,
+      "status": "stale_data"
     },
     "GRU-MCO:outbound": {
       "last_success_at_utc": "2026-10-04T15:24:59Z",
-      "stale": false,
-      "status": "success"
+      "stale": true,
+      "status": "stale_data"
     },
     "GRU-MIA:FLL-GRU": {
       "last_success_at_utc": "2026-10-04T15:24:59Z",
-      "stale": false,
-      "status": "success"
+      "stale": true,
+      "status": "stale_data"
     },
     "GRU-MIA:FLL-VCP": {
       "last_success_at_utc": "2026-10-04T15:24:59Z",
-      "stale": false,
-      "status": "success"
+      "stale": true,
+      "status": "stale_data"
     },
     "GRU-MIA:MCO-GRU": {
       "last_success_at_utc": "2026-10-04T15:24:59Z",
-      "stale": false,
-      "status": "success"
+      "stale": true,
+      "status": "stale_data"
     },
     "GRU-MIA:MCO-VCP": {
       "last_success_at_utc": "2026-10-04T15:24:59Z",
-      "stale": false,
-      "status": "success"
+      "stale": true,
+      "status": "stale_data"
     },
     "GRU-MIA:MIA-GRU": {
       "last_success_at_utc": "2026-10-04T15:24:59Z",
-      "stale": false,
-      "status": "success"
+      "stale": true,
+      "status": "stale_data"
     },
     "GRU-MIA:MIA-VCP": {
       "last_success_at_utc": "2026-10-04T15:24:59Z",
-      "stale": false,
-      "status": "success"
+      "stale": true,
+      "status": "stale_data"
     },
     "GRU-MIA:outbound": {
       "last_success_at_utc": "2026-10-04T15:24:59Z",
-      "stale": false,
-      "status": "success"
+      "stale": true,
+      "status": "stale_data"
     },
     "MCO-GRU:return": {
       "last_success_at_utc": "2026-10-04T15:24:59Z",
-      "stale": false,
-      "status": "success"
+      "stale": true,
+      "status": "stale_data"
     },
     "MCO-VCP:return": {
       "last_success_at_utc": "2026-10-04T15:24:59Z",
-      "stale": false,
-      "status": "success"
+      "stale": true,
+      "status": "stale_data"
     },
     "MIA-GRU:return": {
       "last_success_at_utc": "2026-10-04T15:24:59Z",
-      "stale": false,
-      "status": "success"
+      "stale": true,
+      "status": "stale_data"
     },
     "MIA-VCP:return": {
       "last_success_at_utc": "2026-10-04T15:24:59Z",
-      "stale": false,
-      "status": "success"
+      "stale": true,
+      "status": "stale_data"
     },
     "VCP-FLL:FLL-GRU": {
       "last_success_at_utc": "2026-10-04T15:24:59Z",
-      "stale": false,
-      "status": "success"
+      "stale": true,
+      "status": "stale_data"
     },
     "VCP-FLL:FLL-VCP": {
       "last_success_at_utc": "2026-10-04T15:24:59Z",
-      "stale": false,
-      "status": "success"
+      "stale": true,
+      "status": "stale_data"
     },
     "VCP-FLL:MCO-GRU": {
       "last_success_at_utc": "2026-10-04T15:24:59Z",
-      "stale": false,
-      "status": "success"
+      "stale": true,
+      "status": "stale_data"
     },
     "VCP-FLL:MCO-VCP": {
       "last_success_at_utc": "2026-10-04T15:24:59Z",
-      "stale": false,
-      "status": "success"
+      "stale": true,
+      "status": "stale_data"
     },
     "VCP-FLL:MIA-GRU": {
       "last_success_at_utc": "2026-10-03T14:45:27Z",
@@ -41347,43 +41822,43 @@
     },
     "VCP-FLL:outbound": {
       "last_success_at_utc": "2026-10-04T15:24:59Z",
-      "stale": false,
-      "status": "success"
+      "stale": true,
+      "status": "stale_data"
     },
     "VCP-MCO:FLL-GRU": {
       "last_success_at_utc": "2026-10-04T15:24:59Z",
-      "stale": false,
-      "status": "success"
+      "stale": true,
+      "status": "stale_data"
     },
     "VCP-MCO:FLL-VCP": {
       "last_success_at_utc": "2026-10-04T15:24:59Z",
-      "stale": false,
-      "status": "success"
+      "stale": true,
+      "status": "stale_data"
     },
     "VCP-MCO:MCO-GRU": {
       "last_success_at_utc": "2026-10-04T15:24:59Z",
-      "stale": false,
-      "status": "success"
+      "stale": true,
+      "status": "stale_data"
     },
     "VCP-MCO:MCO-VCP": {
       "last_success_at_utc": "2026-10-04T15:24:59Z",
-      "stale": false,
-      "status": "success"
+      "stale": true,
+      "status": "stale_data"
     },
     "VCP-MCO:MIA-GRU": {
       "last_success_at_utc": "2026-10-04T15:24:59Z",
-      "stale": false,
-      "status": "success"
+      "stale": true,
+      "status": "stale_data"
     },
     "VCP-MCO:MIA-VCP": {
       "last_success_at_utc": "2026-10-04T15:24:59Z",
-      "stale": false,
-      "status": "success"
+      "stale": true,
+      "status": "stale_data"
     },
     "VCP-MCO:outbound": {
       "last_success_at_utc": "2026-10-04T15:24:59Z",
-      "stale": false,
-      "status": "success"
+      "stale": true,
+      "status": "stale_data"
     },
     "VCP-MIA:FLL-GRU": {
       "last_success_at_utc": "2026-10-03T14:45:27Z",
@@ -41417,8 +41892,8 @@
     },
     "VCP-MIA:outbound": {
       "last_success_at_utc": "2026-10-04T15:24:59Z",
-      "stale": false,
-      "status": "success"
+      "stale": true,
+      "status": "stale_data"
     }
   },
   "schema_version": 1,
