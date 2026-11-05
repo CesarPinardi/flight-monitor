@@ -295,14 +295,14 @@
       "failure": {
         "active": false,
         "alerted": false,
-        "consecutive": 2
+        "consecutive": 0
       },
       "quota": {
         "active": false,
         "alerted": false
       }
     },
-    "last_evaluated_at_utc": "2026-11-04T18:03:54Z",
+    "last_evaluated_at_utc": "2026-11-05T18:06:29Z",
     "schema_version": 1,
     "sent": {}
   },
@@ -316,15 +316,15 @@
     "remaining": 0,
     "total_limit": 186
   },
-  "last_run_at_utc": "2026-11-04T18:03:54Z",
-  "last_run_id": "run-fc20a8e560658a349999",
-  "last_run_local_date": "2026-11-04",
+  "last_run_at_utc": "2026-11-05T18:06:29Z",
+  "last_run_id": "run-1838a61266176ea5ed5a",
+  "last_run_local_date": "2026-11-05",
   "month": "2026-11",
   "routes": {
     "FLL-GRU:return": {
-      "last_attempt_at_utc": "2026-11-04T18:03:54Z",
-      "last_error": null,
-      "last_result_status": "success",
+      "last_attempt_at_utc": "2026-11-05T18:06:29Z",
+      "last_error": "SerpApi call budget exhausted (0)",
+      "last_result_status": "quota",
       "last_success_at_utc": "2026-11-04T18:03:54Z",
       "last_valid_offers": [
         {
@@ -1040,12 +1040,12 @@
         }
       ],
       "last_valid_run_id": "run-fc20a8e560658a349999",
-      "status": "success"
+      "status": "stale_data"
     },
     "FLL-VCP:return": {
-      "last_attempt_at_utc": "2026-11-04T18:03:54Z",
-      "last_error": null,
-      "last_result_status": "success",
+      "last_attempt_at_utc": "2026-11-05T18:06:29Z",
+      "last_error": "SerpApi call budget exhausted (0)",
+      "last_result_status": "quota",
       "last_success_at_utc": "2026-11-04T18:03:54Z",
       "last_valid_offers": [
         {
@@ -1784,12 +1784,12 @@
         }
       ],
       "last_valid_run_id": "run-fc20a8e560658a349999",
-      "status": "success"
+      "status": "stale_data"
     },
     "GRU-FLL:FLL-GRU": {
-      "last_attempt_at_utc": "2026-11-04T18:03:54Z",
-      "last_error": null,
-      "last_result_status": "success",
+      "last_attempt_at_utc": "2026-11-05T18:06:29Z",
+      "last_error": "SerpApi call budget exhausted (0)",
+      "last_result_status": "quota",
       "last_success_at_utc": "2026-11-04T18:03:54Z",
       "last_valid_offers": [
         {
@@ -2514,12 +2514,12 @@
         }
       ],
       "last_valid_run_id": "run-fc20a8e560658a349999",
-      "status": "success"
+      "status": "stale_data"
     },
     "GRU-FLL:FLL-VCP": {
-      "last_attempt_at_utc": "2026-11-04T18:03:54Z",
-      "last_error": null,
-      "last_result_status": "success",
+      "last_attempt_at_utc": "2026-11-05T18:06:29Z",
+      "last_error": "SerpApi call budget exhausted (0)",
+      "last_result_status": "quota",
       "last_success_at_utc": "2026-11-04T18:03:54Z",
       "last_valid_offers": [
         {
@@ -3421,12 +3421,12 @@
         }
       ],
       "last_valid_run_id": "run-fc20a8e560658a349999",
-      "status": "success"
+      "status": "stale_data"
     },
     "GRU-FLL:MCO-GRU": {
-      "last_attempt_at_utc": "2026-11-04T18:03:54Z",
-      "last_error": null,
-      "last_result_status": "success",
+      "last_attempt_at_utc": "2026-11-05T18:06:29Z",
+      "last_error": "SerpApi call budget exhausted (0)",
+      "last_result_status": "quota",
       "last_success_at_utc": "2026-11-04T18:03:54Z",
       "last_valid_offers": [
         {
@@ -4311,12 +4311,12 @@
         }
       ],
       "last_valid_run_id": "run-fc20a8e560658a349999",
-      "status": "success"
+      "status": "stale_data"
     },
     "GRU-FLL:MCO-VCP": {
-      "last_attempt_at_utc": "2026-11-04T18:03:54Z",
-      "last_error": null,
-      "last_result_status": "success",
+      "last_attempt_at_utc": "2026-11-05T18:06:29Z",
+      "last_error": "SerpApi call budget exhausted (0)",
+      "last_result_status": "quota",
       "last_success_at_utc": "2026-11-04T18:03:54Z",
       "last_valid_offers": [
         {
@@ -5281,12 +5281,12 @@
         }
       ],
       "last_valid_run_id": "run-fc20a8e560658a349999",
-      "status": "success"
+      "status": "stale_data"
     },
     "GRU-FLL:MIA-GRU": {
-      "last_attempt_at_utc": "2026-11-04T18:03:54Z",
-      "last_error": null,
-      "last_result_status": "success",
+      "last_attempt_at_utc": "2026-11-05T18:06:29Z",
+      "last_error": "SerpApi call budget exhausted (0)",
+      "last_result_status": "quota",
       "last_success_at_utc": "2026-11-04T18:03:54Z",
       "last_valid_offers": [
         {
@@ -6091,12 +6091,12 @@
         }
       ],
       "last_valid_run_id": "run-fc20a8e560658a349999",
-      "status": "success"
+      "status": "stale_data"
     },
     "GRU-FLL:MIA-VCP": {
-      "last_attempt_at_utc": "2026-11-04T18:03:54Z",
-      "last_error": null,
-      "last_result_status": "success",
+      "last_attempt_at_utc": "2026-11-05T18:06:29Z",
+      "last_error": "SerpApi call budget exhausted (0)",
+      "last_result_status": "quota",
       "last_success_at_utc": "2026-11-04T18:03:54Z",
       "last_valid_offers": [
         {
@@ -6821,12 +6821,12 @@
         }
       ],
       "last_valid_run_id": "run-fc20a8e560658a349999",
-      "status": "success"
+      "status": "stale_data"
     },
     "GRU-FLL:outbound": {
-      "last_attempt_at_utc": "2026-11-04T18:03:54Z",
-      "last_error": null,
-      "last_result_status": "success",
+      "last_attempt_at_utc": "2026-11-05T18:06:29Z",
+      "last_error": "SerpApi call budget exhausted (0)",
+      "last_result_status": "quota",
       "last_success_at_utc": "2026-11-04T18:03:54Z",
       "last_valid_offers": [
         {
@@ -7638,12 +7638,12 @@
         }
       ],
       "last_valid_run_id": "run-fc20a8e560658a349999",
-      "status": "success"
+      "status": "stale_data"
     },
     "GRU-MCO:FLL-GRU": {
-      "last_attempt_at_utc": "2026-11-04T18:03:54Z",
-      "last_error": "SerpApi request failed: The read operation timed out",
-      "last_result_status": "failure",
+      "last_attempt_at_utc": "2026-11-05T18:06:29Z",
+      "last_error": "SerpApi call budget exhausted (0)",
+      "last_result_status": "quota",
       "last_success_at_utc": "2026-11-02T20:24:02Z",
       "last_valid_offers": [
         {
@@ -8257,9 +8257,9 @@
       "status": "stale_data"
     },
     "GRU-MCO:FLL-VCP": {
-      "last_attempt_at_utc": "2026-11-04T18:03:54Z",
-      "last_error": null,
-      "last_result_status": "success",
+      "last_attempt_at_utc": "2026-11-05T18:06:29Z",
+      "last_error": "SerpApi call budget exhausted (0)",
+      "last_result_status": "quota",
       "last_success_at_utc": "2026-11-04T18:03:54Z",
       "last_valid_offers": [
         {
@@ -8904,12 +8904,12 @@
         }
       ],
       "last_valid_run_id": "run-fc20a8e560658a349999",
-      "status": "success"
+      "status": "stale_data"
     },
     "GRU-MCO:MCO-GRU": {
-      "last_attempt_at_utc": "2026-11-04T18:03:54Z",
-      "last_error": null,
-      "last_result_status": "success",
+      "last_attempt_at_utc": "2026-11-05T18:06:29Z",
+      "last_error": "SerpApi call budget exhausted (0)",
+      "last_result_status": "quota",
       "last_success_at_utc": "2026-11-04T18:03:54Z",
       "last_valid_offers": [
         {
@@ -9600,12 +9600,12 @@
         }
       ],
       "last_valid_run_id": "run-fc20a8e560658a349999",
-      "status": "success"
+      "status": "stale_data"
     },
     "GRU-MCO:MCO-VCP": {
-      "last_attempt_at_utc": "2026-11-04T18:03:54Z",
-      "last_error": null,
-      "last_result_status": "success",
+      "last_attempt_at_utc": "2026-11-05T18:06:29Z",
+      "last_error": "SerpApi call budget exhausted (0)",
+      "last_result_status": "quota",
       "last_success_at_utc": "2026-11-04T18:03:54Z",
       "last_valid_offers": [
         {
@@ -10296,12 +10296,12 @@
         }
       ],
       "last_valid_run_id": "run-fc20a8e560658a349999",
-      "status": "success"
+      "status": "stale_data"
     },
     "GRU-MCO:MIA-GRU": {
-      "last_attempt_at_utc": "2026-11-04T18:03:54Z",
-      "last_error": null,
-      "last_result_status": "success",
+      "last_attempt_at_utc": "2026-11-05T18:06:29Z",
+      "last_error": "SerpApi call budget exhausted (0)",
+      "last_result_status": "quota",
       "last_success_at_utc": "2026-11-04T18:03:54Z",
       "last_valid_offers": [
         {
@@ -10992,12 +10992,12 @@
         }
       ],
       "last_valid_run_id": "run-fc20a8e560658a349999",
-      "status": "success"
+      "status": "stale_data"
     },
     "GRU-MCO:MIA-VCP": {
-      "last_attempt_at_utc": "2026-11-04T18:03:54Z",
-      "last_error": null,
-      "last_result_status": "success",
+      "last_attempt_at_utc": "2026-11-05T18:06:29Z",
+      "last_error": "SerpApi call budget exhausted (0)",
+      "last_result_status": "quota",
       "last_success_at_utc": "2026-11-04T18:03:54Z",
       "last_valid_offers": [
         {
@@ -11608,12 +11608,12 @@
         }
       ],
       "last_valid_run_id": "run-fc20a8e560658a349999",
-      "status": "success"
+      "status": "stale_data"
     },
     "GRU-MCO:outbound": {
-      "last_attempt_at_utc": "2026-11-04T18:03:54Z",
-      "last_error": null,
-      "last_result_status": "success",
+      "last_attempt_at_utc": "2026-11-05T18:06:29Z",
+      "last_error": "SerpApi call budget exhausted (0)",
+      "last_result_status": "quota",
       "last_success_at_utc": "2026-11-04T18:03:54Z",
       "last_valid_offers": [
         {
@@ -12470,12 +12470,12 @@
         }
       ],
       "last_valid_run_id": "run-fc20a8e560658a349999",
-      "status": "success"
+      "status": "stale_data"
     },
     "GRU-MIA:FLL-GRU": {
-      "last_attempt_at_utc": "2026-11-04T18:03:54Z",
-      "last_error": "SerpApi request failed: The read operation timed out",
-      "last_result_status": "failure",
+      "last_attempt_at_utc": "2026-11-05T18:06:29Z",
+      "last_error": "SerpApi call budget exhausted (0)",
+      "last_result_status": "quota",
       "last_success_at_utc": "2026-11-03T17:53:59Z",
       "last_valid_offers": [
         {
@@ -13261,9 +13261,9 @@
       "status": "stale_data"
     },
     "GRU-MIA:FLL-VCP": {
-      "last_attempt_at_utc": "2026-11-04T18:03:54Z",
-      "last_error": null,
-      "last_result_status": "success",
+      "last_attempt_at_utc": "2026-11-05T18:06:29Z",
+      "last_error": "SerpApi call budget exhausted (0)",
+      "last_result_status": "quota",
       "last_success_at_utc": "2026-11-04T18:03:54Z",
       "last_valid_offers": [
         {
@@ -13857,12 +13857,12 @@
         }
       ],
       "last_valid_run_id": "run-fc20a8e560658a349999",
-      "status": "success"
+      "status": "stale_data"
     },
     "GRU-MIA:MCO-GRU": {
-      "last_attempt_at_utc": "2026-11-04T18:03:54Z",
-      "last_error": null,
-      "last_result_status": "success",
+      "last_attempt_at_utc": "2026-11-05T18:06:29Z",
+      "last_error": "SerpApi call budget exhausted (0)",
+      "last_result_status": "quota",
       "last_success_at_utc": "2026-11-04T18:03:54Z",
       "last_valid_offers": [
         {
@@ -14485,12 +14485,12 @@
         }
       ],
       "last_valid_run_id": "run-fc20a8e560658a349999",
-      "status": "success"
+      "status": "stale_data"
     },
     "GRU-MIA:MCO-VCP": {
-      "last_attempt_at_utc": "2026-11-04T18:03:54Z",
-      "last_error": null,
-      "last_result_status": "success",
+      "last_attempt_at_utc": "2026-11-05T18:06:29Z",
+      "last_error": "SerpApi call budget exhausted (0)",
+      "last_result_status": "quota",
       "last_success_at_utc": "2026-11-04T18:03:54Z",
       "last_valid_offers": [
         {
@@ -15193,12 +15193,12 @@
         }
       ],
       "last_valid_run_id": "run-fc20a8e560658a349999",
-      "status": "success"
+      "status": "stale_data"
     },
     "GRU-MIA:MIA-GRU": {
-      "last_attempt_at_utc": "2026-11-04T18:03:54Z",
-      "last_error": null,
-      "last_result_status": "success",
+      "last_attempt_at_utc": "2026-11-05T18:06:29Z",
+      "last_error": "SerpApi call budget exhausted (0)",
+      "last_result_status": "quota",
       "last_success_at_utc": "2026-11-04T18:03:54Z",
       "last_valid_offers": [
         {
@@ -15741,12 +15741,12 @@
         }
       ],
       "last_valid_run_id": "run-fc20a8e560658a349999",
-      "status": "success"
+      "status": "stale_data"
     },
     "GRU-MIA:MIA-VCP": {
-      "last_attempt_at_utc": "2026-11-04T18:03:54Z",
-      "last_error": null,
-      "last_result_status": "success",
+      "last_attempt_at_utc": "2026-11-05T18:06:29Z",
+      "last_error": "SerpApi call budget exhausted (0)",
+      "last_result_status": "quota",
       "last_success_at_utc": "2026-11-04T18:03:54Z",
       "last_valid_offers": [
         {
@@ -16529,12 +16529,12 @@
         }
       ],
       "last_valid_run_id": "run-fc20a8e560658a349999",
-      "status": "success"
+      "status": "stale_data"
     },
     "GRU-MIA:outbound": {
-      "last_attempt_at_utc": "2026-11-04T18:03:54Z",
-      "last_error": null,
-      "last_result_status": "success",
+      "last_attempt_at_utc": "2026-11-05T18:06:29Z",
+      "last_error": "SerpApi call budget exhausted (0)",
+      "last_result_status": "quota",
       "last_success_at_utc": "2026-11-04T18:03:54Z",
       "last_valid_offers": [
         {
@@ -17148,12 +17148,12 @@
         }
       ],
       "last_valid_run_id": "run-fc20a8e560658a349999",
-      "status": "success"
+      "status": "stale_data"
     },
     "MCO-GRU:return": {
-      "last_attempt_at_utc": "2026-11-04T18:03:54Z",
-      "last_error": null,
-      "last_result_status": "success",
+      "last_attempt_at_utc": "2026-11-05T18:06:29Z",
+      "last_error": "SerpApi call budget exhausted (0)",
+      "last_result_status": "quota",
       "last_success_at_utc": "2026-11-04T18:03:54Z",
       "last_valid_offers": [
         {
@@ -17677,12 +17677,12 @@
         }
       ],
       "last_valid_run_id": "run-fc20a8e560658a349999",
-      "status": "success"
+      "status": "stale_data"
     },
     "MCO-VCP:return": {
-      "last_attempt_at_utc": "2026-11-04T18:03:54Z",
-      "last_error": null,
-      "last_result_status": "success",
+      "last_attempt_at_utc": "2026-11-05T18:06:29Z",
+      "last_error": "SerpApi call budget exhausted (0)",
+      "last_result_status": "quota",
       "last_success_at_utc": "2026-11-04T18:03:54Z",
       "last_valid_offers": [
         {
@@ -18212,12 +18212,12 @@
         }
       ],
       "last_valid_run_id": "run-fc20a8e560658a349999",
-      "status": "success"
+      "status": "stale_data"
     },
     "MIA-GRU:return": {
-      "last_attempt_at_utc": "2026-11-04T18:03:54Z",
-      "last_error": null,
-      "last_result_status": "success",
+      "last_attempt_at_utc": "2026-11-05T18:06:29Z",
+      "last_error": "SerpApi call budget exhausted (0)",
+      "last_result_status": "quota",
       "last_success_at_utc": "2026-11-04T18:03:54Z",
       "last_valid_offers": [
         {
@@ -18752,12 +18752,12 @@
         }
       ],
       "last_valid_run_id": "run-fc20a8e560658a349999",
-      "status": "success"
+      "status": "stale_data"
     },
     "MIA-VCP:return": {
-      "last_attempt_at_utc": "2026-11-04T18:03:54Z",
-      "last_error": null,
-      "last_result_status": "success",
+      "last_attempt_at_utc": "2026-11-05T18:06:29Z",
+      "last_error": "SerpApi call budget exhausted (0)",
+      "last_result_status": "quota",
       "last_success_at_utc": "2026-11-04T18:03:54Z",
       "last_valid_offers": [
         {
@@ -19609,12 +19609,12 @@
         }
       ],
       "last_valid_run_id": "run-fc20a8e560658a349999",
-      "status": "success"
+      "status": "stale_data"
     },
     "VCP-FLL:FLL-GRU": {
-      "last_attempt_at_utc": "2026-11-04T18:03:54Z",
-      "last_error": null,
-      "last_result_status": "success",
+      "last_attempt_at_utc": "2026-11-05T18:06:29Z",
+      "last_error": "SerpApi call budget exhausted (0)",
+      "last_result_status": "quota",
       "last_success_at_utc": "2026-11-04T18:03:54Z",
       "last_valid_offers": [
         {
@@ -19973,12 +19973,12 @@
         }
       ],
       "last_valid_run_id": "run-fc20a8e560658a349999",
-      "status": "success"
+      "status": "stale_data"
     },
     "VCP-FLL:FLL-VCP": {
-      "last_attempt_at_utc": "2026-11-04T18:03:54Z",
-      "last_error": null,
-      "last_result_status": "success",
+      "last_attempt_at_utc": "2026-11-05T18:06:29Z",
+      "last_error": "SerpApi call budget exhausted (0)",
+      "last_result_status": "quota",
       "last_success_at_utc": "2026-11-04T18:03:54Z",
       "last_valid_offers": [
         {
@@ -20337,12 +20337,12 @@
         }
       ],
       "last_valid_run_id": "run-fc20a8e560658a349999",
-      "status": "success"
+      "status": "stale_data"
     },
     "VCP-FLL:MCO-GRU": {
-      "last_attempt_at_utc": "2026-11-04T18:03:54Z",
-      "last_error": null,
-      "last_result_status": "success",
+      "last_attempt_at_utc": "2026-11-05T18:06:29Z",
+      "last_error": "SerpApi call budget exhausted (0)",
+      "last_result_status": "quota",
       "last_success_at_utc": "2026-11-04T18:03:54Z",
       "last_valid_offers": [
         {
@@ -20701,12 +20701,12 @@
         }
       ],
       "last_valid_run_id": "run-fc20a8e560658a349999",
-      "status": "success"
+      "status": "stale_data"
     },
     "VCP-FLL:MCO-VCP": {
-      "last_attempt_at_utc": "2026-11-04T18:03:54Z",
-      "last_error": null,
-      "last_result_status": "success",
+      "last_attempt_at_utc": "2026-11-05T18:06:29Z",
+      "last_error": "SerpApi call budget exhausted (0)",
+      "last_result_status": "quota",
       "last_success_at_utc": "2026-11-04T18:03:54Z",
       "last_valid_offers": [
         {
@@ -20871,12 +20871,12 @@
         }
       ],
       "last_valid_run_id": "run-fc20a8e560658a349999",
-      "status": "success"
+      "status": "stale_data"
     },
     "VCP-FLL:MIA-GRU": {
-      "last_attempt_at_utc": "2026-11-04T18:03:54Z",
-      "last_error": null,
-      "last_result_status": "success",
+      "last_attempt_at_utc": "2026-11-05T18:06:29Z",
+      "last_error": "SerpApi call budget exhausted (0)",
+      "last_result_status": "quota",
       "last_success_at_utc": "2026-11-04T18:03:54Z",
       "last_valid_offers": [
         {
@@ -21235,12 +21235,12 @@
         }
       ],
       "last_valid_run_id": "run-fc20a8e560658a349999",
-      "status": "success"
+      "status": "stale_data"
     },
     "VCP-FLL:MIA-VCP": {
-      "last_attempt_at_utc": "2026-11-04T18:03:54Z",
-      "last_error": null,
-      "last_result_status": "success",
+      "last_attempt_at_utc": "2026-11-05T18:06:29Z",
+      "last_error": "SerpApi call budget exhausted (0)",
+      "last_result_status": "quota",
       "last_success_at_utc": "2026-11-04T18:03:54Z",
       "last_valid_offers": [
         {
@@ -21696,12 +21696,12 @@
         }
       ],
       "last_valid_run_id": "run-fc20a8e560658a349999",
-      "status": "success"
+      "status": "stale_data"
     },
     "VCP-FLL:outbound": {
-      "last_attempt_at_utc": "2026-11-04T18:03:54Z",
-      "last_error": null,
-      "last_result_status": "success",
+      "last_attempt_at_utc": "2026-11-05T18:06:29Z",
+      "last_error": "SerpApi call budget exhausted (0)",
+      "last_result_status": "quota",
       "last_success_at_utc": "2026-11-04T18:03:54Z",
       "last_valid_offers": [
         {
@@ -22152,12 +22152,12 @@
         }
       ],
       "last_valid_run_id": "run-fc20a8e560658a349999",
-      "status": "success"
+      "status": "stale_data"
     },
     "VCP-MCO:FLL-GRU": {
-      "last_attempt_at_utc": "2026-11-04T18:03:54Z",
-      "last_error": null,
-      "last_result_status": "success",
+      "last_attempt_at_utc": "2026-11-05T18:06:29Z",
+      "last_error": "SerpApi call budget exhausted (0)",
+      "last_result_status": "quota",
       "last_success_at_utc": "2026-11-04T18:03:54Z",
       "last_valid_offers": [
         {
@@ -23144,12 +23144,12 @@
         }
       ],
       "last_valid_run_id": "run-fc20a8e560658a349999",
-      "status": "success"
+      "status": "stale_data"
     },
     "VCP-MCO:FLL-VCP": {
-      "last_attempt_at_utc": "2026-11-04T18:03:54Z",
-      "last_error": null,
-      "last_result_status": "success",
+      "last_attempt_at_utc": "2026-11-05T18:06:29Z",
+      "last_error": "SerpApi call budget exhausted (0)",
+      "last_result_status": "quota",
       "last_success_at_utc": "2026-11-04T18:03:54Z",
       "last_valid_offers": [
         {
@@ -23457,12 +23457,12 @@
         }
       ],
       "last_valid_run_id": "run-fc20a8e560658a349999",
-      "status": "success"
+      "status": "stale_data"
     },
     "VCP-MCO:MCO-GRU": {
-      "last_attempt_at_utc": "2026-11-04T18:03:54Z",
-      "last_error": null,
-      "last_result_status": "success",
+      "last_attempt_at_utc": "2026-11-05T18:06:29Z",
+      "last_error": "SerpApi call budget exhausted (0)",
+      "last_result_status": "quota",
       "last_success_at_utc": "2026-11-04T18:03:54Z",
       "last_valid_offers": [
         {
@@ -24175,12 +24175,12 @@
         }
       ],
       "last_valid_run_id": "run-fc20a8e560658a349999",
-      "status": "success"
+      "status": "stale_data"
     },
     "VCP-MCO:MCO-VCP": {
-      "last_attempt_at_utc": "2026-11-04T18:03:54Z",
-      "last_error": null,
-      "last_result_status": "success",
+      "last_attempt_at_utc": "2026-11-05T18:06:29Z",
+      "last_error": "SerpApi call budget exhausted (0)",
+      "last_result_status": "quota",
       "last_success_at_utc": "2026-11-04T18:03:54Z",
       "last_valid_offers": [
         {
@@ -24876,12 +24876,12 @@
         }
       ],
       "last_valid_run_id": "run-fc20a8e560658a349999",
-      "status": "success"
+      "status": "stale_data"
     },
     "VCP-MCO:MIA-GRU": {
-      "last_attempt_at_utc": "2026-11-04T18:03:54Z",
-      "last_error": null,
-      "last_result_status": "success",
+      "last_attempt_at_utc": "2026-11-05T18:06:29Z",
+      "last_error": "SerpApi call budget exhausted (0)",
+      "last_result_status": "quota",
       "last_success_at_utc": "2026-11-04T18:03:54Z",
       "last_valid_offers": [
         {
@@ -25691,12 +25691,12 @@
         }
       ],
       "last_valid_run_id": "run-fc20a8e560658a349999",
-      "status": "success"
+      "status": "stale_data"
     },
     "VCP-MCO:MIA-VCP": {
-      "last_attempt_at_utc": "2026-11-04T18:03:54Z",
-      "last_error": null,
-      "last_result_status": "success",
+      "last_attempt_at_utc": "2026-11-05T18:06:29Z",
+      "last_error": "SerpApi call budget exhausted (0)",
+      "last_result_status": "quota",
       "last_success_at_utc": "2026-11-04T18:03:54Z",
       "last_valid_offers": [
         {
@@ -26506,12 +26506,12 @@
         }
       ],
       "last_valid_run_id": "run-fc20a8e560658a349999",
-      "status": "success"
+      "status": "stale_data"
     },
     "VCP-MCO:outbound": {
-      "last_attempt_at_utc": "2026-11-04T18:03:54Z",
-      "last_error": null,
-      "last_result_status": "success",
+      "last_attempt_at_utc": "2026-11-05T18:06:29Z",
+      "last_error": "SerpApi call budget exhausted (0)",
+      "last_result_status": "quota",
       "last_success_at_utc": "2026-11-04T18:03:54Z",
       "last_valid_offers": [
         {
@@ -27199,11 +27199,11 @@
         }
       ],
       "last_valid_run_id": "run-fc20a8e560658a349999",
-      "status": "success"
+      "status": "stale_data"
     },
     "VCP-MIA:FLL-GRU": {
-      "last_attempt_at_utc": "2026-11-04T18:03:54Z",
-      "last_error": "SerpApi call budget exhausted (42)",
+      "last_attempt_at_utc": "2026-11-05T18:06:29Z",
+      "last_error": "SerpApi call budget exhausted (0)",
       "last_result_status": "quota",
       "last_success_at_utc": "2026-11-03T17:53:59Z",
       "last_valid_offers": [
@@ -27971,8 +27971,8 @@
       "status": "stale_data"
     },
     "VCP-MIA:FLL-VCP": {
-      "last_attempt_at_utc": "2026-11-04T18:03:54Z",
-      "last_error": "SerpApi call budget exhausted (42)",
+      "last_attempt_at_utc": "2026-11-05T18:06:29Z",
+      "last_error": "SerpApi call budget exhausted (0)",
       "last_result_status": "quota",
       "last_success_at_utc": "2026-11-03T17:53:59Z",
       "last_valid_offers": [
@@ -28158,8 +28158,8 @@
       "status": "stale_data"
     },
     "VCP-MIA:MCO-GRU": {
-      "last_attempt_at_utc": "2026-11-04T18:03:54Z",
-      "last_error": "SerpApi call budget exhausted (42)",
+      "last_attempt_at_utc": "2026-11-05T18:06:29Z",
+      "last_error": "SerpApi call budget exhausted (0)",
       "last_result_status": "quota",
       "last_success_at_utc": "2026-11-03T17:53:59Z",
       "last_valid_offers": [
@@ -28733,8 +28733,8 @@
       "status": "stale_data"
     },
     "VCP-MIA:MCO-VCP": {
-      "last_attempt_at_utc": "2026-11-04T18:03:54Z",
-      "last_error": "SerpApi call budget exhausted (42)",
+      "last_attempt_at_utc": "2026-11-05T18:06:29Z",
+      "last_error": "SerpApi call budget exhausted (0)",
       "last_result_status": "quota",
       "last_success_at_utc": "2026-11-03T17:53:59Z",
       "last_valid_offers": [
@@ -29114,8 +29114,8 @@
       "status": "stale_data"
     },
     "VCP-MIA:MIA-GRU": {
-      "last_attempt_at_utc": "2026-11-04T18:03:54Z",
-      "last_error": "SerpApi call budget exhausted (42)",
+      "last_attempt_at_utc": "2026-11-05T18:06:29Z",
+      "last_error": "SerpApi call budget exhausted (0)",
       "last_result_status": "quota",
       "last_success_at_utc": "2026-11-03T17:53:59Z",
       "last_valid_offers": [
@@ -29883,8 +29883,8 @@
       "status": "stale_data"
     },
     "VCP-MIA:MIA-VCP": {
-      "last_attempt_at_utc": "2026-11-04T18:03:54Z",
-      "last_error": "SerpApi call budget exhausted (42)",
+      "last_attempt_at_utc": "2026-11-05T18:06:29Z",
+      "last_error": "SerpApi call budget exhausted (0)",
       "last_result_status": "quota",
       "last_success_at_utc": "2026-11-03T17:53:59Z",
       "last_valid_offers": [
@@ -30652,9 +30652,9 @@
       "status": "stale_data"
     },
     "VCP-MIA:outbound": {
-      "last_attempt_at_utc": "2026-11-04T18:03:54Z",
-      "last_error": null,
-      "last_result_status": "success",
+      "last_attempt_at_utc": "2026-11-05T18:06:29Z",
+      "last_error": "SerpApi call budget exhausted (0)",
+      "last_result_status": "quota",
       "last_success_at_utc": "2026-11-04T18:03:54Z",
       "last_valid_offers": [
         {
@@ -31314,7 +31314,7 @@
         }
       ],
       "last_valid_run_id": "run-fc20a8e560658a349999",
-      "status": "success"
+      "status": "stale_data"
     }
   },
   "schema_version": 1,
